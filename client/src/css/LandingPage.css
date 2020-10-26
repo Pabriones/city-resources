@@ -1,0 +1,127 @@
+.container {
+    @media only screen and (min-width : 992px) {
+        width: 50%;
+  
+      }
+}
+
+
+.background {
+  background-image: url("../Images/spaceneedle.jpg");
+  height: 100vh;
+  min-width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  position: center;
+  font-family: "Roboto Slab", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 150px;
+  text-align: center;
+  color: #22333b;
+  
+}
+
+.nav,
+a:link,
+a:visited {
+  position: center;
+  font-family: "Roboto Slab", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #222831;
+}
+
+a:hover {
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+.searchDirectoryBtn {
+  float: right;
+  width: 506px;
+  height: 93px;
+  margin-top: 370px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #c6ac8f;
+  outline: none;
+  flex-direction: column;
+}
+
+
+.searchText {
+    font-family: "Roboto", "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 49px;
+  color: rgba(94, 80, 63, 0.85);
+  width: 506px;
+  
+  
+}
+
+.searchDirectoryBtn:hover {
+  background-color: #847a6e;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* .btnSearch {
+    color: rgba(94, 80, 63, 0.85);
+  }
+ */
+
+
+ .chevIconSearch{
+    width: 55px;
+    height: 45px;
+    margin-bottom: 0px;
+ }
+
+ .emergencyLinesBtn {
+    float: right;
+    width: 506px;
+    height: 93px;
+    margin-left: 475px;
+    margin-right: 60px;
+    border: none;
+    margin-top: 4px;
+    border-radius: 15px;
+    background-color: #c6ac8f;
+    outline: none;
+    font-family: "Roboto", "Helvetica";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    color: rgba(94, 80, 63, 0.85);
+    
+  }
+  
+  .emergencyLinesBtn:hover {
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .chevIconLines{
+    width: 45px;
+    height: 35px;
+    margin-bottom: -7px;
+ }

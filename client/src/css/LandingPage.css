@@ -1,22 +1,18 @@
 .container {
-    @media only screen and (min-width : 992px) {
-        width: 50%;
-  
-      }
+    height: 100%;
 }
-
-
 .background {
   background-image: url("../Images/spaceneedle.jpg");
-  height: 100vh;
-  min-width: auto;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 
 .title {
-  position: center;
+  position: center, fixed;
+  
   font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
   font-weight: normal;
@@ -45,14 +41,12 @@ a:hover {
   font-style: normal;
   font-weight: bold;
 }
-
-
 .searchDirectoryBtn {
+display: block;
   float: right;
   width: 506px;
   height: 93px;
-  margin-top: 370px;
-  margin-right: 60px;
+  margin-top: 27em;
   margin-bottom: 10px;
   border: none;
   border-radius: 15px;
@@ -94,13 +88,14 @@ a:hover {
  }
 
  .emergencyLinesBtn {
+   
     float: right;
     width: 506px;
     height: 93px;
-    margin-left: 475px;
-    margin-right: 60px;
+    margin-left: 3em;
+    margin-right: 2.5em;
     border: none;
-    margin-top: 4px;
+    margin-top: 1em;
     border-radius: 15px;
     background-color: #c6ac8f;
     outline: none;

@@ -4,7 +4,7 @@ import { Icon } from "semantic-ui-react";
 
 const LandingPage = () => {
   return (
-    <body>
+ 
       <div class="container">
         <div class="background">
           <div class="title">CITY RESOURCES</div>
@@ -13,34 +13,41 @@ const LandingPage = () => {
               <a href="url">ABOUT </a>
               <a href="url">CONTACT</a>
 
-           <div> <Icon>
-              <a href=" ">
-                <button type="button" class="searchDirectoryBtn">
-                  <p class= "searchText">SEARCH DIRECTORY <ion-icon
-                    class="chevIconSearch"
-                    name="chevron-forward-outline"
-                  ></ion-icon></p>
-                 
-                </button>
-              </a>
-            </Icon></div>
+              <div>
+                {" "}
+                <Icon>
+                  <a href=" ">
+                    <button type="button" class="searchDirectoryBtn">
+                      <p class="searchText">
+                        SEARCH DIRECTORY{" "}
+                        <ion-icon
+                          class="chevIconSearch"
+                          name="chevron-forward-outline"
+                        ></ion-icon>
+                      </p>
+                    </button>
+                  </a>
+                </Icon>
+              </div>
 
-
-            <Icon>
-              <a href=" ">
-                <button type="button" class="emergencyLinesBtn">
-                  <p class="emergenText">EMERGENCY AND CRISIS LINES <ion-icon
-                    class="chevIconLines"
-                    name="chevron-forward-outline"
-                  ></ion-icon></p>
-                  
-                </button>
-              </a>
-            </Icon></div>
+              <Icon>
+                <a href=" ">
+                  <button type="button" class="emergencyLinesBtn">
+                    <p class="emergenText">
+                      EMERGENCY AND CRISIS LINES{" "}
+                      <ion-icon
+                        class="chevIconLines"
+                        name="chevron-forward-outline"
+                      ></ion-icon>
+                    </p>
+                  </button>
+                </a>
+              </Icon>
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
-    </body>
+ 
   );
 };
 

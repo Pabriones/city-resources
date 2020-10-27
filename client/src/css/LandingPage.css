@@ -12,11 +12,10 @@
 
 .title {
   position: center, fixed;
-
   font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 9vh;
+  font-size: 6.5vh;
   line-height: 15vh;
   text-align: center;
   color: #22333b;
@@ -27,10 +26,9 @@ a:link,
 a:visited {
   position: center;
   font-family: "Roboto Slab", "sans-serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 3vh;
+  font-size: 2.2vh;
   line-height: 1vh;
+  margin: 0px 2vw;
   text-align: center;
   text-decoration: none;
   color: #222831;
@@ -56,7 +54,7 @@ a:hover {
   background-color: #c6ac8f;
   outline: none;
   max-height: 8vh;
-  margin-right: 10vh;
+  margin-right: 1vh;
   width: 42vh;
 }
 
@@ -87,7 +85,7 @@ a:hover {
   border-radius: 15px;
   outline: none;
   max-height: 8vh;
-  margin-right: 10vh;
+  margin-right: 1vh;
   width: 42vh;
   margin-top: 10px;
 }

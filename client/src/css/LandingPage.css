@@ -1,26 +1,25 @@
 .container {
-    height: 100%;
+  height: 100%;
 }
 .background {
   background-image: url("../Images/spaceneedle.jpg");
   min-height: 100vh;
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 .title {
   position: center, fixed;
-  
+
   font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 80px;
-  line-height: 150px;
+  font-size: 9vh;
+  line-height: 15vh;
   text-align: center;
   color: #22333b;
-  
 }
 
 .nav,
@@ -30,8 +29,8 @@ a:visited {
   font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 5px;
+  font-size: 3vh;
+  line-height: 1vh;
   text-align: center;
   text-decoration: none;
   color: #222831;
@@ -41,31 +40,33 @@ a:hover {
   font-style: normal;
   font-weight: bold;
 }
-.searchDirectoryBtn {
-display: block;
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
   float: right;
-  width: 506px;
-  height: 93px;
-  margin-top: 27em;
-  margin-bottom: 10px;
+  margin-top: 50vh;
+  outline: none;
+  position: relative;
+}
+
+.searchDirectoryBtn {
   border: none;
   border-radius: 15px;
   background-color: #c6ac8f;
   outline: none;
-  flex-direction: column;
+  max-height: 8vh;
+  margin-right: 10vh;
+  width: 42vh;
 }
 
-
 .searchText {
-    font-family: "Roboto", "Helvetica";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 49px;
+  display: inline;
+  font-family: "Roboto", "Helvetica";
+  font-size: 3.2vh;
   color: rgba(94, 80, 63, 0.85);
-  width: 506px;
-  
-  
+  width: 13em;
+  line-height: 2.5em;
 }
 
 .searchDirectoryBtn:hover {
@@ -75,48 +76,39 @@ display: block;
   cursor: pointer;
 }
 
-/* .btnSearch {
-    color: rgba(94, 80, 63, 0.85);
-  }
- */
+.chevIconSearch {
+  font-size: 2.4vh;
+  display: absolute;
+}
 
+.emergencyLinesBtn {
+  background-color: #c29f9f;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  max-height: 8vh;
+  margin-right: 10vh;
+  width: 42vh;
+  margin-top: 10px;
+}
 
- .chevIconSearch{
-    width: 55px;
-    height: 45px;
-    margin-bottom: 0px;
- }
+.emergencyText {
+  display: inline;
+  font-family: "Roboto", "Helvetica";
+  font-size: 2.2vh;
+  width: 13em;
+  line-height: 3.5em;
+  color: rgba(94, 80, 63, 0.85);
+}
 
- .emergencyLinesBtn {
-   
-    float: right;
-    width: 506px;
-    height: 93px;
-    margin-left: 3em;
-    margin-right: 2.5em;
-    border: none;
-    margin-top: 1em;
-    border-radius: 15px;
-    background-color: #c6ac8f;
-    outline: none;
-    font-family: "Roboto", "Helvetica";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 35px;
-    color: rgba(94, 80, 63, 0.85);
-    
-  }
-  
-  .emergencyLinesBtn:hover {
-    background-color: #bbbbbb;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-  }
+.emergencyLinesBtn:hover {
+  background-color: #c8b7b7;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
 
-  .chevIconLines{
-    width: 45px;
-    height: 35px;
-    margin-bottom: -7px;
- }
+.phone {
+  font-size: 2.5vh;
+  display: absolute;
+}

@@ -15,9 +15,10 @@
   font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 6.5vh;
+  font-size: 12vh;
   line-height: 15vh;
   text-align: center;
+  padding-top: 1.5%;
   color: #22333b;
 }
 
@@ -26,9 +27,10 @@ a:link,
 a:visited {
   position: center;
   font-family: "Roboto Slab", "sans-serif";
-  font-size: 2.2vh;
+  font-size: 4.2vh;
   line-height: 1vh;
   margin: 0px 2vw;
+  padding-top: 1vh;
   text-align: center;
   text-decoration: none;
   color: #222831;
@@ -53,15 +55,15 @@ a:hover {
   border-radius: 15px;
   background-color: #c6ac8f;
   outline: none;
-  max-height: 8vh;
+  max-height: 12vh;
   margin-right: 1vh;
-  width: 42vh;
+  width: 50vh;
 }
 
 .searchText {
   display: inline;
   font-family: "Roboto", "Helvetica";
-  font-size: 3.2vh;
+  font-size: 4.2vh;
   color: rgba(94, 80, 63, 0.85);
   width: 13em;
   line-height: 2.5em;
@@ -84,16 +86,16 @@ a:hover {
   border: none;
   border-radius: 15px;
   outline: none;
-  max-height: 8vh;
+  max-height: 10vh;
   margin-right: 1vh;
-  width: 42vh;
+  width: 50vh;
   margin-top: 10px;
 }
 
 .emergencyText {
   display: inline;
   font-family: "Roboto", "Helvetica";
-  font-size: 2.2vh;
+  font-size: 3vh;
   width: 13em;
   line-height: 3.5em;
   color: rgba(94, 80, 63, 0.85);

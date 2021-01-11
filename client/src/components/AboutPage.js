@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div class="container">
         <div class="heading">
           The City Resource Guide provides a comprehensive, up-to-date list of
-          services for people experiencing homelessness and proverty.
+          services for people experiencing homelessness and poverty.
         </div>
 
         <div class="factsImg">

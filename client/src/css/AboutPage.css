@@ -39,7 +39,7 @@
 .factsImg {
   align-self: flex-start;
   display: -webkit-inline-flex;
-  padding-left: 10%;
+  padding-left: 2%;
   filter: grayscale(80%);
   position: relative;
 }

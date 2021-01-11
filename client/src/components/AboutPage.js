@@ -14,8 +14,8 @@ const AboutPage = () => {
           <img
             src={require("../Images/elijah-macleod-5LqilHen4Po-unsplash.jpg")}
             alt=""
-            width={280}
-            height={300}
+            width={420}
+            height={425}
           />
         </div>
 
@@ -24,8 +24,8 @@ const AboutPage = () => {
           <img
             src={require("../Images/jon-tyson-ajzN2AYNi1U-unsplash.jpg")}
             alt=""
-            width={120}
-            height={148}
+            width={220}
+            height={248}
           />
         </div>
         <div class="factsImg3">
@@ -33,8 +33,8 @@ const AboutPage = () => {
           <img
             src={require("../Images/ali-arif-soydas-Lr49v_a5WOw-unsplash.jpg")}
             alt=""
-            width={120}
-            height={148}
+            width={220}
+            height={170}
           />
         </div>
 

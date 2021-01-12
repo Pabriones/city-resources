@@ -1,0 +1,80 @@
+.container {
+  height: 100%;
+  margin-bottom: 1%;
+}
+
+.heading {
+  position: center, fixed;
+  font-family: "Roboto", "sans-serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7vh;
+  line-height: 7vh;
+  letter-spacing: -0.1vh;
+  padding: 3%;
+  padding-bottom: 5%;
+  color: #22333b;
+}
+
+.facts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4vh;
+  float: right;
+  width: 45%;
+ 
+}
+
+.facts2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 5.5vh;
+  line-height: 5vh;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+
+.factsImg {
+  align-self: flex-start;
+  display: -webkit-inline-flex;
+  padding-left: 4%;
+  filter: grayscale(80%);
+  position: relative;
+}
+
+.factsImg2 {
+  align-self: flex-start;
+  display: -webkit-inline-flex;
+  padding-left: 1%;
+  filter: grayscale(75%);
+  position: absolute;
+}
+
+.factsImg3 {
+  align-self: flex-start;
+  display: -webkit-inline-flex;
+  position: relative;
+  padding-left: 1%;
+}
+
+.crop {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 100%;
+  height: 0%;
+  margin: -80% 0 -35% 0%;
+}
+
+.list {
+  float: left;
+  padding-left: 10%;
+  list-style-type: none;
+  margin-bottom: 5%;
+  font-size: 3vh;
+}

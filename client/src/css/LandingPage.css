@@ -1,0 +1,114 @@
+.container {
+  height: 100%;
+}
+.background {
+  background-image: url("../Images/spaceneedle.jpg");
+  min-height: 100vh;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  position: center, fixed;
+  font-family: "Roboto Slab", "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12vh;
+  line-height: 15vh;
+  text-align: center;
+  padding-top: 1.5%;
+  color: #22333b;
+}
+
+.nav,
+a:link,
+a:visited {
+  position: center;
+  font-family: "Roboto Slab", "sans-serif";
+  font-size: 4.2vh;
+  line-height: 1vh;
+  margin: 0px 2vw;
+  padding-top: 1vh;
+  text-align: center;
+  text-decoration: none;
+  color: #222831;
+}
+
+a:hover {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-top: 50vh;
+  outline: none;
+  position: relative;
+}
+
+.searchDirectoryBtn {
+  border: none;
+  border-radius: 15px;
+  background-color: #c6ac8f;
+  outline: none;
+  max-height: 12vh;
+  margin-right: 1vh;
+  width: 50vh;
+}
+
+.searchText {
+  display: inline;
+  font-family: "Roboto", "Helvetica";
+  font-size: 4.2vh;
+  color: rgba(94, 80, 63, 0.85);
+  width: 13em;
+  line-height: 2.5em;
+}
+
+.searchDirectoryBtn:hover {
+  background-color: #847a6e;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.chevIconSearch {
+  font-size: 2.4vh;
+  display: absolute;
+}
+
+.emergencyLinesBtn {
+  background-color: #c29f9f;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  max-height: 10vh;
+  margin-right: 1vh;
+  width: 50vh;
+  margin-top: 10px;
+}
+
+.emergencyText {
+  display: inline;
+  font-family: "Roboto", "Helvetica";
+  font-size: 3vh;
+  width: 13em;
+  line-height: 3.5em;
+  color: rgba(94, 80, 63, 0.85);
+}
+
+.emergencyLinesBtn:hover {
+  background-color: #c8b7b7;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.phone {
+  font-size: 2.5vh;
+  display: absolute;
+}

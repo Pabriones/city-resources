@@ -1,8 +1,6 @@
 import React from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
-import "../components/ContactPage.js";
-import { Link } from 'react-router'
 
 const LandingPage = () => {
   return (
@@ -13,7 +11,7 @@ const LandingPage = () => {
           <div class="nav">
             <div class="nav">
               <a href="url">ABOUT </a>
-              <a href="url">CONTACT </a>
+              <a href="url">CONTACT</a>
             </div>
             <div class="flex-container">
               <div>

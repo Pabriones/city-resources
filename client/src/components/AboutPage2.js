@@ -55,7 +55,11 @@ const AboutPage2 = () => {
               jobs - and are key indicators in determining success in Seattle.
             </p>
           </div>
-          <div>   <div class="crop2">
+
+
+
+          <div>   
+            <div class="crop2">
           <img
             src={require("../Images/steve-knutson-lQ2BzDNmnHE-unsplash.jpg")}
             alt=""
@@ -64,7 +68,7 @@ const AboutPage2 = () => {
         </div>
         <div class="crop3">
           <img
-            src={require("../Images/steve-knutson-lQ2BzDNmnHE-unsplash.jpg")}
+            src={require("../Images/nick-bolton-ktC7QQ7hLTw-unsplash.jpg")}
             alt=""
             width={"50%"}
           />

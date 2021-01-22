@@ -1,29 +1,40 @@
-.container2 {
-  background-color: #eddfd0;
-  height: 100%
-}
 
-.content h1 {
+.ab2-container {
+  background-color: #eddfd0;
+    width: auto;
+    margin: auto;
+    border: 1px solid #eddfd0;
+  }
+
+
+.ab2-content h1 {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-size: 4vh;
-  padding: 5% 2% 4% 2%;
+  padding: 3.5% 2%;
   color: #22333b;
 }
 
-.content h2 {
+.ab2-title {
   font-family: "Roboto", "sans-serif";
-  color: #22333b;
-  padding: 0% 2% 0% 5%;
-  text-decoration: underline;
-}
-
-.content p {
-  font-family: "Roboto", "sans-serif";
-  color: #22333b;
-  margin: 0% 5% 2.5% 5%;
   font-size: 3vh;
+  font-weight: bold;
+  color: #22333b;
+   
 }
+
+.ab2-text-container {
+  font-family: "Roboto", "sans-serif";
+  color: #22333b;
+  margin: 0% 5%;
+  font-size: 3vh;
+  text-align: justify;
+}
+
+.ab2-text-container p {
+  margin: 0.2% 0% 2.8%;
+}
+
 
 .crop2 {
   width: 50%;

@@ -8,14 +8,14 @@ function App() {
   return (
     <div>
       <LandingPage />
-      <div>
+     
         <AboutPage />
      
-      </div>
-      <div>
+     
+   
         <AboutPage2 />
      
-      </div>
+     
     </div>
   );
 }

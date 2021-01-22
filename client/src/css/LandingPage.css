@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
- 
 
 .lp-title {
   position: center, fixed;
@@ -46,7 +45,6 @@ a:hover {
   margin-top: 50vh;
   outline: none;
   position: relative;
- 
 }
 
 .searchDirectoryBtn {
@@ -57,7 +55,6 @@ a:hover {
   max-height: 12vh;
   margin-right: 1vh;
   width: 50vh;
- 
 }
 
 .searchText {
@@ -67,7 +64,6 @@ a:hover {
   color: rgba(94, 80, 63, 0.85);
   width: 13em;
   line-height: 2.5em;
- 
 }
 
 .searchDirectoryBtn:hover {
@@ -75,7 +71,6 @@ a:hover {
   border: none;
   border-radius: 15px;
   cursor: pointer;
- 
 }
 
 .chevIconSearch {
@@ -92,7 +87,6 @@ a:hover {
   margin-right: 1vh;
   width: 50vh;
   margin-top: 10px;
- 
 }
 
 .emergencyText {
@@ -102,7 +96,6 @@ a:hover {
   width: 13em;
   line-height: 3.5em;
   color: rgba(94, 80, 63, 0.85);
- 
 }
 
 .emergencyLinesBtn:hover {
@@ -110,7 +103,6 @@ a:hover {
   border: none;
   border-radius: 15px;
   cursor: pointer;
- 
 }
 
 .phone {

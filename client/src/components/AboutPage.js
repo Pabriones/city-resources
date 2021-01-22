@@ -9,7 +9,7 @@ const AboutPage = () => {
           The City Resource Guide provides a comprehensive, up-to-date list of
           services for people experiencing homelessness and poverty.
         </div>
- 
+
         <div className="ab1-img">
           <img
             src={require("../Images/elijah-macleod-5LqilHen4Po-unsplash.jpg")}
@@ -36,7 +36,7 @@ const AboutPage = () => {
             height={170}
           />
         </div>
-         
+
         <div className="ab1-intro">
           According to a study done by the National Law Center on Homelessness
           and Poverty done in 2007, 3.5 million people (1.35 million of them

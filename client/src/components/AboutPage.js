@@ -1,17 +1,16 @@
 import React from "react";
 import "../../src/css/AboutPage.css";
 
-
 const AboutPage = () => {
   return (
     <body>
-      <div class="container">
-        <div class="heading">
+      <div className="ab1-container">
+        <div className="ab1-heading">
           The City Resource Guide provides a comprehensive, up-to-date list of
           services for people experiencing homelessness and poverty.
         </div>
 
-        <div class="factsImg">
+        <div className="ab1-img">
           <img
             src={require("../Images/elijah-macleod-5LqilHen4Po-unsplash.jpg")}
             alt=""
@@ -20,8 +19,7 @@ const AboutPage = () => {
           />
         </div>
 
-        <div class="factsImg2">
-          {" "}
+        <div className="ab1-img1">
           <img
             src={require("../Images/jon-tyson-ajzN2AYNi1U-unsplash.jpg")}
             alt=""
@@ -29,7 +27,7 @@ const AboutPage = () => {
             height={248}
           />
         </div>
-        <div class="factsImg3">
+        <div className="ab1-img2">
           {" "}
           <img
             src={require("../Images/ali-arif-soydas-Lr49v_a5WOw-unsplash.jpg")}
@@ -39,7 +37,7 @@ const AboutPage = () => {
           />
         </div>
 
-        <div class="facts">
+        <div className="ab1-intro">
           According to a study done by the National Law Center on Homelessness
           and Poverty done in 2007, 3.5 million people (1.35 million of them
           children) are likely to experience homelessness in a given year.
@@ -49,36 +47,35 @@ const AboutPage = () => {
             year.
           </p>
         </div>
-        <div class="facts2">
+        <div className="ab1-content">
           <p>
             Poverty can be caused by many different factors, and these factors
             vary by where a person lives in the world.
           </p>
         </div>
 
-        <ul class="list">
+        <ul className="ab1-list">
           <li> Unemployment </li>
           <li> Low-Paying Jobs</li>
           <li> Family History of Poverty (Cycle of Poverty) </li>
           <li> Discrimination </li>
           <li> Social Inequality</li>
         </ul>
-        <ul class="list">
+        <ul className="ab1-list">
           <li> Political Corruption & Instability </li>
           <li> Centralization of Power Debt (Personal & National) </li>
           <li> Family History of Poverty (Cycle of Poverty) </li>
           <li> Lack of Education & Resources Disease </li>
         </ul>
 
-        <div class="crop">
+        <div className="ab1-img-divider">
           <img
             src={require("../Images/sean-benesh-04YCqKIyN-8-unsplash.jpg")}
             alt=""
             width={"100%"}
           />
         </div>
-     </div>
-    
+      </div>
     </body>
   );
 };

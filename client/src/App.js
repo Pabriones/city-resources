@@ -10,9 +10,6 @@ function App() {
       <LandingPage />
       <div>
         <AboutPage />
-     
-     
-   
         <AboutPage2 />
      
         </div>

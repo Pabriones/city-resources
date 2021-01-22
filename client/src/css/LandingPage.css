@@ -1,7 +1,4 @@
-.container {
-  height: 100%;
-}
-.background {
+.lp-container {
   background-image: url("../Images/spaceneedle.jpg");
   min-height: 100vh;
   max-width: 100%;
@@ -9,8 +6,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+ 
 
-.title {
+.lp-title {
   position: center, fixed;
   font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
@@ -22,7 +20,7 @@
   color: #22333b;
 }
 
-.nav,
+.lp-nav,
 a:link,
 a:visited {
   position: center;
@@ -41,13 +39,14 @@ a:hover {
   font-weight: bold;
 }
 
-.flex-container {
+.lp-flex-container {
   display: flex;
   flex-direction: column;
   float: right;
   margin-top: 50vh;
   outline: none;
   position: relative;
+ 
 }
 
 .searchDirectoryBtn {
@@ -58,6 +57,7 @@ a:hover {
   max-height: 12vh;
   margin-right: 1vh;
   width: 50vh;
+ 
 }
 
 .searchText {
@@ -67,6 +67,7 @@ a:hover {
   color: rgba(94, 80, 63, 0.85);
   width: 13em;
   line-height: 2.5em;
+ 
 }
 
 .searchDirectoryBtn:hover {
@@ -74,6 +75,7 @@ a:hover {
   border: none;
   border-radius: 15px;
   cursor: pointer;
+ 
 }
 
 .chevIconSearch {
@@ -90,6 +92,7 @@ a:hover {
   margin-right: 1vh;
   width: 50vh;
   margin-top: 10px;
+ 
 }
 
 .emergencyText {
@@ -99,6 +102,7 @@ a:hover {
   width: 13em;
   line-height: 3.5em;
   color: rgba(94, 80, 63, 0.85);
+ 
 }
 
 .emergencyLinesBtn:hover {
@@ -106,6 +110,7 @@ a:hover {
   border: none;
   border-radius: 15px;
   cursor: pointer;
+ 
 }
 
 .phone {

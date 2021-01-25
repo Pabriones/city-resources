@@ -1,0 +1,26 @@
+.footer {
+  color: black;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 0;
+  padding: 2% 0.5% 0.5% 3%;
+}
+ 
+
+.ft-text{
+  font-weight: bolder;
+  font-size: 5vh;
+  line-height: 95%;
+  font-family: "Roboto", "sans-serif";
+}
+
+.ft-text li{
+  font-size: 2.5vh;
+  padding-top: 2.5% 0% 0% 0%;
+ 
+  font-family: "Roboto", "sans-serif";
+}
+
+.col-lg{
+  text-align: right;
+}

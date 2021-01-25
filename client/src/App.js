@@ -3,17 +3,20 @@ import "./App.css";
 import LandingPage from "./components/LandingPage";
 import AboutPage from "./components/AboutPage";
 import AboutPage2 from "./components/AboutPage2";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+   <div className= "cr-container">
+     <div className="content-wrap">
+  
       <LandingPage />
-      <div>
         <AboutPage />
         <AboutPage2 />
-     
-        </div>
+      
     </div>
+           
+     <Footer/> </div> 
   );
 }
 

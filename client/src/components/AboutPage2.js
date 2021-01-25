@@ -1,5 +1,6 @@
 import React from "react";
 import "../../src/css/AboutPage2.css";
+ 
 
 const AboutPage2 = () => {
   return (
@@ -74,6 +75,7 @@ const AboutPage2 = () => {
                 width={"50%"}
               />
             </div>
+           
           </div>
         </div>
       </div>

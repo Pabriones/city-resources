@@ -32,10 +32,17 @@
   color: #222831;
 }
 
-.ft-link:hover {
-  font-style: normal;
-  font-weight: bold;
+.ft-link-logo{
+  font-family: "Roboto", "sans-serif";
   text-decoration: none;
   color: #222831;
-  font-family: "Roboto slab", "sans-serif";
+
+}
+
+.ft-link:hover,
+.ft-link-logo:hover{
+ font-weight: 500;
+  text-decoration: none;
+  color: #222831;
+  font-family: "Roboto", "sans-serif";
 }

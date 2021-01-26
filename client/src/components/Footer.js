@@ -9,17 +9,18 @@ const Footer = () => {
           {/* Column1 */}
           <div className="col-sm">
             <div className="ft-text">
-              CITY <br />
-              RESOURCES
+            <a href="url" className="ft-link-logo">
+               CITY <br />
+              RESOURCES</a>
             </div>
           </div>
           {/* Column2 */}
           <div className="col-sm">
             <ui className="list-unstyled">
               <div className="ft-text">
-                {" "}
+        
                 <li>
-                  <a href=" " className="ft-link">
+                  <a href="url" className="ft-link">
                     {" "}
                     HOME{" "}
                   </a>
@@ -29,7 +30,7 @@ const Footer = () => {
               <div className="ft-text">
                 {" "}
                 <li>
-                  <a href=" " className="ft-link">
+                  <a href="url" className="ft-link">
                     {" "}
                     SEARCH DIRECTORY{" "}
                   </a>
@@ -44,7 +45,7 @@ const Footer = () => {
               <div className="ft-text">
                 {" "}
                 <li>
-                  <a href=" " className="ft-link">
+                  <a href="url" className="ft-link">
                     {" "}
                     ABOUT{" "}
                   </a>

@@ -18,8 +18,9 @@
   font-weight: 300;
   font-size: 4vh;
   float: right;
-  width: 50%;
-  padding: 2%;
+  width: 48%;
+  padding: 1% 2% 2%;
+ 
 }
 
 .ab1-content {
@@ -35,6 +36,7 @@
   padding-left: 4%;
   filter: grayscale(80%);
   position: relative;
+  object-fit: scale-down; 
 }
 
 .ab1-img1 {
@@ -43,6 +45,23 @@
   padding-left: 1%;
   filter: grayscale(75%);
   position: absolute;
+  object-fit: scale-down; 
+}
+
+.img1 {
+  width: 67vh;
+  height: 52vh;
+ 
+}
+
+.img2 {
+  width: 25vh;
+  height: 30vh;
+}
+
+.img3 {
+  width: 25vh;
+  height: 21vh;
 }
 
 .ab1-img2 {
@@ -50,6 +69,7 @@
   display: -webkit-inline-flex;
   position: relative;
   padding-left: 1%;
+  object-fit: scale-down; 
 }
 
 .col {

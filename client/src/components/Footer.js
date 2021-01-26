@@ -18,11 +18,11 @@ const Footer = () => {
           <div className="col-sm">
             <ui className="list-unstyled">
             <div className="ft-text"> <li>
-            HOME
+            <a href= " " className="ft-link" > HOME </a>
               </li></div> 
            
               <div className="ft-text">   <li>
-               SEARCH DIRECTORY
+              <a href= " " className="ft-link" > SEARCH DIRECTORY </a>
               </li></div>
             </ui>
           </div>
@@ -31,11 +31,11 @@ const Footer = () => {
           <div className="col-sm">
             <ui className="list-unstyled">
             <div className="ft-text">      <li>
-            ABOUT
+          <a href= " " className="ft-link" > ABOUT </a>
               </li></div>
          
               <div className="ft-text">   <li>
-                CONTACT
+              <a href= " " className="ft-link" > CONTACT </a>
               </li></div>
             </ui>
           </div>

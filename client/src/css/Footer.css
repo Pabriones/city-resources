@@ -3,24 +3,40 @@
   background-color: #ffffff;
   position: relative;
   bottom: 0;
-  padding: 2% 0.5% 0.5% 3%;
+  padding: 1.5% 0.5% 0% 3%;
 }
  
 
 .ft-text{
   font-weight: bolder;
-  font-size: 5vh;
-  line-height: 95%;
+  font-size: 5.5vh;
+  line-height: 110%;
   font-family: "Roboto", "sans-serif";
 }
 
 .ft-text li{
   font-size: 2.5vh;
   padding-top: 2.5% 0% 0% 0%;
- 
   font-family: "Roboto", "sans-serif";
 }
 
 .col-lg{
   text-align: right;
+}
+
+
+.ft-link {
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: "Roboto", "sans-serif";
+  text-decoration: none;
+  color: #222831;
+}
+
+.ft-link:hover {
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222831;
+  font-family: "Roboto slab", "sans-serif";
 }

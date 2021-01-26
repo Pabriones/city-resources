@@ -5,13 +5,13 @@ import { Icon } from "semantic-ui-react";
 const LandingPage = () => {
   return (
     <body>
-      <div class="lp-container">
-        <div class="lp-title">CITY RESOURCES</div>
+      <div className="lp-container">
+        <div className="lp-title">CITY RESOURCES</div>
 
-        <div class="lp-nav">
-          <a href="url">ABOUT </a>
-          <a href="url">CONTACT</a>
-        </div>
+        <div className="lp-nav">
+          <a href="#sectionabt" className="lp-link">ABOUT </a>
+          <a href="url" className="lp-link"> CONTACT</a>
+          </div>
         <div class="lp-flex-container">
           <div>
             <Icon>

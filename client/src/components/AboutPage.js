@@ -52,21 +52,21 @@ const AboutPage = () => {
           </p>
         </div></div>
 
-        <ul className="ab1-list">
-          <div className="col">
+       
+          <div className="col"> <ul className="ab1-list">
           <li> Unemployment </li>
           <li> Low-Paying Jobs</li>
           <li> Family History of Poverty (Cycle of Poverty) </li>
           <li> Discrimination </li>
-          <li> Social Inequality</li>
-          </div></ul>
+          <li> Social Inequality</li></ul>
+         </div> <div className="col">
         <ul className="ab1-list">
-        <div className="col">
+       
           <li> Political Corruption & Instability </li>
           <li> Centralization of Power Debt (Personal & National) </li>
           <li> Family History of Poverty (Cycle of Poverty) </li>
-          <li> Lack of Education & Resources Disease </li>
-      </div>  </ul>
+          <li> Lack of Education & Resources Disease </li> </ul>
+      </div>  
 
         <div className="ab1-img-divider">
           <img

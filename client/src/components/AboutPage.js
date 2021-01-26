@@ -48,25 +48,28 @@ const AboutPage = () => {
           </p>
         </div>
         <div className="ab1-content">
+          <div className="row">
           <p>
             Poverty can be caused by many different factors, and these factors
             vary by where a person lives in the world.
           </p>
-        </div>
+        </div></div>
 
         <ul className="ab1-list">
+          <div className="col">
           <li> Unemployment </li>
           <li> Low-Paying Jobs</li>
           <li> Family History of Poverty (Cycle of Poverty) </li>
           <li> Discrimination </li>
           <li> Social Inequality</li>
-        </ul>
+          </div></ul>
         <ul className="ab1-list">
+        <div className="col">
           <li> Political Corruption & Instability </li>
           <li> Centralization of Power Debt (Personal & National) </li>
           <li> Family History of Poverty (Cycle of Poverty) </li>
           <li> Lack of Education & Resources Disease </li>
-        </ul>
+      </div>  </ul>
 
         <div className="ab1-img-divider">
           <img

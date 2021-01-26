@@ -7,14 +7,14 @@
 .ab1-heading {
   font-family: "Roboto", "sans-serif";
   font-weight: bold;
-  font-size: 7vh;
+  font-size: 6vh;
   padding: 5% 4%;
+  line-height: 9vh;
   color: #22333b;
 }
 
 .ab1-intro {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 300;
   font-size: 4vh;
   float: right;
@@ -24,10 +24,9 @@
 
 .ab1-content {
   font-family: "Roboto";
-  font-style: normal;
   font-size: 5.5vh;
-  line-height: 5vh;
-  margin: 4.5% 5%;
+  line-height: 6vh;
+  margin: 3% 5% 2%;
 }
 
 .ab1-img {
@@ -53,11 +52,11 @@
   padding-left: 1%;
 }
 
-.ab1-list {
+.col {
   float: left;
   list-style-type: none;
   font-size: 3.2vh;
-  padding: 0% 8% 5%;
+  padding: 0% 8% 2.5%;
 }
 
 .ab1-img-divider {

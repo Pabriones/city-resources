@@ -19,13 +19,11 @@
   color: #22333b;
 }
 
-
 .lp-nav {
   text-align: center;
   font-size: 4.2vh;
   font-family: "Roboto Slab", "sans-serif";
   margin: 0px 2vw;
-  
 }
 .lp-link {
   margin: 0px 2vw;
@@ -34,17 +32,17 @@
 }
 
 .lp-link:hover {
-    font-style: normal;
-    font-weight: bold;
-    text-decoration: none;
-    color: #222831;
-  }
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222831;
+}
 
 .lp-flex-container {
   display: flex;
   flex-direction: column;
   float: right;
-  margin-top: 50vh;
+  margin-top: 40vh;
   outline: none;
   position: relative;
 }
@@ -86,7 +84,7 @@
   border-radius: 15px;
   outline: none;
   max-height: 10vh;
-  margin-right: 1vh;
+  margin-right: 7vh;
   width: 50vh;
   margin-top: 10px;
 }

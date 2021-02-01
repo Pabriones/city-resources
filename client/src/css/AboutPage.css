@@ -1,57 +1,46 @@
 .ab1-container {
-  background-color: #ffffff;
-  width: 100%;
-  margin: auto;
+ 
+  width: fit-content;
 }
 
 .ab1-heading {
   font-family: "Roboto", "sans-serif";
   font-weight: bold;
   font-size: 5vh;
-  padding: 5% 4%;
+  padding: 3% 4%;
   line-height: 8vh;
   color: #22333b;
 }
 
 .ab1-intro {
   font-family: "Roboto";
-  font-weight: 300;
-  font-size: 3vh;
-  float: right;
-  width: 48%;
-  padding: 1% 2% 2%;
+  font-size: 3.1vh;
+  padding: 10% 9% 0% 3%;
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+.imgContainer {
+  display: -webkit-inline-flex;
+  object-fit: scale-down;
+  filter: grayscale(80%);
+  padding: 2% 2% 2% 8%;
+  width: auto;
  
 }
 
-.ab1-content {
-  font-family: "Roboto";
-  font-size: 5vh;
-  line-height: 6vh;
-  margin: 3% 5% 2%;
-}
-
-.ab1-img {
-  align-self: flex-start;
-  display: -webkit-inline-flex;
-  padding-left: 4%;
-  filter: grayscale(80%);
-  position: relative;
-  object-fit: scale-down; 
-}
-
 .ab1-img1 {
-  align-self: flex-start;
-  display: -webkit-inline-flex;
   padding-left: 1%;
-  filter: grayscale(75%);
-  position: absolute;
-  object-fit: scale-down; 
+}
+
+.ab1-img2 {
+  padding-left: 1%;
 }
 
 .img1 {
   width: 67vh;
-  height: 52vh;
- 
+  height: 51vh;
 }
 
 .img2 {
@@ -64,21 +53,20 @@
   height: 21vh;
 }
 
-.ab1-img2 {
-  align-self: flex-start;
-  display: -webkit-inline-flex;
+.ab1-content {
+  font-family: "Roboto";
+  font-size: 4vh;
+  line-height: 5vh;
   position: relative;
-  padding-left: 1%;
-  object-fit: scale-down; 
+  margin: 3% 5% 2%;
 }
 
 .ab1-list {
- 
   list-style-type: none;
   font-size: 2.5vh;
   padding: 0% 12% 2.5%;
   width: 50%;
- float: left;
+  float: left;
 }
 
 .ab1-img-divider {

@@ -12,12 +12,12 @@ const LandingPage = () => {
           <a href="#sectionabt" className="lp-link">ABOUT </a>
           <a href="url" className="lp-link"> CONTACT</a>
           </div>
-        <div class="lp-flex-container">
+        <div className="lp-flex-container">
           <div>
             <Icon>
               <a href=" ">
                 <button type="button" class="searchDirectoryBtn">
-                  <p class="searchText">
+                  <p className="searchText">
                     SEARCH DIRECTORY
                     <ion-icon
                       class="chevIconSearch"
@@ -33,9 +33,9 @@ const LandingPage = () => {
             <Icon>
               <a href=" ">
                 <button type="button" class="emergencyLinesBtn">
-                  <p class="emergencyText">
+                  <p className="emergencyText">
                     EMERGENCY AND CRISIS LINES
-                    <ion-icon class="phone" name="call"></ion-icon>
+                    <ion-icon className="phone" name="call"></ion-icon>
                   </p>
                 </button>
               </a>

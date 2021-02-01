@@ -3,6 +3,7 @@ import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
 import { Link } from "react-scroll";
 
+
 const LandingPage = () => {
   return (
     <body>
@@ -49,9 +50,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      </div>
-    </body>
-  );
-};
+      </body>
+    );
+  }
+}
 
 export default LandingPage;

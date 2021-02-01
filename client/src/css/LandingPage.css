@@ -23,19 +23,22 @@
   text-align: center;
   font-size: 4.2vh;
   font-family: "Roboto Slab", "sans-serif";
-  margin: 0px 2vw;
+  margin: 0px 5vw;
+  cursor: pointer;
 }
 .lp-link {
   margin: 0px 2vw;
   text-decoration: none;
   color: #222831;
+  cursor: pointer;
 }
 
 .lp-link:hover {
   font-style: normal;
-  font-weight: bold;
+  font-weight: bolder;
   text-decoration: none;
   color: #222831;
+
 }
 
 .lp-flex-container {

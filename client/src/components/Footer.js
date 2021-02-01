@@ -1,5 +1,6 @@
 import React from "react";
 import "../../src/css/Footer.css";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -9,21 +10,25 @@ const Footer = () => {
           {/* Column1 */}
           <div className="col-sm">
             <div className="ft-text">
-            <a href="url" className="ft-link-logo">
-               CITY <br />
-              RESOURCES</a>
+              <a href="url" className="ft-link-logo">
+                CITY <br />
+                RESOURCES
+              </a>
             </div>
           </div>
           {/* Column2 */}
           <div className="col-sm">
             <ui className="list-unstyled">
               <div className="ft-text">
-        
                 <li>
-                  <a href="url" className="ft-link">
-                    {" "}
-                    HOME{" "}
-                  </a>
+                  <Link
+                    className="ft-link"
+                    to="LandingPage"
+                    spy={true}
+                    duration={500}
+                  >
+                    HOME
+                  </Link>
                 </li>
               </div>
 
@@ -45,10 +50,14 @@ const Footer = () => {
               <div className="ft-text">
                 {" "}
                 <li>
-                  <a href="url" className="ft-link">
-                    {" "}
-                    ABOUT{" "}
-                  </a>
+                  <Link
+                    className="ft-link"
+                    to="AboutPage"
+                    spy={true}
+                    duration={500}
+                  >
+                    ABOUT
+                  </Link>
                 </li>
               </div>
 

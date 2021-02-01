@@ -1,6 +1,4 @@
 .footer {
- 
- 
   position: relative;
   bottom: 0;
   padding: 1.5% 0.5% 0% 3%;
@@ -30,18 +28,18 @@
   font-family: "Roboto", "sans-serif";
   text-decoration: none;
   color: #222831;
+  cursor: pointer;
 }
 
-.ft-link-logo{
+.ft-link-logo {
   font-family: "Roboto", "sans-serif";
   text-decoration: none;
   color: #222831;
-
 }
 
 .ft-link:hover,
-.ft-link-logo:hover{
- font-weight: 500;
+.ft-link-logo:hover {
+  font-weight: 500;
   text-decoration: none;
   color: #222831;
   font-family: "Roboto", "sans-serif";

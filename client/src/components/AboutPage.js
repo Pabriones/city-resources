@@ -4,6 +4,7 @@ import "../../src/css/AboutPage.css";
 const AboutPage = () => {
   return (
     <body>
+       <div id="AboutPage">
       <div className="ab1-container">
         <div className="ab1-heading">
           The City Resource Guide provides a comprehensive, up-to-date list of
@@ -108,7 +109,7 @@ const AboutPage = () => {
             width={"100%"}
           />
         </div></div>
-      </div>
+      </div></div>
     </body>
   );
 };

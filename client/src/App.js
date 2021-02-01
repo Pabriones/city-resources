@@ -3,18 +3,23 @@ import "./App.css";
 import LandingPage from "./components/LandingPage";
 import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import AboutPage2 from "./components/AboutPage2";
+import Footer from "./components/Footer";
+ 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/" component={LandingPage} exact />
+   <div className= "cr-container">
+     <div className="content-wrap">
+  
+      <LandingPage />
+        <AboutPage />
+        <AboutPage2 />
+      
+    </div>
+           
+     <Footer/> </div> 
 
-        <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
-      </Switch>
-    </Router>
   );
 }
 

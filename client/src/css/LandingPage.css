@@ -1,7 +1,4 @@
-.container {
-  height: 100%;
-}
-.background {
+.lp-container {
   background-image: url("../Images/spaceneedle.jpg");
   min-height: 100vh;
   max-width: 100%;
@@ -10,7 +7,7 @@
   background-size: cover;
 }
 
-.title {
+.lp-title {
   position: center, fixed;
   font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
@@ -22,30 +19,33 @@
   color: #22333b;
 }
 
-.nav,
-a:link,
-a:visited {
-  position: center;
-  font-family: "Roboto Slab", "sans-serif";
-  font-size: 4.2vh;
-  line-height: 1vh;
-  margin: 0px 2vw;
-  padding-top: 1vh;
+.lp-nav {
   text-align: center;
+  font-size: 4.2vh;
+  font-family: "Roboto Slab", "sans-serif";
+  margin: 0px 5vw;
+  cursor: pointer;
+}
+.lp-link {
+  margin: 0px 2vw;
   text-decoration: none;
   color: #222831;
+  cursor: pointer;
 }
 
-a:hover {
+.lp-link:hover {
   font-style: normal;
-  font-weight: bold;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #222831;
+
 }
 
-.flex-container {
+.lp-flex-container {
   display: flex;
   flex-direction: column;
   float: right;
-  margin-top: 50vh;
+  margin-top: 40vh;
   outline: none;
   position: relative;
 }
@@ -87,7 +87,7 @@ a:hover {
   border-radius: 15px;
   outline: none;
   max-height: 10vh;
-  margin-right: 1vh;
+  margin-right: 7vh;
   width: 50vh;
   margin-top: 10px;
 }

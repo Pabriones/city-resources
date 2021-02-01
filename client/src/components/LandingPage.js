@@ -1,51 +1,52 @@
 import React from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
+import { Link } from "react-scroll";
 
-import { Link } from "react-router-dom";
 
-class LandingPage extends React.Component {
-  render() {
-    return (
-      <body>
-        <div class="container">
-          <div class="background">
-            <div class="title">CITY RESOURCES</div>
-            <div class="nav">
-              <div class="nav">
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-              </div>
-              <div class="flex-container">
-                <div>
-                  <Icon>
-                    <a href=" ">
-                      <button type="button" class="searchDirectoryBtn">
-                        <p class="searchText">
-                          SEARCH DIRECTORY
-                          <ion-icon
-                            class="chevIconSearch"
-                            name="chevron-forward-outline"
-                          ></ion-icon>
-                        </p>
-                      </button>
-                    </a>
-                  </Icon>
-                </div>
+const LandingPage = () => {
+  return (
+    <body>
+      <div id="LandingPage">
+        <div className="lp-container">
+          <div className="lp-title">CITY RESOURCES</div>
 
-                <div>
-                  <Icon>
-                    <a href=" ">
-                      <button type="button" class="emergencyLinesBtn">
-                        <p class="emergencyText">
-                          EMERGENCY AND CRISIS LINES
-                          <ion-icon class="phone" name="call"></ion-icon>
-                        </p>
-                      </button>
-                    </a>
-                  </Icon>
-                </div>
-              </div>
+          <div className="lp-nav">
+            <Link className="lp-link" to="AboutPage" spy={true} duration={500}>
+              ABOUT
+            </Link>
+            <Link className="lp-link" to="Contact" spy={true} duration={500}>
+              CONTACT
+            </Link>
+          </div>
+          <div className="lp-flex-container">
+            <div>
+              <Icon>
+                <a href=" ">
+                  <button type="button" class="searchDirectoryBtn">
+                    <p className="searchText">
+                      SEARCH DIRECTORY
+                      <ion-icon
+                        class="chevIconSearch"
+                        name="chevron-forward-outline"
+                      ></ion-icon>
+                    </p>
+                  </button>
+                </a>
+              </Icon>
+            </div>
+
+            <div>
+              <Icon>
+                <a href=" ">
+                  <button type="button" class="emergencyLinesBtn">
+                    <p className="emergencyText">
+                      EMERGENCY AND CRISIS LINES
+                      <ion-icon className="phone" name="call"></ion-icon>
+                    </p>
+                  </button>
+                </a>
+              </Icon>
             </div>
           </div>
         </div>

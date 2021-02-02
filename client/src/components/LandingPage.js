@@ -49,10 +49,9 @@ const LandingPage = () => {
               </Icon>
             </div>
           </div>
-        </div>
+        </div></div>
       </body>
     );
   }
-}
 
 export default LandingPage;

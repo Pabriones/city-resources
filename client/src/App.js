@@ -1,9 +1,7 @@
 import React from "react";
 import "./App.css";
 import LandingPage from "./components/LandingPage";
-import ContactPage from "./components/ContactPage";
 import AboutPage from "./components/AboutPage";
-
 import AboutPage2 from "./components/AboutPage2";
 import Footer from "./components/Footer";
  

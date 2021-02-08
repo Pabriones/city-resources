@@ -22,7 +22,7 @@ class LandingPage extends React.Component {
                   <a href=" ">
                     <button type="button" class="searchDirectoryBtn">
                       <p class="searchText">
-                        SEARCH DIRECTORY
+                      <Link to="/directory">SEARCH DIRECTORY</Link>
                         <ion-icon
                           class="chevIconSearch"
                           name="chevron-forward-outline"

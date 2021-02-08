@@ -93,7 +93,7 @@ const ContactPage = () => {
                       value={contactMessage}
                       onChange={(e) => setContactMessage(e.target.value)}
                     ></textarea>
-                    <input type="submit" value="Send Message" />
+                    <input type="submit" value="Send" />
                   
                 </div>
               </form>
@@ -110,53 +110,8 @@ const ContactPage = () => {
               <p>{successModalMsg}</p>
             </Modal>
           </Grid.Column>
-          <Grid.Column>
-            <div className="ContactInfo">
-              <div className="List">
-                <ul className="list-unstyled mb-4">
-                  <li>
-                    <div className="Icon">
-                      <ion-icon name="location-outline"></ion-icon>
-                    </div>
-                    Seattle, WA 98104, USA
-                  </li>
-                  <br />
-                  <li>
-                    <div className="Icon">
-                      <ion-icon name="call-outline"></ion-icon>
-                    </div>
-                    1-800-983-8765
-                  </li>
-                  <br />
-                  <li>
-                    <div className="Icon">
-                      <ion-icon name="mail-outline"></ion-icon>
-                    </div>
-                    contact@city-resources.com
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </Grid.Column>
-
-          <Grid.Column>
-            <div className="Social">
-              <h4>Connect:</h4>
-
-              <div className="IconSocial">
-                <a href=" ">
-                  <ion-Icon name="mail-outline"></ion-Icon>
-                </a>
-                <a href=" ">
-                  <ion-Icon name="logo-twitter"></ion-Icon>
-                </a>
-
-                <a href=" ">
-                  <ion-Icon name="logo-google"></ion-Icon>
-                </a>
-              </div>
-            </div>
-          </Grid.Column>
+          
+       
         </Grid.Row>
       </Grid>
     </div>

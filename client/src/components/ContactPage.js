@@ -38,9 +38,17 @@ const ContactPage = () => {
       <Grid divided="vertically">
         <Grid.Row columns={1}>
           <div className="ContactIntro">
-            <h1>Get in contact with us!</h1>
+            <h1>We are here for you!</h1>
           </div>
          
+          <div className="ContactIntro">
+            <p>Any questions or comments? <br></br>
+            We would love to know your thoughts. If our<br></br>
+            is no longer correct, or if there <br></br>
+            are any other resources we should add,<br></br>
+            please let us know!
+            </p>
+          </div>
         </Grid.Row>
 
         <Grid.Row columns={3}>
@@ -66,7 +74,7 @@ const ContactPage = () => {
                     onChange={(e) => setContactLastName(e.target.value)}
                   />
                   <br />
-                  <div className="label">Email: </div>
+                  <div className="label">Email Address: </div>
 
                   <input
                     size="40"
@@ -77,7 +85,7 @@ const ContactPage = () => {
                   />
                   <br />
                   <br />
-                  <div className="TextForm">
+                  <div className="TextForm">Questions/Comments: </div>
                     <textarea
                       className="form-control"
                       id="exampleFormControlTextarea1"
@@ -85,8 +93,8 @@ const ContactPage = () => {
                       value={contactMessage}
                       onChange={(e) => setContactMessage(e.target.value)}
                     ></textarea>
-                    <input type="submit" value="Submit" />
-                  </div>
+                    <input type="submit" value="Send Message" />
+                  
                 </div>
               </form>
             </div>

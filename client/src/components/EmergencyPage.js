@@ -1,84 +1,51 @@
 import React from "react";
-import "../../src/css/AboutPage.css";
+import "../../src/css/EmergencyPage.css";
 
-const AboutPage = () => {
+const EmergencyPage = () => {
   return (
     <body>
-      <div class="container">
-        <div class="heading">
-          The City Resource Guide provides a comprehensive, up-to-date list of
-          services for people experiencing homelessness and poverty.
-        </div>
-
-        <div class="factsImg">
-          <img
-            src={require("../Images/elijah-macleod-5LqilHen4Po-unsplash.jpg")}
-            alt=""
-            width={420}
-            height={425}
-          />
-        </div>
-
-        <div class="factsImg2">
-          {" "}
-          <img
-            src={require("../Images/jon-tyson-ajzN2AYNi1U-unsplash.jpg")}
-            alt=""
-            width={220}
-            height={248}
-          />
-        </div>
-        <div class="factsImg3">
-          {" "}
-          <img
-            src={require("../Images/ali-arif-soydas-Lr49v_a5WOw-unsplash.jpg")}
-            alt=""
-            width={220}
-            height={170}
-          />
-        </div>
-
-        <div class="facts">
-          According to a study done by the National Law Center on Homelessness
-          and Poverty done in 2007, 3.5 million people (1.35 million of them
-          children) are likely to experience homelessness in a given year.
+     
+         <div class="info">
           <p>
-            In 2018, more than 38 million people are lived in poverty in
-            America. Four a family of four, that means earning just $25,000 per
-            year.
+          People often don't get the mental health services they need <br></br>
+          because they don't know where to start.
           </p>
-        </div>
-        <div class="facts2">
+          
           <p>
-            Poverty can be caused by many different factors, and these factors
-            vary by where a person lives in the world.
+          Talk to your primary care doctor or another health professional <br></br>
+          about mental health problems. Ask them to connect you with the <br></br>
+          right mental health services.
           </p>
-        </div>
+          <p>
+          If you do not have a health professional who is able to assist you, <br></br>
+          use these resources to find help for yourself, your friends, your <br></br>
+          family, or your students.
+          </p>
+         </div>
 
-        <ul class="list">
-          <li> Unemployment </li>
-          <li> Low-Paying Jobs</li>
-          <li> Family History of Poverty (Cycle of Poverty) </li>
-          <li> Discrimination </li>
-          <li> Social Inequality</li>
-        </ul>
-        <ul class="list">
-          <li> Political Corruption & Instability </li>
-          <li> Centralization of Power Debt (Personal & National) </li>
-          <li> Family History of Poverty (Cycle of Poverty) </li>
-          <li> Lack of Education & Resources Disease </li>
-        </ul>
 
-        <div class="crop">
-          <img
-            src={require("../Images/sean-benesh-04YCqKIyN-8-unsplash.jpg")}
-            alt=""
-            width={"100%"}
-          />
+         <div class="header">
+         <h1>EMERGENCY AND CRISIS LINES - 24/7 HELPLINES</h1>
         </div>
-      </div>
+        
+        
+         <div class="phones">
+          <li>Arab American Community Coalition...................(206) 634-9001 </li>
+          <li>Child Protective Services............................................(866) 363-4276</li>
+          <li>Chrisis Connections 24-Hour Crisis Line..............(866) 427-4747 </li>
+          <li>Domestic Violence Hotline........................................(800) 799-7233 </li>
+          <li>King Country Sexual Assault Resource Center...(888) 998-6423</li>
+          <li>National Problem Gambling Helpline...................(800) 522-4700</li>
+          <li>National Suicide Prevention Hotline......................(800) 273-8255</li>
+          <li>Planned Parenthood.....................................................(206) 744-2500 </li>
+          <li>Veterans Affairs Crisis Line.........................................(800) 273-8255</li>
+          <li>Qashington Poison Center Information Line......(800) 222-1222</li>
+          <li>Washington Recovery Helping.................................(866) 789-1511</li>
+</div>
+       
+     
     </body>
   );
 };
 
-export default AboutPage;
+export default EmergencyPage;

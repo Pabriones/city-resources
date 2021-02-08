@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
 import LandingPage from "./components/LandingPage";
-import AboutPage from "./components/AboutPage";
+import EmergencyPage from "./components/EmergencyPage";
 
 function App() {
   return (
     <div>
       <LandingPage />
       <div>
-        <AboutPage />
+        <EmergencyPage />
       </div>
     </div>
   );

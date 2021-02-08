@@ -1,8 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
+import AboutPage from "./AboutPage";
+import { Link } from "react-router-dom";
 
-const LandingPage = () => {
+class LandingPage extends React.Component {
+  render() {
   return (
     <body>
       <div class="container">
@@ -10,8 +13,8 @@ const LandingPage = () => {
           <div class="title">CITY RESOURCES</div>
           <div class="nav">
             <div class="nav">
-              <a href="url">ABOUT </a>
-              <a href="url">CONTACT</a>
+            <Link to="#">ABOUT</Link>
+            <Link to="/contact">CONTACT</Link>
             </div>
             <div class="flex-container">
               <div>
@@ -35,7 +38,7 @@ const LandingPage = () => {
                   <a href=" ">
                     <button type="button" class="emergencyLinesBtn">
                       <p class="emergencyText">
-                        EMERGENCY AND CRISIS LINES
+                         <Link to="/emergency">EMERGENCY AND CRISIS LINES</Link>
                         <ion-icon class="phone" name="call">
                         </ion-icon>
                       </p>
@@ -47,8 +50,11 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <div>
+        <AboutPage/>
+      </div>
     </body>
   );
-};
-
+}
+}
 export default LandingPage;

@@ -87,7 +87,7 @@ const SearchDirectoryPage = () => {
                     <textarea
                       className="form-control"
                       id="exampleFormControlTextarea1"
-                      rows="3"
+                      rows="6"
                       value={contactMessage}
                       onChange={(e) => setContactMessage(e.target.value)}
                     ></textarea>

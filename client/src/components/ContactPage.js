@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import Modal from "react-modal";
-import { Grid } from "semantic-ui-react";
 
-import "../../src/css/SearchDirectoryPage.css";
+
+import "../../src/css/ContactPage.css";
 
 const SearchDirectoryPage = () => {
   const [contactFirstName, setContactFirstName] = useState("");

@@ -1,20 +1,50 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 3rem;
-  font-family: sans-serif;
+.ContactIntro {
+  color: #22333b;
+  position:absolute;
+  width:794px;
+  height:124px;
+  left:71px;
+  top:219px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 73px;
+ 
 }
 
-.ContactIntro {
+
+.ContactIntro2 {
   color: #38373b;
-  margin-right: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 35px;
+  padding-left: 80px;
+  position:absolute;
+  width:583px;
+  height:227px;
+  left:102px;
+  top:372px;
+
+  
+ 
 }
 
 .SubmitForm {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
+  padding-left: 1200px;
+  padding-top: 400px;
+  position:absolute;
+  width:584px;
+
+ 
+
+  
+ 
 }
 
 .Social {

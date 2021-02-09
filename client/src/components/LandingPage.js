@@ -54,6 +54,10 @@ const LandingPage = () => {
       </body>
     );
   }
+<<<<<<< Updated upstream
 
+=======
+};
+>>>>>>> Stashed changes
 
 export default LandingPage;

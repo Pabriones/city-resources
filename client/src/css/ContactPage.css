@@ -1,15 +1,14 @@
 .ContactIntro {
   color: #22333b;
   position:absolute;
-  width:794px;
+  width:1000px;
   height:124px;
-  left:71px;
-  top:219px;
+  left:370px;
+  top:300px;
   font-family: "Roboto Slab";
   font-style: normal;
-  font-weight: normal;
   font-size: 40px;
-  line-height: 73px;
+  line-height: 35px;
  
 }
 
@@ -20,13 +19,13 @@
   font-style: normal;
   font-weight: 300;
   font-size: 35px;
-  line-height: 35px;
-  padding-left: 80px;
+  line-height: 50px;
+  padding-left: 280px;
   position:absolute;
-  width:583px;
-  height:227px;
-  left:102px;
-  top:372px;
+  width:800px;
+  height:500px;
+  left:150px;
+  top:450px;
 
   
  

@@ -45,7 +45,7 @@ const SearchDirectoryPage = () => {
          <div class="ContactIntro2">
          <p>Any questions or comments? <br></br>
             We would love to know your thoughts. If our<br></br>
-            is no longer correct, or if there <br></br>
+            information is no longer correct, or if there <br></br>
             are any other resources we should add,<br></br>
             please let us know!
             </p>

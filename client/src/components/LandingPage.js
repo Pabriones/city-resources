@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
+import Footer from "./components/Footer";
 
 import AboutPage from "./AboutPage";
 import AboutPage2 from "./AboutPage2";

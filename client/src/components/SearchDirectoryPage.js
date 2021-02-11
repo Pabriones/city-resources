@@ -1,5 +1,5 @@
 import React from "react";
-import SearchDirectoryPage from "./components/SearchDirectoryPage";
+import SearchDirectoryPage from "./components/SearchDirectoryPage.css";
 
 const SearchDirectoryPage = () => {
   return (
@@ -15,5 +15,6 @@ const SearchDirectoryPage = () => {
 };
 
 export default SearchDirectoryPage;
+
 
 

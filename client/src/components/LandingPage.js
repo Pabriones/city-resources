@@ -19,9 +19,9 @@ class LandingPage extends React.Component {
             <Link className="lp-link" to="AboutPage" spy={true} duration={500}>
               ABOUT
             </Link>
-            <Link className="lp-link" to="Contact" spy={true} duration={500}>
-            <Link to="/contact">CONTACT</Link>
-            </Link>
+            <Link className="lp-link" to="contact" spy={true} duration={500}>
+          CONTACT</Link>
+           
           </div>
           <div className="lp-flex-container">
             <div>
@@ -58,12 +58,8 @@ class LandingPage extends React.Component {
         <AboutPage/>
         <AboutPage2/>
         <Footer/>
-
-        
-      </div>
-    
-    
-      </body>
+        </div>
+  </body>
     );
   }
 }

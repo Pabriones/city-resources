@@ -57,8 +57,11 @@ class LandingPage extends React.Component {
         <div>
         <AboutPage/>
         <AboutPage2/>
-        <footer/>
+        
       </div>
+      <div>
+           
+     <Footer/> </div>
       </body>
     );
   }

@@ -1,6 +1,10 @@
 import React from "react";
 import "../../src/css/Footer.css";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
+import ContactPage from "./components/ContactPage";
+import EmergencyPage from "./components/EmergencyPage";
+import SearchDirectoryPage from "./components/SearchDirectoryPage";
 
 const Footer = () => {
   return (

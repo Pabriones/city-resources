@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
-import Footer from "./components/Footer";
-
+import Footer from "./Footer";
 import AboutPage from "./AboutPage";
 import AboutPage2 from "./AboutPage2";
 import { Link } from "react-router-dom";
@@ -58,11 +57,12 @@ class LandingPage extends React.Component {
         <div>
         <AboutPage/>
         <AboutPage2/>
+        <Footer/>
+
         
       </div>
-      <div>
-           
-     <Footer/> </div>
+    
+    
       </body>
     );
   }

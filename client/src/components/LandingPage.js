@@ -1,57 +1,62 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
-import { Link } from "react-scroll";
+import AboutPage from "./AboutPage";
+import AboutPage2 from "./AboutPage2";
+import { Link } from "react-router-dom";
 
-
-const LandingPage = () => {
+class LandingPage extends React.Component {
+  render() {
   return (
     <body>
-      <div id="LandingPage">
-        <div className="lp-container">
-          <div className="lp-title">CITY RESOURCES</div>
-
-          <div className="lp-nav">
-            <Link className="lp-link" to="AboutPage" spy={true} duration={500}>
-              ABOUT
-            </Link>
-            <Link className="lp-link" to="Contact" spy={true} duration={500}>
-              CONTACT
-            </Link>
-          </div>
-          <div className="lp-flex-container">
-            <div>
-              <Icon>
-                <a href=" ">
-                  <button type="button" class="searchDirectoryBtn">
-                    <p className="searchText">
-                      SEARCH DIRECTORY
-                      <ion-icon
-                        class="chevIconSearch"
-                        name="chevron-forward-outline"
-                      ></ion-icon>
-                    </p>
-                  </button>
-                </a>
-              </Icon>
+      <div class="container">
+        <div class="background">
+          <div class="title">CITY RESOURCES</div>
+          <div class="nav">
+            <div class="nav">
+            <Link to="#">ABOUT</Link>
+            <Link to="/contact">CONTACT</Link>
             </div>
+            <div class="flex-container">
+              <div>
+                <Icon>
+                  <a href=" ">
+                    <button type="button" class="searchDirectoryBtn">
+                      <p class="searchText">
+                      <Link to="/directory">SEARCH DIRECTORY</Link>
+                        <ion-icon
+                          class="chevIconSearch"
+                          name="chevron-forward-outline"
+                        ></ion-icon>
+                      </p>
+                    </button>
+                  </a>
+                </Icon>
+              </div>
 
-            <div>
-              <Icon>
-                <a href=" ">
-                  <button type="button" class="emergencyLinesBtn">
-                    <p className="emergencyText">
-                      EMERGENCY AND CRISIS LINES
-                      <ion-icon className="phone" name="call"></ion-icon>
-                    </p>
-                  </button>
-                </a>
-              </Icon>
+              <div>
+                <Icon>
+                  <a href=" ">
+                    <button type="button" class="emergencyLinesBtn">
+                      <p class="emergencyText">
+                         <Link to="/emergency">EMERGENCY AND CRISIS LINES</Link>
+                        <ion-icon class="phone" name="call">
+                        </ion-icon>
+                      </p>
+                    </button>
+                  </a>
+                </Icon>
+              </div>
             </div>
           </div>
-        </div></div>
-      </body>
-    );
-  }
-
+        </div>
+      </div>
+      <div>
+        <AboutPage/>
+        <AboutPage2 />
+      </div>
+    </body>
+  );
+}
+}
 export default LandingPage;

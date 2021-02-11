@@ -1,5 +1,5 @@
 import React from "react";
-import "../../src/css/SearchDirectoryPage.css";
+import SearchDirectoryPage from "./components/SearchDirectoryPage";
 
 const SearchDirectoryPage = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
-import { Link } from "react-scroll";
+
 import AboutPage from "./AboutPage";
 import { Link } from "react-router-dom";
 

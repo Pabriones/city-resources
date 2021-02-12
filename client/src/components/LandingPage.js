@@ -26,30 +26,30 @@ class LandingPage extends React.Component {
           <div className="lp-flex-container">
             <div>
               <Icon>
-                <a href=" ">
+                
                   <button type="button" class="searchDirectoryBtn">
                     <p className="searchText">
-                    <Link to="/directory">SEARCH DIRECTORY</Link>
+                    <Link p className="searchText" to="/directory">SEARCH DIRECTORY</Link>
                       <ion-icon
                         class="chevIconSearch"
                         name="chevron-forward-outline"
                       ></ion-icon>
                     </p>
                   </button>
-                </a>
+               
               </Icon>
             </div>
 
             <div>
               <Icon>
-                <a href=" ">
+                
                   <button type="button" class="emergencyLinesBtn">
                     <p className="emergencyText">
-                    <Link to="/emergency">EMERGENCY AND CRISIS LINES</Link>
+                    <Link className="emergencyText" to="/emergency">EMERGENCY AND CRISIS LINES</Link>
                       <ion-icon className="phone" name="call"></ion-icon>
                     </p>
                   </button>
-                </a>
+              
               </Icon>
             </div>
           </div>

@@ -4,7 +4,8 @@ import { Icon } from "semantic-ui-react";
 import Footer from "./Footer";
 import AboutPage from "./AboutPage";
 import AboutPage2 from "./AboutPage2";
-import { Link } from "react-router-dom";
+import { Link as Link1 } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
 
 
 class LandingPage extends React.Component {
@@ -16,11 +17,11 @@ class LandingPage extends React.Component {
           <div className="lp-title">CITY RESOURCES</div>
 
           <div className="lp-nav">
-            <Link className="lp-link" to="AboutPage" spy={true} duration={500}>
+            <Link1 className="lp-link" to="AboutPage" spy={true} duration={500}>
               ABOUT
-            </Link>
-            <Link className="lp-link" to="contact" spy={true} duration={500}>
-          CONTACT</Link>
+            </Link1>
+            <Link2 className="lp-link" to="contact" spy={true} duration={500}>
+          CONTACT</Link2>
            
           </div>
           <div className="lp-flex-container">
@@ -29,7 +30,7 @@ class LandingPage extends React.Component {
                 
                   <button type="button" class="searchDirectoryBtn">
                     <p className="searchText">
-                    <Link p className="searchText" to="/directory">SEARCH DIRECTORY</Link>
+                    <Link2 p className="searchText" to="/directory">SEARCH DIRECTORY</Link2>
                       <ion-icon
                         class="chevIconSearch"
                         name="chevron-forward-outline"
@@ -45,7 +46,7 @@ class LandingPage extends React.Component {
                 
                   <button type="button" class="emergencyLinesBtn">
                     <p className="emergencyText">
-                    <Link className="emergencyText" to="/emergency">EMERGENCY AND CRISIS LINES</Link>
+                    <Link2 className="emergencyText" to="/emergency">EMERGENCY AND CRISIS LINES</Link2>
                       <ion-icon className="phone" name="call"></ion-icon>
                     </p>
                   </button>

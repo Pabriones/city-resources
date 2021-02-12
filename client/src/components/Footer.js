@@ -1,6 +1,7 @@
 import React from "react";
 import "../../src/css/Footer.css";
-import { Link } from "react-router-dom";
+import { Link as Link2 } from "react-scroll";
+
 
 
 const Footer = () => {
@@ -22,14 +23,14 @@ const Footer = () => {
             <ui className="list-unstyled">
               <div className="ft-text">
                 <li>
-                  <Link
+                  <Link2
                     className="ft-link"
                     to="LandingPage"
                     spy={true}
                     duration={500}
                   >
                     HOME
-                  </Link>
+                  </Link2>
                 </li>
               </div>
 
@@ -51,14 +52,14 @@ const Footer = () => {
               <div className="ft-text">
                 {" "}
                 <li>
-                  <Link
+                  <Link2
                     className="ft-link"
                     to="AboutPage"
                     spy={true}
                     duration={500}
                   >
                     ABOUT
-                  </Link>
+                  </Link2>
                 </li>
               </div>
 

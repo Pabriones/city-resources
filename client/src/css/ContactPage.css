@@ -1,43 +1,72 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 3rem;
-    font-family: sans-serif;
-  }
+.ContactIntro {
+  color: #22333b;
+  position:absolute;
+  width:1000px;
+  height:124px;
+  left:370px;
+  top:300px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-size: 40px;
+  line-height: 35px;
+ 
+}
+
+
+.ContactIntro2 {
+  color: #38373b;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 50px;
+  padding-left: 280px;
+  position:absolute;
+  width:800px;
+  height:500px;
+  left:150px;
+  top:450px;
+
   
-  .ContactIntro {
-    color: #38373b;
-    margin-right: 0px;
-  }
+ 
+}
+
+.SubmitForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding-left: 1200px;
+  padding-top: 400px;
+  position:absolute;
+  width:584px;
+
+ 
+
   
-  .SubmitForm {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-  
-  .Social {
-    margin-left: 14px;
-  }
-  
-  .IconSocial {
-    font-size: 35px;
-  }
-  
-  .TextForm {
-    width: 85%;
-  }
-  
-  .Icon {
-    font-size: 30px;
-  }
-  
-  .List {
-    margin-top: 20px;
-  }
-  
-  .label {
-    margin-top: 15px;
-  }
-  
+ 
+}
+
+.Social {
+  margin-left: 14px;
+}
+
+.IconSocial {
+  font-size: 35px;
+}
+
+.TextForm {
+  width: 85%;
+}
+
+.Icon {
+  font-size: 30px;
+}
+
+.List {
+  margin-top: 20px;
+}
+
+.label {
+  margin-top: 20px;
+ 
+}

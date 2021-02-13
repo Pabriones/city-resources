@@ -1,10 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "../../src/css/LandingPage.css";
 import { Icon } from "semantic-ui-react";
-import { Link } from "react-scroll";
+import Footer from "./Footer";
+import AboutPage from "./AboutPage";
+import AboutPage2 from "./AboutPage2";
+import { Link as Link1 } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
 
 
-const LandingPage = () => {
+class LandingPage extends React.Component {
+    render() {
   return (
     <body>
       <div id="LandingPage">
@@ -12,47 +17,51 @@ const LandingPage = () => {
           <div className="lp-title">CITY RESOURCES</div>
 
           <div className="lp-nav">
-            <Link className="lp-link" to="AboutPage" spy={true} duration={500}>
+            <Link1 className="lp-link" to="AboutPage" spy={true} duration={500}>
               ABOUT
-            </Link>
-            <Link className="lp-link" to="Contact" spy={true} duration={500}>
-              CONTACT
-            </Link>
+            </Link1>
+            <Link2 className="lp-link" to="contact" spy={true} duration={500}>
+          CONTACT</Link2>
+           
           </div>
           <div className="lp-flex-container">
             <div>
               <Icon>
-                <a href=" ">
+                
                   <button type="button" class="searchDirectoryBtn">
                     <p className="searchText">
-                      SEARCH DIRECTORY
+                    <Link2 p className="searchText" to="/directory">SEARCH DIRECTORY</Link2>
                       <ion-icon
                         class="chevIconSearch"
                         name="chevron-forward-outline"
                       ></ion-icon>
                     </p>
                   </button>
-                </a>
+               
               </Icon>
             </div>
 
             <div>
               <Icon>
-                <a href=" ">
+                
                   <button type="button" class="emergencyLinesBtn">
                     <p className="emergencyText">
-                      EMERGENCY AND CRISIS LINES
+                    <Link2 className="emergencyText" to="/emergency">EMERGENCY AND CRISIS LINES</Link2>
                       <ion-icon className="phone" name="call"></ion-icon>
                     </p>
                   </button>
-                </a>
+              
               </Icon>
             </div>
           </div>
+        </div></div>
+        <div>
+        <AboutPage/>
+        <AboutPage2/>
+        <Footer/>
         </div>
-        </div>
+      
       </body>
-    );
-  }
+    )};
 
 export default LandingPage;

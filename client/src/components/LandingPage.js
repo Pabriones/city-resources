@@ -62,6 +62,6 @@ class LandingPage extends React.Component {
         </div>
       
       </body>
-    )};
+    )  }};
 
 export default LandingPage;

@@ -1,10 +1,12 @@
 .footer {
+ 
   position: relative;
   bottom: 0;
-  padding: 1.5% 0.5% 0% 3%;
+  padding: 1.5% 0.5% 0% 5%;
 }
 
 .ft-text {
+ 
   font-weight: bolder;
   font-size: 5vh;
   line-height: 110%;
@@ -32,6 +34,7 @@
 }
 
 .ft-link-logo {
+
   font-family: "Roboto", "sans-serif";
   text-decoration: none;
   color: #222831;

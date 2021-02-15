@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
+import "../../src/css/LoginModal.css";
 // import Bootstrap from "react-bootstrap";
 
 function LoginModal() {
@@ -10,8 +11,8 @@ function LoginModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Login
+      <Button type ="button" class="btn btn-link" onClick={handleShow}>
+        LOG IN
       </Button>
 
       <Modal show={show} onHide={handleClose} animation={false}>

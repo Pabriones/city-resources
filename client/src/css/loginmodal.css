@@ -5,6 +5,8 @@
   color: #222831;
   cursor: pointer;
   font-size: 2vh;
+
+box-shadow:none !important;
 }
 
 .btn-primary:hover,
@@ -16,6 +18,9 @@
   font-weight: bold;
   font-style: normal;
   font-weight: bold;
-  text-decoration: none;
+ 
+ 
   color: #222831;
 }
+
+ 

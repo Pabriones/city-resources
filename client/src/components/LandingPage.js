@@ -30,7 +30,7 @@ class LandingPage extends React.Component {
                 
                   <button type="button" class="searchDirectoryBtn">
                     <p className="searchText">
-                    <Link2 p className="searchText" to="/directory">SEARCH DIRECTORY</Link2>
+                    <Link2 className="btnLink" to="/directory">SEARCH DIRECTORY</Link2>
                       <ion-icon
                         class="chevIconSearch"
                         name="chevron-forward-outline"
@@ -46,7 +46,7 @@ class LandingPage extends React.Component {
                 
                   <button type="button" class="emergencyLinesBtn">
                     <p className="emergencyText">
-                    <Link2 className="emergencyText" to="/emergency">EMERGENCY AND CRISIS LINES</Link2>
+                    <Link2 className="btnLink" to="/emergency">EMERGENCY AND CRISIS LINES</Link2>
                       <ion-icon className="phone" name="call"></ion-icon>
                     </p>
                   </button>

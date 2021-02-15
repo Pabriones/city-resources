@@ -7,67 +7,83 @@ import AboutPage2 from "./AboutPage2";
 import { Link as Link1 } from "react-scroll";
 import { Link as Link2 } from "react-router-dom";
 
-
 class LandingPage extends React.Component {
-    render() {
-  return (
-    <body>
-      <div id="LandingPage">
-        <div className="lp-container">
-       <div className="lp-title">CITY RESOURCES </div>   <div className="lp-nav"> 
-       
-       <Link1 className="lp-link" to="AboutPage" spy={true} duration={500}>
-              ABOUT
-            </Link1>
+  render() {
+    return (
+      <body>
+        <div id="LandingPage">
+          <div className="lp-container">
+            <div className="lp-title">CITY RESOURCES </div>{" "}
+            <div className="lp-nav">
+              <Link1
+                className="lp-link"
+                to="AboutPage"
+                spy={true}
+                duration={500}
+              >
+                ABOUT
+              </Link1>
 
-         
-           
-            <Link1 className="lp-link" to="contact" spy={true} duration={500}>
-          CONTACT</Link1>  
-         <Link1 className="lp-link2" to="contact" spy={true} duration={500}>
-          LOG IN</Link1>  
-          <Link1 className="lp-link2" to="contact" spy={true} duration={500}>
-          REGISTER</Link1>
-           
-          </div>
-          <div className="lp-flex-container">
-            <div>
-              <Icon>
-                
+              <Link1 className="lp-link" to="contact" spy={true} duration={500}>
+                CONTACT
+              </Link1>
+              <Link1
+                className="lp-link2"
+                to="contact"
+                spy={true}
+                duration={500}
+              >
+                LOG IN
+              </Link1>
+              <Link1
+                className="lp-link2"
+                to="contact"
+                spy={true}
+                duration={500}
+              >
+                REGISTER
+              </Link1>
+            </div>
+            <div className="lp-flex-container">
+              <div>
+                <Icon>
                   <button type="button" class="searchDirectoryBtn">
                     <p className="searchText">
-                    <Link2 p className="searchText" to="/directory">SEARCH DIRECTORY</Link2>
+                      <Link2 className="btnLink" to="/directory">
+                        SEARCH DIRECTORY
+                      </Link2>
                       <ion-icon
                         class="chevIconSearch"
                         name="chevron-forward-outline"
                       ></ion-icon>
                     </p>
                   </button>
-               
-              </Icon>
-            </div>
+                </Icon>
+              </div>
 
-            <div>
-              <Icon>
-                
+             {/*  <div>
+                <Icon>
                   <button type="button" class="emergencyLinesBtn">
                     <p className="emergencyText">
-                    <Link2 className="emergencyText" to="/emergency">EMERGENCY AND CRISIS LINES</Link2>
+                      <Link2 className="btnLink" to="/emergency">
+                        EMERGENCY AND CRISIS LINES
+                      </Link2>
                       <ion-icon className="phone" name="call"></ion-icon>
                     </p>
                   </button>
-              
-              </Icon>
+                </Icon>
+              </div> */}
             </div>
           </div>
-        </div></div>
-        <div>
-        <AboutPage/>
-        <AboutPage2/>
-        <Footer/>
         </div>
-      
+        <div>
+          <AboutPage />
+          <AboutPage2 />
+          <Footer />
+        </div>
       </body>
-    )  }};
+    );
+  }
+}
 
 export default LandingPage;

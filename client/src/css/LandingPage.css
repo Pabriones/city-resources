@@ -8,23 +8,23 @@
 }
 
 .lp-title {
- 
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto Slab", "sans-serif";
   font-style: normal;
-  font-weight: normal;
-  font-size: 9vh;
-  line-height: 15vh;
-  text-align: left;
-  padding-top: 1.5%;
+ 
+  font-size: 8vh;
+  text-align: center;
+ 
+  padding-top: 1.5vh;
   color: #22333b;
 }
 
 .lp-nav {
-  font-size: 3.0vh;
+  font-size: 2vh;
   font-family: "Roboto", "sans-serif";
-  margin: 0px 5vw;
-  cursor: pointer;
 
+  cursor: pointer;
+  text-align: center;
+ 
 }
 
 .lp-link2 {

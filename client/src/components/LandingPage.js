@@ -36,6 +36,11 @@ class LandingPage extends React.Component {
               >
                 LOG IN
               </Link1>
+
+              <div className="loginm">
+								<LoginModal />
+							</div>
+              
               <Link1
                 className="lp-link2"
                 to="contact"

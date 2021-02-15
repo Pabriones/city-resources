@@ -35,12 +35,12 @@ class LandingPage extends React.Component {
                 spy={true}
                 duration={500}
               >
-                LOG IN
+                
+								<LoginModal />
+				
               </Link1>
 
-              <div className="loginm">
-								<LoginModal />
-							</div>
+           
               
               <Link1
                 className="lp-link2"

@@ -7,6 +7,7 @@ import AboutPage2 from "./AboutPage2";
 import ContactSection from "./ContactSection"
 import { Link as Link1 } from "react-scroll";
 import { Link as Link2 } from "react-router-dom";
+import LoginModal from './LoginModal';
 
 class LandingPage extends React.Component {
   render() {

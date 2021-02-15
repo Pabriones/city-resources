@@ -8,37 +8,52 @@
 }
 
 .lp-title {
-  position: center, fixed;
-  font-family: "Roboto Slab", "sans-serif";
+ 
+  font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 12vh;
+  font-size: 9vh;
   line-height: 15vh;
-  text-align: center;
+  text-align: left;
   padding-top: 1.5%;
   color: #22333b;
 }
 
 .lp-nav {
-  text-align: center;
-  font-size: 4.2vh;
-  font-family: "Roboto Slab", "sans-serif";
+  font-size: 3.0vh;
+  font-family: "Roboto", "sans-serif";
   margin: 0px 5vw;
   cursor: pointer;
+
 }
+
+.lp-link2 {
+  margin: 0px 2vw;
+  text-decoration: none;
+  color: #222831;
+  cursor: pointer; 
+}
+
 .lp-link {
   margin: 0px 2vw;
   text-decoration: none;
   color: #222831;
-  cursor: pointer;
+  cursor: pointer; 
+font-weight: bold;
 }
 
 .lp-link:hover {
   font-style: normal;
-  font-weight: bolder;
+  font-weight:normal;
   text-decoration: none;
   color: #222831;
+}
 
+.lp-link2:hover {
+  font-style: normal;
+  font-weight:bold;
+  text-decoration: none;
+  color: #222831;
 }
 
 .lp-flex-container {

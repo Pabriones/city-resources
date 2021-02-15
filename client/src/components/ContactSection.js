@@ -1,29 +1,31 @@
 import React from "react";
 import "../../src/css/ContactSection.css";
+import { Icon } from "semantic-ui-react";
 
 const ContactSection = () => {
   return (
     <body>
+      <div id="ContactSection"></div>
       <div contact-container>
         <div contact-content>
           <div className="row">
-         
             <div class="col-xs-6">
               <div className="contactInfo">
-                <h1>WE'RE HERE FOR YOU.</h1>
+                <h1>
+                  <ion-icon class="mail-icon" name="mail-outline"></ion-icon>{" "}
+                  CONTACT US{" "}
+                </h1>
                 <p>
                   Any questions or comments? We would love to know your
                   thoughts. If our information is no longer correct, or if there
                   are any other resources we should add, please let us know!
                 </p>
                 <h2>hello@cityresources.com</h2>
-                
-                
               </div>
 
               <div class="col-xs-6">
                 <div className="emergencyNumbers">
-                <h1>24HR EMERGENCY HELP LINES</h1>
+                  <h1>24HR EMERGENCY HELP LINES</h1>
                   <li>
                     Arab American Community Coalition...................(206)
                     634-9001{" "}

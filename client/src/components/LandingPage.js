@@ -25,7 +25,7 @@ class LandingPage extends React.Component {
                 ABOUT
               </Link1>
 
-              <Link1 className="lp-link" to="contact" spy={true} duration={500}>
+              <Link1 className="lp-link" to="ContactSection" spy={true} duration={500}>
                 CONTACT
               </Link1>
               <Link1

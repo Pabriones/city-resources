@@ -23,7 +23,7 @@
 }
 
 .contactInfo {
-  padding: 2% 5% 2% 5%;
+  padding: 3% 5% 2% 5%;
   font-size: 1.8vh;
   background-color: #d6cfcf;
   font-family: Roboto;
@@ -36,10 +36,17 @@
 
 .contactInfo h1 {
   font-size: 4vh;
+  font-weight: 600;
+  color: #22333b;
 }
 
 .contactInfo h2 {
   font-size: 4vh;
+  padding-top: 3%;
+}
+
+.mail-icon {
+  font-size: 3.2vh;
 }
 
 .ab2-images {

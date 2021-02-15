@@ -1,0 +1,56 @@
+.contact-container {
+  background-color: #eddfd0;
+  width: auto;
+  margin: auto;
+  border: 1px solid #eddfd0;
+}
+
+.ct-divider-top {
+  background-color: #ceb0b0;
+}
+.emergencyNumbers {
+  font-size: 1.5vh;
+  background-color: #d6cfcf;
+ float: right;
+ width: 50%;
+ position:relative;
+}
+
+.contactInfo {
+  font-size: 1.5vh;
+  background-color: #d6cfcf;
+  font-family: Roboto;
+  font-style: normal;
+  float: left;
+  width: 50%;
+  position:relative;
+}
+
+.ab2-images {
+}
+
+.ab2-crop {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  float: left;
+  display: -webkit-inline-flex;
+}
+
+.ab2-crop img {
+  width: 100%;
+  margin: -20% 0% -26% 0%;
+}
+
+.ab2-crop2 {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  float: left;
+  display: -webkit-inline-flex;
+}
+
+.ab2-crop2 img {
+  width: 100%;
+  margin: -32% 0% -18.8% 0%;
+}

@@ -8,12 +8,12 @@
 }
 
 .lp-title {
-  font-family: "Roboto Slab", "sans-serif";
+  font-family: "Roboto", "sans-serif";
   font-style: normal;
- 
-  font-size: 8vh;
+
+  font-size: 10vh;
   text-align: center;
- 
+
   padding-top: 1.5vh;
   color: #22333b;
 }
@@ -24,34 +24,33 @@
 
   cursor: pointer;
   text-align: center;
- 
 }
 
 .lp-link2 {
-  margin: 0px 2vw;
+  margin: 0px 0.5vw;
   text-decoration: none;
   color: #222831;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .lp-link {
-  margin: 0px 2vw;
+  margin: 0px 1vw 0vw 0vw;
   text-decoration: none;
   color: #222831;
-  cursor: pointer; 
-font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .lp-link:hover {
   font-style: normal;
-  font-weight:normal;
+  font-weight: normal;
   text-decoration: none;
   color: #222831;
 }
 
 .lp-link2:hover {
   font-style: normal;
-  font-weight:bold;
+  font-weight: bold;
   text-decoration: none;
   color: #222831;
 }
@@ -78,8 +77,8 @@ font-weight: bold;
 .searchText {
   display: inline;
   font-family: "Roboto", "Helvetica";
-  font-size: 4.2vh;
-  color: rgba(94, 80, 63, 0.85);
+  font-size: 4vh;
+  color: #3F2D19;
   width: 13em;
   line-height: 2.5em;
 }
@@ -87,7 +86,7 @@ font-weight: bold;
 .btnLink {
   margin: 0px 2vw;
   text-decoration: none;
-  color: rgba(94, 80, 63, 0.85);
+  color: #3F2D19;
   cursor: pointer;
 }
 
@@ -95,7 +94,7 @@ font-weight: bold;
   font-style: normal;
   font-weight: bolder;
   text-decoration: none;
-  color: rgba(94, 80, 63, 0.85);
+  color: #3F2D19;
 }
 
 .searchDirectoryBtn:hover {

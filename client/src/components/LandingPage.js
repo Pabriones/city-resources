@@ -4,6 +4,7 @@ import { Icon } from "semantic-ui-react";
 import Footer from "./Footer";
 import AboutPage from "./AboutPage";
 import AboutPage2 from "./AboutPage2";
+import ContactSection from "./ContactSection"
 import { Link as Link1 } from "react-scroll";
 import { Link as Link2 } from "react-router-dom";
 
@@ -79,6 +80,7 @@ class LandingPage extends React.Component {
         <div>
           <AboutPage />
           <AboutPage2 />
+          <ContactSection/>
           <Footer />
         </div>
       </body>

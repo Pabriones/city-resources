@@ -9,15 +9,14 @@
   font-size: 8vh;
   padding: 10% 0% 0% 5%;
   line-height: 8vh;
-  color: #22333b;
+  color: #47545A;
 }
 
 .ab1-intro {
   font-family: "Roboto";
   font-size: 3.1vh;
   padding: 0% 5% 10% 5%;
- 
- 
+  color: #000000;
 }
 
 .imgContainer {
@@ -26,7 +25,6 @@
   filter: grayscale(80%);
   padding: 2% 2% 2% 8%;
   width: auto;
- 
 }
 
 .ab1-img1 {
@@ -87,6 +85,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 90%;
 }
 
 .space {

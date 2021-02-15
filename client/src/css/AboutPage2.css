@@ -1,0 +1,66 @@
+
+.ab2-container {
+  background-color: #eddfd0;
+    width: auto;
+    margin: auto;
+    border: 1px solid #eddfd0;
+  }
+
+
+.ab2-content h1 {
+  font-family: "Roboto", "sans-serif";
+  font-style: normal;
+  font-size: 4vh;
+  padding: 3.5% 2%;
+  color: #22333b;
+}
+
+.ab2-title {
+  font-family: "Roboto", "sans-serif";
+  font-size: 3vh;
+  font-weight: bold;
+  color: #22333b;
+   
+}
+
+.ab2-text-container {
+  font-family: "Roboto", "sans-serif";
+  color: #22333b;
+  margin: 0% 5%;
+  font-size: 3vh;
+  text-align: justify;
+}
+
+.ab2-text-container p {
+  margin: 0.2% 0% 2.8%;
+}
+
+.ab2-images {
+  margin-top: 6.5%;
+}
+
+.ab2-crop {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  float: left;
+  display: -webkit-inline-flex;
+}
+
+.ab2-crop img {
+  width: 100%;
+  margin: -20% 0% -26% 0%;
+}
+
+.ab2-crop2 {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  float: left;
+  display: -webkit-inline-flex;
+}
+
+.ab2-crop2 img {
+  width: 100%;
+  margin: -32% 0% -18.8% 0%;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "../../src/css/AboutPage2.css";
- 
 
 const AboutPage2 = () => {
   return (
@@ -10,73 +9,47 @@ const AboutPage2 = () => {
           {" "}
           <div>
             <h1>
-              While there are many root causes, in many cases adverse life
-              events such as a health issue, the loss of a job, or the need to
-              escape a domestic violence situation can quickly catapult our
-              neighbors into homelessness. These root causes are inherently
-              interconnected, and for our unsheltered neighbors each factor
-              listed below, in many instances, they are compounded by each
-              other.
+              With an increase in hardships due to the COVID-19 pandemic and the
+              resulting economic recession, it has created new barriers for people
+              already struggling.
             </h1>
 
             <div className="ab2-text-container">
-              <div className="ab2-title"> Mental Health and Addiction</div>
+              <div className="ab2-title">
+                Mauris porttitor consequat ligula, nec porttitor ante commodo
+                cursus.
+              </div>
               <p>
-                Drug overdose is currently the leading cause of death among
-                people who are homeless. In King County, more people enter detox
-                for heroin than they do alcohol. In 2014, the 156 opiate
-                overdose deaths were the highest ever recorded in King County -
-                more than triple the number of deaths in 2009.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+                quam aliquam, sodales ante id, porta odio. Curabitur tincidunt
+                tristique mauris quis placerat. Curabitur sit amet egestas ante,
+                a efficitur sem. Sed sed posuere libero. Cras eu velit vitae
+                lorem auctor molestie vel nec quam. Cras eget sem eget lorem
+                posuere facilisis. Proin luctus fermentum neque. Curabitur
+                porttitor sem sem, vitae laoreet lectus vehicula id. Vivamus
+                lectus mauris, rutrum vel malesuada quis, tincidunt a augue.
+                Maecenas vel mattis ligula. Proin fermentum nisi eu odio ornare,
+                sed consectetur ligula maximus.
               </p>
-              <div className="ab2-title">Economic Disparities & Poverty</div>
+              <div className="ab2-title">
+                Proin fermentum nisi eu odio ornare, sed consectetur ligula
+                maximus.
+              </div>
               <p>
-                Seattle has a booming economy and high-wage jobs. But too many
-                residents are being pushed out in the face of rising housing and
-                living costs, and the growth in our economy has not been shared
-                nearly widely enough.
-              </p>
-              <div className="ab2-title">Lack of Affordable Housing</div>
-              <p>
-                According to the Census Bureau, Seattle was the fastest growing
-                city in the nation, increasing our population by almost 19
-                percent over the past ten years. Affordable housing development
-                coupled with rising rents in the private market has not kept
-                pace with the need. As the number of affordable units continue
-                to decrease, the cost of housing continues to skyrocket; over
-                the past six years, rents have increased 57%.
-              </p>
-
-              <div className="ab2-title">Racial Disparities</div>
-              <p>
-                People experiencing homelessness are disproportionately people
-                of color. The systemic issues of racial inequity and the
-                policies that drive that inequity is woven throughout our City.
-                These disparities continue to show up in many ways - educational
-                attainment, life expectancy and access to healthcare, access to
-                affordable housing, and access to jobs training for family-wage
-                jobs - and are key indicators in determining success in Seattle.
+                Vivamus volutpat nulla auctor tempor iaculis. Aliquam ac rhoncus
+                neque, id luctus ante. Sed ornare nisl eu libero molestie
+                luctus. Cras interdum dignissim risus, eu dapibus metus molestie
+                mollis. Nullam porttitor ornare mi at feugiat. Integer
+                hendrerit, felis at suscipit sagittis, ex felis ultricies massa,
+                nec varius nibh lectus vitae ligula. Sed et orci porta,
+                fermentum nibh non, vestibulum quam. Morbi iaculis porta felis
+                vitae molestie. Fusce vel libero laoreet, hendrerit ante nec,
+                scelerisque tortor. Etiam vel augue quis nunc dapibus dignissim
+                quis nec tortor. Praesent ac posuere urna, sed molestie nisl.
               </p>
             </div>
           </div>
-
-          
-          <div className="ab2-images">
-            <div className="ab2-crop">
-              <img
-                src={require("../Images/steve-knutson-lQ2BzDNmnHE-unsplash.jpg")}
-                alt=""
-                width={"50%"}
-              />
-            </div>
-            <div className="ab2-crop2">
-              <img
-                src={require("../Images/nick-bolton-ktC7QQ7hLTw-unsplash.jpg")}
-                alt=""
-                width={"50%"}
-              />
-            </div>
-           
-          </div>
+   
         </div>
       </div>
     </body>

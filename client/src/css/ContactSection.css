@@ -5,25 +5,41 @@
   border: 1px solid #eddfd0;
 }
 
-.ct-divider-top {
-  background-color: #ceb0b0;
-}
 .emergencyNumbers {
   font-size: 1.5vh;
   background-color: #d6cfcf;
- float: right;
- width: 50%;
- position:relative;
+  float: right;
+  width: 50%;
+  padding: 1% 5% 2% 5%;
+  height: 100%;
+}
+
+.emergencyNumbers h1 {
+  font-family: Roboto Condensed;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3vh;
+  color: #641111;
 }
 
 .contactInfo {
-  font-size: 1.5vh;
+  padding: 2% 5% 2% 5%;
+  font-size: 1.8vh;
   background-color: #d6cfcf;
   font-family: Roboto;
   font-style: normal;
   float: left;
   width: 50%;
-  position:relative;
+  height: 100%;
+  text-align: justify;
+}
+
+.contactInfo h1 {
+  font-size: 4vh;
+}
+
+.contactInfo h2 {
+  font-size: 4vh;
 }
 
 .ab2-images {

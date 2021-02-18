@@ -13,6 +13,14 @@ class LandingPage extends React.Component {
   render() {
     return (
       <body>
+
+<div className = "parallaxx">
+
+
+
+<div className="spacee"> 
+
+
         <div id="LandingPage">
           <div className="lp-container">
             <div className="lp-title">CITY RESOURCES </div>{" "}
@@ -50,7 +58,7 @@ class LandingPage extends React.Component {
               >
                 REGISTER
               </Link1>
-            </div>
+            </div></div></div>
             <div className="lp-flex-container">
               <div>
                 <Icon>

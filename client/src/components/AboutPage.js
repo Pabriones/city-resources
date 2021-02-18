@@ -48,7 +48,7 @@ const AboutPage = () => {
                 </p>
                 <p>
                   This guide provides the tools to easily find the services
-                  offered near you. In addition to that, important documents can
+                  offered near you. Important documents can
                   easily be uploaded and saved in your account so you’ll never
                   forget them at your appointments!
                 </p>

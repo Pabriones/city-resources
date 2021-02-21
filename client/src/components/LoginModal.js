@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
+import RegisterModal from './RegisterModal';
 
 function LoginModal() {
   const [show, setShow] = useState(false);
@@ -10,12 +11,15 @@ function LoginModal() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Login
+        LOGIN
       </Button>
 
       <Modal show={show} onHide={handleClose} animation={false}>
         <Modal.Header>
           <Modal.Title>Log in here</Modal.Title>
+          <div>
+            <RegisterModal/>
+          </div>
         </Modal.Header>
 
         {/* Start of form for user to login */}

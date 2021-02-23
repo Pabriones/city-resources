@@ -7,7 +7,7 @@
 		"start": "node server",
 		"server": "nodemon server"
 	},
-	"author": "Paul Briones & Selina Nguyen",
+	"author": "Paul Briones, Selina Nguyen, & Margarita Yatina",
 	"license": "MIT",
 	"dependencies": {
 		"bcryptjs": "^2.4.3",

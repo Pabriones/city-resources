@@ -1,10 +1,10 @@
 .btn {
-  border: none;
-  background: none;
-  margin: 0px 0.4vw;
-  color: #222831;
-  cursor: pointer;
-  font-size: 2vh;
+	border: none;
+	background: none;
+	margin: 0px 0.4vw;
+	color: #222831;
+	cursor: pointer;
+	font-size: 2vh;
 }
 
 .btn-primary:hover,
@@ -12,10 +12,10 @@
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background: none;
-  font-weight: bold;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: none;
-  color: #222831;
+	background: none;
+	font-weight: bold;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color: #222831;
 }

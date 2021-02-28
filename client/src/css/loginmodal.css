@@ -18,9 +18,11 @@ box-shadow:none !important;
   font-weight: bold;
   font-style: normal;
   font-weight: bold;
- 
- 
   color: #222831;
 }
 
- 
+ .modal-body {
+   width: 50%;
+   background-color: aliceblue;
+   height: 100%;
+ }

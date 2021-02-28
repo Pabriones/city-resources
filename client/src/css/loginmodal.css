@@ -19,3 +19,9 @@
 	text-decoration: none;
 	color: #222831;
 }
+
+ .modal-body {
+   width: 50%;
+   background-color: aliceblue;
+   height: 100%;
+ }

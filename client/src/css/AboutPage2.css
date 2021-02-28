@@ -1,9 +1,9 @@
 
 .ab2-container {
-  background-color: #eddfd0;
+  background-color: #F3EDE5;
     width: auto;
     margin: auto;
-    border: 1px solid #eddfd0;
+    border-bottom: 10px solid #a17b6c;
   }
 
 
@@ -27,7 +27,7 @@
 .ab2-text-container {
   font-family: "Roboto", "sans-serif";
   color: #22333b;
-  margin: 0% 5%;
+  margin: 0% 5% 8%;
   font-size: 2vh;
   text-align: justify;
 }

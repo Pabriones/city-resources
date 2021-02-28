@@ -7,6 +7,7 @@ import SearchDirectoryPage from './components/SearchDirectoryPage';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Footer from './components/Footer';
 import LoginModal from './components/LoginModal';
+import RegisterModal from './components/RegisterModal';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/directory" component={SearchDirectoryPage} />
 				<Route path="/footer" component={Footer} />
 				<Route path="/loginmodal" component={LoginModal} />
+				<Route path="/registermodal" component={RegisterModal} />
 			</Switch>
 		</Router>
 	);

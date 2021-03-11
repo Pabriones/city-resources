@@ -1,0 +1,97 @@
+.app {
+    padding: 5px 20px;
+    background-color: #e9e3e3;
+  }
+  
+  .row {
+    display: flex;
+  }
+  input[type="text"]{
+    padding:12px 24px;
+    border:1px solid #d3d3d3;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-6.p-main{
+    padding:50px;
+  }
+  .bg-orange{
+    background-color: #f5ecdd;;
+  }
+  .input-group{
+    padding:2px 0;
+    color:#616161;
+  }
+  .input-section{
+    padding:12px 0;
+    column-count: 2;
+  }
+  
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
+  .mt-2, .mb-2 {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  
+  .hero {
+    /* overflow: hidden; */
+    /* max-height: 75vh; */
+  }
+  
+  .section p {
+    font-size: 13px;
+  }
+  .footer-wrapper {
+    display: flex;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .footer-wrapper li {
+    list-style-type: none;
+  }
+  
+  .footer-logo {
+    width: 30%;
+  }
+  
+  .footer-li-1, .footer-li-2 {
+    width: 20%;
+  }
+  
+  .white {
+    background-color: #fff;
+  }
+  
+  .print-btn {
+    background-color: #23363c;
+    color: #b4b19e;
+    padding: 12px 20px;
+    border-radius: 40px;
+  }
+  
+  .scroll {
+    overflow-y: scroll;
+    height: 900px;
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    .row {
+      flex-wrap: wrap;
+    }
+    .col-6 {
+      width: 100%;
+    }
+  }

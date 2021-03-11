@@ -4,6 +4,7 @@ import RegisterModal from './RegisterModal';
 
 function LoginModal() {
   const [show, setShow] = useState(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -14,7 +15,7 @@ function LoginModal() {
       </Button>
 
       <Modal show={show} onHide={handleClose} animation={false}>
-     {/*    <Modal.Header>
+        <Modal.Header>
           <Modal.Title>Log in here</Modal.Title>
           <div>
             <RegisterModal/>
@@ -22,22 +23,21 @@ function LoginModal() {
         </Modal.Header>
 
         {/* Start of form for user to login */}
-        
-        <div class="modal-dialog modal-lg">
+        <Form>
         {/* Enter email address  */}
-     
-        <div class= "form-group" controlId="formBasicEmail">
+        <Modal.Body>I am under construction</Modal.Body>
+        <Form.Group controlId="formBasicEmail">
         <Form.Label>Email Address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" /></div>
-        
-        <div class ="form.group" controlId="formBasicPassword">
+        <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
+        <Form.Group controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" />
-        </div>
+        </Form.Group>
         <Form.Group controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Remember Me" />
         </Form.Group>
-        </div>
+        </Form>
         {/* End of form for users to login */}
 
         <Modal.Footer>

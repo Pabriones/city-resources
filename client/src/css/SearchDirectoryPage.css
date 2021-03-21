@@ -1,8 +1,4 @@
-.app {
-    padding: 5px 20px;
-    background-color: #e9e3e3;
-  }
-  
+
   .row {
     display: flex;
   }
@@ -19,8 +15,8 @@
   .col-6.p-main{
     padding:50px;
   }
-  .bg-orange{
-    background-color: #f5ecdd;;
+  .results{
+    background-color: #EAE0D5;;
   }
   .input-group{
     padding:2px 0;
@@ -32,12 +28,12 @@
   }
   
   .mb-0 {
-    margin-bottom: 0;
+    margin: 2%;
   }
   
-  .underline {
+/*   .underline {
     text-decoration: underline;
-  }
+  } */
   
   .mt-2, .mb-2 {
     margin-top: 13px;
@@ -52,7 +48,8 @@
   .section p {
     font-size: 13px;
   }
-  .footer-wrapper {
+
+/*   .footer-wrapper {
     display: flex;
     padding: 50px;
     background-color: #fff;
@@ -68,11 +65,11 @@
   
   .footer-li-1, .footer-li-2 {
     width: 20%;
-  }
+  } */
   
-  .white {
+  /* .white {
     background-color: #fff;
-  }
+  } */
   
   .print-btn {
     background-color: #23363c;

@@ -23,7 +23,7 @@ let filterArray = [
     { filterName: 'LGBTQIA + Services' },
     { filterName: 'Legal Services' },
     { filterName: 'Mail Services' },
-    { filterName: 'Mental Health Setvices' },
+    { filterName: 'Mental Health Services' },
     { filterName: 'Native and Indegious Services' },
     { filterName: 'Pets and Service Animal Services' },
     { filterName: 'Problem Gambling Services' },
@@ -38,14 +38,13 @@ let filterArray = [
 
 const SearchDirectoryPage = () => {
 	return (
-		<div className="app">
-			<p style={{color: '#b8b2b2'}}>Search Directory</p>      
+		<div className="app">    
 			{/* Row 1 */}
 			<div className="row hero">
 
 				{/* Col 1 */}
 				<div className="col-6 p-main white">
-					<div className="search">
+					<div className="search-bar">
 					<input placeholder="What are you looking for?" type="text" />
 					</div>
 					<h2 className="mb-0">FILTER BY</h2>
@@ -62,7 +61,7 @@ const SearchDirectoryPage = () => {
 				</div>
 
 				{/* Col 2 */}
-				<div className="col-6 p-main bg-orange scroll">
+				<div className="col-6 p-main results scroll">
             		<div className="section">
 
 						<a href="#"><h1>Bread For Life</h1></a>

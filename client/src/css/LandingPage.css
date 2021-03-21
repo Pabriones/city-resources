@@ -1,17 +1,12 @@
 
 
-.parallaxx {
-  height: 100%;
+.lp-container {
   background-image: url("../Images/spaceneedle.jpg");
-  background-attachment: fixed;
+  min-height: 100vh;
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 90%;
-}
-
-.spacee {
-  height: 100vh;
 }
 
 .lp-title {

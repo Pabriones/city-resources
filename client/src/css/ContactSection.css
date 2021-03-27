@@ -12,6 +12,7 @@
   width: 50%;
   padding: 4% 5% 2% 5%;
   height: 100%;
+  word-break: break-word;
 }
 
 .emergencyNumbers h1 {
@@ -43,6 +44,7 @@
 .contactInfo h2 {
   font-size: 4vh;
   padding-top: 3%;
+  word-break: break-word;
 }
 
 .mail-icon {

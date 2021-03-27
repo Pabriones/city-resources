@@ -78,7 +78,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-{/*         <div className="ab2-images">
+        {/*         <div className="ab2-images">
           <div className="ab2-crop">
             <img
               src={require("../Images/steve-knutson-lQ2BzDNmnHE-unsplash.jpg")}

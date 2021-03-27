@@ -17,7 +17,7 @@
 }
 
 .col-lg {
- padding-left: 80%;
+ padding-left: 85%;
  
 }
 
@@ -34,6 +34,7 @@
   font-family: "Roboto", "sans-serif";
   text-decoration: none;
   color: #222831;
+  cursor: pointer;
 }
 
 .ft-link:hover,

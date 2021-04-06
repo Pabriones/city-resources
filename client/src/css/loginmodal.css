@@ -20,8 +20,12 @@
 	color: #222831;
 }
 
- .modal-body {
-   width: 50%;
-   background-color: aliceblue;
-   height: 100%;
- }
+.modal-body {
+	width: 50%;
+	background-color: aliceblue;
+	height: 100%;
+}
+
+.loginst {
+	margin: 50%;
+}

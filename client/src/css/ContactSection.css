@@ -1,0 +1,81 @@
+.contact-container {
+  background-color: #eddfd0;
+  width: auto;
+  margin: auto;
+  border: 1px solid #eddfd0;
+}
+
+.emergencyNumbers {
+  font-size: 1.5vh;
+  background-color: #dfd7d7;
+  float: right;
+  width: 50%;
+  padding: 4% 5% 2% 5%;
+  height: 100%;
+  word-break: break-word;
+}
+
+.emergencyNumbers h1 {
+  font-family: Roboto Condensed;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3vh;
+  color: #641111;
+}
+
+.contactInfo {
+  padding: 3% 5% 2% 5%;
+  font-size: 1.8vh;
+  background-color: #dfd7d7;
+  font-family: Roboto;
+  font-style: normal;
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+}
+
+.contactInfo h1 {
+  font-size: 4vh;
+  font-weight: 600;
+  color: #22333b;
+}
+
+.contactInfo h2 {
+  font-size: 4vh;
+  padding-top: 3%;
+  word-break: break-word;
+}
+
+.mail-icon {
+  font-size: 3.2vh;
+}
+
+.ab2-images {
+}
+
+.ab2-crop {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  float: left;
+  display: -webkit-inline-flex;
+}
+
+.ab2-crop img {
+  width: 100%;
+  margin: -20% 0% -26% 0%;
+}
+
+.ab2-crop2 {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  float: left;
+  display: -webkit-inline-flex;
+}
+
+.ab2-crop2 img {
+  width: 100%;
+  margin: -32% 0% -18.8% 0%;
+}

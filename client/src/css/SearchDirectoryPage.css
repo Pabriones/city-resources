@@ -1,0 +1,161 @@
+.sd-container {
+  width: 100%;
+}
+
+.sd-title {
+  font-family: "Roboto", "sans-serif";
+  font-style: normal;
+  font-size: 6vh;
+  text-align: left;
+  padding: 2vh 4vh 3vh;
+  color: #22333b;
+}
+
+.row {
+  display: flex;
+}
+
+input[type="text"] {
+  padding: 1vh 3vh;
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  box-sizing: border-box;
+}
+.sd-filterContainer {
+  width: 50%;
+  padding: 2% 3% ;
+}
+/* .col-6.p-main {
+ padding: 5% 5% 2%;
+} */
+.sd-results-container {
+  background-color: #eae0d5;
+  padding: 2%;
+}
+
+.sd-search-results {
+  padding: 3% 4% 2%;
+  font-size: 2vh;
+  font-family: "Roboto", "sans-serif";
+}
+
+.sd-services {
+  font-family: "Roboto", "sans-serif";
+  padding: 3%;
+  color: #6e6d6d;
+  white-space: nowrap;
+  font-size: 2.3vh;
+}
+
+input.checkbox {
+  width: 15%;
+  height: 2.5vh;
+  vertical-align: middle;
+}
+
+.input-section {
+  padding: 1.5% 2% 2%;
+  column-count: 2;
+}
+
+.mb-0 {
+  padding-top: 6.5%;
+  font-size: 4vh;
+}
+
+/*   .underline {
+    text-decoration: underline;
+  } */
+
+.mt-2,
+.mb-2 {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+/* .hero {
+  /* overflow: hidden; */
+/* max-height: 75vh; }*/
+
+/* 
+.section p {
+  font-size: 2vh;
+  font-family: "Roboto", "sans-serif";
+} */
+
+/*   .footer-wrapper {
+    display: flex;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .footer-wrapper li {
+    list-style-type: none;
+  }
+  
+  .footer-logo {
+    width: 30%;
+  }
+  
+  .footer-li-1, .footer-li-2 {
+    width: 20%;
+  } */
+
+/* .white {
+    background-color: #fff;
+  } */
+
+.print-btn {
+  background-color: #23363c;
+  border-radius: 2%;
+  width: 35%;
+}
+
+.print-btn h2 {
+  color: #b4b19e;
+  margin: 5%;
+  font-size: 2.5vh;
+  font-family: "Roboto", "sans-serif";
+  font-weight: bold;
+}
+
+.sd-btn {
+  padding: 5% 5%;
+  text-align: center;
+}
+
+.scroll {
+  overflow-y: scroll;
+  max-height: 85vh;
+  min-height: 85vh;
+}
+
+.sd-link { 
+  font-family: "Roboto", "sans-serif";
+  color: #607da8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sd-link h1 {
+  font-size: 3.5vh;
+}
+
+
+.sd-link:hover,
+.sd-link-logo:hover {
+  font-weight: 500;
+  color: #41659b;
+  text-decoration: underline;
+  font-family: "Roboto", "sans-serif";
+}
+
+
+@media screen and (max-width: 1000px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}

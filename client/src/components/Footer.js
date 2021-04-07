@@ -1,8 +1,7 @@
 import React from "react";
 import "../../src/css/Footer.css";
 import { Link as Link2 } from "react-scroll";
-
-
+import { Link as Link1 } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,10 +11,10 @@ const Footer = () => {
           {/* Column1 */}
           <div className="col-sm">
             <div className="ft-text">
-              <a href="url" className="ft-link-logo">
+              <Link1 className="ft-link-logo" to="/" spy={true} duration={500}>
                 CITY <br />
                 RESOURCES
-              </a>
+              </Link1>
             </div>
           </div>
           {/* Column2 */}
@@ -23,24 +22,24 @@ const Footer = () => {
             <ui className="list-unstyled">
               <div className="ft-text">
                 <li>
-                  <Link2
-                    className="ft-link"
-                    to="LandingPage"
-                    spy={true}
-                    duration={500}
-                  >
+                  <Link1 to className="ft-link" to="/">
                     HOME
-                  </Link2>
+                  </Link1>
                 </li>
               </div>
 
               <div className="ft-text">
                 {" "}
                 <li>
-                  <a href="url" className="ft-link">
+                  <Link1
+                    className="ft-link"
+                    to="/directory"
+                    spy={true}
+                    duration={500}
+                  >
                     {" "}
                     SEARCH DIRECTORY{" "}
-                  </a>
+                  </Link1>
                 </li>
               </div>
             </ui>
@@ -66,10 +65,14 @@ const Footer = () => {
               <div className="ft-text">
                 {" "}
                 <li>
-                  <a href=" " className="ft-link">
-                    {" "}
-                    CONTACT{" "}
-                  </a>
+                  <Link2
+                    className="ft-link"
+                    to="ContactSection"
+                    spy={true}
+                    duration={500}
+                  >
+                    CONTACT
+                  </Link2>
                 </li>
               </div>
             </ui>

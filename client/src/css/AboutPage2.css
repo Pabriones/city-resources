@@ -1,23 +1,24 @@
 
 .ab2-container {
-  background-color: #eddfd0;
+  background-color: #F3EDE5;
     width: auto;
     margin: auto;
-    border: 1px solid #eddfd0;
+    border-bottom: 10px solid #a17b6c;
   }
 
 
 .ab2-content h1 {
+      padding: 5% 5% 2%;
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-size: 4vh;
-  padding: 3.5% 2%;
+  
   color: #22333b;
 }
 
 .ab2-title {
   font-family: "Roboto", "sans-serif";
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: bold;
   color: #22333b;
    
@@ -26,12 +27,12 @@
 .ab2-text-container {
   font-family: "Roboto", "sans-serif";
   color: #22333b;
-  margin: 0% 5%;
-  font-size: 3vh;
+  margin: 0% 5% 8%;
+  font-size: 2vh;
   text-align: justify;
 }
 
-.ab2-text-container p {
+/* .ab2-text-container p {
   margin: 0.2% 0% 2.8%;
 }
 
@@ -63,4 +64,4 @@
 .ab2-crop2 img {
   width: 100%;
   margin: -32% 0% -18.8% 0%;
-}
+} */

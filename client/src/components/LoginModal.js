@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import RegisterModal from './RegisterModal';
-import '../../src/css/loginmodal.css';
+//import '../../src/css/loginmodal.css';
 
 function LoginModal() {
   const [show, setShow] = useState(false);
@@ -24,7 +24,7 @@ function LoginModal() {
         </Modal.Header>
 
         {/* Start of form for user to login */}
-        <div classname = "loginst">
+       
         <Form>
         {/* Enter email address  */}
         <Modal.Body>I am under construction</Modal.Body>
@@ -40,7 +40,7 @@ function LoginModal() {
         <Form.Check type="checkbox" label="Remember Me" />
         </Form.Group>
         </Form>
-        </div>
+        
         {/* End of form for users to login */}
 
         <Modal.Footer>

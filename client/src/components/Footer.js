@@ -12,8 +12,11 @@ const Footer = () => {
           <div className="col-sm">
             <div className="ft-text">
               <Link1 className="ft-link-logo" to="/" spy={true} duration={500}>
-                CITY <br />
-                RESOURCES
+                <img
+                  src={require("../Images/logoImg.png")}
+                  alt=""
+                  width="50%"
+                />
               </Link1>
             </div>
           </div>
@@ -89,3 +92,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

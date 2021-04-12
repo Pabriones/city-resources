@@ -34,7 +34,7 @@ class LandingPage extends React.Component {
 							</Link1>
 						</div>
 						<div className="lp-flex-container">
-							<div>
+					{/* 		<div>
 								<Icon>
 									<button type="button" class="searchDirectoryBtn">
 										<p className="searchText">
@@ -45,7 +45,7 @@ class LandingPage extends React.Component {
 										</p>
 									</button>
 								</Icon>
-							</div>
+							</div> */}
 
 							{/*  <div>
                 <Icon>

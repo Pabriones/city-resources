@@ -1,21 +1,21 @@
 .ab1-container {
- 
-  width: fit-content;
+  padding: 0% 5% 8%;
+  width: 100%;
 }
 
 .ab1-heading h1 {
   font-family: "Roboto", "sans-serif";
   font-weight: bold;
-  font-size: 8vh;
-  padding: 10% 0% 0% 5%;
-  line-height: 8vh;
-  color: #47545A;
+  font-size: 11vh;
+  padding: 10% 0% 4% 5%;
+  line-height: 13vh;
+  color: #393531;
 }
 
 .ab1-intro {
   font-family: "Roboto";
-  font-size: 3.1vh;
-  padding: 0% 5% 10% 5%;
+  font-size: 3.4vh;
+  padding: 0% 8% 5% 5%;
   color: #000000;
 }
 
@@ -90,4 +90,89 @@
 
 .space {
   height: 22vh;
+}
+
+.faceImg {
+  max-width: 100%;
+
+  filter: sepia(50%);
+}
+
+.row {
+  width: 100%;
+}
+
+.directLinkBtn {
+  background-color: #141414;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3vh;;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin: 31px auto 0 0;
+  padding: 4px 45px 1px 51px;
+}
+
+@media (max-width: 1199px) {
+  .directLinkBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .directLinkBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .directLinkBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .directLinkBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+.directLink {
+  margin: 0px 2vw;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.directLink:hover {
+  font-style: normal;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.directLinkBtn:hover {
+  background-color: #847a6e;
+  border: none;
+  cursor: pointer;
+}
+
+.quote {
+  background-color: #272726;
+  color: #ffffff;
+  padding: 10%;
+  font-size: 3vh;
+  font-style: italic;
+}
+
+.searchText {
+  margin: 5%;
 }

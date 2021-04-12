@@ -1,5 +1,4 @@
 .contact-container {
-  background-color: #eddfd0;
   width: auto;
   margin: auto;
   border: 1px solid #eddfd0;
@@ -7,10 +6,10 @@
 
 .emergencyNumbers {
   font-size: 1.5vh;
-  background-color: #dfd7d7;
   float: right;
-  width: 50%;
+  width: 55%;
   padding: 4% 5% 2% 5%;
+  background-color: whitesmoke;
   height: 100%;
   word-break: break-word;
 }
@@ -26,7 +25,6 @@
 .contactInfo {
   padding: 3% 5% 2% 5%;
   font-size: 1.8vh;
-  background-color: #dfd7d7;
   font-family: Roboto;
   font-style: normal;
   float: left;

@@ -21,7 +21,7 @@ const ContactSection = () => {
                   are any other resources we should add, please let us know!
                 </p>
                 <h2>hello@cityresources.com</h2>
-              </div>
+              </div> </div>
 
               <div class="col-xs-6">
                 <div className="emergencyNumbers">
@@ -74,7 +74,7 @@ const ContactSection = () => {
                   </li>
                 </div>
               </div>
-            </div>
+           
           </div>
         </div>
 

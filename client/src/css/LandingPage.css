@@ -1,31 +1,30 @@
-
-
 .lp-container {
-  background-image: url("../Images/spaceneedle.jpg");
+  background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
   min-height: 100vh;
   max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #e0e0e0;
 }
 
 .lp-title {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
-
-  font-size: 10vh;
-  text-align: center;
-
-  padding-top: 1.5vh;
-  color: #22333b;
+  font-size: 4vh;
+  padding-top: 4vh;
+  font-weight:bolder;
+  margin-left: 15vh;
+  color: #fcfcfc;
+  opacity: 55%;
 }
 
 .lp-nav {
-  font-size: 2vh;
+  font-size: 5vh;
   font-family: "Roboto", "sans-serif";
 
   cursor: pointer;
-  text-align: center;
+  margin-left: 15vh;
 }
 
 .lp-link2 {
@@ -70,17 +69,40 @@
   border: none;
   border-radius: 15px;
   background-color: #c6ac8f;
-  outline: none;
-  max-height: 12vh;
-  margin-right: 1vh;
-  width: 50vh;
+  margin: 65px 75px 60px auto;
+  padding: 5px 60px 5px;
+}
+/* @media (max-width: 1199px) {
+  .usearchDirectoryBtn {
+    margin-top: 116px;
+    margin-right: auto;
+  }
 }
 
+@media (max-width: 991px) {
+  .searchDirectoryBtn {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .searchDirectoryBtn {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .searchDirectoryBtn {
+    margin-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+} */
 .searchText {
   display: inline;
   font-family: "Roboto", "Helvetica";
   font-size: 4vh;
-  color: #3F2D19;
+  color: #ffffff;
   width: 13em;
   line-height: 2.5em;
 }
@@ -88,7 +110,7 @@
 .btnLink {
   margin: 0px 2vw;
   text-decoration: none;
-  color: #3F2D19;
+  color: #3f2d19;
   cursor: pointer;
 }
 
@@ -96,7 +118,7 @@
   font-style: normal;
   font-weight: bolder;
   text-decoration: none;
-  color: #3F2D19;
+  color: #3f2d19;
 }
 
 .searchDirectoryBtn:hover {

@@ -16,7 +16,7 @@
 }
 
 .col-lg {
-  padding-left: 85%;
+  padding-left: 80%;
 }
 
 .ft-link {
@@ -28,12 +28,12 @@
   cursor: pointer;
 }
 
-/* .ft-link-logo {
+.ft-link-logo {
   font-family: "Roboto", "sans-serif";
   text-decoration: none;
   color: #222831;
   cursor: pointer;
-} */
+}
 
 .ft-link:hover,
 .ft-link-logo:hover {

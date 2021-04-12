@@ -10,8 +10,8 @@ const AboutPage2 = () => {
           <div>
             <h1>
               With an increase in hardships due to the COVID-19 pandemic and the
-              resulting economic recession, it has created new barriers for people
-              already struggling.
+              resulting economic recession, it has created new barriers for
+              people already struggling.
             </h1>
 
             <div className="ab2-text-container">
@@ -19,7 +19,7 @@ const AboutPage2 = () => {
                 Mauris porttitor consequat ligula, nec porttitor ante commodo
                 cursus.
               </div>
-              <p>
+              
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
                 quam aliquam, sodales ante id, porta odio. Curabitur tincidunt
                 tristique mauris quis placerat. Curabitur sit amet egestas ante,
@@ -30,26 +30,23 @@ const AboutPage2 = () => {
                 lectus mauris, rutrum vel malesuada quis, tincidunt a augue.
                 Maecenas vel mattis ligula. Proin fermentum nisi eu odio ornare,
                 sed consectetur ligula maximus.
-              </p>
+              
               <div className="ab2-title">
                 Proin fermentum nisi eu odio ornare, sed consectetur ligula
                 maximus.
               </div>
-              <p>
-                Vivamus volutpat nulla auctor tempor iaculis. Aliquam ac rhoncus
-                neque, id luctus ante. Sed ornare nisl eu libero molestie
-                luctus. Cras interdum dignissim risus, eu dapibus metus molestie
-                mollis. Nullam porttitor ornare mi at feugiat. Integer
-                hendrerit, felis at suscipit sagittis, ex felis ultricies massa,
-                nec varius nibh lectus vitae ligula. Sed et orci porta,
-                fermentum nibh non, vestibulum quam. Morbi iaculis porta felis
-                vitae molestie. Fusce vel libero laoreet, hendrerit ante nec,
-                scelerisque tortor. Etiam vel augue quis nunc dapibus dignissim
-                quis nec tortor. Praesent ac posuere urna, sed molestie nisl.
-              </p>
+              
+                Seattle's homelessness crisis has been years in the making,
+                and its roots run deep, touching racial inequity, economic
+                disparities, mental health treatment, rising housing costs,
+                mental health, addiction, and so much more. We have a
+                responsibility to be honest that this crisis won't go away
+                overnight. Lasting, meaningful progress will take years. But we
+                still must act - and are acting - to improve life in Seattle."-
+                Mayor Jenny Durkan"
+              
             </div>
           </div>
-   
         </div>
       </div>
     </body>

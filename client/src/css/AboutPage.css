@@ -89,14 +89,9 @@
 }
 
 .space {
-  height: 22vh;
+  height: 40vh;
 }
 
-.faceImg {
-  max-width: 100%;
-
-  filter: sepia(50%);
-}
 
 .row {
   width: 100%;

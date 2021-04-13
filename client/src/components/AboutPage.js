@@ -66,13 +66,9 @@ const AboutPage = () => {
                 </div>
           
             </div>
-          </div>
+          </div> </div>
 
-          {/* <div className = "parallax">
-
-
-
-<div className="space"> </div></div> */}
+   
 
           {/*           <div>
             <div className="ab1-content">
@@ -109,7 +105,7 @@ const AboutPage = () => {
               />
             </div>
           </div> */}
-        </div>
+       
         <div className="quote">
           "Seattle's homelessness crisis has been years in the making, and its
           roots run deep, touching racial inequity, economic disparities, mental
@@ -119,6 +115,11 @@ const AboutPage = () => {
           But we still must act - and are acting - to improve life in Seattle."-
           Mayor Jenny Durkan
         </div>
+        <div className = "parallax">
+
+
+
+<div className="space"> </div></div> 
       </div>
     </body>
   );

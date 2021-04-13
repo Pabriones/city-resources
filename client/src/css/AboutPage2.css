@@ -1,38 +1,35 @@
-
 .ab2-container {
- background-color: #ebedee;
-    width: 100%;
-    margin: auto;
-  
-  }
-
+  background-color: #ebedee;
+  width: 100%;
+  margin: auto;
+}
 
 .ab2-content h1 {
-      padding: 5% 5% 2%;
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-size: 4vh;
-  
   color: #22333b;
+  padding-bottom: 2%;
 }
 
 .ab2-title {
   font-family: "Roboto", "sans-serif";
-  font-size: 2.5vh;
+  font-size: 2.8vh;
   font-weight: bold;
   color: #22333b;
+
 }
 
 .ab2-text-container {
   font-family: "Roboto", "sans-serif";
-  margin: 0% 5% 9%;
+  padding: 2%;
   font-size: 2.1vh;
   text-align: justify;
 }
 
 .ab2-text-container p {
-  margin: 0.2% 0% 3%;
   padding-bottom: 2%;
+  font-size: 2.5vh;
 }
 
 /*.ab2-images {

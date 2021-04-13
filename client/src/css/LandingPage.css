@@ -11,7 +11,7 @@
 .lp-title {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
-  font-size: 4vh;
+  font-size: 3.2vh;
   padding-top: 4vh;
   font-weight:bolder;
   margin-left: 15vh;
@@ -20,9 +20,8 @@
 }
 
 .lp-nav {
-  font-size: 5vh;
+  font-size: 4vh;
   font-family: "Roboto", "sans-serif";
-
   cursor: pointer;
   margin-left: 15vh;
 }

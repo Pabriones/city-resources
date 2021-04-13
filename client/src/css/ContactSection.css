@@ -1,7 +1,5 @@
 .contact-container {
-  width: auto;
-  margin: auto;
-  border: 1px solid #eddfd0;
+  width: 100%;
 }
 
 .emergencyNumbers {
@@ -9,7 +7,6 @@
   float: right;
   width: 55%;
   padding: 4% 5% 2% 5%;
-  background-color: whitesmoke;
   height: 100%;
   word-break: break-word;
 }
@@ -22,42 +19,68 @@
   color: #641111;
 }
 
-.contactInfo {
-  padding: 3% 5% 2% 5%;
-  font-size: 1.8vh;
-  font-family: Roboto;
-  font-style: normal;
-  float: left;
-  width: 50%;
-  height: 100%;
-  text-align: justify;
+.contact-content {
+  background-color: #727a7e;
+  text-align: center;
 }
 
-.contactInfo h1 {
-  font-size: 4vh;
+.contact-info {
+  padding: 3% 5% 2% 5%;
+  font-size: 2.5vh;
+  font-family: Roboto;
+  padding: 5%;
+  font-style: normal;
+  height: 100%;
+}
+
+.contact-info h1 {
+  font-size: 5vh;
   font-weight: 600;
+  font-family: Roboto;
   color: #22333b;
 }
 
-.contactInfo h2 {
-  font-size: 4vh;
-  padding-top: 3%;
-  word-break: break-word;
+.contact-info p {
+  padding: 2% 15% 0% 15%;
 }
-
 .mail-icon {
   font-size: 3.2vh;
+}
+
+.contact-info-2 {
+  background-color: #e2e2e2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 25px 20px -30px;
+}
+
+.contact-info-2 h2{
+  font-family: Roboto mono;
+}
+
+.contact-info-2 h1 {
+  font-size: 3.0vh;
+  padding: 1%;
+  font-weight: 300;
+}
+
+.email {
+  padding: 5%;
+}
+
+.add-resource {
+padding: 5%
+}
+.email h2 {
+  font-size: 5vh;
+ 
 }
 
 .ab2-images {
 }
 
 .ab2-crop {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
+  width: 100%;
+  margin: -32% 0% -18.8% 0%;
 }
 
 .ab2-crop img {
@@ -76,4 +99,68 @@
 .ab2-crop2 img {
   width: 100%;
   margin: -32% 0% -18.8% 0%;
+}
+
+
+.resourcePgBtn {
+  background-color: #141414;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2vh;;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+/*   margin: 31px auto 0 0;
+  padding: 4px 45px 1px 51px; */
+}
+
+@media (max-width: 1199px) {
+  .resourcePgBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .resourcePgBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .resourcePgBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .resourcePgBtn {
+    font-size: 22px;
+    margin: 31px auto 0 0;
+    padding: 4px 4px 1px 15px;
+  }
+}
+
+.resourcePg {
+  margin: 0px 1vw;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.resourcePg:hover {
+  font-style: normal;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.resourcePgBtn:hover {
+  background-color: #847a6e;
+  border: none;
+  cursor: pointer;
 }

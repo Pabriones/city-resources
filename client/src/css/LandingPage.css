@@ -11,7 +11,7 @@
 .lp-title {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
-  font-size: 3.2vh;
+  font-size: 4.2vh;
   padding-top: 4vh;
   font-weight:bolder;
   margin-left: 15vh;
@@ -20,10 +20,11 @@
 }
 
 .lp-nav {
-  font-size: 4vh;
+  font-size: 6vh;
   font-family: "Roboto", "sans-serif";
   cursor: pointer;
   margin-left: 15vh;
+
 }
 
 .lp-link2 {
@@ -39,6 +40,7 @@
   color: #222831;
   cursor: pointer;
   font-weight: bold;
+
 }
 
 .lp-link:hover {

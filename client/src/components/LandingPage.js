@@ -16,7 +16,16 @@ class LandingPage extends React.Component {
 			<body>
 				<div id="LandingPage">
 					<div className="lp-container">
-						<div className="lp-title">CITY RESOURCES </div>{' '}
+						<div className="row">
+							<div className="col-sm">
+						<div className="lp-title">CITY RESOURCES </div></div>
+						 
+							<div className="col-md">	<Link1 className="loginBtn" to="contact" spy={true} duration={500}>
+								<LoginModal />
+							</Link1>
+</div></div> 
+
+
 						<div className="lp-nav">
 							<Link1 className="lp-link" to="AboutPage" spy={true} duration={500}>
 								ABOUT
@@ -25,13 +34,7 @@ class LandingPage extends React.Component {
 							<Link1 className="lp-link" to="ContactSection" spy={true} duration={500}>
 								CONTACT
 							</Link1>
-							<Link1 className="lp-link2" to="contact" spy={true} duration={500}>
-								<LoginModal />
-							</Link1>
-
-							<Link1 className="lp-link2" to="contact" spy={true} duration={500}>
-								<RegisterModal />
-							</Link1>
+							
 						</div>
 						<div className="lp-flex-container">
 					{/* 		<div>

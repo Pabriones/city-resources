@@ -12,7 +12,7 @@
 }
 
 .emergencyNumbers h1 {
-  font-family: Roboto Condensed;
+  font-family: Roboto ;
   font-style: italic;
   font-weight: normal;
   font-size: 3vh;
@@ -20,24 +20,25 @@
 }
 
 .contact-content {
-  background-color: #727a7e;
+  background-color: #694839;
   text-align: center;
 }
 
 .contact-info {
   padding: 3% 5% 2% 5%;
-  font-size: 2.5vh;
+  font-size: 3.5vh;
   font-family: Roboto;
   padding: 5%;
+  color: #cfcccc;
   font-style: normal;
   height: 100%;
 }
 
 .contact-info h1 {
-  font-size: 5vh;
-  font-weight: 600;
+  font-size: 6vh;
+  font-weight: 800;
   font-family: Roboto;
-  color: #22333b;
+  color: #ffffff;
 }
 
 .contact-info p {
@@ -54,7 +55,7 @@
 }
 
 .contact-info-2 h2{
-  font-family: Roboto mono;
+  font-family: Roboto;
 }
 
 .contact-info-2 h1 {

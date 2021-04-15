@@ -22,7 +22,7 @@ function LoginModal() {
           <div className="form-container sign-in-container">
             <form action="#">
               <h1>SIGN IN</h1>
-              <input type="email" placeholder="Name" />
+              <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <a href="#"> Forgot Password</a>
               <button>Sign In</button>

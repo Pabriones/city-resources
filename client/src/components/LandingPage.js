@@ -1,22 +1,34 @@
-import React from 'react';
-import '../../src/css/LandingPage.css';
-import { Icon } from 'semantic-ui-react';
-import Footer from './Footer';
-import AboutPage from './AboutPage';
-import AboutPage2 from './AboutPage2';
-import ContactSection from './ContactSection';
-import { Link as Link1 } from 'react-scroll';
-import { Link as Link2 } from 'react-router-dom';
-import LoginModal from './LoginModal';
-import RegisterModal from './RegisterModal';
+import React from "react";
+import "../../src/css/LandingPage.css";
+import { Icon } from "semantic-ui-react";
+import Footer from "./Footer";
+import AboutPage from "./AboutPage";
+import AboutPage2 from "./AboutPage2";
+import ContactSection from "./ContactSection";
+import TopNav from "./TopNav";
+import { Link as Link1 } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
+import LoginModal from "./LoginModal";
+import RegisterModal from "./RegisterModal";
 
 class LandingPage extends React.Component {
-	render() {
-		return (
-			<body>
-				<div id="LandingPage">
-					<div className="lp-container">
-						<div className="lp-title">CITY RESOURCES </div>{' '}
+  render() {
+    return (
+      <body>
+        <div id="LandingPage">
+          <div className="lp-container">
+            <div className="lp-title">CITY RESOURCES </div>
+            <TopNav />
+            {/* <div className="row">
+							<div className="col-sm">
+						<div className="lp-title">CITY RESOURCES </div></div>
+						 
+							<div className="col-md">	<Link1 className="loginBtn" to="contact" spy={true} duration={500}>
+								<LoginModal />
+							</Link1>
+</div></div> 
+
+
 						<div className="lp-nav">
 							<Link1 className="lp-link" to="AboutPage" spy={true} duration={500}>
 								ABOUT
@@ -25,16 +37,10 @@ class LandingPage extends React.Component {
 							<Link1 className="lp-link" to="ContactSection" spy={true} duration={500}>
 								CONTACT
 							</Link1>
-							<Link1 className="lp-link2" to="contact" spy={true} duration={500}>
-								<LoginModal />
-							</Link1>
-
-							<Link1 className="lp-link2" to="contact" spy={true} duration={500}>
-								<RegisterModal />
-							</Link1>
-						</div>
-						<div className="lp-flex-container">
-							<div>
+							
+						</div> */}
+            <div className="lp-flex-container">
+              {/* 		<div>
 								<Icon>
 									<button type="button" class="searchDirectoryBtn">
 										<p className="searchText">
@@ -45,9 +51,9 @@ class LandingPage extends React.Component {
 										</p>
 									</button>
 								</Icon>
-							</div>
+							</div> */}
 
-							{/*  <div>
+              {/*  <div>
                 <Icon>
                   <button type="button" class="emergencyLinesBtn">
                     <p className="emergencyText">
@@ -59,18 +65,18 @@ class LandingPage extends React.Component {
                   </button>
                 </Icon>
               </div> */}
-						</div>
-					</div>
-				</div>
-				<div>
-					<AboutPage />
-					<AboutPage2 />
-					<ContactSection />
-					<Footer />
-				</div>
-			</body>
-		);
-	}
+            </div>
+          </div>
+        </div>
+        <div>
+          <AboutPage />
+          <AboutPage2 />
+          <ContactSection />
+          <Footer />
+        </div>
+      </body>
+    );
+  }
 }
 
 export default LandingPage;

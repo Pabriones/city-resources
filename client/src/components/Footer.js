@@ -4,30 +4,28 @@ import { Link as Link2 } from 'react-scroll';
 import { Link as Link1 } from 'react-router-dom';
 
 const Footer = () => {
-	return (
-		<div className="footer">
-			<div className="ft-container">
-				<div className="row">
-					{/* Column1 */}
-					<div className="col-sm">
-						<div className="ft-text">
-							<Link1 className="ft-link-logo" to="/" spy={true} duration={500}>
-								CITY <br />
-								RESOURCES
-							</Link1>
-						</div>
-					</div>
-					{/* Column2 */}
-					<div className="col-sm">
-						<ui className="list-unstyled">
-							<div className="ft-text">
-								<li>
-									<Link1 to className="ft-link" to="/">
-										HOME
-									</Link1>
-								</li>
-							</div>
-
+  return (
+    <div className="footer">
+      <div className="ft-container">
+        <div className="row">
+          {/* Column1 */}
+          <div className="col-sm">
+            <div className="ft-text">
+              <Link1 className="ft-link-logo" to="/" spy={true} duration={500}>
+              CITY <br/> RESOURCES
+              </Link1>
+            </div>
+          </div>
+          {/* Column2 */}
+          <div className="col-sm">
+            <ui className="list-unstyled">
+              <div className="ft-text">
+                <li>
+                  <Link1 to className="ft-link" to="/">
+                    HOME
+                  </Link1>
+                </li>
+              </div>
 							<div className="ft-text">
 								{' '}
 								<li>
@@ -72,3 +70,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

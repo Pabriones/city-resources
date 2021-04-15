@@ -39,7 +39,8 @@ const AboutPage = () => {
 
             <div className="col">
               <div className="ab1-heading">
-                <h1>THE CITY<br/> RESOURCE GUIDE</h1>
+                
+                <h1> THE CITY<br/> RESOURCE GUIDE</h1>
               </div>
               <div className="ab1-intro">
                 <p>

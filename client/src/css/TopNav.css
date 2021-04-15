@@ -1,0 +1,17 @@
+.nav-bar {
+  font-size: 5vh;
+  padding-right: 4%;
+  font-family: 'roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav-links:hover {
+  color: #b8b8b8;
+  font-style: normal;
+  font-weight: bold;
+ 
+}

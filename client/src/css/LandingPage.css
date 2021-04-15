@@ -12,9 +12,9 @@
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-size: 4.2vh;
-  padding-top: 4vh;
-  font-weight:bolder;
-  margin-left: 15vh;
+  padding-top: 2.2vh;
+  font-weight: bolder;
+  margin-left: 5vh;
   color: #fcfcfc;
   opacity: 55%;
 }
@@ -24,7 +24,6 @@
   font-family: "Roboto", "sans-serif";
   cursor: pointer;
   margin-left: 15vh;
-
 }
 
 .lp-link2 {
@@ -40,7 +39,6 @@
   color: #222831;
   cursor: pointer;
   font-weight: bold;
-
 }
 
 .lp-link:hover {

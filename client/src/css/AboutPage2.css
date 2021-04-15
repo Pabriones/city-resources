@@ -1,42 +1,38 @@
-
 .ab2-container {
-  background-color: #F3EDE5;
-    width: auto;
-    margin: auto;
-    border-bottom: 10px solid #a17b6c;
-  }
-
+  background-color: #ebedee;
+  width: 100%;
+  margin: auto;
+}
 
 .ab2-content h1 {
-      padding: 5% 5% 2%;
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-size: 4vh;
-  
   color: #22333b;
+  padding-bottom: 2%;
 }
 
 .ab2-title {
   font-family: "Roboto", "sans-serif";
-  font-size: 2.5vh;
+  font-size: 2.8vh;
   font-weight: bold;
   color: #22333b;
-   
+
 }
 
 .ab2-text-container {
   font-family: "Roboto", "sans-serif";
-  color: #22333b;
-  margin: 0% 5% 8%;
-  font-size: 2vh;
+  padding: 2%;
+  font-size: 2.1vh;
   text-align: justify;
 }
 
-/* .ab2-text-container p {
-  margin: 0.2% 0% 2.8%;
+.ab2-text-container p {
+  padding-bottom: 2%;
+  font-size: 2.5vh;
 }
 
-.ab2-images {
+/*.ab2-images {
   margin-top: 6.5%;
 }
 

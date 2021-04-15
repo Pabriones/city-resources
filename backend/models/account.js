@@ -23,6 +23,9 @@ const AccountSchema = new mongoose.Schema({
 		required: true,
 		unique: true
 	},
+	avatar: {
+		type: String
+	},
 	date: {
 		type: Date,
 		default: Date.now

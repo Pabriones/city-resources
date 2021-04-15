@@ -1,4 +1,4 @@
 {
-	"mongoURI": "",
+	"mongoURI": "mongodb+srv://margarita:Database123@cityresourcecluster1.3xq7m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
 	"jwtSecret": ""
 }

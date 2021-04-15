@@ -28,7 +28,6 @@ function LoginModal() {
               <button>Sign In</button>
             </form>
           </div>
-
         </div>
       </Modal>
     </>

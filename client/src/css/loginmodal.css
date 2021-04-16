@@ -69,7 +69,7 @@
 }
 
 .loginBtn {
-  font-size: 4vh;
+  font-size: 3vh;
   font-family: "Roboto", "sans-serif";
   cursor: pointer;
   text-decoration: none;
@@ -78,7 +78,7 @@
 }
 
 .loginBtn:hover {
-  color: #999999;
+  color: #ffffff;
   font-style: normal;
   font-weight: bold;
   text-decoration: underline;

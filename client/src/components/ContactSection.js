@@ -39,7 +39,7 @@ const ContactSection = () => {
                     <p className="searchText">
                       <button type="button" class="resourcePgBtn">
                         {" "}
-                        <Link2 className="resourcePg" to="#">
+                        <Link2 className="resourcePg" to="/addresource">
                           Add your resource
                       
                         </Link2>

@@ -7,8 +7,12 @@ import { Link as Link2 } from "react-router-dom";
 
 const TopNav = () => {
   return (
-    <Nav className="nav-bar justify-content-end">
+    <div>
+    <Nav className="nav-bar title justify-content-center">CITY RESOURCES </Nav>
+
+       <Nav className="nav-bar justify-content-center">
       <Nav.Item>
+        
         <Nav.Link className="nav-links" href="#">
           <Link1 className="nav-links" to="AboutPage" spy={true} duration={500}>
             ABOUT
@@ -33,7 +37,7 @@ const TopNav = () => {
         </Nav.Link>
       </Nav.Item>
     </Nav>
-
+    </div>
     /* 
       <div className="nav-container">
       <div class="top-nav">
@@ -53,3 +57,4 @@ const TopNav = () => {
 };
 
 export default TopNav;
+

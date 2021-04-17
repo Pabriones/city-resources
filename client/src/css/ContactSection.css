@@ -55,7 +55,7 @@
 }
 
 .contact-info-2 h2{
-  font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 .contact-info-2 h1 {
@@ -65,7 +65,7 @@
 }
 
 .email {
-  padding: 5%;
+  padding: 3%;
 }
 
 .add-resource {
@@ -76,6 +76,9 @@ padding: 5%
  
 }
 
+.cs-text {
+  font-size: 2vh;
+}
 .ab2-images {
 }
 
@@ -103,19 +106,18 @@ padding: 5%
 }
 
 
-.resourcePgBtn {
+.cs-btn {
   background-color: #141414;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2vh;;
-  font-weight: 700;
   color: rgb(255, 255, 255);
 /*   margin: 31px auto 0 0;
   padding: 4px 45px 1px 51px; */
 }
 
-@media (max-width: 1199px) {
-  .resourcePgBtn {
+/* @media (max-width: 1199px) {
+  .btn-style {
     font-size: 22px;
     margin: 31px auto 0 0;
     padding: 4px 4px 1px 15px;
@@ -123,7 +125,7 @@ padding: 5%
 }
 
 @media (max-width: 991px) {
-  .resourcePgBtn {
+  .btn-style {
     font-size: 22px;
     margin: 31px auto 0 0;
     padding: 4px 4px 1px 15px;
@@ -131,26 +133,28 @@ padding: 5%
 }
 
 @media (max-width: 767px) {
-  .resourcePgBtn {
+  .btn-style {
     font-size: 22px;
-    margin: 31px auto 0 0;
+    margin: 25px auto 0 0;
     padding: 4px 4px 1px 15px;
   }
 }
 
 @media (max-width: 575px) {
-  .resourcePgBtn {
+  .btn-style {
     font-size: 22px;
     margin: 31px auto 0 0;
     padding: 4px 4px 1px 15px;
   }
-}
+} */
 
 .resourcePg {
   margin: 0px 1vw;
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
+  font-size: 2.5vh;
+   font-family: Roboto ;
 }
 
 .resourcePg:hover {

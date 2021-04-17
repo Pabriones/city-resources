@@ -1,5 +1,5 @@
 .nav-bar {
-  font-size: 5vh;
+  font-size: 4.2vh;
   font-family: "roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -7,6 +7,7 @@
   text-decoration: none;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
+
 }
 
 .nav-links:hover {
@@ -17,7 +18,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.title {
+.nb-title {
   font-size: 3vh;
   font-family: 'Poppins', sans-serif;
   opacity: 80%;
@@ -25,3 +26,4 @@
   color: #ffffff;
   padding-top: 2%;
 }
+ 

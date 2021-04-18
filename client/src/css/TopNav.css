@@ -1,17 +1,29 @@
 .nav-bar {
-  font-size: 5vh;
-  padding-right: 4%;
-  font-family: 'roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.2vh;
+  font-family: "roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-links {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .nav-links:hover {
-  color: #b8b8b8;
+  color: #f8f7f7;
   font-style: normal;
   font-weight: bold;
- 
+  text-decoration: overline;
+  font-family: 'Poppins', sans-serif;
 }
+
+.nb-title {
+  font-size: 3vh;
+  font-family: 'Poppins', sans-serif;
+  opacity: 80%;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 2%;
+}
+ 

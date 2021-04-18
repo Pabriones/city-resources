@@ -17,7 +17,6 @@ class LandingPage extends React.Component {
       <body>
         <div id="LandingPage">
           <div className="lp-container">
-            <div className="lp-title">CITY RESOURCES </div>
             <TopNav />
             {/* <div className="row">
 							<div className="col-sm">

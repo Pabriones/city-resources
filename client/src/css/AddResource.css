@@ -1,0 +1,43 @@
+.ar-container {
+    padding-top: 10%;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.form-input {
+  padding: 2%;
+}
+
+.ar-textarea h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ar-textarea p {
+    font-family: "Roboto", "sans-serif";
+    line-height:150%;
+    padding-top: 5%;
+}
+
+.ar-submit {
+  font-size: 5vh;
+  font-family: "Roboto", "sans-serif";
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+ 
+}
+
+.ar-submit:hover {
+  color: #0e0b0b;
+  font-style: normal;
+  font-weight: bold;
+ 
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ 

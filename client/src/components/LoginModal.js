@@ -14,7 +14,7 @@ function LoginModal() {
   return (
     <>
       <Button variant=" " className="loginBtn" onClick={handleShow}>
-      <ion-icon name="person-circle-outline"/> LOG IN
+      <ion-icon name="person-circle-outline"/> USER LOG IN
       </Button>
 
       <Modal show={show} onHide={handleClose}>

@@ -2,6 +2,7 @@ import React from "react";
 import "../../src/css/ContactSection.css";
 import { Icon } from "semantic-ui-react";
 import { Link as Link2 } from "react-router-dom";
+import { Nav, Row, Col, Container, Button } from "react-bootstrap";
 
 const ContactSection = () => {
   return (
@@ -19,11 +20,6 @@ const ContactSection = () => {
           </div>
           <div className="contact-info-2">
             <div className="row">
-              <div className="col-sm email">
-                <h2> E-mail</h2>
-                <h1>hello@cityresources.com </h1>
-              </div>
-
               <div className="col-sm add-resource">
                 {/*      <img
                   src={require("../Images/sean-benesh-OBthVZFqnKk-unsplash.jpg")}
@@ -31,21 +27,31 @@ const ContactSection = () => {
                   width={"110%"}
                 /> */}
                 <div>
-                  <p>
-                    If you would like to add your resource to our page, please
-                    complete the form.
-                  </p>
-                  <Icon>
-                    <p className="searchText">
-                      <button type="button" class="resourcePgBtn">
+                  <Container>
+                    <Row>
+                      <Col>
+                        <div className="col-sm email">
+                          <h2> E-mail</h2>
+                          <h1>hello@cityresources.com </h1>
+                        </div>
+                      </Col>
+                      <Col>
                         {" "}
-                        <Link2 className="resourcePg" to="#">
-                          Add your resource
-                      
-                        </Link2>
-                      </button>
-                    </p>
-                  </Icon>
+                        <p>
+                          If you would like to add your resource to our page,
+                          please complete the form.
+                        </p>
+                        <div className="searchText">
+                          <Button variant="outline-dark" className="cs-btn">
+                            {" "}
+                            <Link2 className="resourcePg" to="/addresource">
+                              Add your resource
+                            </Link2>
+                          </Button>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Container>
                 </div>
               </div>
             </div>

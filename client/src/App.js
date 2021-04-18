@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Footer from './components/Footer';
 import LoginModal from './components/LoginModal';
 import RegisterModal from './components/RegisterModal';
+import AddResource from './components/AddResource';
 import Homepage from './components/Homepage';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 				<Route path="/footer" component={Footer} />
 				<Route path="/loginmodal" component={LoginModal} />
 				<Route path="/registermodal" component={RegisterModal} />
+				<Route path="/addresource" component={AddResource} />
 				<Route path="/homepage" component={Homepage} />
 			</Switch>
 		</Router>

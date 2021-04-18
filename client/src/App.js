@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Footer from './components/Footer';
 import LoginModal from './components/LoginModal';
 import RegisterModal from './components/RegisterModal';
+import Homepage from './components/Homepage';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 				<Route path="/footer" component={Footer} />
 				<Route path="/loginmodal" component={LoginModal} />
 				<Route path="/registermodal" component={RegisterModal} />
+				<Route path="/homepage" component={Homepage} />
 			</Switch>
 		</Router>
 	);

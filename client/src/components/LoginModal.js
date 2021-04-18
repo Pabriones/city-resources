@@ -3,6 +3,7 @@ import { Modal, Button, Form, Container } from "react-bootstrap";
 import RegisterModal from "./RegisterModal";
 import "../../src/css/loginmodal.css";
 import { Icon } from "semantic-ui-react";
+import homepage from './Homepage';
 
 function LoginModal() {
   const [show, setShow] = useState(false);
@@ -25,7 +26,7 @@ function LoginModal() {
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <a href="#"> Forgot Password</a>
-              <button>Sign In</button>
+              <button href="/homepage">Sign In</button>
             </form>
           </div>
         </div>

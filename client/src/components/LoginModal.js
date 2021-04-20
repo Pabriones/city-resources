@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Modal, Button, Form, Container } from "react-bootstrap";
 import RegisterModal from "./RegisterModal";
 import "../../src/css/LoginModal.css";
-import { Icon } from "semantic-ui-react";
+import { PersonCircle } from 'react-bootstrap-icons';
+
 
 function LoginModal() {
   const [show, setShow] = useState(false);
@@ -13,7 +14,7 @@ function LoginModal() {
   return (
     <>
       <Button variant=" " className="loginBtn" onClick={handleShow}>
-      <ion-icon name="person-circle-outline"/> USER LOG IN
+      <PersonCircle size={20} />   USER LOG IN
       </Button>
 
       <Modal show={show} onHide={handleClose}>

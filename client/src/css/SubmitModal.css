@@ -1,0 +1,54 @@
+.submitContainer h1 {
+  font-weight: bold;
+  margin: 0;
+  color: rgb(39, 30, 30);
+  padding-bottom: 10%;
+}
+
+.submitContainer {
+  margin: 10%;
+  font-family: "Poppins", sans-serif;
+  font-size: 2vh;
+}
+
+.submitBtn {
+  background-color: #141414;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.5vh;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 3% 1vw 10%;
+  border: none;
+  border-radius: 0%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #847a6e;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.homeBtn {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 2.3vh;
+  margin-top: 10%;
+  font-family: "Poppins", sans-serif;
+  color: rgb(68, 56, 56);
+  border: none;
+}
+
+.homeBtn:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #0e0d0d;
+}

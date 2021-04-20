@@ -31,7 +31,7 @@ router.post(
 
 		try {
 			// See if users exists
-			let resources = await Resources.findOne({ name });
+			let resources = await Resources.findOne({name });
 			if (resources) {
 				return res.status(400).json({ errors: [ { msg: 'Resources already exists' } ] });
 			}

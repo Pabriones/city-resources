@@ -27,6 +27,7 @@ function LoginModal() {
               <input type="password" placeholder="Password" />
               <a href="#"> Forgot Password</a>
               <button>Sign In</button>
+
             </form>
           </div>
         </div>

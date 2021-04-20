@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import LoginModal from "./components/LoginModal";
 import RegisterModal from "./components/RegisterModal";
 import AddResource from "./components/AddResource";
+import Forms from "./components/Forms";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/loginmodal" component={LoginModal} />
         <Route path="/registermodal" component={RegisterModal} />
         <Route path="/addresource" component={AddResource} />
+        <Route path="/forms" component={Forms} />
       </Switch>
     </Router>
   );

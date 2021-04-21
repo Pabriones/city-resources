@@ -6,7 +6,8 @@
 .nav-links {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .nav-links:hover {
@@ -14,14 +15,15 @@
   font-style: normal;
   font-weight: bold;
   text-decoration: overline;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nb-title {
   font-size: 3vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   opacity: 80%;
   font-weight: 600;
   color: #ffffff;
   padding-top: 2%;
 }
+ 

@@ -25,9 +25,12 @@ function App() {
         <Route path="/registermodal" component={RegisterModal} />
         <Route path="/addresource" component={AddResource} />
         <Route path="/forms" component={Forms} />
+    	<Route path="/homepage" component={Homepage} />
       </Switch>
     </Router>
   );
+
+			
 }
 
 export default App;

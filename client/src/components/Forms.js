@@ -42,11 +42,7 @@ const Forms = () => {
           </div>
         </div>
       </div>
-      <div className="sd-btn">
-        <button className="print-btn">
-          <h2>PRINT RESULTS</h2>
-        </button>
-      </div>
+ 
       <div>
         {" "}
         <Footer />

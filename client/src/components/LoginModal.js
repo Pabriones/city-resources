@@ -4,7 +4,7 @@ import RegisterModal from "./RegisterModal";
 import "../../src/css/LoginModal.css";
 import { PersonCircle } from 'react-bootstrap-icons';
 import { Icon } from "semantic-ui-react";
-import homepage from './Homepage';
+import Homepage from './Homepage';
 
 
 function LoginModal() {
@@ -28,9 +28,6 @@ function LoginModal() {
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <a href="#"> Forgot Password</a>
-
-              <button>Sign In</button>
-
               <button href="/homepage">Sign In</button>
 
             </form>

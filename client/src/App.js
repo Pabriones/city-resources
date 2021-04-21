@@ -10,7 +10,7 @@ import LoginModal from "./components/LoginModal";
 import RegisterModal from "./components/RegisterModal";
 import AddResource from "./components/AddResource";
 import Forms from "./components/Forms";
-
+import Homepage from "./components/Homepage"
 
 function App() {
   return (

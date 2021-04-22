@@ -73,12 +73,12 @@
   font-family: "Roboto", "sans-serif";
   cursor: pointer;
   text-decoration: none;
-  color: #ffffff;
+  color: #080808;
   cursor: pointer;
 }
 
 .loginBtn:hover {
-  color: #ffffff;
+  color: #2c2c2c;
   font-style: normal;
   font-weight: bold;
   text-decoration: underline;

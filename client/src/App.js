@@ -11,6 +11,7 @@ import RegisterModal from "./components/RegisterModal";
 import AddResource from "./components/AddResource";
 import Forms from "./components/Forms";
 import Homepage from "./components/Homepage"
+import RegisterPage from "./components/RegisterPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/addresource" component={AddResource} />
         <Route path="/forms" component={Forms} />
     	<Route path="/homepage" component={Homepage} />
+      <Route path="/register" component={RegisterPage} />
       </Switch>
     </Router>
   );

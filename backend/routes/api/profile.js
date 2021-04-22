@@ -53,6 +53,8 @@ router.post(
 		}
 
 		console.log(skills);
+
+		res.send('Hello');
 	}
 );
 

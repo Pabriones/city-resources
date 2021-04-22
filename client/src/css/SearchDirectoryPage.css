@@ -172,6 +172,7 @@ input.checkbox {
   border: none;
   float: right;
   padding-top: 3.5%;
+  background-color: transparent;
 }
 
 .fav-icon:hover {

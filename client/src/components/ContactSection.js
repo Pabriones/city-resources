@@ -41,14 +41,13 @@ const ContactSection = () => {
                           If you would like to add your resource to our page,
                           please complete the form.
                         </p>
-                        <div className="searchText">
-                          <Button variant="outline-dark" className="cs-btn">
+                        <Link2 className="addResource" to="/addresource">
+                          {" "}
+                          <button type="button" class="addResourceBtn">
                             {" "}
-                            <Link2 className="resourcePg" to="/addresource">
-                              Add your resource
-                            </Link2>
-                          </Button>
-                        </div>
+                            Add Your Resource
+                          </button>{" "}
+                        </Link2>
                       </Col>
                     </Row>
                   </Container>

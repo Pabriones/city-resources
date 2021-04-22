@@ -45,9 +45,9 @@ const TopNav = () => {
             {" "}
             <Nav.Item>
               <Nav.Link className="nav-links" href="#">
-                <Link1 className="nav-links" to="#" spy={true} duration={500}>
-                  FORMS
-                </Link1>
+              <Link2 className="nav-links" to="/forms">
+                        FORMS 
+                 </Link2>
               </Nav.Link>
             </Nav.Item>
           </Col>

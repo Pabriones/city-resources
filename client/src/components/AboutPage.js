@@ -1,7 +1,7 @@
 import React from "react";
 import "../../src/css/AboutPage.css";
 import { Link as Link2 } from "react-router-dom";
-import { Icon } from "semantic-ui-react";
+import { ArrowRight } from 'react-bootstrap-icons';
 
 const AboutPage = () => {
   return (
@@ -50,20 +50,17 @@ const AboutPage = () => {
                 </p>
     </div>
                 <div>
-                  <Icon>
+             
                     <p className="searchText">
-                      <button type="button" class="directLinkBtn">
+                    <Link2 className="directLink" to="/directory"> <button type="button" class="directLinkBtn">
                         {" "}
-                        <Link2 className="directLink" to="/directory">
+                        
                           SEARCH DIRECTORY{" "}
-                          <ion-icon
-                            class="chevIconSearch"
-                            name="chevron-forward-outline"
-                          />{" "}
-                        </Link2>
-                      </button>
+                          <ArrowRight size={20} />
+                        
+                      </button></Link2>
                     </p>
-                  </Icon>
+                
                 </div>
           
             </div>

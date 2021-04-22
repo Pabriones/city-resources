@@ -4,6 +4,7 @@ const auth = require('../../middleware/auth');
 const Profile = require('../../models/Profile');
 const Account = require('../../models/Account');
 const { check, validationResult } = require('express-validator');
+const { restart } = require('nodemon');
 
 // @route GET api/profile/me
 // @desc  Get current users profile
@@ -32,6 +33,7 @@ router.post(
 	[
 		auth,
 		[
+			check('bio', 'Bio is required').not().isEmpty(),
 			check('status', 'Status is required').not().isEmpty(),
 			check('skills', 'Skills are required').not().isEmpty()
 		]
@@ -42,19 +44,38 @@ router.post(
 			return res.status(400).json({ errors: errors.array() });
 		}
 
-		const { status, skills } = req.body;
+		const { bio, status, skills } = req.body;
 
 		// Build profile object
 		const profileFields = {};
 		profileFields.account = req.account.id;
+		if (bio) profileFields.bio = bio;
 		if (status) profileFields.status = status;
 		if (skills) {
-			profileFields.status = skills.split(',').map((skill) => skill.trim()); // split turns string into an array
+			profileFields.skills = skills.split(',').map((skill) => skill.trim()); // split turns string into an array
 		}
 
-		console.log(skills);
+		try {
+			let profile = await Profile.findOne({ account: req.account.id });
+			if (profile) {
+				//update
+				profile = await Profile.findOneAndUpdate(
+					{ account: req.account.id },
+					{ $set: profileFields },
+					{ new: true }
+				);
 
-		res.send('Hello');
+				return res.json(profile);
+			}
+			// Create
+			profile = new Profile(profileFields);
+
+			await profile.save();
+			res.json(profile);
+		} catch (err) {
+			console.error(err.message);
+			res.status(500).send('Server Error');
+		}
 	}
 );
 

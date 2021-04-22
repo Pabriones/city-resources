@@ -167,9 +167,16 @@ input.checkbox {
  
 }
 
- 
 
+.fav-icon{
+  border: none;
+  float: right;
+  padding-top: 3.5%;
+}
 
+.fav-icon:hover {
+  color: red;
+}
 @media screen and (max-width: 1000px) {
   .row {
     flex-wrap: wrap;
@@ -178,3 +185,5 @@ input.checkbox {
     width: 100%;
   }
 }
+
+

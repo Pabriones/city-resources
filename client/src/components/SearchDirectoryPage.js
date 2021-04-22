@@ -1,7 +1,7 @@
 import React from "react";
 import "../../src/css/SearchDirectoryPage.css";
 import Footer from "./Footer";
-import { Globe, Envelope, ArrowUpRight, Map } from "react-bootstrap-icons";
+import { Globe, Envelope, ArrowUpRight, Map, SuitHeart, SuitHeartFill } from "react-bootstrap-icons";
 let filterArray = [
   { filterName: "Clothing Assistance" },
   { filterName: "Day Centers" },
@@ -95,6 +95,14 @@ const SearchDirectoryPage = () => {
                  <Map size={25} /> Directions 
                 </button>
               </a>
+
+            
+               <button className="fav-icon">
+                  {" "}
+                 <SuitHeart size={45} /> 
+                </button>
+              
+
 
               <p>
                 <b>Phone:</b> 206-628-3579

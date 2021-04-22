@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import "../../src/css/SearchDirectoryPage.css";
 import Footer from "./Footer";
+import { Globe, Envelope, ArrowUpRight, Map, SuitHeart, SuitHeartFill } from "react-bootstrap-icons";
+import SearchNavLinks from "./SearchNavLinks";
 import Axios from "axios";
-import { Globe, Envelope, ArrowUpRight, Map } from "react-bootstrap-icons";
+
 
 let filterArray = [
   { filterName: "Clothing Assistance",

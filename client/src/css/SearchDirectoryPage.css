@@ -52,7 +52,7 @@ input[type="text"] {
 
 .website-linkBtn {
   padding: 2%;
-  background-color: #383636;
+  background-color: #252424;
   border: none;
   color: #f7f3f3;
   margin: 3% 2% 8%;
@@ -60,7 +60,7 @@ input[type="text"] {
 
 .website-linkBtn:hover {
   font-weight: bold;
-  color: #ddcfcf;
+  color: #f3f3f3;
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
 }
@@ -167,9 +167,17 @@ input.checkbox {
  
 }
 
- 
 
+.fav-icon{
+  border: none;
+  float: right;
+  padding-top: 3.5%;
+  background-color: transparent;
+}
 
+.fav-icon:hover {
+  color: red;
+}
 @media screen and (max-width: 1000px) {
   .row {
     flex-wrap: wrap;

@@ -1,5 +1,6 @@
 .sd-container {
   width: 100%;
+  font-family: "Roboto", "sans-serif";
 }
 
 .sd-title {
@@ -8,7 +9,7 @@
   font-size: 6vh;
   text-align: left;
   padding: 2vh 4vh 3vh;
-  color: #22333b;
+  color: #383636;
 }
 
 .row {
@@ -17,25 +18,50 @@
 
 input[type="text"] {
   padding: 1vh 3vh;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #686464;
   width: 100%;
   box-sizing: border-box;
 }
 .sd-filterContainer {
   width: 50%;
-  padding: 2% 3% ;
+  padding: 2% 3%;
+
 }
 /* .col-6.p-main {
  padding: 5% 5% 2%;
 } */
 .sd-results-container {
-  background-color: #eae0d5;
+  background-color: #e7e7e7;
   padding: 2%;
 }
 
 .sd-search-results {
   padding: 3% 4% 2%;
-  font-size: 2vh;
+  font-family: "Roboto", "sans-serif";
+ 
+}
+
+.sd-search-results p {
+  font-size: 2.5vh;
+}
+
+.sd-search-results h1 {
+  font-size: 4.5vh;
+  font-family: "Roboto", "sans-serif";
+}
+
+.website-linkBtn {
+  padding: 2%;
+  background-color: #383636;
+  border: none;
+  color: #f7f3f3;
+  margin: 3% 2% 8%;
+}
+
+.website-linkBtn:hover {
+  font-weight: bold;
+  color: #ddcfcf;
+  text-decoration: none;
   font-family: "Roboto", "sans-serif";
 }
 
@@ -45,6 +71,7 @@ input[type="text"] {
   color: #6e6d6d;
   white-space: nowrap;
   font-size: 2.3vh;
+ 
 }
 
 input.checkbox {
@@ -106,7 +133,7 @@ input.checkbox {
   } */
 
 .print-btn {
-  background-color: #23363c;
+  background-color: #383636;
   border-radius: 2%;
   width: 35%;
 }
@@ -116,39 +143,31 @@ input.checkbox {
   margin: 5%;
   font-size: 2.5vh;
   font-family: "Roboto", "sans-serif";
+ 
+}
+
+
+.print-btn:hover h2{
   font-weight: bold;
+  color: #ddcfcf;
+  text-decoration: none;
+  font-family: "Roboto", "sans-serif";
 }
 
 .sd-btn {
   padding: 5% 5%;
   text-align: center;
+ 
 }
 
 .scroll {
   overflow-y: scroll;
-  max-height: 85vh;
-  min-height: 85vh;
+  max-height: 115vh;
+  /*   min-height: 85vh; */
+ 
 }
 
-.sd-link { 
-  font-family: "Roboto", "sans-serif";
-  color: #607da8;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.sd-link h1 {
-  font-size: 3.5vh;
-}
-
-
-.sd-link:hover,
-.sd-link-logo:hover {
-  font-weight: 500;
-  color: #41659b;
-  text-decoration: underline;
-  font-family: "Roboto", "sans-serif";
-}
+ 
 
 
 @media screen and (max-width: 1000px) {

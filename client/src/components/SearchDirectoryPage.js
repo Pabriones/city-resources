@@ -1,40 +1,178 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../src/css/SearchDirectoryPage.css";
 import Footer from "./Footer";
+import Axios from "axios";
 import { Globe, Envelope, ArrowUpRight, Map } from "react-bootstrap-icons";
+
 let filterArray = [
-  { filterName: "Clothing Assistance" },
-  { filterName: "Day Centers" },
-  { filterName: "Dental and Vision" },
-  { filterName: "Drug and Alcohol" },
-  { filterName: "Emergency and Crisis" },
-  { filterName: "Employment and Training" },
-  { filterName: "Encampments" },
-  { filterName: "Family and Maternity" },
-  { filterName: "Financial Assistance" },
-  { filterName: "General Health" },
-  { filterName: "HIV/AIDS" },
-  { filterName: "Housing" },
-  { filterName: "Hygiene" },
-  { filterName: "Identification" },
-  { filterName: "Immigrant and Refugee" },
-  { filterName: "LGBTQIA" },
-  { filterName: "Legal" },
-  { filterName: "Mail" },
-  { filterName: "Mental Health" },
-  { filterName: "Native and Indigenous" },
-  { filterName: "Pets and Service Animals" },
-  { filterName: "Problem Gambling" },
-  { filterName: "Seniors" },
-  { filterName: "Services for People of Color" },
-  { filterName: "Shelters" },
-  { filterName: "Storage" },
-  { filterName: "Survivor Support" },
-  { filterName: "Transportation" },
-  { filterName: "Veterans" },
+  { filterName: "Clothing Assistance",
+  checked:true
+  },
+  { filterName: "Day Centers",
+    checked:false },
+  { filterName: "Dental and Vision" ,
+    checked:false},
+  { filterName: "Drug and Alcohol",
+    checked:false },
+  { filterName: "Emergency and Crisis" ,
+    checked:false},
+  { filterName: "Employment and Training",
+    checked:false },
+  { filterName: "Encampments" ,
+    checked:false},
+  { filterName: "Family and Maternity",
+    checked:false },
+  { filterName: "Financial Assistance",
+    checked:false },
+  { filterName: "General Health",
+    checked:false },
+  { filterName: "HIV/AIDS" ,
+    checked:false},
+  { filterName: "Housing",
+    checked:false },
+  { filterName: "Hygiene",
+    checked:false },
+  { filterName: "Identification",
+    checked:false },
+  { filterName: "Immigrant and Refugee" ,
+    checked:false},
+  { filterName: "LGBTQIA" ,
+    checked:false},
+  { filterName: "Legal",
+    checked:false },
+  { filterName: "Mail" ,
+    checked:false},
+  { filterName: "Mental Health" ,
+    checked:false},
+  { filterName: "Native and Indigenous",
+    checked:false },
+  { filterName: "Pets and Service Animals",
+    checked:false },
+  { filterName: "Problem Gambling",
+    checked:false },
+  { filterName: "Seniors" ,
+    checked:false},
+  { filterName: "Services for People of Color",
+    checked:false },
+  { filterName: "Shelters",
+    checked:false },
+  { filterName: "Storage" ,
+    checked:false},
+  { filterName: "Survivor Support" ,
+    checked:false},
+  { filterName: "Transportation",
+    checked:false },
+  { filterName: "Veterans" ,
+    checked:false},
 ];
 
+// const handleChange = e => {
+//   const { name, value } = e.target;
+//   setState(prevState => ({
+//     ...prevState,
+//     [name]: value
+//   }));
+// };
+
 const SearchDirectoryPage = () => {
+
+  const [state, setState] = useState([
+      { filterName: "Clothing Assistance",
+        checked:false
+      },
+      { filterName: "Day Centers",
+        checked:false },
+      { filterName: "Dental and Vision" ,
+        checked:false},
+      { filterName: "Drug and Alcohol",
+        checked:false },
+      { filterName: "Emergency and Crisis" ,
+        checked:false},
+      { filterName: "Employment and Training",
+        checked:false },
+      { filterName: "Encampments" ,
+        checked:false},
+      { filterName: "Family and Maternity",
+        checked:false },
+      { filterName: "Financial Assistance",
+        checked:false },
+      { filterName: "General Health",
+        checked:false },
+      { filterName: "HIV/AIDS" ,
+        checked:false},
+      { filterName: "Housing",
+        checked:false },
+      { filterName: "Hygiene",
+        checked:false },
+      { filterName: "Identification",
+        checked:false },
+      { filterName: "Immigrant and Refugee" ,
+        checked:false},
+      { filterName: "LGBTQIA" ,
+        checked:false},
+      { filterName: "Legal",
+        checked:false },
+      { filterName: "Mail" ,
+        checked:false},
+      { filterName: "Mental Health" ,
+        checked:false},
+      { filterName: "Native and Indigenous",
+        checked:false },
+      { filterName: "Pets and Service Animals",
+        checked:false },
+      { filterName: "Problem Gambling",
+        checked:false },
+      { filterName: "Seniors" ,
+        checked:false},
+      { filterName: "Services for People of Color",
+        checked:false },
+      { filterName: "Shelters",
+        checked:false },
+      { filterName: "Storage" ,
+        checked:false},
+      { filterName: "Survivor Support" ,
+        checked:false},
+      { filterName: "Transportation",
+        checked:false },
+      { filterName: "Veterans" ,
+        checked:false},
+    ]);
+  const [resource,setResource] = useState([]);
+
+  const handleCheckBox = (e,i) => {
+    let toFetch=[];
+    {state.map((filter, index) => {
+
+      if(index === i){
+        filter.checked = !filter.checked;
+      }
+      if(filter.checked === true){
+        toFetch.push(filter.filterName)
+      }
+    })}
+    setState([...state]);
+    handleRequest(toFetch);
+
+  };
+
+  const handleRequest=(data)=>{
+    console.log('in this');
+    Axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded';
+    Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+  Axios.post("http://localhost:8080/api/getFilterData", {
+    category: data
+  }).then((res) => {
+    console.log(res);
+    if(res.data.success){
+      setResource(res.data.data);
+    }
+    // if (res.data.status === "1") {
+    //   setSuccessModalMsg(res.data.message);
+    //   setIsSuccessModalOpen(true);
+    // }
+  });
+};
+
   return (
     <div className="sd-container">
       {/* Row 1 */} <div className="sd-title">CITY RESOURCES </div>
@@ -46,13 +184,13 @@ const SearchDirectoryPage = () => {
           </div>
           <h2 className="mb-0">FILTER BY SERVICES:</h2>
           <div className="input-section">
-            {filterArray.map((filter, i) => {
-              return (
-                <div className="sd-services">
-                  <input type="checkbox" className="checkbox" />
-                  <label> {filter.filterName}</label>
-                </div>
-              );
+            {state.map((filter, i) => {
+              let temp = [];
+              temp.push(<div className="sd-services">
+                <input type="checkbox" className="checkbox" onChange={(e)=>handleCheckBox(e,i)} checked={filter.checked}/>
+                <label> {filter.filterName}</label>
+              </div>);
+              return (temp);
             })}
           </div>
         </div>
@@ -60,8 +198,34 @@ const SearchDirectoryPage = () => {
         {/* Col 2 */}
         <div className="col-6 sd-results-container scroll">
           <div className="sd-search-results">
-            <div className="sd-search-results">
-              <h1>Union Gospel Mission: Men's Shelter</h1>
+
+              {resource.map((filter, i) => {
+                console.log(resource);
+                let temp = [];
+                temp.push(<div className="sd-search-results">
+                  <a href="https://www.ugm.org/" className="sd-link" target="_blank">
+                    <h1>{filter.name}</h1>
+                  </a>
+                  <p>Phone: {filter.phone}</p>
+                  <p>Address: {filter.address}</p>
+                  <p>Email: {filter.email}</p>
+
+                  <p>{filter.operationHours}</p>
+                  {/*<p>9:30 AM - 3:00 PM</p>*/}
+
+                  <p>
+                    {filter.description}
+                  </p>
+                </div>);
+                return (temp);
+              })}
+            {/*<div className="sd-search-results">
+			<a href="https://www.ugm.org/" className="sd-link" target="_blank">
+                <h1>Union Gospel Mission: Men's Shelter</h1>
+              </a>
+              <p>Phone: 206-628-3579</p>
+              <p>Address: 97 S. Main Street Seattle, WA 98104</p>
+              <p>Email: info@breadoflifemission.org</p>
 
               <a
                 href="https://www.ugm.org/"
@@ -130,184 +294,43 @@ const SearchDirectoryPage = () => {
             </div>
 
             <div className="sd-search-results">
-            <h1>Union Gospel Mission: Men's Shelter</h1>
 
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-     <Globe size={25} /> Visit Website 
-  </button>
-</a>
+              <a href="https://www.ugm.org/" className="sd-link" target="_blank">
+                <h1>Union Gospel Mission: Men's Shelter</h1>
+              </a>
+              Phone: (206) 323-6341
+              <br />
+              <p>Address: 1561 Alaskan Way South Seattle, WA 98134</p>
+              <p>Email: info@breadoflifemission.org</p>
+              <p>
+                St. Martin de Porres provides safe and dignified night shelter
+                for homeless men age 50 and older.
+                <br />
+                The shelter opened in October 1984 in response to the growing
+                need for an emergency shelter for this
+                <br />
+                special population of elderly men who are vulnerable to the
+                weather, street predators, and illness.
+              </p>
+              <p>
+                We currently operate our full capacity of 212 men a night. The
+                shelter is open 365 nights a year from 6:30
+                <br />
+                p.m to 7:30 a.m and during the day of medical convalescent care.
+                During the winter months, we have arrangements
+                <br />
+                with eight local churches to provide space for an additional 34
+                men a night.
+              </p>
+            </div>*/}
 
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-   <ArrowUpRight size={25} /> Share 
-  </button>
-</a>
-
-<p>
-  <b>Phone:</b> 206-628-3579
-  <br />
-  <b>Address:</b> 97 S. Main Street Seattle, WA 98104
-  <br />
-  <b>Email:</b> info@breadoflifemission.org
-</p>
-
-<p>
-  <b>Monday - Friday</b>
-  <br />
-  9:30 AM - 3:00 PM
-</p>
-
-<p>
-  Bread of Life Mission helps people experiencing homeless in the
-  Seattle area. Bread of Life Mission is a non-denominational,
-  Christian, social services organization, which provides
-  critically needed goods and services to the homeless, poor, and
-  needy of Washington State without regard to race, color, sexual
-  orientation, creed, national origin, or religion.
-</p>
-
-<p>
-  <b>Eligibiity:</b>
-  <br />
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
-  quam aliquam, sodales ante id, porta odio. Curabitur tincidunt
-  tristique mauris quis placerat. Curabitur sit amet egestas ante,
-  a efficitur sem.
-</p>
-            </div>
-
-            <div className="sd-search-results">
-            <h1>Union Gospel Mission: Men's Shelter</h1>
-
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-     <Globe size={25} /> Visit Website 
-  </button>
-</a>
-
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-   <ArrowUpRight size={25} /> Share 
-  </button>
-</a>
-
-<p>
-  <b>Phone:</b> 206-628-3579
-  <br />
-  <b>Address:</b> 97 S. Main Street Seattle, WA 98104
-  <br />
-  <b>Email:</b> info@breadoflifemission.org
-</p>
-
-<p>
-  <b>Monday - Friday</b>
-  <br />
-  9:30 AM - 3:00 PM
-</p>
-
-<p>
-  Bread of Life Mission helps people experiencing homeless in the
-  Seattle area. Bread of Life Mission is a non-denominational,
-  Christian, social services organization, which provides
-  critically needed goods and services to the homeless, poor, and
-  needy of Washington State without regard to race, color, sexual
-  orientation, creed, national origin, or religion.
-</p>
-
-<p>
-  <b>Eligibiity:</b>
-  <br />
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
-  quam aliquam, sodales ante id, porta odio. Curabitur tincidunt
-  tristique mauris quis placerat. Curabitur sit amet egestas ante,
-  a efficitur sem.
-</p>
-            </div>
-
-            <div className="sd-search-results">
-            <h1>Union Gospel Mission: Men's Shelter</h1>
-
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-     <Globe size={25} /> Visit Website 
-  </button>
-</a>
-
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-   <ArrowUpRight size={25} /> Share 
-  </button>
-</a>
-
-<p>
-  <b>Phone:</b> 206-628-3579
-  <br />
-  <b>Address:</b> 97 S. Main Street Seattle, WA 98104
-  <br />
-  <b>Email:</b> info@breadoflifemission.org
-</p>
-
-<p>
-  <b>Monday - Friday</b>
-  <br />
-  9:30 AM - 3:00 PM
-</p>
-
-<p>
-  Bread of Life Mission helps people experiencing homeless in the
-  Seattle area. Bread of Life Mission is a non-denominational,
-  Christian, social services organization, which provides
-  critically needed goods and services to the homeless, poor, and
-  needy of Washington State without regard to race, color, sexual
-  orientation, creed, national origin, or religion.
-</p>
-
-<p>
-  <b>Eligibiity:</b>
-  <br />
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
-  quam aliquam, sodales ante id, porta odio. Curabitur tincidunt
-  tristique mauris quis placerat. Curabitur sit amet egestas ante,
-  a efficitur sem.
-</p>
-            </div>
           </div>
         </div>
       </div>
       <div className="sd-btn">
-        <button className="print-btn">
-          <h2>PRINT AND SHARE LIST</h2>
+
+        <button className="print-btn" onClick={()=>handleRequest()}>
+          <h2>PRINT RESULTS</h2>
         </button>
       </div>
       <div>

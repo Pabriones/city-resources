@@ -41,6 +41,18 @@ router.post(
 		if (!errors.isEmpty()) {
 			return res.status(400).json({ errors: errors.array() });
 		}
+
+		const { status, skills } = req.body;
+
+		// Build profile object
+		const profileFields = {};
+		profileFields.account = req.account.id;
+		if (status) profileFields.status = status;
+		if (skills) {
+			profileFields.status = skills.split(',').map((skill) => skill.trim()); // split turns string into an array
+		}
+
+		console.log(skills);
 	}
 );
 

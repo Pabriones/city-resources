@@ -7,7 +7,7 @@
   .nav-links2 {
     text-decoration: none;
     color: #2e2a2a;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", "sans-serif";
   }
   
   .nav-links2:hover {
@@ -15,7 +15,7 @@
     font-style: normal;
     font-weight: bold;
     text-decoration: overline;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", "sans-serif";
   }
   
   

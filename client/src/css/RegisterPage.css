@@ -1,0 +1,61 @@
+.rp-container {
+  font-family: "Roberto", sans-serif;
+}
+
+.col-sm-3 {
+  background-image: url("../Images/brick.jpg");
+  min-height: 100vh;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e0e0e0;
+}
+
+.rp-form {
+  margin: 10%;
+}
+
+.rp-title {
+  font-size: 3vh;
+  padding: 5% 5% 0%;
+}
+
+.rp-label {
+  padding: 2%;
+}
+
+.rp-submit {
+  background-color: #302e2e;
+  font-size: 3vh;
+  font-family: "Roboto", "sans-serif";
+  cursor: pointer;
+  text-decoration: none;
+  color: #e4e0e0;
+  cursor: pointer;
+  margin: 2% 2vh;
+  padding: 2% 4% 2% ;
+}
+
+.rp-submit:hover {
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+
+  text-decoration: underline;
+  color: #e4e0e0;
+}
+
+.usr-login {
+  float: right;
+}
+
+
+.rp-intro {
+    font-size: 4vh;
+    padding-bottom: 2%;
+}
+
+.rp-terms {
+    padding-top: 2%;
+}

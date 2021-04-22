@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Modal, Button, Form, Container } from "react-bootstrap";
 import RegisterModal from "./RegisterModal";
-import "../../src/css/LoginModal.css";
+import "../../src/css/loginmodal.css";
 import { PersonCircle } from 'react-bootstrap-icons';
 import { Icon } from "semantic-ui-react";
 import Homepage from './Homepage';
-
+import { Link as Link3 } from "react-router-dom";
+import RegisterPage from './RegisterPage'
 
 function LoginModal() {
   const [show, setShow] = useState(false);
@@ -29,7 +30,10 @@ function LoginModal() {
               <input type="password" placeholder="Password" />
               <a href="#"> Forgot Password</a>
               <button href="/homepage">Sign In</button>
-
+              <Link3 className="rp-link" to="/register" spy={true} duration={500}>
+                 REGISTER
+              </Link3>
+              
             </form>
           </div>
         </div>

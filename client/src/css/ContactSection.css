@@ -12,7 +12,7 @@
 }
 
 .emergencyNumbers h1 {
-  font-family: Roboto ;
+  font-family: "Roboto", "sans-serif";
   font-style: italic;
   font-weight: normal;
   font-size: 3vh;
@@ -27,7 +27,7 @@
 .contact-info {
   padding: 3% 5% 2% 5%;
   font-size: 3.5vh;
-  font-family: Roboto;
+  font-family: "Roboto", "sans-serif";
   padding: 5%;
   color: #cfcccc;
   font-style: normal;

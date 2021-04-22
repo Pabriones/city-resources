@@ -2,6 +2,10 @@ import React from "react";
 import "../../src/css/SearchDirectoryPage.css";
 import Footer from "./Footer";
 import { Globe, Envelope, ArrowUpRight, Map, SuitHeart, SuitHeartFill } from "react-bootstrap-icons";
+import SearchNavLinks from "./SearchNavLinks";
+
+
+
 let filterArray = [
   { filterName: "Clothing Assistance" },
   { filterName: "Day Centers" },
@@ -62,47 +66,9 @@ const SearchDirectoryPage = () => {
           <div className="sd-search-results">
             <div className="sd-search-results">
               <h1>Union Gospel Mission: Men's Shelter</h1>
-
-              <a
-                href="https://www.ugm.org/"
-                className="website-link"
-                target="_blank"
-              >
-               <button className="website-linkBtn">
-                  {" "}
-                   <Globe size={25} /> Visit Website 
-                </button>
-              </a>
-
-              <a
-                href="https://www.ugm.org/"
-                className="website-link"
-                target="_blank"
-              >
-               <button className="website-linkBtn">
-                  {" "}
-                 <ArrowUpRight size={25} /> Share 
-                </button>
-              </a>
-
-              <a
-                href="https://www.ugm.org/"
-                className="website-link"
-                target="_blank"
-              >
-               <button className="website-linkBtn">
-                  {" "}
-                 <Map size={25} /> Directions 
-                </button>
-              </a>
-
-            
-               <button className="fav-icon">
-                  {" "}
-                 <SuitHeart size={45} /> 
-                </button>
-              
-
+ 
+             <SearchNavLinks/>
+             
 
               <p>
                 <b>Phone:</b> 206-628-3579
@@ -140,27 +106,7 @@ const SearchDirectoryPage = () => {
             <div className="sd-search-results">
             <h1>Union Gospel Mission: Men's Shelter</h1>
 
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-     <Globe size={25} /> Visit Website 
-  </button>
-</a>
-
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-   <ArrowUpRight size={25} /> Share 
-  </button>
-</a>
+            <SearchNavLinks/>
 
 <p>
   <b>Phone:</b> 206-628-3579
@@ -198,27 +144,7 @@ const SearchDirectoryPage = () => {
             <div className="sd-search-results">
             <h1>Union Gospel Mission: Men's Shelter</h1>
 
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-     <Globe size={25} /> Visit Website 
-  </button>
-</a>
-
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-   <ArrowUpRight size={25} /> Share 
-  </button>
-</a>
+            <SearchNavLinks/>
 
 <p>
   <b>Phone:</b> 206-628-3579
@@ -256,27 +182,7 @@ const SearchDirectoryPage = () => {
             <div className="sd-search-results">
             <h1>Union Gospel Mission: Men's Shelter</h1>
 
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-     <Globe size={25} /> Visit Website 
-  </button>
-</a>
-
-<a
-  href="https://www.ugm.org/"
-  className="website-link"
-  target="_blank"
->
- <button className="website-linkBtn">
-    {" "}
-   <ArrowUpRight size={25} /> Share 
-  </button>
-</a>
+            <SearchNavLinks/>
 
 <p>
   <b>Phone:</b> 206-628-3579

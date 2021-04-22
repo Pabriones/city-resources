@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Form, Row, Container, Col } from "react-bootstrap";
 import "../../src/css/AddResource.css";
 import { Link as Link2 } from "react-router-dom";
+import SubmitModal from "./SubmitModal";
 
 const AddResourceForm = () => {
   return (
@@ -109,12 +110,7 @@ const AddResourceForm = () => {
               <Form.Check type="checkbox" label="I agree to  " />
             </Form.Group>
 
-            <button type="button" class="resourcePgBtn">
-              {" "}
-              <Link2 className="resourcePg" to="/">
-                SUBMIT
-              </Link2>
-            </button>
+            <SubmitModal />
           </Form>
         </Col>
       </Row>

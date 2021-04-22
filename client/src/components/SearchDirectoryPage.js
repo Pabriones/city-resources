@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "../../src/css/SearchDirectoryPage.css";
 import Footer from "./Footer";
 import Axios from "axios";
+import { Globe, Envelope, ArrowUpRight, Map } from "react-bootstrap-icons";
 
 let filterArray = [
   { filterName: "Clothing Assistance",
@@ -195,8 +196,9 @@ const SearchDirectoryPage = () => {
         </div>
 
         {/* Col 2 */}
-        <div className="col-6 p-main sd-results-container scroll">
+        <div className="col-6 sd-results-container scroll">
           <div className="sd-search-results">
+
               {resource.map((filter, i) => {
                 console.log(resource);
                 let temp = [];
@@ -225,85 +227,74 @@ const SearchDirectoryPage = () => {
               <p>Address: 97 S. Main Street Seattle, WA 98104</p>
               <p>Email: info@breadoflifemission.org</p>
 
-              <p>Monday - Friday</p>
-              <p>9:30 AM - 3:00 PM</p>
+              <a
+                href="https://www.ugm.org/"
+                className="website-link"
+                target="_blank"
+              >
+               <button className="website-linkBtn">
+                  {" "}
+                   <Globe size={25} /> Visit Website 
+                </button>
+              </a>
+
+              <a
+                href="https://www.ugm.org/"
+                className="website-link"
+                target="_blank"
+              >
+               <button className="website-linkBtn">
+                  {" "}
+                 <ArrowUpRight size={25} /> Share 
+                </button>
+              </a>
+
+              <a
+                href="https://www.ugm.org/"
+                className="website-link"
+                target="_blank"
+              >
+               <button className="website-linkBtn">
+                  {" "}
+                 <Map size={25} /> Directions 
+                </button>
+              </a>
+
+              <p>
+                <b>Phone:</b> 206-628-3579
+                <br />
+                <b>Address:</b> 97 S. Main Street Seattle, WA 98104
+                <br />
+                <b>Email:</b> info@breadoflifemission.org
+              </p>
+
+              <p>
+                <b>Monday - Friday</b>
+                <br />
+                9:30 AM - 3:00 PM
+              </p>
 
               <p>
                 Bread of Life Mission helps people experiencing homeless in the
-                Seattle area. Bread of Life Mission is a<br />
-                non-denominational, Christian, social services organization,
-                which provides critically needed goods and
-                <br />
-                services to the homeless, poor, and needy of Washington State
-                without regard to race, color, sexual
-                <br />
+                Seattle area. Bread of Life Mission is a non-denominational,
+                Christian, social services organization, which provides
+                critically needed goods and services to the homeless, poor, and
+                needy of Washington State without regard to race, color, sexual
                 orientation, creed, national origin, or religion.
               </p>
-            </div>
-
-            <div className="sd-search-results">
-			<a href="https://www.ugm.org/" className="sd-link" target="_blank">
-                <h1>Union Gospel Mission: Men's Shelter</h1>
-              </a>
-              <p>Phone: (206) 323-6341</p>
-              <p>Address: 1561 Alaskan Way South Seattle, WA 98134</p>
-              <p>Email: info@breadoflifemission.org</p>
 
               <p>
-                St. Martin de Porres provides safe and dignified night shelter
-                for homeless men age 50 and older.
+                <b>Eligibiity:</b>
                 <br />
-                The shelter opened in October 1984 in response to the growing
-                need for an emergency shelter for this
-                <br />
-                special population of elderly men who are vulnerable to the
-                weather, street predators, and illness.
-              </p>
-
-              <p>
-                We currently operate our full capacity of 212 men a night. The
-                shelter is open 365 nights a year from 6:30
-                <br />
-                p.m to 7:30 a.m and during the day of medical convalescent care.
-                During the winter months, we have arrangements
-                <br />
-                with eight local churches to provide space for an additional 34
-                men a night.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+                quam aliquam, sodales ante id, porta odio. Curabitur tincidunt
+                tristique mauris quis placerat. Curabitur sit amet egestas ante,
+                a efficitur sem.
               </p>
             </div>
 
             <div className="sd-search-results">
-			<a href="https://www.ugm.org/" className="sd-link" target="_blank">
-                <h1>Union Gospel Mission: Men's Shelter</h1>
-              </a>
-              <p>Phone: (206) 323-6341</p>
-              <p>Address: 1561 Alaskan Way South Seattle, WA 98134</p>
-              <p>Email: info@breadoflifemission.org</p>
 
-              <p>
-                St. Martin de Porres provides safe and dignified night shelter
-                for homeless men age 50 and older.
-                <br />
-                The shelter opened in October 1984 in response to the growing
-                need for an emergency shelter for this
-                <br />
-                special population of elderly men who are vulnerable to the
-                weather, street predators, and illness.
-              </p>
-
-              <p>
-                We currently operate our full capacity of 212 men a night. The
-                shelter is open 365 nights a year from 6:30
-                <br />
-                p.m to 7:30 a.m and during the day of medical convalescent care.
-                During the winter months, we have arrangements
-                <br />
-                with eight local churches to provide space for an additional 34
-                men a night.
-              </p>
-            </div>
-
-            <div className="sd-search-results">
               <a href="https://www.ugm.org/" className="sd-link" target="_blank">
                 <h1>Union Gospel Mission: Men's Shelter</h1>
               </a>
@@ -332,10 +323,12 @@ const SearchDirectoryPage = () => {
                 men a night.
               </p>
             </div>*/}
+
           </div>
         </div>
       </div>
       <div className="sd-btn">
+
         <button className="print-btn" onClick={()=>handleRequest()}>
           <h2>PRINT RESULTS</h2>
         </button>

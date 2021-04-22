@@ -1,0 +1,21 @@
+.nav-bar2 {
+    font-size: 4vh;
+    font-family: "roboto", Tahoma, Geneva, Verdana, sans-serif;
+   margin-top: 3%;
+  }
+  
+  .nav-links2 {
+    text-decoration: none;
+    color: #2e2a2a;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .nav-links2:hover {
+    color: #694839;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: overline;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  

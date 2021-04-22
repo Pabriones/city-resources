@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form, Container } from "react-bootstrap";
 import RegisterModal from "./RegisterModal";
-import "../../src/css/LoginModal.css";
+import "../../src/css/loginmodal.css";
 import { PersonCircle } from 'react-bootstrap-icons';
 import { Icon } from "semantic-ui-react";
 import Homepage from './Homepage';

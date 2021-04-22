@@ -5,6 +5,12 @@ const ResourcesSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
+
+	category: {
+		type: String,
+		required: true
+	},
+
 	phone: {
 		type: String,
 		required: true

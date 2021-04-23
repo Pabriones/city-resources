@@ -131,12 +131,13 @@ input.checkbox {
 
 .print-btn {
   background-color: #383636;
-  border-radius: 2%;
   width: 35%;
+  outline: none;
+  box-shadow: none;
 }
 
 .print-btn h2 {
-  color: #b4b19e;
+  color: #eeeeee;
   margin: 5%;
   font-size: 2.5vh;
   font-family: "Roboto", "sans-serif";
@@ -144,9 +145,11 @@ input.checkbox {
 
 .print-btn:hover h2 {
   font-weight: bold;
-  color: #ddcfcf;
+  color: #ebebeb;
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
+  outline: none;
+  box-shadow: none;
 }
 
 .sd-btn {
@@ -154,8 +157,8 @@ input.checkbox {
   text-align: center;
 }
 
-.sd-btn p{
-padding-top: 2%;
+.sd-btn p {
+  padding-top: 2%;
 }
 
 .scroll {
@@ -183,7 +186,6 @@ padding-top: 2%;
   }
 }
 
-
 .sd-rp-link {
   margin: 0px 1vw 0vw 0vw;
   text-decoration: none;
@@ -193,7 +195,6 @@ padding-top: 2%;
 }
 
 .sd-rp-link:hover {
- 
   font-weight: normal;
   text-decoration: none;
   color: #c54b26;

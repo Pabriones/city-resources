@@ -28,14 +28,13 @@ function LoginModal() {
               <h1>SIGN IN</h1>
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
-              <a href="#"> Forgot Password</a>
-              <button href="/homepage">Sign In</button>
-              <Link3 className="rp-link" to="/register" spy={true} duration={500}>
-                 REGISTER
-              </Link3>
-              
+              <a href="#"> Forgot Password?</a>
+              <button href="/homepage">Sign In</button>            
             </form>
           </div>
+
+
+          <h1>gsfsf</h1>
         </div>
       </Modal>
     </>

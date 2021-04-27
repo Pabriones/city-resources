@@ -6,7 +6,16 @@ const ProfileSchema = new mongoose.Schema({
 		ref: 'account'
 	},
 	bio: {
-		type: String
+		type: String,
+		required: true
+	},
+	status: {
+		type: String,
+		required: true
+	},
+	skills: {
+		type: [ String ],
+		required: true
 	},
 	date: {
 		type: Date,

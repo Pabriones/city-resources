@@ -10,9 +10,12 @@ class Homepage extends React.Component {
 	render() {
 		return (
 			<body>
-				<h1>Hello</h1>
-				<TopNav />
-				<div className="lp-title">CITY RESOURCES </div>;
+				<h1>Page currenty in construction</h1>
+				<div id="LandingPage">
+					<div className="lp-container">
+						<TopNav />
+					</div>
+				</div>
 				<div>
 					<AboutPage />
 					<AboutPage2 />

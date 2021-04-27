@@ -30,57 +30,39 @@ function RegisterPage() {
 									<Form.Label>
 										<div className="input-txt"> First Name </div>
 									</Form.Label>
-									<Form.Control size="lg" placeholder="Enter First Name" />
+									<Form.Control size="lg" placeholder="Enter First Name" required />
 								</Form.Group>
 
 								<Form.Group className="rp-label">
 									<Form.Label>
 										<div className="input-txt"> Last Name </div>
 									</Form.Label>
-									<Form.Control size="lg" placeholder="Enter Last Name" />
+									<Form.Control size="lg" placeholder="Enter Last Name" required />
 								</Form.Group>
-
-								{/* <label class="control-label" for="date">
-										Date
-									</label>
-									<Form.Control
-										class="form-control"
-										id="date"
-										name="date"
-										placeholder="MM/DD/YYY"
-										type="date"
-									/> */}
 
 								<Form.Group className="rp-label">
 									<Form.Label>
 										<div className="input-txt"> Date of Birth </div>
 									</Form.Label>
-									<Form.Control size="lg" placeholder="MM/DD/YYYY" type="date" />
+									<Form.Control size="lg" placeholder="MM/DD/YYYY" type="date" required />
 								</Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicEmail">
 									<Form.Label>
 										<div className="input-txt"> Email address </div>
 									</Form.Label>
-									<Form.Control size="lg" type="email" placeholder="Enter email" />
+									<Form.Control size="lg" type="email" placeholder="Enter email" required />
 								</Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicPassword">
 									<Form.Label>
 										<div className="input-txt"> Password </div>
 									</Form.Label>
-									<Form.Control size="lg" type="password" placeholder="Password" />
+									<Form.Control size="lg" type="password" placeholder="Password" required />
 								</Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicPassword">
-									<Form.Label>
-										<div className="input-txt"> Password </div>
-									</Form.Label>
-									<Form.Control
-										size="lg"
-										type="password"
-										placeholder="Enter Password again to confirm"
-									/>
+									<Form.Control size="lg" type="password" placeholder="Confirm Password" required />
 								</Form.Group>
 
 								<div class="form-group">

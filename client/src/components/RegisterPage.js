@@ -26,6 +26,38 @@ function RegisterPage() {
 								By registering, you'll be able to save your favorites and return to them when needed.
 							</div>
 							<Form className="rp-input">
+								<Form.Group className="rp-label">
+									<Form.Label>
+										<div className="input-txt"> First Name </div>
+									</Form.Label>
+									<Form.Control size="lg" placeholder="Enter First Name" />
+								</Form.Group>
+
+								<Form.Group className="rp-label">
+									<Form.Label>
+										<div className="input-txt"> Last Name </div>
+									</Form.Label>
+									<Form.Control size="lg" placeholder="Enter Last Name" />
+								</Form.Group>
+
+								{/* <label class="control-label" for="date">
+										Date
+									</label>
+									<Form.Control
+										class="form-control"
+										id="date"
+										name="date"
+										placeholder="MM/DD/YYY"
+										type="date"
+									/> */}
+
+								<Form.Group className="rp-label">
+									<Form.Label>
+										<div className="input-txt"> Date of Birth </div>
+									</Form.Label>
+									<Form.Control size="lg" placeholder="MM/DD/YYYY" type="date" />
+								</Form.Group>
+
 								<Form.Group className="rp-label" controlId="formBasicEmail">
 									<Form.Label>
 										<div className="input-txt"> Email address </div>
@@ -39,6 +71,32 @@ function RegisterPage() {
 									</Form.Label>
 									<Form.Control size="lg" type="password" placeholder="Password" />
 								</Form.Group>
+
+								<Form.Group className="rp-label" controlId="formBasicPassword">
+									<Form.Label>
+										<div className="input-txt"> Password </div>
+									</Form.Label>
+									<Form.Control
+										size="lg"
+										type="password"
+										placeholder="Enter Password again to confirm"
+									/>
+								</Form.Group>
+
+								<div class="form-group">
+									<div class="form-check">
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="invalidCheck2"
+											required
+										/>
+										<label class="form-check-label" for="invalidCheck2">
+											Agree to terms and conditions
+										</label>
+									</div>
+								</div>
 
 								<Button variant="" className="rp-submit" type="submit">
 									<PersonPlus size={28} /> REGISTER

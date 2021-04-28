@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../src/css/RegisterPage.css';
 import Footer from './Footer';
 import LoginModal from './LoginModal';
@@ -6,7 +6,18 @@ import TopNav from './TopNav';
 import { Form, Button } from 'react-bootstrap';
 import { PersonCircle, PersonPlus } from 'react-bootstrap-icons';
 
-function RegisterPage() {
+const RegisterPage = () => {
+	const [ formData, setFormData ] = useState({
+		firsname: '',
+		lastname: '',
+		email: '',
+		dateofbirth: '',
+		password: '',
+		password2: ''
+	});
+
+	const { firstname, lastname, email, dateofbirth, password, password2 } = formData;
+
 	return (
 		<div>
 			<div class="rp-container">
@@ -30,7 +41,7 @@ function RegisterPage() {
 									<Form.Label>
 										<div className="input-txt"> First Name </div>
 									</Form.Label>
-									<Form.Control size="lg" placeholder="Enter First Name" required />
+									<Form.Control size="lg" placeholder="Enter First Name" value={firstname} required />
 								</Form.Group>
 
 								<Form.Group className="rp-label">
@@ -58,14 +69,26 @@ function RegisterPage() {
 									<Form.Label>
 										<div className="input-txt"> Password </div>
 									</Form.Label>
-									<Form.Control size="lg" type="password" placeholder="Password" required />
+									<Form.Control
+										size="lg"
+										type="password"
+										placeholder="Password"
+										minLength="7"
+										required
+									/>
 								</Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicPassword">
 									<Form.Label>
 										<div className="input-txt"> Re-enter Password </div>
 									</Form.Label>
-									<Form.Control size="lg" type="password" placeholder="Confirm Password" required />
+									<Form.Control
+										size="lg"
+										type="password"
+										placeholder="Confirm Password"
+										minLength="7"
+										required
+									/>
 								</Form.Group>
 
 								<Form.Group className="rp-label">
@@ -99,6 +122,6 @@ function RegisterPage() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default RegisterPage;

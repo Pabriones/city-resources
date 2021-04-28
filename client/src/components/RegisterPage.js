@@ -2,7 +2,7 @@ import React from 'react';
 import '../../src/css/RegisterPage.css';
 import Footer from './Footer';
 import LoginModal from './LoginModal';
-import TopNav2 from './TopNav2';
+import TopNav from './TopNav';
 import { Form, Button } from 'react-bootstrap';
 import { PersonCircle, PersonPlus } from 'react-bootstrap-icons';
 
@@ -62,10 +62,13 @@ function RegisterPage() {
 								</Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicPassword">
+									<Form.Label>
+										<div className="input-txt"> Re-enter Password </div>
+									</Form.Label>
 									<Form.Control size="lg" type="password" placeholder="Confirm Password" required />
 								</Form.Group>
 
-								<Form.Group>
+								<Form.Group className="rp-label">
 									<div class="form-check">
 										<input
 											class="form-check-input"

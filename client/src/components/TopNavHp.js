@@ -4,15 +4,15 @@ import "../../src/css/TopNav.css";
 import {
     SuitHeart,
   } from "react-bootstrap-icons";
-  
+import UserProfile from './UserProfile'
 import LoginModal from "./LoginModal";
-import { Link as Link1 } from "react-scroll";
+import { Link as Link1 } from "react-router-dom";
 
 function TopNavHp() {
   return (
     <Container className="TopNavContainer">
       <Navbar expand="lg" variant="dark">
-        <Navbar.Brand href="#home" className="navTitle">
+        <Navbar.Brand href="/" className="navTitleHp">
           <h1>CITY RESOURCES</h1>
         </Navbar.Brand>
         <Navbar.Toggle className="toggleNav" aria-controls="basic-navbar-nav" />
@@ -24,9 +24,11 @@ function TopNavHp() {
               <SuitHeart size={30} color= "red"/> My Favorites
                 </a>  <br/>
                 <p> Signed in as:{" "}
-                <a href="#login" className="nav-links user-logged">
-             Selina Nguyen
-                </a> </p>
+                <Link1 className="nav-links user-logged" to="/userprofile" spy={true} duration={500}>
+                Selina Nguyen
+              </Link1>
+              
+             </p>
              
             </Navbar.Text>
           </Navbar.Collapse>

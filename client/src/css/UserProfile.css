@@ -1,4 +1,30 @@
 .up-container {
-    background-color: aliceblue;
-    padding: 0% 5% 0%;
+  /* background-image: url("../Images/adam-thomas-FB1n9kXP7WA-unsplash.jpg"); */
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: #141313;
+  font-family: "Roboto", "sans-serif";
+}
+
+.profile-container {
+  background-color: #e0e0e0d3;
+  margin: 1% 8% 0%;
+  padding: 2%;
+  height: 75vh;
+}
+
+.up-form-container {
+  padding: 1% 5% 0%;
+}
+
+.up-selections {
+  text-transform: uppercase;
+}
+
+.up-selections:hover h2 {
+  font-weight: bold;
+}
+
+.up-selections h2 {
+  color: black;
 }

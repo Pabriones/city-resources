@@ -1,8 +1,7 @@
 import React from "react";
 import { Nav, Row, Col, Container, Navbar} from "react-bootstrap";
 import "../../src/css/TopNav2.css";
-import { Link as Link1 } from "react-scroll";
-import { Link as Link2 } from "react-router-dom";
+import { Link as Link1 } from "react-router-dom";
 import LoginModal from './LoginModal'
 
 const TopNav2 = () => {

@@ -60,7 +60,6 @@
 .mr-auto h3 {
   font-size: 3.5vh;
   color: white;
- 
 }
 
 .mr-auto p {
@@ -70,8 +69,8 @@
 }
 
 .nav-links {
- text-decoration: none;
- color: #2c2927;
+  text-decoration: none;
+  color: #2c2927;
 }
 
 .nav-links:hover {
@@ -80,7 +79,7 @@
   text-decoration: underline;
 }
 
-.nav-linksBtn{
+.nav-linksBtn {
   background-color: #1f1c1a;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -93,8 +92,7 @@
 .nav-linksBtn:hover {
   color: #ffffff;
   font-style: normal;
- background-color: #3a3030;
- 
+  background-color: #3a3030;
 }
 
 .favs {
@@ -107,14 +105,18 @@
   font-weight: bold;
 }
 
-
 .user-logged {
   font-size: 2.2vh;
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
 }
 
-.user-logged:hover{
+.user-logged:hover {
   text-decoration: none;
   font-weight: bold;
+}
+
+.navTitleHp h1 {
+  color: #ffffff;
+  font-size: 5.8vh;
 }

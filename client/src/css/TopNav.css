@@ -1,4 +1,4 @@
-.nav-bar {
+/* .nav-bar {
   font-size: 4.2vh;
   font-family: "roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -41,4 +41,56 @@
   font-style: normal;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.justify-content-left{
+  padding-top: 5%;
+} */
+
+.TopNavContainer {
+  padding-top: 3%;
+  font-family: "Roboto", "sans-serif";
+}
+.navTitle h1 {
+  font-size: 5.8vh;
+  color: white;
+  opacity: 55%;
+}
+
+.mr-auto h3 {
+  font-size: 3.5vh;
+  color: white;
+ 
+}
+
+.mr-auto p {
+  font-size: 3vh;
+  color: white;
+  padding-top: 5%;
+}
+
+.nav-links {
+ text-decoration: none;
+ color: #2c2927;
+}
+
+.nav-links:hover {
+  color: #2c2927;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.nav-linksBtn{
+font-size: 2.8vh;
+ background-color: #1a1716;
+ color: white;
+ border: none;
+ border-radius: 0%;
+}
+
+.nav-linksBtn:hover {
+  color: #ffffff;
+  font-style: normal;
+ background-color: #3a3030;
+ 
 }

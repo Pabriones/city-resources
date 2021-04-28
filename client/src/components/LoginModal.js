@@ -16,8 +16,8 @@ function LoginModal() {
 
   return (
     <>
-      <Button variant=" " className="loginBtn" onClick={handleShow}>
-      <PersonCircle size={20} />   USER LOG IN
+      <Button variant=" " className="nav-linksBtn" onClick={handleShow}>
+   SIGN IN 
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -28,7 +28,7 @@ function LoginModal() {
               <h1>SIGN IN</h1>
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
-              <a href="#"> Forgot Password?</a>
+              <a href="/resetpassword"> Forgot Password?</a>
               <button href="/homepage">Sign In</button>            
             </form>
           </div>

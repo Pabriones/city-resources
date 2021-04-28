@@ -16,8 +16,8 @@ function LoginModal() {
 
   return (
     <>
-      <Button variant=" " className="loginBtn" onClick={handleShow}>
-      <PersonCircle size={20} />   USER LOG IN
+      <Button variant=" " className="nav-linksBtn" onClick={handleShow}>
+   SIGN IN 
       </Button>
 
       <Modal show={show} onHide={handleClose}>

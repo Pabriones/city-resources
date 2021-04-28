@@ -6,7 +6,7 @@ import { useReactToPrint} from 'react-to-print';
 import { Globe, Envelope, ArrowUpRight, Map, SuitHeart, SuitHeartFill } from "react-bootstrap-icons";
 import SearchNavLinks from "./SearchNavLinks";
 import Axios from "axios";
-
+import { Link as Link3 } from "react-router-dom";
 
 let filterArray = [
   { filterName: "Clothing Assistance",
@@ -99,7 +99,6 @@ const SearchDirectoryPage = () => {
     })}
     setState([...state]);
     handleRequest(toFetch);
-
   };
 
   const handleSearch=(e)=>{
@@ -167,6 +166,17 @@ const SearchDirectoryPage = () => {
         <button className="print-btn" onClick={handlePrint}>
           <h2>PRINT RESULTS</h2>
         </button>
+        <p>
+          Want to save your favorites and share by email?{" "}
+          <Link3
+            className="sd-rp-link"
+            to="/register"
+            spy={true}
+            duration={500}
+          >
+            Create an account!
+          </Link3>
+        </p>
       </div>
       <div>
         {" "}

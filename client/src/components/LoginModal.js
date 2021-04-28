@@ -7,6 +7,7 @@ import { Icon } from "semantic-ui-react";
 import Homepage from './Homepage';
 import { Link as Link3 } from "react-router-dom";
 import RegisterPage from './RegisterPage'
+import { Link as Link2 } from "react-router-dom";
 
 function LoginModal() {
   const [show, setShow] = useState(false);
@@ -29,7 +30,11 @@ function LoginModal() {
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <a href="/resetpassword"> Forgot Password?</a>
-              <button href="/homepage">Sign In</button>            
+              <Link2 className="directLink" to="/homepage"> <button type="button" class="directLinkBtn">
+                  SIGN IN
+                        
+                        
+                      </button></Link2>      
             </form>
           </div>
 

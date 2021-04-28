@@ -92,35 +92,19 @@
 }
 
 .loginBtn {
-<<<<<<< HEAD
-	font-size: 3vh;
+	font-size: 2.5vh;
 	font-family: "Roboto", "sans-serif";
 	cursor: pointer;
 	text-decoration: none;
-	color: #080808;
+	color: #ffffff;
 	cursor: pointer;
 }
 
 .loginBtn:hover {
-	color: #2c2c2c;
+	color: #ffffff;
 	font-style: normal;
 	font-weight: bold;
 	text-decoration: underline;
-=======
-  font-size: 2.5vh;
-  font-family: "Roboto", "sans-serif";
-  cursor: pointer;
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.loginBtn:hover {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-  text-decoration: underline;
->>>>>>> dev
 }
 
 .btn:focus {

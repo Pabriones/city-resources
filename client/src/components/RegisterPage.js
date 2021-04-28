@@ -17,20 +17,31 @@ const RegisterPage = () => {
 	});
 
 	const { firstname, lastname, email, dateofbirth, password, password2 } = formData;
-
 	return (
 		<div>
 			<div class="rp-container">
 				<div className="row">
 					<div className="col-sm-3" />
 
-					<div className="col-sm-8">
-						<div className="rp-title">CITY RESOURCES </div>
+          <div className="col-sm-8">
+            <div className="rp-title">CITY RESOURCES  </div>
 
-						<div className="usr-login">
-							{' '}
-							<LoginModal />
-						</div>
+                <div className="rp-form">
+              <div className="rp-intro">
+                By registering, you'll be able to save your favorites and return
+                to them when needed.
+              </div>
+              <Form className="rp-input">
+                <Form.Group className="rp-label">
+                  <Form.Label>
+                    <div className="input-txt"> First Name </div>
+                  </Form.Label>
+                  <Form.Control
+                    size="lg"
+                    placeholder="Enter First Name"
+                    required
+                  />
+                </Form.Group>
 
 						<div className="rp-form">
 							<div className="rp-intro">
@@ -44,26 +55,41 @@ const RegisterPage = () => {
 									<Form.Control size="lg" placeholder="Enter First Name" value={firstname} required />
 								</Form.Group>
 
-								<Form.Group className="rp-label">
-									<Form.Label>
-										<div className="input-txt"> Last Name </div>
-									</Form.Label>
-									<Form.Control size="lg" placeholder="Enter Last Name" required />
-								</Form.Group>
+                <Form.Group className="rp-label">
+                  <Form.Label>
+                    <div className="input-txt"> Date of Birth </div>
+                  </Form.Label>
+                  <Form.Control
+                    size="lg"
+                    placeholder="MM/DD/YYYY"
+                    type="date"
+                    required
+                  />
+                </Form.Group>
 
-								<Form.Group className="rp-label">
-									<Form.Label>
-										<div className="input-txt"> Date of Birth </div>
-									</Form.Label>
-									<Form.Control size="lg" placeholder="MM/DD/YYYY" type="date" required />
-								</Form.Group>
+                <Form.Group className="rp-label" controlId="formBasicEmail">
+                  <Form.Label>
+                    <div className="input-txt"> Email address </div>
+                  </Form.Label>
+                  <Form.Control
+                    size="lg"
+                    type="email"
+                    placeholder="Enter email"
+                    required
+                  />
+                </Form.Group>
 
-								<Form.Group className="rp-label" controlId="formBasicEmail">
-									<Form.Label>
-										<div className="input-txt"> Email address </div>
-									</Form.Label>
-									<Form.Control size="lg" type="email" placeholder="Enter email" required />
-								</Form.Group>
+                <Form.Group className="rp-label" controlId="formBasicPassword">
+                  <Form.Label>
+                    <div className="input-txt"> Password </div>
+                  </Form.Label>
+                  <Form.Control
+                    size="lg"
+                    type="password"
+                    placeholder="Password"
+                    required
+                  />
+                </Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicPassword">
 									<Form.Label>

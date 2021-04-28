@@ -92,6 +92,7 @@
 }
 
 .loginBtn {
+<<<<<<< HEAD
 	font-size: 3vh;
 	font-family: "Roboto", "sans-serif";
 	cursor: pointer;
@@ -105,6 +106,21 @@
 	font-style: normal;
 	font-weight: bold;
 	text-decoration: underline;
+=======
+  font-size: 2.5vh;
+  font-family: "Roboto", "sans-serif";
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+>>>>>>> dev
 }
 
 .btn:focus {

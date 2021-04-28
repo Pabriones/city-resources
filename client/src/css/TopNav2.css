@@ -1,21 +1,48 @@
-.nav-bar2 {
-    font-size: 4vh;
-    font-family: "roboto", Tahoma, Geneva, Verdana, sans-serif;
-   margin-top: 3%;
-  }
-  
-  .nav-links2 {
-    text-decoration: none;
-    color: #2e2a2a;
-    font-family: "Roboto", "sans-serif";
-  }
-  
-  .nav-links2:hover {
-    color: #694839;
-    font-style: normal;
-    font-weight: bold;
-    text-decoration: overline;
-    font-family: "Roboto", "sans-serif";
-  }
-  
-  
+
+.TopNavContainer2 {
+  padding-top: 3%;
+  font-family: "Roboto", "sans-serif";
+}
+.navTitle2 h1 {
+  font-size: 5.8vh;
+  color: rgb(22, 22, 22);
+  opacity: 55%;
+}
+
+.mr-auto2 h3 {
+  font-size: 3.5vh;
+  color: #181515;
+ 
+}
+
+.mr-auto2 p {
+  font-size: 3vh;
+  color: 181515;
+  padding-top: 5%;
+}
+
+.nav-links2 {
+ text-decoration: none;
+ color: #2c2927;
+}
+
+.nav-links2:hover {
+  color: #2c2927;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.nav-linksBtn2{
+font-size: 2.8vh;
+ background-color: #1a1716;
+ color: 181515;
+ border: none;
+ border-radius: 0%;
+}
+
+.nav-linksBtn2:hover {
+  color: #181515;
+  font-style: normal;
+ background-color: #3a3030;
+ 
+}

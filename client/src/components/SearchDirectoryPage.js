@@ -7,6 +7,7 @@ import { Globe, Envelope, ArrowUpRight, Map, SuitHeart, SuitHeartFill } from "re
 import SearchNavLinks from "./SearchNavLinks";
 import Axios from "axios";
 import { Link as Link3 } from "react-router-dom";
+import TopNav2 from "./TopNav2";
 
 let filterArray = [
   { filterName: "Clothing Assistance",
@@ -133,7 +134,7 @@ const SearchDirectoryPage = () => {
 
   return (
     <div className="sd-container">
-      {/* Row 1 */} <div className="sd-title">CITY RESOURCES </div>
+<TopNav2/>
       <div className="row hero">
         {/* Col 1 */}
         <div className="col-6 p main sd-filterContainer">

@@ -10,8 +10,9 @@ import LoginModal from "./components/LoginModal";
 import RegisterModal from "./components/RegisterModal";
 import AddResource from "./components/AddResource";
 import Forms from "./components/Forms";
-import Homepage from "./components/Homepage"
+import Homepage from "./components/Homepage";
 import RegisterPage from "./components/RegisterPage";
+import ResetPassword from "./components/ResetPassword";
 
 function App() {
   return (
@@ -26,13 +27,12 @@ function App() {
         <Route path="/registermodal" component={RegisterModal} />
         <Route path="/addresource" component={AddResource} />
         <Route path="/forms" component={Forms} />
-    	<Route path="/homepage" component={Homepage} />
-      <Route path="/register" component={RegisterPage} />
+        <Route path="/homepage" component={Homepage} />
+        <Route path="/register" component={RegisterPage} />
+        <Route path="/resetpassword" component={ResetPassword} />
       </Switch>
     </Router>
   );
-
-			
 }
 
 export default App;

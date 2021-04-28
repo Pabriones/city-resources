@@ -71,18 +71,18 @@
 
 .nav-links {
  text-decoration: none;
- color: #000000;
+ color: #2c2927;
 }
 
 .nav-links:hover {
-  color: #1d1c1b;
+  color: #2c2927;
   font-style: normal;
   text-decoration: underline;
 }
 
 .nav-linksBtn{
 font-size: 2.8vh;
- background-color: #141313;
+ background-color: #1a1716;
  color: white;
  border: none;
 }

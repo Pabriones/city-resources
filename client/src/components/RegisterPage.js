@@ -65,7 +65,7 @@ function RegisterPage() {
 									<Form.Control size="lg" type="password" placeholder="Confirm Password" required />
 								</Form.Group>
 
-								<div class="form-group">
+								<Form.Group>
 									<div class="form-check">
 										<input
 											class="form-check-input"
@@ -78,7 +78,7 @@ function RegisterPage() {
 											Agree to terms and conditions
 										</label>
 									</div>
-								</div>
+								</Form.Group>
 
 								<Button variant="" className="rp-submit" type="submit">
 									<PersonPlus size={28} /> REGISTER

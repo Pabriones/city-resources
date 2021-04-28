@@ -25,7 +25,6 @@ input[type="text"] {
 .sd-filterContainer {
   width: 50%;
   padding: 2% 3%;
-
 }
 /* .col-6.p-main {
  padding: 5% 5% 2%;
@@ -38,7 +37,6 @@ input[type="text"] {
 .sd-search-results {
   padding: 3% 4% 2%;
   font-family: "Roboto", "sans-serif";
- 
 }
 
 .sd-search-results p {
@@ -71,7 +69,6 @@ input[type="text"] {
   color: #6e6d6d;
   white-space: nowrap;
   font-size: 2.3vh;
- 
 }
 
 input.checkbox {
@@ -134,41 +131,43 @@ input.checkbox {
 
 .print-btn {
   background-color: #383636;
-  border-radius: 2%;
   width: 35%;
+  outline: none;
+  box-shadow: none;
 }
 
 .print-btn h2 {
-  color: #b4b19e;
+  color: #eeeeee;
   margin: 5%;
   font-size: 2.5vh;
   font-family: "Roboto", "sans-serif";
- 
 }
 
-
-.print-btn:hover h2{
+.print-btn:hover h2 {
   font-weight: bold;
-  color: #ddcfcf;
+  color: #ebebeb;
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
+  outline: none;
+  box-shadow: none;
 }
 
 .sd-btn {
   padding: 5% 5%;
   text-align: center;
- 
+}
+
+.sd-btn p {
+  padding-top: 2%;
 }
 
 .scroll {
   overflow-y: scroll;
   max-height: 115vh;
   /*   min-height: 85vh; */
- 
 }
 
-
-.fav-icon{
+.fav-icon {
   border: none;
   float: right;
   padding-top: 3.5%;
@@ -185,4 +184,18 @@ input.checkbox {
   .col-6 {
     width: 100%;
   }
+}
+
+.sd-rp-link {
+  margin: 0px 1vw 0vw 0vw;
+  text-decoration: none;
+  color: #ad5430;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sd-rp-link:hover {
+  font-weight: normal;
+  text-decoration: none;
+  color: #c54b26;
 }

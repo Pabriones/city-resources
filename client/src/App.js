@@ -31,7 +31,7 @@ function App() {
 				<Route path="/homepage" component={Homepage} />
 				<Route path="/registerpage" component={RegisterPage} />
 				<Route path="/resetpassword" component={ResetPassword} />
-				<Route path="/searchnavlinks" /> component={SearchNavLinks}
+				<Route path="/searchnavlinks" component={SearchNavLinks} />
 			</Switch>
 		</Router>
 	);

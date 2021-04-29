@@ -3,25 +3,33 @@ import TopNavHp from "./TopNavHp";
 import "../../src/css/UserProfile.css";
 import { Tab, Row, Col, Nav, Form, Button } from "react-bootstrap";
 import Footer from "./Footer";
+import TopNavHpDark from "./TopNavHpDark";
+import { SuitHeart, ArrowRight, Lock } from "react-bootstrap-icons";
+import { Icon } from "semantic-ui-react";
 
 function UserProfile() {
   return (
     <body>
       <div className="up-container">
-        <TopNavHp />
+        <TopNavHpDark />
         <div className="profile-container">
-          <Tab.Container defaultActiveKey="Profile">
+          <Tab.Container  defaultActiveKey=" ">
             <Row>
               <Col md={3}>
-                <Nav className="flex-column">
+                <Nav variant="tabs"className="flex-column">
                   <Nav.Item>
                     <Nav.Link className="up-selections" eventKey="Profile">
-                      <h2>Profile</h2>
+                      <h2>Profile </h2>
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link className="up-selections" eventKey="Password">
-                      <h2>Password</h2>
+                      <h2>Password </h2>
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link className="up-selections" eventKey="Favorites">
+                      <h2>Favorites </h2>
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
@@ -31,7 +39,6 @@ function UserProfile() {
                 <Tab.Content>
                   <Tab.Pane eventKey="Profile">
                     <div className="up-form-container">
-                      <h1>PERSONAL INFORMATION</h1>
                       <Form className="rp-input">
                         <Form.Group className="rp-label">
                           <Form.Label>
@@ -90,7 +97,6 @@ function UserProfile() {
                   </Tab.Pane>
                   <Tab.Pane eventKey="Password">
                     <div className="up-form-container">
-                      <h1>SET A NEW PASSWORD</h1>
                       <Form className="rp-input">
                         <Form.Group className="rp-label">
                           <Form.Label>

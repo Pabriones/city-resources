@@ -1,0 +1,59 @@
+.TopNavContainer-dark {
+  padding-top: 3%;
+  font-family: "Roboto", "sans-serif";
+}
+.navTitle-dark h1 {
+  font-size: 5.8vh;
+  color: #221d1d;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #2c2927;
+}
+
+.nav-links:hover {
+  color: #2c2927;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.nav-linksBtn-dark {
+  background-color: #1f1c1a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.5vh;
+  font-weight: bold;
+  color: rgb(32, 30, 30);
+  border: none;
+}
+
+.nav-linksBtn-dark:hover {
+  font-style: normal;
+  background-color: #3a3030;
+}
+
+.favs-dark {
+  font-size: 3vh;
+  color: #221d1d;
+}
+
+.favs-dark:hover {
+  font-size: 3vh;
+  text-decoration: none;
+  font-weight: bold;
+  color: #221d1d;
+}
+
+.user-logged-dark {
+  font-size: 2.2vh;
+  text-decoration: none;
+  font-family: "Roboto", "sans-serif";
+}
+
+.user-logged-dark:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ 

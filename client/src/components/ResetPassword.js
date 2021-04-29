@@ -3,6 +3,9 @@ import "../../src/css/ResetPassword.css";
 import Footer from "./Footer";
 import TopNav from "./TopNav";
 import { Button, Form, Row, Container, Col } from "react-bootstrap";
+import AboutPage from "./AboutPage";
+import AboutPage2 from "./AboutPage2";
+import ContactSection from "./ContactSection";
 
 function ResetPassword() {
   return (

@@ -5,7 +5,6 @@ import LoginModal from './LoginModal';
 import TopNav from './TopNav';
 import { Form, Button } from 'react-bootstrap';
 import { PersonCircle, PersonPlus } from 'react-bootstrap-icons';
-import axios from 'axios';
 
 const RegisterPage = () => {
 	const [ formData, setFormData ] = useState({
@@ -24,27 +23,7 @@ const RegisterPage = () => {
 		if (password !== password2) {
 			console.log('Password do not match');
 		} else {
-			const newUser = {
-				firstname,
-				lastname,
-				dateofbirth,
-				email,
-				password
-			};
-
-			try {
-				const config = {
-					headers: {
-						'Content-Type': 'application/json'
-					}
-				};
-				const body = JSON.stringify(newUser);
-
-				const res = await axios.post('/api/account', body, config);
-				console.log(res.data);
-			} catch (err) {
-				console.error(err.response.data);
-			}
+			console.log('SUCCESS');
 		}
 	};
 

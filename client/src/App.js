@@ -15,28 +15,33 @@ import RegisterPage from './components/RegisterPage';
 import ResetPassword from './components/ResetPassword';
 import SearchNavLinks from './components/SearchNavLinks';
 import UserProfile from './components/UserProfile';
+//Redux
+import { Provider } from 'react-redux';
+import store from './store';
 
-function App() {
+const App = () => {
 	return (
-		<Router>
-			<Switch>
-				<Route path="/" component={LandingPage} exact />
-				<Route path="/contact" component={ContactPage} />
-				<Route path="/emergency" component={EmergencyPage} />
-				<Route path="/directory" component={SearchDirectoryPage} />
-				<Route path="/footer" component={Footer} />
-				<Route path="/loginmodal" component={LoginModal} />
-				<Route path="/registermodal" component={RegisterModal} />
-				<Route path="/addresource" component={AddResource} />
-				<Route path="/forms" component={Forms} />
-				<Route path="/homepage" component={Homepage} />
-				<Route path="/registerpage" component={RegisterPage} />
-				<Route path="/resetpassword" component={ResetPassword} />
-				<Route path="/searchnavlinks" component={SearchNavLinks} />
-				<Route path="/userprofile" component={UserProfile} />
-			</Switch>
-		</Router>
+		<Provider store={store}>
+			<Router>
+				<Switch>
+					<Route path="/" component={LandingPage} exact />
+					<Route path="/contact" component={ContactPage} />
+					<Route path="/emergency" component={EmergencyPage} />
+					<Route path="/directory" component={SearchDirectoryPage} />
+					<Route path="/footer" component={Footer} />
+					<Route path="/loginmodal" component={LoginModal} />
+					<Route path="/registermodal" component={RegisterModal} />
+					<Route path="/addresource" component={AddResource} />
+					<Route path="/forms" component={Forms} />
+					<Route path="/homepage" component={Homepage} />
+					<Route path="/registerpage" component={RegisterPage} />
+					<Route path="/resetpassword" component={ResetPassword} />
+					<Route path="/searchnavlinks" component={SearchNavLinks} />
+					<Route path="/userprofile" component={UserProfile} />
+				</Switch>
+			</Router>
+		</Provider>
 	);
-}
+};
 
 export default App;

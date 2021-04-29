@@ -5,6 +5,7 @@ import LoginModal from './LoginModal';
 import TopNav from './TopNav';
 import { Form, Button } from 'react-bootstrap';
 import { PersonCircle, PersonPlus } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 
 const RegisterPage = () => {
 	const [ formData, setFormData ] = useState({

@@ -23,28 +23,18 @@ const Footer = () => {
               <div className="ft-text">
                 {" "}
                 <li>
-				<Link1
-                  className="ft-link"
-                  to="/"
-                  spy={true}
-                  duration={500}
-                >
-                  ABOUT
-                </Link1>
+                  <Link1 className="ft-link" to="/" spy={true} duration={500}>
+                    ABOUT
+                  </Link1>
                 </li>
               </div>
 
               <div className="ft-text">
                 {" "}
                 <li>
-				<Link1
-                  className="ft-link"
-                  to="/"
-                  spy={true}
-                  duration={500}
-                >
-                  CONTACT
-                </Link1>
+                  <Link1 className="ft-link" to="/" spy={true} duration={500}>
+                    CONTACT
+                  </Link1>
                 </li>
               </div>
             </ui>
@@ -69,32 +59,36 @@ const Footer = () => {
               </div>
               <div className="ft-text">
                 <li>
-				<Link1 className="ft-link" to="/addresource" spy={true} duration={500}>
-                 LIST YOUR RESOURCE
-              </Link1>
+                  <Link1
+                    className="ft-link"
+                    to="/addresource"
+                    spy={true}
+                    duration={500}
+                  >
+                    LIST YOUR RESOURCE
+                  </Link1>
                 </li>
               </div>
             </ui>
           </div>
 
-
-
-		  <div className="col-sm">
+          <div className="col-sm">
             <ui className="list-unstyled">
               <div className="ft-text">
                 {" "}
                 <li>
-				<Link1 className="ft-link" to="/forms" spy={true} duration={500}>
-                 FORMS
-              </Link1>
+                  <Link1
+                    className="ft-link"
+                    to="/forms"
+                    spy={true}
+                    duration={500}
+                  >
+                    FORMS
+                  </Link1>
                 </li>
               </div>
-
             </ui>
           </div>
-
-
-
         </div>
         <div className="row">
           <p className="col-lg">

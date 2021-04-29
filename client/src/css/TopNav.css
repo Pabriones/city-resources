@@ -52,9 +52,8 @@
   font-family: "Roboto", "sans-serif";
 }
 .navTitle h1 {
-  font-size: 5.8vh;
-  color: white;
-  opacity: 55%;
+  font-size: 3vh;
+  color: rgb(255, 255, 255);
 }
 
 .mr-auto h3 {

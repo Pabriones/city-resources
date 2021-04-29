@@ -9,6 +9,7 @@ import ContactSection from "./ContactSection";
 
 function ResetPassword() {
   return (
+    <body>
     <div className="rpass-container">
       <TopNav />{" "}
       <div className="rpass-form">
@@ -49,8 +50,8 @@ function ResetPassword() {
           </Row>
         </Container>
       </div>
-      <Footer />
-    </div>
+    
+    </div>  <Footer /></body>
   );
 }
 

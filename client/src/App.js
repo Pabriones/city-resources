@@ -14,10 +14,12 @@ import Homepage from "./components/Homepage";
 import RegisterPage from "./components/RegisterPage";
 import ResetPassword from "./components/ResetPassword";
 import UserProfile from "./components/UserProfile";
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Switch>
         <Route path="/" component={LandingPage} exact />
         <Route path="/contact" component={ContactPage} />

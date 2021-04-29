@@ -12,10 +12,7 @@ const TopNav = () => {
         <Navbar.Brand href="#home" className="navTitle">
           <h1>CITY RESOURCES</h1>
         </Navbar.Brand>
-        <Navbar.Toggle
-          className="toggleNav"
-          aria-controls="basic-navbar-nav"
-        />
+        <Navbar.Toggle className="toggleNav" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
           <Nav className="mr-auto">
             <Nav.Link className="nav-links" href="#">
@@ -46,64 +43,12 @@ const TopNav = () => {
           </Nav>
           <Navbar.Collapse className="justify-content-end mr-auto">
             <Navbar.Text>
-             
-                <LoginModal />
-           
+              <LoginModal />
             </Navbar.Text>
           </Navbar.Collapse>
         </Navbar.Collapse>
       </Navbar>
     </Container>
-
-    /* 
-      <Nav className="nav-bar title justify-content-center">
-        CITY RESOURCES{" "}
-      </Nav>
-
-      <Nav className="nav-bar justify-content-center">
-        <Nav.Item>
-          <Nav.Link className="nav-links" href="#">
-            <Link1
-              className="nav-links"
-              to="AboutPage"
-              spy={true}
-              duration={500}
-            >
-              ABOUT
-            </Link1>
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link className="nav-links" href="#">
-            <Link1
-              className="nav-links"
-              to="ContactSection"
-              spy={true}
-              duration={500}
-            >
-              CONTACT
-            </Link1>
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link className="nav-links" href="#">
-            <Link1
-              className="nav-links"
-              to="#"
-              spy={true}
-              duration={500}
-            >
-              FORMS
-            </Link1>
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#">
-            <LoginModal />
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
-</div> */
   );
 };
 

@@ -1,0 +1,24 @@
+.up-container {
+  font-family: "Roboto", "sans-serif";
+}
+
+.up-form-container {
+  padding: 0% 5% 0%;
+}
+
+.up-selections {
+  text-transform: uppercase;
+}
+
+.flex-column {
+  background-color: #e0e0e073;
+  height: 70vh;
+}
+
+.up-selections:hover h2 {
+  font-weight: bold;
+}
+
+.up-selections h2 {
+  color: rgb(22, 16, 16);
+}

@@ -14,6 +14,7 @@ import Homepage from './components/Homepage';
 import RegisterPage from './components/RegisterPage';
 import ResetPassword from './components/ResetPassword';
 import SearchNavLinks from './components/SearchNavLinks';
+import UserProfile from './components/UserProfile';
 
 function App() {
 	return (
@@ -32,6 +33,7 @@ function App() {
 				<Route path="/registerpage" component={RegisterPage} />
 				<Route path="/resetpassword" component={ResetPassword} />
 				<Route path="/searchnavlinks" component={SearchNavLinks} />
+				<Route path="/userprofile" component={UserProfile} />
 			</Switch>
 		</Router>
 	);

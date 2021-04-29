@@ -30,7 +30,7 @@ function LoginModal() {
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <p>Forgot Password? Reset <Link to="/resetpassword">here</Link></p>
-              <button ><Link to="/forms">Sign In</Link></button>   
+              <button ><Link to="/homepage">Sign In</Link></button>   
               <p> Not a member, Register <Link to="/registerpage" >here</Link></p>
             </form>
           </div>

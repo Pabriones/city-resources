@@ -5,10 +5,11 @@ import LoginModal from './LoginModal';
 import TopNav from './TopNav';
 import { Form, Button } from 'react-bootstrap';
 import { PersonCircle, PersonPlus } from 'react-bootstrap-icons';
+import axios from 'axios';
 
 const RegisterPage = () => {
 	const [ formData, setFormData ] = useState({
-		firsname: '',
+		firstname: '',
 		lastname: '',
 		email: '',
 		dateofbirth: '',
@@ -17,10 +18,39 @@ const RegisterPage = () => {
 	});
 
 	const { firstname, lastname, email, dateofbirth, password, password2 } = formData;
+	const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+	const onSubmit = async (e) => {
+		e.preventDefault();
+		if (password !== password2) {
+			console.log('Password do not match');
+		} else {
+			const newUser = {
+				firstname,
+				lastname,
+				dateofbirth,
+				email,
+				password
+			};
+
+			try {
+				const config = {
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				};
+				const body = JSON.stringify(newUser);
+
+				const res = await axios.post('/api/account', body, config);
+				console.log(res.data);
+			} catch (err) {
+				console.error(err.response.data);
+			}
+		}
+	};
 
 	return (
 		<div>
-			<div class="rp-container">
+			<div className="rp-container">
 				<div className="row">
 					<div className="col-sm-3" />
 
@@ -31,40 +61,64 @@ const RegisterPage = () => {
 							<div className="rp-intro">
 								By registering, you'll be able to save your favorites and return to them when needed.
 							</div>
-							<Form className="rp-input">
+							<Form className="rp-input" onSubmit={(e) => onSubmit(e)}>
 								<Form.Group className="rp-label">
 									<Form.Label>
 										<div className="input-txt"> First Name </div>
 									</Form.Label>
-									<Form.Control size="lg" placeholder="Enter First Name" value={firstname} required />
+									<Form.Control
+										size="lg"
+										placeholder="Enter First Name"
+										type="text"
+										name="firstname"
+										value={firstname}
+										onChange={(e) => onChange(e)}
+										required
+									/>
 								</Form.Group>
 
 								<Form.Group className="rp-label">
 									<Form.Label>
 										<div className="input-txt"> Last Name </div>
 									</Form.Label>
-									<Form.Control size="lg" placeholder="Enter Last Name" required />
+									<Form.Control
+										size="lg"
+										placeholder="Enter Last Name"
+										name="lastname"
+										value={lastname}
+										onChange={(e) => onChange(e)}
+										required
+									/>
 								</Form.Group>
 
 								<Form.Group className="rp-label">
 									<Form.Label>
 										<div className="input-txt"> Date of Birth </div>
 									</Form.Label>
-									<Form.Control size="lg" placeholder="MM/DD/YYYY" type="date" required />
+									<Form.Control
+										size="lg"
+										placeholder="MM/DD/YYYY"
+										type="date"
+										name="dateofbirth"
+										value={dateofbirth}
+										onChange={(e) => onChange(e)}
+										required
+									/>
 								</Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicEmail">
 									<Form.Label>
 										<div className="input-txt"> Email address </div>
 									</Form.Label>
-									<Form.Control size="lg" type="email" placeholder="Enter email" required />
-								</Form.Group>
-
-								<Form.Group className="rp-label" controlId="formBasicPassword">
-									<Form.Label>
-										<div className="input-txt"> Password </div>
-									</Form.Label>
-									<Form.Control size="lg" type="password" placeholder="Password" required />
+									<Form.Control
+										size="lg"
+										type="email"
+										placeholder="Enter email"
+										name="email"
+										value={email}
+										onChange={(e) => onChange(e)}
+										required
+									/>
 								</Form.Group>
 
 								<Form.Group className="rp-label" controlId="formBasicPassword">
@@ -76,6 +130,9 @@ const RegisterPage = () => {
 										type="password"
 										placeholder="Password"
 										minLength="7"
+										name="password"
+										value={password}
+										onChange={(e) => onChange(e)}
 										required
 									/>
 								</Form.Group>
@@ -89,20 +146,23 @@ const RegisterPage = () => {
 										type="password"
 										placeholder="Confirm Password"
 										minLength="7"
+										name="password2"
+										value={password2}
+										onChange={(e) => onChange(e)}
 										required
 									/>
 								</Form.Group>
 
 								<Form.Group className="rp-label">
-									<div class="form-check">
+									<div className="form-check">
 										<input
-											class="form-check-input"
+											className="form-check-input"
 											type="checkbox"
 											value=""
 											id="invalidCheck2"
 											required
 										/>
-										<label class="form-check-label" for="invalidCheck2">
+										<label className="form-check-label" htmlFor="invalidCheck2">
 											Agree to terms and conditions
 										</label>
 									</div>

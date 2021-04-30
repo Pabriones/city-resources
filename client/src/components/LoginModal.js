@@ -26,7 +26,14 @@ function LoginModal() {
           <div className="form-container sign-in-container">
             <form action="#">
               <h1>SIGN IN</h1>
-             <p>Don't have an account yet?<a href="/register" className="create-acct-link"> Create one!</a></p>
+              <p>
+                {" "}
+                Don't have an account yet?
+                <a href="/register" className="fg-link">
+                  {" "}
+                  Create one!
+                </a>
+              </p>
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
               <Link2 className="directLink" to="/homepage">
@@ -35,12 +42,12 @@ function LoginModal() {
                   SIGN IN
                 </button>
               </Link2>{" "}
-              <a href="/resetpassword"> Forgot Password?</a>
-  
+              <a href="/resetpassword" className="fg-link">
+                {" "}
+                Forgot Password?
+              </a>
             </form>
           </div>
-
-          <h1>gsfsf</h1>
         </div>
       </Modal>
     </>

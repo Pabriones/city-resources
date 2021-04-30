@@ -73,7 +73,7 @@
 }
 
 .nav-links:hover {
-  color: #2c2927;
+ 
   font-style: normal;
   text-decoration: underline;
 }
@@ -81,9 +81,8 @@
 .nav-linksBtn {
   background-color: #1f1c1a;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-size: 2.5vh;
-  font-weight: bold;
   color: rgb(255, 255, 255);
   border: none;
 }

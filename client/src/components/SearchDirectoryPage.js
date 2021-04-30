@@ -133,8 +133,9 @@ const SearchDirectoryPage = () => {
   let toPrint = [];
 
   return (
+    <body><TopNav2/>
     <div className="sd-container">
-<TopNav2/>
+
       <div className="row hero">
         {/* Col 1 */}
         <div className="col-6 p main sd-filterContainer">
@@ -183,7 +184,7 @@ const SearchDirectoryPage = () => {
         {" "}
         <Footer />
       </div>
-    </div>
+    </div></body>
   );
 };
 

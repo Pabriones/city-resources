@@ -120,10 +120,6 @@
   background-color: #000000;
 }
 
-.create-acct-btn p {
-  font-size: 3vh;
-}
-
-.create-acct-btn:hover {
+.form-container a:hover {
   font-weight: bold;
 }

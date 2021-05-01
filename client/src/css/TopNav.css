@@ -67,13 +67,14 @@
   padding-top: 5%;
 }
 
-.nav-links {
-  text-decoration: none;
-  color: #2c2927;
+.navTitle:hover h1{
+color: #ffffff;
+font-weight: bold;
 }
 
-.nav-links:hover {
- 
+.nav-links:hover h3 {
+ color: #ffffff;
+ font-weight: bold;
   font-style: normal;
   text-decoration: underline;
 }
@@ -85,6 +86,7 @@
   font-size: 2.5vh;
   color: rgb(255, 255, 255);
   border: none;
+  border-radius: 0%;
 }
 
 .nav-linksBtn:hover {
@@ -117,4 +119,47 @@
 .navTitleHp h1 {
   color: #ffffff;
   font-size: 5.8vh;
+}
+
+
+@media (max-width: 575px) { 
+  .navTitle h1 {
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+  }
+ }
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  .navTitle h1 {
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .navTitle h1 {
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .lp-container {
+    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
+    min-height: 90vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0e0e0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ 
 }

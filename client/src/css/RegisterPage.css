@@ -67,7 +67,17 @@
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {  }
+@media (max-width: 575px) { 
+  .col-sm-3 {
+    background-image: url("../Images/brick.jpg");
+    min-height: 35vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0e0e0;
+  }
+ }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) { 

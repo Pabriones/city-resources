@@ -1,5 +1,6 @@
 .contact-container {
   width: 100%;
+  font-family: "Roboto", "sans-serif";
 }
 
 .emergencyNumbers {
@@ -37,7 +38,7 @@
 .contact-info h1 {
   font-size: 6vh;
   font-weight: 800;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Roboto", "sans-serif";
   color: #ffffff;
 }
 
@@ -55,7 +56,7 @@
 }
 
 .contact-info-2 h2{
-font-family: 'Poppins', sans-serif;
+  font-family: "Roboto", "sans-serif";
 }
 
 .contact-info-2 h1 {
@@ -78,8 +79,6 @@ padding: 5%
 
 .cs-text {
   font-size: 2vh;
-}
-.ab2-images {
 }
 
 .ab2-crop {
@@ -116,39 +115,6 @@ padding: 5%
   padding: 4px 45px 1px 51px; */
 }
 
-/* @media (max-width: 1199px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 31px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
-}
-
-@media (max-width: 991px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 31px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 25px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
-}
-
-@media (max-width: 575px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 31px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
-} */
-
-
 
 .addResourceBtn {
   background-color: #2c2927;
@@ -181,4 +147,53 @@ padding: 5%
   font-weight: bolder;
   text-decoration: none;
   color: #ffffff;
+}
+
+
+@media (max-width: 575px) { 
+  .contact-info {
+    font-size: 2.5vh;
+  }
+
+  .contact-info h1 {
+    font-size: 5vh;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+ }
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  .contact-info {
+    font-size: 2.8vh;
+  }
+
+  .contact-info h1 {
+    font-size: 5vh;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .contact-info {
+    font-size: 2.8vh;
+  }
+
+  .contact-info h1 {
+    font-size: 5vh;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .contact-info {
+    font-size: 2.8vh;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ 
 }

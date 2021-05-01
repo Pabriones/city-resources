@@ -71,32 +71,7 @@
   margin: 65px 75px 60px auto;
   padding: 5px 60px 5px;
 }
-/* @media (max-width: 1199px) {
-  .usearchDirectoryBtn {
-    margin-top: 116px;
-    margin-right: auto;
-  }
-}
 
-@media (max-width: 991px) {
-  .searchDirectoryBtn {
-    margin-top: 90px;
-  }
-}
-
-@media (max-width: 767px) {
-  .searchDirectoryBtn {
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 575px) {
-  .searchDirectoryBtn {
-    margin-top: 0px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-} */
 .searchText {
   display: inline;
   font-family: "Roboto", "Helvetica";
@@ -162,4 +137,61 @@
 .chevIconSearch {
   font-size: 2.4vh;
   display: absolute;
+}
+
+@media (max-width: 575px) { 
+  .lp-container {
+    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
+    min-height: 60vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0e0e0;
+  }
+ }
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  .lp-container {
+    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
+    min-height: 70vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0e0e0;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .lp-container {
+    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
+    min-height: 80vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0e0e0;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .lp-container {
+    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
+    min-height: 90vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0e0e0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ 
 }

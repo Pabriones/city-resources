@@ -139,59 +139,10 @@
   display: absolute;
 }
 
-@media (max-width: 575px) { 
+/* SMARTPHONES */
+@media (min-width : 320px)
+and (max-width : 480px) { 
   .lp-container {
-    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
-    min-height: 60vh;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #e0e0e0;
+    min-height: 70vh;
   }
  }
-
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) { 
-  .lp-container {
-    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
-    min-height: 70vh;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #e0e0e0;
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) { 
-  .lp-container {
-    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
-    min-height: 80vh;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #e0e0e0;
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) { 
-  .lp-container {
-    background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
-    min-height: 90vh;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #e0e0e0;
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
- 
-}

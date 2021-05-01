@@ -142,7 +142,7 @@
 
 
 /* SMARTPHONES */
-@media (min-width : 320px)
+@media (min-width : 321px)
 and (max-width : 480px) { 
   .ab1-heading h1 {
     font-family: "Poppins", sans-serif;

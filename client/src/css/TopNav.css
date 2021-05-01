@@ -116,10 +116,6 @@ font-weight: bold;
   font-weight: bold;
 }
 
-.navTitleHp h1 {
-  color: #ffffff;
-  font-size: 5.8vh;
-}
 
 /* SMARTPHONES */
 @media (min-width : 320px)

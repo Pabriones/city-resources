@@ -136,7 +136,7 @@ const SearchDirectoryPage = () => {
     <body><TopNav2/>
     <div className="sd-container">
 
-      <div className="row hero">
+      <div className="row filter">
         {/* Col 1 */}
         <div className="col-6 p main sd-filterContainer">
           <div className="sd-searchBar">
@@ -179,11 +179,10 @@ const SearchDirectoryPage = () => {
             Create an account!
           </Link3>
         </p>
-      </div>
+      </div>   </div>
       <div>
-        {" "}
         <Footer />
-      </div>
+   
     </div></body>
   );
 };

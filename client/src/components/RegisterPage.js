@@ -10,12 +10,10 @@ function RegisterPage() {
   return (
     <div>
       <div class="rp-container">
+       
         <div className="row">
           <div className="col-sm-3" />
-
-          <div className="col-sm-8">
-            <div className="rp-title">CITY RESOURCES  </div>
-
+          <div className="col-sm-8"> <TopNav2/>
                 <div className="rp-form">
               <div className="rp-intro">
                 By registering, you'll be able to save your favorites and return

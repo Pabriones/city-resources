@@ -1,40 +1,35 @@
 const mongoose = require('mongoose');
 
 const FormsSchema = new mongoose.Schema({
-	name: {
+	firstname: {
 		type: String,
 		required: true
 	},
-
-	category: {
+	lastname: {
 		type: String,
 		required: true
 	},
-
-	phone: {
-		type: String,
-		required: true
-	},
-    address: {
+	dateofbirth: {
 		type: String,
 		required: true
 	},
 	email: {
 		type: String,
 		required: true,
-		
+		unique: true
 	},
-
-    operationHours: {
+	password: {
 		type: String,
-		required: true
+		required: true,
+		unique: true
 	},
-	
-    description: {
-		type: String,
-		required: true
+	avatar: {
+		type: String
 	},
-	
+	date: {
+		type: Date,
+		default: Date.now
+	}
 });
 
 module.exports = Forms = mongoose.model('forms', FormsSchema);

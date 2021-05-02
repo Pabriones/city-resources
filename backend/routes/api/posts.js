@@ -6,6 +6,7 @@ const auth = require('../../middleware/auth');
 const Post = require('../../models/Post');
 const Profile = require('../../models/Profile');
 const Account = require('../../models/Account');
+const Account = require('../../models/forms');
 
 // @route Get api/posts
 // @desc Create a post
@@ -17,7 +18,7 @@ router.post('/', [ auth, [ check('text', 'Text is required').not().isEmpty() ] ]
 	}
 
 	try {
-		const account = await Account.findById(req.account.id).select('-password');
+		const forms = await Forms.findById(req.forms.id).select('-password');
 
 		const newPost = new Post({
 			text: req.body.text,

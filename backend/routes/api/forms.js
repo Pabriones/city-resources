@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
-
+const gravatar = require('gravatar');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const config = require('config');
 const { check, validationResult } = require('express-validator');
 
-const Forms = require('../../models/forms');
+const Account = require('../../models/forms');
 
 // @route POST api/forms
 // @desc Test route
@@ -11,15 +14,13 @@ const Forms = require('../../models/forms');
 router.post(
 	'/',
 	[
-		check('name', 'Name is required').not().isEmpty(),
-		check('category', 'Category is required').not().isEmpty(),
-		check('phone', 'Phone is required').not().isEmpty(),
-        check('address', 'Address is required').not().isEmpty(),
-        check('email', 'Please include a valid email').not().isEmpty(),
-		check('operationHours', 'Operation hours are required').not().isEmpty(),
-		check('description', 'Description is required').not().isEmpty()
-			
-	
+		check('firstname', 'Firstname is required').not().isEmpty(),
+		check('lastname', 'Lastname is required').not().isEmpty(),
+		check('dateofbirth', 'Please enter a date of birth').not().isEmpty(),
+		check('email', 'Please include a valid email').isEmail(),
+		check('password', 'Please enter a password with 7 or more characters').isLength({
+			min: 7
+		})
 	],
 	async (req, res) => {
 		const errors = validationResult(req);
@@ -27,22 +28,40 @@ router.post(
 			return res.status(400).json({ errors: errors.array() });
 		}
 
-		const { name,category, phone, address, email,operationHours, description } = req.body;
+		const { firstname, lastname, dateofbirth, email, password } = req.body;
 
 		try {
 			// See if users exists
-			let forms = await Forms.findOne({name });
+			let forms = await Forms.findOne({ email });
 			if (forms) {
-				return res.status(400).json({ errors: [ { msg: 'Resources already exists' } ] });
+				return res.status(400).json({ errors: [ { msg: 'Account already exists' } ] });
 			}
+
+			// Get users gravatar
+			const avatar = gravatar.url(email, {
+				s: '200',
+				r: 'pg',
+				d: 'mm'
+			});
+
+			forms = new Forms({ firstname, lastname, dateofbirth, email, avatar, password });
 
 			
 
-			forms = new Resources({ name,category, phone, address, email, operationHours, description });
+			await forms.save(); //save the password in the database
 
-            
-			await forms.save();
-            res.send('Resource saved');
+			// Return jsonwebtoken
+
+			const payload = {
+				account: {
+					id: forms.id
+				}
+			};
+
+			jwt.sign(payload, config.get('jwtSecret'), { expiresIn: 360000 }, (err, token) => {
+				if (err) throw err;
+				res.json({ token });
+			});
 		} catch (err) {
 			console.error(err.message);
 			res.status(500).send('Server Error');
@@ -51,3 +70,4 @@ router.post(
 );
 
 module.exports = router;
+

@@ -24,6 +24,7 @@ app.get('/', (req, res) => res.send('API RUNNING'));
 //define route
 app.use('/api/account', require('./routes/api/account'));
 app.use('/api/resources', require('./routes/api/resources'));
+app.use('/api/forms', require('./routes/api/forms'));
 app.use('/api/getFilterData', require('./routes/api/getFilterData'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));

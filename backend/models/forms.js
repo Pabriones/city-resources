@@ -1,0 +1,40 @@
+const mongoose = require('mongoose');
+
+const FormsSchema = new mongoose.Schema({
+	name: {
+		type: String,
+		required: true
+	},
+
+	category: {
+		type: String,
+		required: true
+	},
+
+	phone: {
+		type: String,
+		required: true
+	},
+    address: {
+		type: String,
+		required: true
+	},
+	email: {
+		type: String,
+		required: true,
+		
+	},
+
+    operationHours: {
+		type: String,
+		required: true
+	},
+	
+    description: {
+		type: String,
+		required: true
+	},
+	
+});
+
+module.exports = Forms = mongoose.model('forms', FormsSchema);

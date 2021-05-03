@@ -11,8 +11,8 @@ const Forms = require('../../models/forms');
 router.post(
 	'/',
 	[
-		check('organisation_name', 'Name is required').not().isEmpty(),
-        check('form_name', 'Name is required').not().isEmpty(),
+		check('organisation_name', 'Organization name is required').not().isEmpty(),
+        check('form_name', 'Form name is required').not().isEmpty(),
 		check('category', 'Category is required').not().isEmpty(),
 		check('link', 'Link is required').not().isEmpty()
         
@@ -24,11 +24,11 @@ router.post(
 			return res.status(400).json({ errors: errors.array() });
 		}
 
-		const { organisation_name,forn_name,category,link } = req.body;
+		const { organisation_name,form_name,category,link } = req.body;
 
 		try {
 			// See if users exists
-			let forms = await Forms.findOne({name });
+			let forms = await Forms.findOne({link });
 			if (forms) {
 				return res.status(400).json({ errors: [ { msg: 'Resources already exists' } ] });
 			}

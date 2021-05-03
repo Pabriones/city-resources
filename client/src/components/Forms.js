@@ -31,14 +31,14 @@ const Forms = () => {
 				<div className="col-6 p-main sd-results-container scroll">
 					<div className="sd-search-results">
 						<div className="sd-search-results">
-							<a href="https://www.ugm.org/" className="sd-link" target="_blank">
+							<a href="https://www.pdffiller.com/jsfiller-desk14/?requestHash=2c631acd4662c43a0456870cce6e8a556133086eabb52cba978f9f9f578eae28&projectId=703257778&loader=tips#9e61439ab93b41339a4f4c2f4fbd7021" className="sd-link" target="_blank">
 								<h1>Disabled Parking</h1>
 							</a>
 						</div>
 
 						<div className="sd-search-results">
 							<a
-								href="https://www.uwmedicine.org/patient-resources/billing-and-insurance/financial-assistance-application"
+								href="https://www.uwmedicine.org/sites/stevie/files/2021-03/Financial-Assistance-Application-English.pdf"
 								className="sd-link"
 								target="_blank"
 							>

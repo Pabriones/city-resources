@@ -11,7 +11,8 @@ const Forms = require('../../models/forms');
 router.post(
 	'/',
 	[
-		check('name', 'Name is required').not().isEmpty(),
+		check('organisation_name', 'Name is required').not().isEmpty(),
+        check('form_name', 'Name is required').not().isEmpty(),
 		check('category', 'Category is required').not().isEmpty(),
 		check('link', 'Link is required').not().isEmpty()
         
@@ -23,7 +24,7 @@ router.post(
 			return res.status(400).json({ errors: errors.array() });
 		}
 
-		const { name,category,link } = req.body;
+		const { organisation_name,forn_name,category,link } = req.body;
 
 		try {
 			// See if users exists
@@ -34,7 +35,7 @@ router.post(
 
 			
 
-			forms = new Forms({ name,category,link });
+			forms = new Forms({ organisation_name,form_name,category,link });
 
             
 			await forms.save();

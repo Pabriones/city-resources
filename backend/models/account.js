@@ -10,7 +10,7 @@ const AccountSchema = new mongoose.Schema({
 		required: true
 	},
 	dateofbirth: {
-		type: String,
+		type: Date,
 		required: true
 	},
 	email: {

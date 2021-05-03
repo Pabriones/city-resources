@@ -160,6 +160,7 @@ const SearchDirectoryPage = () => {
         {/* Col 2 */}
         <div className="col-6 sd-results-container scroll">
           <div className="sd-search-results">
+          <SearchNavLinks/>
             <Print ref={componentRef} data={resource} />
           </div>
         </div>

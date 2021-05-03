@@ -18,41 +18,42 @@ const ContactSection = () => {
               resources we should add, please let us know!
             </p>
           </div>
-          </div>
-          <div className="contact-info-2">
-            <div className="row">
-              <div className="col-sm">
-                <div>
-                  <Container>
-                    <Row>
-                      <Col>
-                        <div className="email">
-                          <p>E-mail</p>
-                          <h2>hello@cityresources.com </h2>
-                        </div>
-                      </Col>
-                      <Col>
+        </div>
+        <div className="contact-info-2">
+          <div className="row">
+            <div className="col-sm">
+              <div>
+                <Container>
+                  <Row>
+                    <Col>
+                      <div className="email">
+                        <p>E-mail</p>
+                        <h2>hello@cityresources.com </h2>
+                      </div>
+                    </Col>
+                    <Col>
                       <div className="add-resource">
                         <p>
                           If you would like to add your resource to our page,
-                          please complete the form.<br/>
-                        
-                        <Link2 className="addResource" to="/addresource">
-                          {" "}
-                          <button type="button" class="addResourceBtn">
+                          please complete the form.
+                          <br />
+                          <Link2 className="addResource" to="/addresource">
                             {" "}
-                            Add Your Resource
-                          </button>{" "}
-                        </Link2></p>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Container>
-                </div>
+                            <button type="button" class="addResourceBtn">
+                              {" "}
+                              Add Your Resource
+                            </button>{" "}
+                          </Link2>
+                        </p>
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
             </div>
           </div>
-     
+        </div>
+
         {/*               <div class="col-xs-6">
                 <div className="emergencyNumbers">
                   <h1>24HR EMERGENCY HELP LINES</h1>

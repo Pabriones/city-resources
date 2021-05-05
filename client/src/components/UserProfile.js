@@ -13,7 +13,7 @@ function UserProfile() {
       <div className="up-container">
         <TopNavHpDark />
         <div className="profile-container">
-          <Tab.Container  defaultActiveKey=" ">
+          <Tab.Container  defaultActiveKey="Profile">
             <Row>
               <Col md={3}>
                 <Nav variant="tabs"className="flex-column">

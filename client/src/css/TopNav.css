@@ -52,9 +52,8 @@
   font-family: "Roboto", "sans-serif";
 }
 .navTitle h1 {
-  font-size: 5.8vh;
-  color: white;
-  opacity: 55%;
+  font-size: 3vh;
+  color: rgb(255, 255, 255);
 }
 
 .mr-auto h3 {
@@ -68,13 +67,14 @@
   padding-top: 5%;
 }
 
-.nav-links {
-  text-decoration: none;
-  color: #2c2927;
+.navTitle:hover h1{
+color: #ffffff;
+font-weight: bold;
 }
 
-.nav-links:hover {
-  color: #2c2927;
+.nav-links:hover h3 {
+ color: #ffffff;
+ font-weight: bold;
   font-style: normal;
   text-decoration: underline;
 }
@@ -82,11 +82,11 @@
 .nav-linksBtn {
   background-color: #1f1c1a;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-size: 2.5vh;
-  font-weight: bold;
   color: rgb(255, 255, 255);
   border: none;
+  border-radius: 0%;
 }
 
 .nav-linksBtn:hover {
@@ -116,7 +116,34 @@
   font-weight: bold;
 }
 
-.navTitleHp h1 {
-  color: #ffffff;
-  font-size: 5.8vh;
-}
+
+/* SMARTPHONES */
+@media (min-width : 320px)
+and (max-width : 480px) { 
+  .navTitle h1 {
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+  }
+ }
+
+ /* IPADS */
+@media (min-width : 768px)
+and (max-width : 1024px) { 
+  .navTitle h1 {
+    font-size: 5.5vh;
+    color: rgb(255, 255, 255);
+  }
+ }
+
+ /* DESKTOPS AND LAPTOPS */
+ @media (min-width : 1224px) {
+  .navTitle h1 {
+    font-size: 3.8vh;
+    color: rgb(255, 255, 255);
+  }
+
+  .mr-auto h3 {
+    font-size: 4.5vh;
+    color: white;
+  }
+ }

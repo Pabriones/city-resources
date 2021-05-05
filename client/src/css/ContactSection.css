@@ -1,8 +1,9 @@
 .contact-container {
   width: 100%;
+  font-family: "Roboto", "sans-serif";
 }
 
-.emergencyNumbers {
+/* .emergencyNumbers {
   font-size: 1.5vh;
   float: right;
   width: 55%;
@@ -17,13 +18,14 @@
   font-weight: normal;
   font-size: 3vh;
   color: #641111;
-}
+} */
 
 .contact-content {
   background-color: #694839;
   text-align: center;
 }
 
+/* CONTACT US SECTION */
 .contact-info {
   padding: 3% 5% 2% 5%;
   font-size: 3.5vh;
@@ -36,52 +38,41 @@
 
 .contact-info h1 {
   font-size: 6vh;
-  font-weight: 800;
-  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-family: "Roboto", "sans-serif";
   color: #ffffff;
 }
 
 .contact-info p {
   padding: 2% 15% 0% 15%;
-}
-.mail-icon {
-  font-size: 3.2vh;
+  font-size: 2.5vh;
 }
 
+/* 
+EMAIL AND ADD RESOURCE SECTION */
 .contact-info-2 {
   background-color: #e2e2e2;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 25px 20px -30px;
-}
-
-.contact-info-2 h2{
-font-family: 'Poppins', sans-serif;
-}
-
-.contact-info-2 h1 {
-  font-size: 3.0vh;
-  padding: 1%;
-  font-weight: 300;
+  padding: 5% 0% 5%;
 }
 
 .email {
-  padding: 3%;
+  font-size: 4.5vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .add-resource {
-padding: 5%
-}
-.email h2 {
-  font-size: 5vh;
- 
+  font-size: 2.2vh;
+  padding-left: 5%;
+  font-family: "Roboto", "sans-serif";
 }
 
-.cs-text {
+/* .cs-text {
   font-size: 2vh;
-}
-.ab2-images {
-}
-
+} */
+/* 
 .ab2-crop {
   width: 100%;
   margin: -32% 0% -18.8% 0%;
@@ -103,68 +94,34 @@ padding: 5%
 .ab2-crop2 img {
   width: 100%;
   margin: -32% 0% -18.8% 0%;
-}
+} */
 
-
-.cs-btn {
+/* .cs-btn {
   background-color: #141414;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 2vh;;
   color: rgb(255, 255, 255);
-/*   margin: 31px auto 0 0;
-  padding: 4px 45px 1px 51px; */
-}
-
-/* @media (max-width: 1199px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 31px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
-}
-
-@media (max-width: 991px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 31px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 25px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
-}
-
-@media (max-width: 575px) {
-  .btn-style {
-    font-size: 22px;
-    margin: 31px auto 0 0;
-    padding: 4px 4px 1px 15px;
-  }
+margin: 31px auto 0 0;
+  padding: 4px 45px 1px 51px;
 } */
-
-
 
 .addResourceBtn {
   background-color: #2c2927;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 2.5vh;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
-  margin: 31px auto 0 0;
-  padding: 2% 5% 2% 5%;
+  /* margin: 31px auto 0 0; */
+  padding: 4% 4% 4%;
+  margin-top: 8%;
   border: none;
 }
 
 .addResource {
-  margin: 0px 2vw;
+  /* margin: 0px 2vw; */
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
@@ -182,3 +139,45 @@ padding: 5%
   text-decoration: none;
   color: #ffffff;
 }
+
+/* SMARTPHONES */
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact-info h1 {
+    font-size: 4vh;
+  }
+
+  .contact-info p {
+    font-size: 2.2vh;
+  }
+
+  .contact-info {
+    padding: 5% 4% 5%;
+  }
+
+  .addResourceBtn {
+    letter-spacing: 2px;
+    font-size: 2.2vh;
+  }
+
+  .add-resource {
+    padding-top: 15%; 
+  }
+
+  .email{
+    text-align: left;
+  }
+ 
+}
+
+ /* DESKTOPS AND LAPTOPS */
+ @media (min-width : 1224px) {
+  .add-resource p{
+font-size: 3vh;
+  }
+
+  .contact-info p {
+    font-size: 3.2vh;
+  }
+
+ }
+

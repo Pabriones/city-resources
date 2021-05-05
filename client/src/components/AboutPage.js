@@ -45,7 +45,7 @@ const AboutPage = () => {
               <div className="ab1-intro">
                 <p>
                   This guide was created to help connect those in need to
-                  different services like meals,<br/> childcare, housing, and many
+                  different services like meals, childcare, housing, and many
                   more throughout Washington State
                 </p>
     </div>

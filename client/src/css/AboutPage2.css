@@ -2,6 +2,7 @@
   background-color: #ebedee;
   width: 100%;
   margin: auto;
+  padding: 3%;
 }
 
 .ab2-content h1 {
@@ -24,7 +25,6 @@
   font-family: "Roboto", "sans-serif";
   padding: 3%;
   font-size: 2.1vh;
-  text-align: justify;
 }
 
 .ab2-text-container p {
@@ -61,3 +61,20 @@
   width: 100%;
   margin: -32% 0% -18.8% 0%;
 } */
+
+
+/* SMARTPHONES */
+@media (min-width : 320px)
+and (max-width : 480px) { 
+  .ab2-content h1 {
+    font-size: 2.8vh;
+  }
+
+  .ab2-title {
+    font-size: 2.4vh;
+  }
+  .ab2-content p {
+    font-size: 2.2vh;
+  }
+
+ }

@@ -113,6 +113,10 @@
 }
 
 .lp-rp-link {
-	color: aqua;
-	background-color: #000000;
+  color: aqua;
+  background-color: #000000;
+}
+
+.form-container a:hover {
+  font-weight: bold;
 }

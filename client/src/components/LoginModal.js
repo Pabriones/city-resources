@@ -5,7 +5,6 @@ import "../../src/css/loginmodal.css";
 import { PersonCircle } from "react-bootstrap-icons";
 import { Icon } from "semantic-ui-react";
 import { Link as Link3 } from "react-router-dom";
-import RegisterPage from "./RegisterPage";
 import { Link as Link2 } from "react-router-dom";
 import Homepage from './Homepage';
 import { Link } from "react-router-dom";

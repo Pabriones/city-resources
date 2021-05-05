@@ -1,7 +1,7 @@
 import React from "react";
 import "../../src/css/ResetPassword.css";
 import Footer from "./Footer";
-import TopNav from "./TopNav";
+import TopNav2 from "./TopNav2";
 import { Button, Form, Row, Container, Col } from "react-bootstrap";
 import AboutPage from "./AboutPage";
 import AboutPage2 from "./AboutPage2";
@@ -9,12 +9,13 @@ import ContactSection from "./ContactSection";
 
 function ResetPassword() {
   return (
+    <body>
     <div className="rpass-container">
-      <TopNav />{" "}
+      <TopNav2 />{" "}
       <div className="rpass-form">
         <Container>
           <Row>
-            <Col> </Col>
+            {/* <Col> </Col> */}
             <Col xs={8} className="form-col">
               <Form>
                 <div className="reset-text">
@@ -45,12 +46,12 @@ function ResetPassword() {
                 </Form.Group>
               </Form>
             </Col>
-            <Col></Col>
+            {/* <Col></Col> */}
           </Row>
         </Container>
       </div>
-      <Footer />
-    </div>
+    
+    </div>  <Footer /></body>
   );
 }
 

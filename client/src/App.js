@@ -15,6 +15,7 @@ import RegisterPage from './components/RegisterPage';
 import ResetPassword from './components/ResetPassword';
 import SearchNavLinks from './components/SearchNavLinks';
 import UserProfile from './components/UserProfile';
+import ScrollToTop from './components/ScrollToTop'
 //Redux
 import { Provider } from 'react-redux';
 import store from './store';
@@ -23,6 +24,7 @@ const App = () => {
 	return (
 		<Provider store={store}>
 			<Router>
+			<ScrollToTop/>
 				<Switch>
 					<Route path="/" component={LandingPage} exact />
 					<Route path="/contact" component={ContactPage} />

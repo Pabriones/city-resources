@@ -1,19 +1,19 @@
 .sd-container {
   width: 100%;
   font-family: "Roboto", "sans-serif";
-  padding: 0% 6% 0%;
+  padding: 4% 2% 0%;
 }
 
-.sd-title {
+/* .sd-title {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
   font-size: 6vh;
   text-align: left;
   padding: 2vh 4vh 3vh;
   color: #383636;
-}
+} */
 
-.row {
+.filter {
   display: flex;
 }
 
@@ -31,7 +31,7 @@ input[type="text"] {
  padding: 5% 5% 2%;
 } */
 .sd-results-container {
-  background-color: #e7e7e7;
+  background-color: #fafafa;
   padding: 2%;
 }
 
@@ -200,3 +200,25 @@ input.checkbox {
   text-decoration: none;
   color: #c54b26;
 }
+
+
+/* SMARTPHONES */
+@media screen
+ and (min-width : 320px)
+and (max-width : 480px){
+  .mb-0 {
+    padding-top: 6.5%;
+    font-size: 3vh;
+  }
+
+  .sd-services {
+    font-family: "Roboto", "sans-serif";
+    padding: 2%;
+    color: #6e6d6d;
+overflow:hidden;
+    font-size: 2vh;
+  }
+
+
+}
+ 

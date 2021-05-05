@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Modal, Button, Form, Container } from "react-bootstrap";
 import RegisterPage from "./RegisterPage";
 import "../../src/css/loginmodal.css";
-import { PersonCircle } from 'react-bootstrap-icons';
+import { PersonCircle } from "react-bootstrap-icons";
 import { Icon } from "semantic-ui-react";
+import { Link as Link3 } from "react-router-dom";
+import { Link as Link2 } from "react-router-dom";
 import Homepage from './Homepage';
 import { Link } from "react-router-dom";
 
@@ -28,13 +30,14 @@ const LoginModal = () => {
 
   return (
     <>
-      <Button variant=" " className="loginBtn" onClick={handleShow} data-focus="false">
-      <PersonCircle size={20} />   USER LOG IN
+      <Button variant=" " className="nav-linksBtn" onClick={handleShow}>
+        SIGN IN
       </Button>
+
 
       <Modal show={show} onHide={handleClose} >
         <div className="logContainer" >
-         
+
           <div className="form-container sign-in-container" >
             <form action="#">
               <h1>SIGN IN</h1>
@@ -45,6 +48,7 @@ const LoginModal = () => {
               <p> Not a member, Register <Link to="/registerpage" >here</Link></p>
             </form>
           </div>
+
 
         </div>
       </Modal>

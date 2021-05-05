@@ -133,9 +133,10 @@ const SearchDirectoryPage = () => {
   let toPrint = [];
 
   return (
+    <body><TopNav2/>
     <div className="sd-container">
-<TopNav2/>
-      <div className="row hero">
+
+      <div className="row filter">
         {/* Col 1 */}
         <div className="col-6 p main sd-filterContainer">
           <div className="sd-searchBar">
@@ -159,6 +160,7 @@ const SearchDirectoryPage = () => {
         {/* Col 2 */}
         <div className="col-6 sd-results-container scroll">
           <div className="sd-search-results">
+          <SearchNavLinks/>
             <Print ref={componentRef} data={resource} />
           </div>
         </div>
@@ -178,12 +180,11 @@ const SearchDirectoryPage = () => {
             Create an account!
           </Link3>
         </p>
-      </div>
+      </div>   </div>
       <div>
-        {" "}
         <Footer />
-      </div>
-    </div>
+   
+    </div></body>
   );
 };
 

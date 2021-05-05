@@ -1,6 +1,5 @@
 import React from "react";
 import "../../src/css/Footer.css";
-import { Link as Link2 } from "react-scroll";
 import { Link as Link1 } from "react-router-dom";
 
 const Footer = () => {

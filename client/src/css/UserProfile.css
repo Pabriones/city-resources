@@ -23,12 +23,10 @@
   color: rgb(22, 16, 16);
 }
 
-
 /* SMARTPHONES */
-@media (min-width : 320px)
-and (max-width : 780px) { 
+@media (min-width: 320px) and (max-width: 780px) {
   .flex-column {
     background-color: #e0e0e073;
     height: 35vh;
   }
- }
+}

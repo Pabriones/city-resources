@@ -140,10 +140,8 @@
   margin: 5%;
 }
 
-
 /* SMARTPHONES */
-@media (min-width : 321px)
-and (max-width : 480px) { 
+@media (min-width: 321px) and (max-width: 480px) {
   .ab1-heading h1 {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -167,4 +165,4 @@ and (max-width : 480px) {
     font-size: 3.5vh;
     line-height: 4.5vh;
   }
- }
+}

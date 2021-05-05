@@ -201,11 +201,8 @@ input.checkbox {
   color: #c54b26;
 }
 
-
 /* SMARTPHONES */
-@media screen
- and (min-width : 320px)
-and (max-width : 480px){
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .mb-0 {
     padding-top: 6.5%;
     font-size: 3vh;
@@ -215,10 +212,7 @@ and (max-width : 480px){
     font-family: "Roboto", "sans-serif";
     padding: 2%;
     color: #6e6d6d;
-overflow:hidden;
+    overflow: hidden;
     font-size: 2vh;
   }
-
-
 }
- 

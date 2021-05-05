@@ -1,11 +1,8 @@
 import React from "react";
-import TopNavHp from "./TopNavHp";
 import "../../src/css/UserProfile.css";
 import { Tab, Row, Col, Nav, Form, Button } from "react-bootstrap";
 import Footer from "./Footer";
 import TopNavHpDark from "./TopNavHpDark";
-import { SuitHeart, ArrowRight, Lock } from "react-bootstrap-icons";
-import { Icon } from "semantic-ui-react";
 
 function UserProfile() {
   return (
@@ -13,10 +10,10 @@ function UserProfile() {
       <div className="up-container">
         <TopNavHpDark />
         <div className="profile-container">
-          <Tab.Container  defaultActiveKey="Profile">
+          <Tab.Container defaultActiveKey="Profile">
             <Row>
               <Col md={3}>
-                <Nav variant="tabs"className="flex-column">
+                <Nav variant="tabs" className="flex-column">
                   <Nav.Item>
                     <Nav.Link className="up-selections" eventKey="Profile">
                       <h2>Profile </h2>

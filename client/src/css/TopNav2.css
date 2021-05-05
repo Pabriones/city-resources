@@ -1,4 +1,3 @@
-
 .TopNavContainer2 {
   padding-top: 3%;
   font-family: "Roboto", "sans-serif";
@@ -21,11 +20,11 @@
 } */
 
 .nav-links2 {
- text-decoration: none;
- color: #2c2927;
+  text-decoration: none;
+  color: #2c2927;
 }
 
-.nav-links2:hover h3{
+.nav-links2:hover h3 {
   color: #2c2927;
   font-style: normal;
   font-size: 3.5vh;

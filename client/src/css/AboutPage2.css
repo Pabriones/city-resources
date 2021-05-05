@@ -6,7 +6,7 @@
 }
 
 .ab2-content h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 4vh;
   color: #22333b;
@@ -14,11 +14,10 @@
 }
 
 .ab2-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.8vh;
   font-weight: bold;
   color: #22333b;
-
 }
 
 .ab2-text-container {
@@ -32,40 +31,8 @@
   font-size: 2.5vh;
 }
 
-/*.ab2-images {
-  margin-top: 6.5%;
-}
-
-.ab2-crop {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
-}
-
-.ab2-crop img {
-  width: 100%;
-  margin: -20% 0% -26% 0%;
-}
-
-.ab2-crop2 {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
-}
-
-.ab2-crop2 img {
-  width: 100%;
-  margin: -32% 0% -18.8% 0%;
-} */
-
-
 /* SMARTPHONES */
-@media (min-width : 320px)
-and (max-width : 480px) { 
+@media (min-width: 320px) and (max-width: 480px) {
   .ab2-content h1 {
     font-size: 2.8vh;
   }
@@ -76,5 +43,4 @@ and (max-width : 480px) {
   .ab2-content p {
     font-size: 2.2vh;
   }
-
- }
+}

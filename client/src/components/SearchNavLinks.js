@@ -21,7 +21,7 @@ function SearchNavLinks() {
       <a href="https://www.ugm.org/" className="website-link" target="_blank">
         <button className="website-linkBtn">
           {" "}
-          <ArrowUpRight size={25} /> Share
+          <ArrowUpRight size={25} /> Share`
         </button>
       </a>
 

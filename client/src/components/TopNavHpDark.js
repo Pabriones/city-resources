@@ -1,9 +1,7 @@
 import React from "react";
-import { Nav, Row, Col, Container, Button, Navbar } from "react-bootstrap";
+import {  Container, Navbar } from "react-bootstrap";
 import "../../src/css/TopNavHpDark.css";
 import { SuitHeart } from "react-bootstrap-icons";
-import UserProfile from "./UserProfile";
-import LoginModal from "./LoginModal";
 import { Link as Link1 } from "react-router-dom";
 
 function TopNavHpDark() {

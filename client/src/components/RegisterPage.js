@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "../../src/css/RegisterPage.css";
 import Footer from "./Footer";
-import LoginModal from "./LoginModal";
 import TopNav2 from "./TopNav2";
 import { Form, Button } from "react-bootstrap";
-import { PersonCircle, PersonPlus } from "react-bootstrap-icons";
-import { Link } from "react-router-dom";
+import { PersonPlus } from "react-bootstrap-icons";
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({

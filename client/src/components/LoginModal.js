@@ -37,15 +37,15 @@ const LoginModal = () => {
 
       <Modal show={show} onHide={handleClose} >
         <div className="logContainer" >
-
           <div className="form-container sign-in-container" >
             <form action="#">
               <h1>SIGN IN</h1>
+              <p>     Don't have an account yet?  <Link to="/registerpage">CREATE ONE!</Link></p>
               <input type="email" placeholder="Email" name="email" value={email} onChange={e => onChange(e)} required />
               <input type="password" placeholder="Password" name="password" value={password} onChange={e => onChange(e)} required />
-              <p>Forgot Password? Reset <Link to="/resetpassword">here</Link></p>
+              <p><Link to="/resetpassword">Forgot Password?</Link></p>
               <button ><Link to="/homepage">Sign In</Link></button>   
-              <p> Not a member, Register <Link to="/registerpage" >here</Link></p>
+            
             </form>
           </div>
 

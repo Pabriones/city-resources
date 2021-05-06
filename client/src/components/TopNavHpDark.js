@@ -9,7 +9,7 @@ function TopNavHpDark() {
     <div>
       <Container className="TopNavContainer-dark">
         <Navbar expand="lg" variant="light">
-          <Navbar.Brand href="/" className="navTitle-dark">
+          <Navbar.Brand href="/homepage" className="navTitle-dark">
             <h1>CITY RESOURCES</h1>
           </Navbar.Brand>
           <Navbar.Toggle

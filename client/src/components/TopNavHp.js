@@ -8,7 +8,7 @@ function TopNavHp() {
   return (
     <Container className="TopNavContainer">
       <Navbar expand="lg" variant="dark">
-        <Navbar.Brand href="/" className="navTitleHp">
+        <Navbar.Brand href="/homepage" className="navTitleHp">
           <h1>CITY RESOURCES</h1>
         </Navbar.Brand>
         <Navbar.Toggle className="toggleNav" aria-controls="basic-navbar-nav" />

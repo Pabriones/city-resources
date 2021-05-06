@@ -11,6 +11,7 @@ import {
   SuitHeart,
   SuitHeartFill,
 } from "react-bootstrap-icons";
+import ShareModal from "./ShareModal";
 
 class SearchNavLinks extends React.Component {
   constructor(props) {
@@ -40,16 +41,7 @@ class SearchNavLinks extends React.Component {
             </button>
           </a>
 
-          <a
-            href="https://www.ugm.org/"
-            className="website-link"
-            target="_blank"
-          >
-            <button className="website-linkBtn">
-              {" "}
-              <ArrowUpRight size={25} /> Share
-            </button>
-          </a>
+          <ShareModal/>
 
           <a href="#" className="website-link" target="_blank">
             <button className="website-linkBtn">

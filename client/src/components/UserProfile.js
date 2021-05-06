@@ -17,6 +17,7 @@ import {
   ArrowRightCircle,
   EnvelopeOpen,
 } from "react-bootstrap-icons";
+import Avatar from "react-avatar";
 
 function UserProfile() {
   return (
@@ -30,12 +31,12 @@ function UserProfile() {
                 <Nav variant="tabs" className="flex-column">
                   <Nav.Item>
                     <Nav.Link className="up-selections" eventKey="Profile">
-                      <h2>Profile </h2>
+                      <h2>Edit Profile </h2>
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="up-selections" eventKey="Password">
-                      <h2>Password </h2>
+                    <Nav.Link className="up-selections" eventKey="Account">
+                      <h2> ACCOUNT </h2>
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
@@ -53,41 +54,54 @@ function UserProfile() {
                 <Tab.Content>
                   <Tab.Pane eventKey="Profile">
                     <div className="up-form-container">
-                      <Form className="rp-input">
+                      <div className="avatar-circle">
+                        <Avatar
+                          color={Avatar.getRandomColor("sitebase", [
+                            "red",
+                            "green",
+                            "blue",
+                            "purple",
+                          ])}
+                          round="100px"
+                          name="Selina Nguyen"
+                        />
+                      </div>{" "}
+                      <Form className="user-profile-input">
                         <Form.Group className="rp-label">
                           <Form.Label>
                             <div className="input-txt"> First Name </div>
                           </Form.Label>
                           <Form.Control
                             size="lg"
+                            className="input-bar-up"
                             placeholder="  First Name"
                             required
                           />
                         </Form.Group>
-
                         <Form.Group className="rp-label">
                           <Form.Label>
                             <div className="input-txt"> Last Name </div>
                           </Form.Label>
                           <Form.Control
                             size="lg"
+                            className="input-bar-up"
                             placeholder="  Last Name"
                             required
                           />
                         </Form.Group>
-
-                        <Form.Group className="rp-label">
-                          <Form.Label>
-                            <div className="input-txt"> Date of Birth </div>
-                          </Form.Label>
-                          <Form.Control
-                            size="lg"
-                            placeholder="MM/DD/YYYY"
-                            type="date"
-                            required
-                          />
-                        </Form.Group>
-
+                   
+                        <Button
+                          className="save-btn-up"
+                          variant="outline-secondary"
+                        >
+                          UPDATE
+                        </Button>
+                      </Form>
+                    </div>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="Account">
+                    <div className="up-form-container">
+                      <Form className="user-profile-input">
                         <Form.Group
                           className="rp-label"
                           controlId="formBasicEmail"
@@ -97,27 +111,20 @@ function UserProfile() {
                           </Form.Label>
                           <Form.Control
                             size="lg"
+                            className="input-bar-up"
                             type="email"
                             placeholder="Enter email"
                             required
                           />
                         </Form.Group>
 
-                        <Button variant="" className="rp-submit" type="submit">
-                          UPDATE
-                        </Button>
-                      </Form>
-                    </div>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="Password">
-                    <div className="up-form-container">
-                      <Form className="rp-input">
                         <Form.Group className="rp-label">
                           <Form.Label>
-                            <div className="input-txt"> New Password </div>
+                            <div className="input-txt"> Old Password </div>
                           </Form.Label>
                           <Form.Control
                             size="lg"
+                            className="input-bar-up"
                             placeholder="New Password"
                             required
                           />
@@ -125,17 +132,21 @@ function UserProfile() {
 
                         <Form.Group className="rp-label">
                           <Form.Label>
-                            <div className="input-txt">Confirm password</div>
+                            <div className="input-txt">New password</div>
                           </Form.Label>
                           <Form.Control
                             size="lg"
+                            className="input-bar-up"
                             placeholder="Confirm password"
                             required
                           />
                         </Form.Group>
 
-                        <Button variant="" className="rp-submit" type="submit">
-                          CHANGE PASSWORD
+                        <Button
+                          className="save-btn-up"
+                          variant="outline-secondary"
+                        >
+                          SAVE
                         </Button>
                       </Form>
                     </div>
@@ -148,7 +159,7 @@ function UserProfile() {
                         you pick what you would like to get more information
                         about.
                       </p>
-                      <Accordion defaultActiveKey="0">
+                      <Accordion defaultActiveKey="/">
                         <Card className="accordion-up">
                           <Card.Header className="accordion-header">
                             <p>

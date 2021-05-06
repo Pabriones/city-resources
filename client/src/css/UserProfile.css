@@ -64,13 +64,22 @@
 }
 
 .save-btn-up {
-  margin: 1% 40% 0%;
+  margin: 1% 70% 0%;
   color: rgb(39, 39, 39);
 }
 
-.save-btn-up:hover {
-  margin: 1% 40% 0%;
-  color: rgb(0, 0, 0);
+.input-bar-up {
+  width: 80%;
+}
+
+.user-profile-input {
+  padding-left: 10%;
+  font-size: 2.5vh;
+}
+
+.avatar-circle {
+  padding: 5% 0% 2%;
+  text-align: center;
 }
 
 /* SMARTPHONES */

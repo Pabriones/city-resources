@@ -57,8 +57,9 @@ const LoginModal = () => {
               <p>
                 <Link to="/resetpassword">Forgot Password?</Link>
               </p>
+
               <button>
-                <Link to="/homepage">Sign In</Link>
+                <Link to="/homepage">Sign in</Link>
               </button>
             </form>
           </div>

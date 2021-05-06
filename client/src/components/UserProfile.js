@@ -1,8 +1,22 @@
 import React from "react";
 import "../../src/css/UserProfile.css";
-import { Tab, Row, Col, Nav, Form, Button } from "react-bootstrap";
+import {
+  Tab,
+  Row,
+  Col,
+  Nav,
+  Form,
+  Button,
+  Accordion,
+  Card,
+} from "react-bootstrap";
 import Footer from "./Footer";
 import TopNavHpDark from "./TopNavHpDark";
+import {
+  ArrowRight,
+  ArrowRightCircle,
+  EnvelopeOpen,
+} from "react-bootstrap-icons";
 
 function UserProfile() {
   return (
@@ -25,8 +39,11 @@ function UserProfile() {
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="up-selections" eventKey="Favorites">
-                      <h2>Favorites </h2>
+                    <Nav.Link
+                      className="up-selections"
+                      eventKey="Notifications"
+                    >
+                      <h2>Notifications </h2>
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
@@ -121,6 +138,87 @@ function UserProfile() {
                           CHANGE PASSWORD
                         </Button>
                       </Form>
+                    </div>
+                  </Tab.Pane>
+
+                  <Tab.Pane eventKey="Notifications">
+                    <div className="up-form-container">
+                      <p>
+                        We'll always let you know about important changes, but
+                        you pick what you would like to get more information
+                        about.
+                      </p>
+                      <Accordion defaultActiveKey="0">
+                        <Card className="accordion-up">
+                          <Card.Header className="accordion-header">
+                            <p>
+                              By Email
+                              <Accordion.Toggle
+                                as={Button}
+                                variant="link"
+                                eventKey="0"
+                                className="accordion-edit"
+                              >
+                                {" "}
+                                <ArrowRightCircle size={31} />
+                                {/* <button className="edit-btn">EDIT</button> */}
+                              </Accordion.Toggle>
+                            </p>
+                          </Card.Header>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>
+                              {" "}
+                              <Form.Group controlId="formBasicCheckbox">
+                                <Form.Check
+                                  className="checkbox-label-up"
+                                  type="checkbox"
+                                  label="Information related to my favorites"
+                                />
+                              </Form.Group>
+                              <Form.Group controlId="formBasicCheckbox">
+                                <Form.Check
+                                  className="checkbox-label-up"
+                                  type="checkbox"
+                                  label="City Resources updates and announcements"
+                                />
+                                <Button
+                                  className="save-btn-up"
+                                  variant="outline-secondary"
+                                >
+                                  SAVE
+                                </Button>
+                              </Form.Group>
+                            </Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+
+                        <Card className="accordion-up">
+                          <Card.Header className="accordion-header">
+                            <p>
+                              On City Resources{" "}
+                              <Accordion.Toggle
+                                as={Button}
+                                variant="link"
+                                eventKey="1"
+                                className="accordion-edit"
+                              >
+                                <ArrowRightCircle size={31} />
+                              </Accordion.Toggle>
+                            </p>
+                          </Card.Header>
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>
+                              {" "}
+                              <Button
+                                className="save-btn-up"
+                                variant="outline-secondary"
+                              >
+                                SAVE
+                              </Button>
+                            </Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
                     </div>
                   </Tab.Pane>
                 </Tab.Content>

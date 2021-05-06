@@ -1,3 +1,7 @@
+*:focus {
+  outline: 0 !important;
+}
+
 .sd-container {
   width: 100%;
   font-family: "Roboto", "sans-serif";
@@ -31,7 +35,7 @@ input[type="text"] {
  padding: 5% 5% 2%;
 } */
 .sd-results-container {
-  background-color: #fafafa;
+  background-color: #f3efef;
   padding: 2%;
 }
 
@@ -49,7 +53,7 @@ input[type="text"] {
   font-family: "Roboto", "sans-serif";
 }
 
-.website-linkBtn {
+/* .website-linkBtn {
   padding: 2%;
   background-color: #252424;
   border: none;
@@ -62,7 +66,7 @@ input[type="text"] {
   color: #f3f3f3;
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
-}
+} */
 
 .sd-services {
   font-family: "Roboto", "sans-serif";

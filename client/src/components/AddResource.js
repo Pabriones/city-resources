@@ -6,7 +6,8 @@ import TopNav2 from "./TopNav2";
 
 const AddResource = () => {
   return (
-    <div><TopNav2/>
+    <div>
+      <TopNav2 />
       <div className="ar-container">
         <AddResourceForm />
       </div>

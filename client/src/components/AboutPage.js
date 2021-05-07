@@ -1,46 +1,21 @@
 import React from "react";
 import "../../src/css/AboutPage.css";
 import { Link as Link2 } from "react-router-dom";
-import { ArrowRight } from 'react-bootstrap-icons';
+import { ArrowRight } from "react-bootstrap-icons";
 
 const AboutPage = () => {
   return (
     <body>
       <div id="AboutPage">
-  
         <div className="ab1-container">
           <div className="row">
-            {/*  <div className="imgContainer">
-              <div className="ab1-img">
-                <img
-                  src={require("../Images/elijah-macleod-5LqilHen4Po-unsplash.jpg")}
-                  alt=""
-                  className="img1"
-                />
-              </div>
-              <div>
-                <div className="ab1-img1">
-                  <img
-                    src={require("../Images/jon-tyson-ajzN2AYNi1U-unsplash.jpg")}
-                    alt=""
-                    className="img2"
-                  />
-                </div>
-                <div className="ab1-img2">
-                  {" "}
-                  <img
-                    src={require("../Images/ali-arif-soydas-Lr49v_a5WOw-unsplash.jpg")}
-                    alt=""
-                    className="img3"
-                  />
-                </div>
-              </div>
-     </div> */}
-
             <div className="col">
               <div className="ab1-heading">
-                
-                <h1> THE CITY<br/> RESOURCE GUIDE</h1>
+                <h1>
+                  {" "}
+                  THE CITY
+                  <br /> RESOURCE GUIDE
+                </h1>
               </div>
               <div className="ab1-intro">
                 <p>
@@ -48,62 +23,22 @@ const AboutPage = () => {
                   different services like meals, childcare, housing, and many
                   more throughout Washington State
                 </p>
-    </div>
-                <div>
-             
-                    <p className="searchText">
-                    <Link2 className="directLink" to="/directory"> <button type="button" class="directLinkBtn">
-                        {" "}
-                        
-                          SEARCH DIRECTORY{" "}
-                          <ArrowRight size={20} />
-                        
-                      </button></Link2>
-                    </p>
-                
-                </div>
-          
-            </div>
-          </div> </div>
-
-   
-
-          {/*           <div>
-            <div className="ab1-content">
-              <div className="row">
-                <p>
-                  Poverty can be caused by many different factors, and these
-                  factors vary by where a person lives in the world.
+              </div>
+              <div>
+                <p className="searchText">
+                  <Link2 className="directLink" to="/directory">
+                    {" "}
+                    <button type="button" class="directLinkBtn">
+                      {" "}
+                      SEARCH DIRECTORY <ArrowRight size={20} />
+                    </button>
+                  </Link2>
                 </p>
               </div>
             </div>
-            <div className="col">
-              {" "}
-              <ul className="ab1-list">
-                <li> Unemployment </li>
-                <li> Low-Paying Jobs</li>
-                <li> Family History of Poverty (Cycle of Poverty) </li>
-                <li> Discrimination </li>
-                <li> Social Inequality</li>
-              </ul>
-            </div>{" "}
-            <div className="col">
-              <ul className="ab1-list">
-                <li> Political Corruption & Instability </li>
-                <li> Centralization of Power Debt (Personal & National) </li>
-                <li> Family History of Poverty (Cycle of Poverty) </li>
-                <li> Lack of Education & Resources Disease </li>{" "}
-              </ul>
-            </div>
-            <div className="ab1-img-divider">
-              <img
-                src={require("../Images/sean-benesh-04YCqKIyN-8-unsplash.jpg")}
-                alt=""
-                width={"100%"}
-              />
-            </div>
-          </div> */}
-       
+          </div>{" "}
+        </div>
+
         <div className="quote">
           "Seattle's homelessness crisis has been years in the making, and its
           roots run deep, touching racial inequity, economic disparities, mental
@@ -113,11 +48,9 @@ const AboutPage = () => {
           But we still must act - and are acting - to improve life in Seattle."-
           Mayor Jenny Durkan
         </div>
-        <div className = "parallax">
-
-
-
-<div className="space"> </div></div> 
+        <div className="parallax">
+          <div className="space"> </div>
+        </div>
       </div>
     </body>
   );

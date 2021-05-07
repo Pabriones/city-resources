@@ -1,7 +1,6 @@
 import React from "react";
-import { Button, Form, Row, Container, Col } from "react-bootstrap";
+import { Form, Row, Container, Col } from "react-bootstrap";
 import "../../src/css/AddResource.css";
-import { Link as Link2 } from "react-router-dom";
 import SubmitModal from "./SubmitModal";
 
 const AddResourceForm = () => {
@@ -19,7 +18,7 @@ const AddResourceForm = () => {
               varius. Pellentesque habitant morbi tristique senectus et netus et
               malesuada fames ac turpis egestas. Nunc accumsan tellus ac ipsum
               porttitor, vulputate auctor neque pharetra.
-            </p>{" "}
+            </p>
           </div>
         </Col>
         <Col md>

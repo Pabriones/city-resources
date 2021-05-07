@@ -56,17 +56,15 @@
   font-weight: bold;
 }
 
- .navTitleHp h1 {
+.navTitleHp h1 {
   color: #ffffff;
   font-size: 5.5vh;
 }
 
-
 /* SMARTPHONES */
-@media (min-width : 320px)
-and (max-width : 480px) { 
+@media (min-width: 320px) and (max-width: 480px) {
   .navTitleHp h1 {
     color: #ffffff;
     font-size: 4vh;
   }
- }
+}

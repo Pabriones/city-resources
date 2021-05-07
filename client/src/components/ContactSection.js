@@ -1,8 +1,7 @@
 import React from "react";
 import "../../src/css/ContactSection.css";
-import { Icon } from "semantic-ui-react";
 import { Link as Link2 } from "react-router-dom";
-import { Nav, Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 const ContactSection = () => {
   return (

@@ -1,35 +1,26 @@
 .info {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 33px;
-    padding-left: 80px;
-    padding-top: 74px;
-   
-  }
-  
-  .header {
-    
-    padding-left: 1000px;
-    padding-top: 10px;
-    border-radius: nullpx;
-    font-family: Roboto Slab;
-    font-size:20px;
-    font-style:normal;
-    color: rgba(211, 43, 43, 0.83)
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  padding-left: 80px;
+  padding-top: 74px;
+}
 
-  } 
+.header {
+  padding-left: 1000px;
+  padding-top: 10px;
+  border-radius: nullpx;
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-style: normal;
+  color: rgba(211, 43, 43, 0.83);
+}
 
-  .phones{
-    padding-left: 1050px;
-    font-style:normal;
-    font-size:29px;
-    line-height: 34px;
-    
-
-  
-
-
-    
-  }
+.phones {
+  padding-left: 1050px;
+  font-style: normal;
+  font-size: 29px;
+  line-height: 34px;
+}

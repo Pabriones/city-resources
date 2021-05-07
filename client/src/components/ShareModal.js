@@ -7,8 +7,9 @@ import {
   InputGroup,
   FormControl,
 } from "react-bootstrap";
+
 import { Link as Link2 } from "react-router-dom";
-import { ArrowRight } from "react-bootstrap-icons";
+import { ArrowUpRight, EnvelopeOpen } from "react-bootstrap-icons";
 import "../../src/css/ShareModal.css";
 
 function ShareModal() {
@@ -18,20 +19,25 @@ function ShareModal() {
 
   return (
     <>
-      <Button variant=" " className="shareBtn" onClick={handleShow}>
-        PRINT RESULTS
-      </Button>
+      <button variant=" " className="website-linkBtn" onClick={handleShow}>
+        <EnvelopeOpen size={25} /> Share
+      </button>
 
       <Modal show={show} onHide={handleClose}>
-        <div className="shareContainer" id="shareContainer">
-          <div className="sm-print-btn">
-            <button type="button" className="sm-btn">
-              <a href="#">PRINT</a>
-            </button>
-          </div>
+      <div className="share-modal-container">
+       <h2> <EnvelopeOpen size={50} /> <br/>Enter email to share:</h2>
+  <InputGroup className="mb-3">
+    <FormControl
+      placeholder="Recipient's e-mail"
+      aria-label="Recipient's e-mail"
+      aria-describedby="basic-addon2"
+    />
+    <InputGroup.Append>
+      <Button variant="outline-secondary">Send</Button>
+    </InputGroup.Append>
+  </InputGroup>
 
-          <h2>Create an account to save your favorites and share by email!</h2>
-        </div>
+</div>
       </Modal>
     </>
   );

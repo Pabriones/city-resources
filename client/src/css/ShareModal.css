@@ -1,11 +1,12 @@
-.shareContainer {
+.share-modal-container {
   padding: 10%;
   font-family: "Roboto", sans-serif;
   font-size: 2vh;
 }
 
-.shareContainer h2 {
-  padding: 25% 0% 5%;
+.share-modal-container h2 {
+  padding: 10% 0% 8%;
+  text-align: center;
 }
 
 .sm-btn {

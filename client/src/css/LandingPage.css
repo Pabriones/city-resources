@@ -1,3 +1,5 @@
+
+
 .lp-container {
   background-image: url("../Images/luka-reedy-xofLF1-LB58-unsplash.jpg");
   min-height: 100vh;
@@ -137,6 +139,28 @@
 .chevIconSearch {
   font-size: 2.4vh;
   display: absolute;
+}
+
+.lp-covid-jumbo {
+  padding: 2% 0% 2%;
+  font-family: "Roboto", "sans-serif";
+}
+.lp-covid-jumbo p {
+  font-size: 2vh;
+  padding: 3% 8% 0%;
+}
+
+.lp-covid-jumbo a {
+  text-decoration: none;
+  color:rgb(156, 35, 35)
+}
+
+.lp-covid-jumbo h4 {
+  text-transform: uppercase;
+}
+
+.lp-jumbo-link:hover {
+  font-weight: bold;
 }
 
 /* SMARTPHONES */

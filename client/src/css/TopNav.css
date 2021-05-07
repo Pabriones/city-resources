@@ -67,14 +67,14 @@
   padding-top: 5%;
 }
 
-.navTitle:hover h1{
-color: #ffffff;
-font-weight: bold;
+.navTitle:hover h1 {
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .nav-links:hover h3 {
- color: #ffffff;
- font-weight: bold;
+  color: #ffffff;
+  font-weight: bold;
   font-style: normal;
   text-decoration: underline;
 }
@@ -116,27 +116,24 @@ font-weight: bold;
   font-weight: bold;
 }
 
-
 /* SMARTPHONES */
-@media (min-width : 320px)
-and (max-width : 480px) { 
+@media (min-width: 320px) and (max-width: 480px) {
   .navTitle h1 {
     font-size: 4vh;
     color: rgb(255, 255, 255);
   }
- }
+}
 
- /* IPADS */
-@media (min-width : 768px)
-and (max-width : 1024px) { 
+/* IPADS */
+@media (min-width: 768px) and (max-width: 1024px) {
   .navTitle h1 {
     font-size: 5.5vh;
     color: rgb(255, 255, 255);
   }
- }
+}
 
- /* DESKTOPS AND LAPTOPS */
- @media (min-width : 1224px) {
+/* DESKTOPS AND LAPTOPS */
+@media (min-width: 1224px) {
   .navTitle h1 {
     font-size: 3.8vh;
     color: rgb(255, 255, 255);
@@ -146,4 +143,4 @@ and (max-width : 1024px) {
     font-size: 4.5vh;
     color: white;
   }
- }
+}

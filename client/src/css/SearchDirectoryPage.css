@@ -1,3 +1,7 @@
+*:focus {
+  outline: 0 !important;
+}
+
 .sd-container {
   width: 100%;
   font-family: "Roboto", "sans-serif";
@@ -49,7 +53,7 @@ input[type="text"] {
   font-family: "Roboto", "sans-serif";
 }
 
-.website-linkBtn {
+/* .website-linkBtn {
   padding: 2%;
   background-color: #252424;
   border: none;
@@ -62,7 +66,7 @@ input[type="text"] {
   color: #f3f3f3;
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
-}
+} */
 
 .sd-services {
   font-family: "Roboto", "sans-serif";
@@ -201,11 +205,8 @@ input.checkbox {
   color: #c54b26;
 }
 
-
 /* SMARTPHONES */
-@media screen
- and (min-width : 320px)
-and (max-width : 480px){
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .mb-0 {
     padding-top: 6.5%;
     font-size: 3vh;
@@ -215,10 +216,7 @@ and (max-width : 480px){
     font-family: "Roboto", "sans-serif";
     padding: 2%;
     color: #6e6d6d;
-overflow:hidden;
+    overflow: hidden;
     font-size: 2vh;
   }
-
-
 }
- 

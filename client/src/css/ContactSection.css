@@ -160,24 +160,21 @@ margin: 31px auto 0 0;
   }
 
   .add-resource {
-    padding-top: 15%; 
+    padding-top: 15%;
   }
 
-  .email{
+  .email {
     text-align: left;
   }
- 
 }
 
- /* DESKTOPS AND LAPTOPS */
- @media (min-width : 1224px) {
-  .add-resource p{
-font-size: 3vh;
+/* DESKTOPS AND LAPTOPS */
+@media (min-width: 1224px) {
+  .add-resource p {
+    font-size: 3vh;
   }
 
   .contact-info p {
     font-size: 3.2vh;
   }
-
- }
-
+}

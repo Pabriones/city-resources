@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import "../../src/css/loginmodal.css";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
+import {login} from '../actions/auth'
 
-const LoginModal = () => {
+
+const LoginModal = ({login, isAuthenticated}) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -17,10 +21,16 @@ const LoginModal = () => {
   const { email, password } = formData;
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
+
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log("SUCCESS");
+    login(email, password);
   };
+
+  // Redirect if logged in
+  if(isAuthenticated){
+    return <Redirect to='/homepage'/>
+  }
 
   return (
     <>
@@ -31,7 +41,7 @@ const LoginModal = () => {
       <Modal show={show} onHide={handleClose}>
         <div className="logContainer">
           <div className="form-container sign-in-container">
-            <form action="#">
+            <form action="#" onSubmit={(e) => onSubmit(e)}>
               <h1>SIGN IN</h1>
               <p>
                 {" "}
@@ -59,7 +69,7 @@ const LoginModal = () => {
               </p>
 
               <button>
-                <Link to="/homepage">Sign in</Link>
+                <Link>Sign in</Link>
               </button>
             </form>
           </div>
@@ -68,5 +78,13 @@ const LoginModal = () => {
     </>
   );
 };
+LoginModal.propTypes = {
+  login: PropTypes.func.isRequired,
+  isAuthenticated: PropTypes.bool
+};
 
-export default LoginModal;
+const mapStateToProps = state => ({
+  isAuthenticated: state.auth.isAuthenticated
+});
+
+export default connect(mapStateToProps, {login}) (LoginModal);

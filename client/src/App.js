@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import LandingPage from './components/LandingPage';
 import ContactPage from './components/ContactPage';
@@ -15,16 +15,28 @@ import RegisterPage from './components/RegisterPage';
 import ResetPassword from './components/ResetPassword';
 import SearchNavLinks from './components/SearchNavLinks';
 import UserProfile from './components/UserProfile';
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop';
+import Alert from './components/layout/Alert';
+import setAuthToken from './utils/setAuthToken';
 //Redux
 import { Provider } from 'react-redux';
 import store from './store';
+import { loadAccount } from './actions/auth';
+
+if (localStorage.token) {
+	setAuthToken(localStorage.token);
+}
 
 const App = () => {
+	useEffect(() => {
+		store.dispatch(loadAccount());
+	}, []);
+
 	return (
 		<Provider store={store}>
 			<Router>
-			<ScrollToTop/>
+				<ScrollToTop />
+				<Alert />
 				<Switch>
 					<Route path="/" component={LandingPage} exact />
 					<Route path="/contact" component={ContactPage} />

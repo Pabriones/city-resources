@@ -22,30 +22,25 @@
 
 .contact-content {
   background-color: #694839;
-  text-align: center;
+  /* text-align: center; */
+  padding: 2%;
 }
 
 /* CONTACT US SECTION */
 .contact-info {
-  padding: 3% 5% 2% 5%;
-  font-size: 3.5vh;
   font-family: "Roboto", "sans-serif";
   padding: 5%;
   color: #cfcccc;
   font-style: normal;
-  height: 100%;
 }
 
 .contact-info h1 {
-  font-size: 6vh;
+  font-size: 6.5vh;
+ letter-spacing: 2px;
   font-weight: bold;
   font-family: "Roboto", "sans-serif";
   color: #ffffff;
-}
-
-.contact-info p {
-  padding: 2% 15% 0% 15%;
-  font-size: 2.5vh;
+  padding-left: 5%;
 }
 
 /* 
@@ -54,19 +49,17 @@ EMAIL AND ADD RESOURCE SECTION */
   background-color: #e2e2e2;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 25px 20px -30px;
-  padding: 5% 0% 5%;
+  padding: 2.5% 0% 5%;
 }
 
 .email {
   font-size: 4.5vh;
+  text-transform: uppercase;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .add-resource {
-  font-size: 2.2vh;
-  padding-left: 5%;
-  font-family: "Roboto", "sans-serif";
+ 
 }
 
 /* .cs-text {
@@ -111,12 +104,12 @@ margin: 31px auto 0 0;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2.5vh;
-  font-weight: 700;
+ 
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
   /* margin: 31px auto 0 0; */
-  padding: 4% 4% 4%;
-  margin-top: 8%;
+  padding: 3% 3% 3%;
+  margin-top: 4%;
   border: none;
 }
 
@@ -125,6 +118,7 @@ margin: 31px auto 0 0;
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
+  padding-left: 5%;
 }
 
 .addResourceBtn:hover {
@@ -170,11 +164,9 @@ margin: 31px auto 0 0;
 
 /* DESKTOPS AND LAPTOPS */
 @media (min-width: 1224px) {
-  .add-resource p {
-    font-size: 3vh;
+  .contact-info p {
+    font-size: 2.8vh;
+    padding: 0% 5% 0%;
   }
 
-  .contact-info p {
-    font-size: 3.2vh;
-  }
 }

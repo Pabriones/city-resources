@@ -1,0 +1,57 @@
+.accordion-up-covid {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .accordion-header-covid {
+    background-color: transparent;
+    border: none;
+  }
+  
+
+  .accordion-header-covid p {
+    font-size: 3.5vh;
+  }
+  
+  .accordion-edit-covid {
+   
+    /* float: right;
+    color: black; */
+  }
+
+  .openTrue {
+    cursor: pointer;
+    color: rgb(224, 26, 26);
+    border: none;
+    float: right;
+    font-size: 5vh;
+   padding-top: 3.5%;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .vaccine-info-container {
+    background-color: rgba(80, 82, 82, 0.041);
+  }
+
+  .openTrue:hover {
+   color: black;
+  }
+
+  .closeFalse:hover {
+    color: black;
+  }
+  
+  .closeFalse {
+    cursor: pointer;
+    outline: none;
+    float: right;
+    color: rgb(70, 63, 63);
+    padding-top: 3.5%;
+    outline: none;
+    box-shadow: none;
+ 
+    border: none;
+    background-color: transparent;
+  }

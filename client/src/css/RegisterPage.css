@@ -2,6 +2,11 @@
   font-family: "Roberto", sans-serif;
 }
 
+form .form-control:focus{
+  box-shadow: none;
+  border-color: #302e2e;
+}
+
 .col-sm-3 {
   background-image: url("../Images/brick.jpg");
   min-height: 100vh;

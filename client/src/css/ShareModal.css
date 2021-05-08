@@ -22,3 +22,8 @@
 .sm-print-btn {
   text-align: center;
 }
+
+form .form-control:focus{
+  box-shadow: none;
+  border-color: #302e2e;
+}

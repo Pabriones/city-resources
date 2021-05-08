@@ -16,7 +16,7 @@ const TopNav2 = () => {
           <Nav className="mr-auto2">
             <Nav.Link className="nav-links2" href="/">
               <Link1 className="nav-links2" to="/" spy={true} duration={500}>
-                <h3> ABOUT</h3>
+                <h3> SEARCH </h3>
               </Link1>
             </Nav.Link>
             <Nav.Link className="nav-links2" href="#">

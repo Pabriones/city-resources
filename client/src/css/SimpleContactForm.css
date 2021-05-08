@@ -1,0 +1,30 @@
+form .form-control:focus{
+    box-shadow: none;
+    border-color: #302e2e;
+  }
+
+.contact-form-btn {
+    background-color: #695c59;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2.5vh;
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
+    /* margin: 31px auto 0 0; */
+    padding: 4% 4% 4%;
+ border: none;
+  
+ 
+}
+
+.contact-form-btn:hover {
+    background-color: #534946;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group {
+    width: 90%;
+    padding-top: 12%;
+    padding-left: 4%;
+}

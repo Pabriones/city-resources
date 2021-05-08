@@ -24,20 +24,22 @@ function ShareModal() {
       </button>
 
       <Modal show={show} onHide={handleClose}>
-      <div className="share-modal-container">
-       <h2> <EnvelopeOpen size={50} /> <br/>Enter email to share:</h2>
-  <InputGroup className="mb-3">
-    <FormControl
-      placeholder="Recipient's e-mail"
-      aria-label="Recipient's e-mail"
-      aria-describedby="basic-addon2"
-    />
-    <InputGroup.Append>
-      <Button variant="outline-secondary">Send</Button>
-    </InputGroup.Append>
-  </InputGroup>
-
-</div>
+        <div className="share-modal-container">
+          <h2>
+            {" "}
+            <EnvelopeOpen size={50} /> <br />
+            Enter email to share:
+          </h2>
+          <div className="col-5 form-group pt-2 mx-auto">
+            <input
+              className="form-control shadow-none"
+              required="true"
+              placeholder="Enter email"
+              name="message"
+            />
+            <Button variant="outline-secondary">Send</Button>
+          </div>
+        </div>
       </Modal>
     </>
   );

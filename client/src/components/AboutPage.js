@@ -21,7 +21,7 @@ const AboutPage = () => {
                 <p>
                   This guide was created to help connect those in need to
                   different services like meals, childcare, housing, and many
-                  more throughout Washington State
+                  more throughout Washington State.
                 </p>
               </div>
               <div>

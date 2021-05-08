@@ -21,7 +21,7 @@ const TopNav = () => {
                 spy={true}
                 duration={500}
               >
-                <h3> ABOUT</h3>
+                <h3> SEARCH</h3>
               </Link1>
             </Nav.Link>
             <Nav.Link className="nav-links" href="#">

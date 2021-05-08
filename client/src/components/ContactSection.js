@@ -1,56 +1,58 @@
 import React from "react";
 import "../../src/css/ContactSection.css";
 import { Link as Link2 } from "react-router-dom";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Form } from "react-bootstrap";
+import SimpleContactForm from "./SimpleContactForm";
 
 const ContactSection = () => {
   return (
     <body>
       <div id="ContactSection"></div>
       <div className="contact-container">
-        <div className="contact-content">
+        {/* <div className="contact-content">
           <div className="contact-info">
-            <h1>CONTACT US</h1>
+            <h1>GET IN TOUCH</h1>
             <p>
               Any questions or comments? We would love to know your thoughts. If
               our information is no longer correct, or if there are any other
               resources we should add, please let us know!
             </p>
           </div>
-        </div>
-        <div className="contact-info-2">
-          <div className="row">
-            <div className="col-sm">
-              <div>
-                <Container>
-                  <Row>
-                    <Col>
-                      <div className="email">
-                        <p>E-mail</p>
-                        <h2>hello@cityresources.com </h2>
-                      </div>
-                    </Col>
-                    <Col>
-                      <div className="add-resource">
-                        <p>
-                          If you would like to add your resource to our page,
-                          please complete the form.
-                          <br />
-                          <Link2 className="addResource" to="/addresource">
-                            {" "}
-                            <button type="button" class="addResourceBtn">
-                              {" "}
-                              Add Your Resource
-                            </button>{" "}
-                          </Link2>
-                        </p>
-                      </div>
-                    </Col>
-                  </Row>
-                </Container>
+        </div> */}
+        <div className="contact-content">
+          <Row>
+            <Col>
+              {/* <div className="add-resource"> */}
+              <div className="contact-info">
+                <h1>GET IN TOUCH</h1>
+
+                <p>
+                  {" "}
+                  Any questions or comments? We would love to know your
+                  thoughts. If our information is no longer correct, or if there
+                  are any other resources we should add, please let us know!
+                </p>
+
+                <div className="pt-2 add-resource">
+                  <p>
+                    If you would like to add your resource to our page, please
+                    complete the add resource form.{" "}
+                  </p>
+
+                  <Link2 className="addResource" to="/addresource">
+                    <button type="button" class="addResourceBtn">
+                      Add Your Resource
+                    </button>{" "}
+                  </Link2>
+                </div>
               </div>
-            </div>
-          </div>
+            </Col>
+            <Col>
+              <div className="email">
+                <SimpleContactForm />
+              </div>
+            </Col>
+          </Row>
         </div>
 
         {/*               <div class="col-xs-6">

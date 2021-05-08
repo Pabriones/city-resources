@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "emailjs-com": "^2.6.4",
     "react-avatar": "^3.10.0",
     "react-bootstrap-icons": "^1.4.0",
     "react-scroll": "^1.8.2",

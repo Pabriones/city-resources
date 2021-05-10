@@ -28,7 +28,7 @@ router.post(
 			return res.status(400).json({ errors: errors.array() });
 		}
 
-		const { name, category, phone, address,website, email,operationHours, description } = req.body;
+		const { name, category, phone, address, website, email,operationHours, description } = req.body;
 
 		try {
 			// See if users exists

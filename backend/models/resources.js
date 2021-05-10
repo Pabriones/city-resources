@@ -19,6 +19,11 @@ const ResourcesSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
+
+	website: {
+		type: String,
+		required: true
+	},
 	email: {
 		type: String,
 		required: true,

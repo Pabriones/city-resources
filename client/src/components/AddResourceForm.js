@@ -3,25 +3,159 @@ import { Form, Row, Container, Col } from "react-bootstrap";
 import "../../src/css/AddResource.css";
 import SubmitModal from "./SubmitModal";
 
-const AddResourceForm = () => {
+import emailjs from "emailjs-com";
+import "../../src/css/SimpleContactForm.css";
+
+export default function SimpleContactForm() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_g11nedj",
+        "template_lu0019p",
+        e.target,
+        "user_yI6ZqqiUBuyWJcjomajAu"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
+  // const AddResourceForm = () => {
   return (
     <Container>
       <Row>
+        <div className="ar-textarea">
+          <h1>Add your resource to our Directory.</h1>{" "}
+        </div>
         <Col md>
-          <div className="ar-textarea">
-            <h1>Add your resource to our Directory.</h1>
-            <p>
-              Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              Suspendisse facilisis metus non finibus vehicula. Nunc vulputate,
-              mi vitae pellentesque sodales, tellus purus ultrices nisl, a
-              sagittis justo lorem quis sapien. Suspendisse consectetur tempor
-              varius. Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Nunc accumsan tellus ac ipsum
-              porttitor, vulputate auctor neque pharetra.
-            </p>
+          <div className="contact-form-container">
+            <form onSubmit={sendEmail}>
+              <div className="row mx-auto">
+                <div className="col-8 arform-group ">
+                  <input
+                    type="text"
+                    className="form-control shadow-none"
+                    required="true"
+                    placeholder="Contact Person"
+                    name="name"
+                  />
+                </div>
+                <div className="col-8 arform-group  pt-3  ">
+                  <input
+                    type="text"
+                    className="form-control shadow-none"
+                    required="true"
+                    placeholder="Organization"
+                    name="organization"
+                  />
+                </div>
+                <div className="col-8 arform-group pt-3 ">
+                  <input
+                    type="email"
+                    className="form-control shadow-none"
+                    required="true"
+                    placeholder="Email Address"
+                    name="email"
+                  />
+                </div>
+                <div className="col-8 arform-group pt-3 ">
+                  <input
+                    type="text"
+                    className="form-control shadow-none"
+                    required="true"
+                    placeholder="Phone Number"
+                    name="phone"
+                  />
+                </div>
+                <div className="col-8 arform-group  pt-3  ">
+                  <input
+                    type="text"
+                    className="form-control shadow-none"
+                    required="true"
+                    placeholder="Address"
+                    name="address"
+                  />
+                </div>
+                <div className="col-8 arform-group   pt-3">
+                  <input
+                    type="text"
+                    className="form-control shadow-none"
+                    placeholder="Apartment, studio, or floor"
+                    name="other"
+                  />
+                </div>
+                <Row>
+                  {" "}
+                  <div className="ar-city   pt-3">
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      required="true"
+                      placeholder="City"
+                      name="city"
+                    />
+                  </div>
+                  <div className="ar-city    pt-3 ">
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      required="true"
+                      placeholder="State"
+                      name="state"
+                    />
+                  </div>
+                </Row>
+                <div className="col-8 arform-group   pt-3">
+                  <input
+                    type="text"
+                    className="form-control shadow-none"
+                    placeholder="Zip Code"
+                    name="zipcode"
+                  />
+                </div>
+              </div>
+            </form>
           </div>
         </Col>
+
         <Col md>
+          <div>
+            {" "}
+            <div className="col-8 arform-group ">
+              <h5>
+                Program Overview - <br />
+              </h5>
+              <i>
+                What do you offer? What are the requirements, if any? Are
+                referrals required? List specifics.
+              </i>{" "}
+              <textarea
+                className="form-control shadow-none"
+                id=""
+                cols="20"
+                required="true"
+                rows="10"
+                name="programOverview"
+              ></textarea>
+            </div>
+            <div className="col-5 pt-3 arform-group ">
+              <input
+                type="submit"
+                className="contact-form-btn"
+                value="Submit for review"
+              ></input>
+            </div>
+          </div>
+        </Col>
+        {/* <Col md>
           {" "}
           <div className="col-sm ar">
             <div className="ar-form-section">
@@ -111,10 +245,10 @@ const AddResourceForm = () => {
 
             <SubmitModal />
           </Form>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );
-};
+}
 
-export default AddResourceForm;
+// export default AddResourceForm;

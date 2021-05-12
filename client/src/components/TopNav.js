@@ -24,10 +24,8 @@ const TopNav = () => {
                 <h3> SEARCH</h3>
               </Link1>
             </Nav.Link>
-            <Nav.Link className="nav-links" href="#">
-              <Link1 className="nav-links" to="#" spy={true} duration={500}>
-                <h3>FORMS</h3>
-              </Link1>
+            <Nav.Link className="nav-links" href="/forms">
+              <h3>FORMS</h3>
             </Nav.Link>
             <Nav.Link className="nav-links" href="#">
               <Link1

@@ -28,3 +28,13 @@ form .form-control:focus{
     padding-top: 12%;
     padding-left: 4%;
 }
+
+.ar-city {
+    width: 40%;
+    
+}
+
+.arform-group {
+    width: 77%;
+    padding-top: 12%;
+}

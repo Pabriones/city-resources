@@ -56,6 +56,21 @@
   font-weight: bold;
 }
 
+.logout-btn a {
+  text-decoration: none;
+  font-size: 2.5vh;
+  float: right;
+  text-transform: uppercase;
+}
+
+.logout-btn a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2.5vh;
+  float: right;
+  text-transform: uppercase;
+}
+
 .navTitleHp h1 {
   color: #ffffff;
   font-size: 5.5vh;

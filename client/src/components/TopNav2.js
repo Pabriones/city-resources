@@ -4,6 +4,8 @@ import "../../src/css/TopNav2.css";
 import { Link as Link1 } from "react-router-dom";
 import LoginModal from "./LoginModal";
 
+// Used by SearchDirectoryPage, RegisterPage
+
 const TopNav2 = () => {
   return (
     <Container className="TopNavContainer2">
@@ -14,25 +16,14 @@ const TopNav2 = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
           <Nav className="mr-auto2">
+            <Nav.Link className="nav-links2" href="#">
+              <h3> SEARCH </h3>
+            </Nav.Link>
+            <Nav.Link className="nav-links2" href="/forms">
+              <h3>FORMS</h3>
+            </Nav.Link>
             <Nav.Link className="nav-links2" href="/">
-              <Link1 className="nav-links2" to="/" spy={true} duration={500}>
-                <h3> SEARCH </h3>
-              </Link1>
-            </Nav.Link>
-            <Nav.Link className="nav-links2" href="#">
-              <Link1 className="nav-links2" to="#" spy={true} duration={500}>
-                <h3>FORMS</h3>
-              </Link1>
-            </Nav.Link>
-            <Nav.Link className="nav-links2" href="#">
-              <Link1
-                className="nav-links2"
-                to="ContactSection"
-                spy={true}
-                duration={500}
-              >
-                <h3> CONTACT</h3>
-              </Link1>
+              <h3> CONTACT</h3>
             </Nav.Link>
           </Nav>
           <Navbar.Collapse className="justify-content-end mr-auto2">

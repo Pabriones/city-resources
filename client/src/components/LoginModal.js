@@ -9,7 +9,6 @@ import {login} from '../actions/auth'
 
 const LoginModal = ({login, isAuthenticated}) => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -34,7 +33,7 @@ const LoginModal = ({login, isAuthenticated}) => {
 
   return (
     <>
-      <Button variant=" " className="nav-linksBtn" onClick={handleShow}>
+      <Button variant=" " className="signin-btn" onClick={handleShow}>
         SIGN IN
       </Button>
 
@@ -43,11 +42,11 @@ const LoginModal = ({login, isAuthenticated}) => {
           <div className="form-container sign-in-container">
             <form action="#" onSubmit={(e) => onSubmit(e)}>
               <h1>SIGN IN</h1>
-              <p>
+              <h6>
                 {" "}
                 Don't have an account yet?{" "}
                 <Link to="/registerpage">CREATE ONE!</Link>
-              </p>
+              </h6>
               <input
                 type="email"
                 placeholder="Email"
@@ -64,11 +63,11 @@ const LoginModal = ({login, isAuthenticated}) => {
                 onChange={(e) => onChange(e)}
                 required
               />
-              <p>
+               
                 <Link to="/resetpassword">Forgot Password?</Link>
-              </p>
+             
 
-              <button>
+              <button className="Login-modal-btn">
                 <Link>Sign in</Link>
               </button>
             </form>

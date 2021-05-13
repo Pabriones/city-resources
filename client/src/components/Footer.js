@@ -64,7 +64,7 @@ const Footer = () => {
                     spy={true}
                     duration={500}
                   >
-                    LIST YOUR RESOURCE
+                    ADD YOUR RESOURCE
                   </Link1>
                 </li>
               </div>

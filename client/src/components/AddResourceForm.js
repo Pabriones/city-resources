@@ -1,8 +1,6 @@
 import React from "react";
 import { Form, Row, Container, Col } from "react-bootstrap";
 import "../../src/css/AddResource.css";
-import SubmitModal from "./SubmitModal";
-
 import emailjs from "emailjs-com";
 import "../../src/css/SimpleContactForm.css";
 
@@ -31,131 +29,143 @@ export default function SimpleContactForm() {
   // const AddResourceForm = () => {
   return (
     <Container>
-      <Row>
-        <div className="ar-textarea">
-          <h1>Add your resource to our Directory.</h1>{" "}
-        </div>
-        <Col md>
-          <div className="contact-form-container">
-            <form onSubmit={sendEmail}>
-              <div className="row mx-auto">
-                <div className="col-8 arform-group ">
-                  <input
-                    type="text"
-                    className="form-control shadow-none"
-                    required="true"
-                    placeholder="Contact Person"
-                    name="name"
-                  />
-                </div>
-                <div className="col-8 arform-group  pt-3  ">
-                  <input
-                    type="text"
-                    className="form-control shadow-none"
-                    required="true"
-                    placeholder="Organization"
-                    name="organization"
-                  />
-                </div>
-                <div className="col-8 arform-group pt-3 ">
-                  <input
-                    type="email"
-                    className="form-control shadow-none"
-                    required="true"
-                    placeholder="Email Address"
-                    name="email"
-                  />
-                </div>
-                <div className="col-8 arform-group pt-3 ">
-                  <input
-                    type="text"
-                    className="form-control shadow-none"
-                    required="true"
-                    placeholder="Phone Number"
-                    name="phone"
-                  />
-                </div>
-                <div className="col-8 arform-group  pt-3  ">
-                  <input
-                    type="text"
-                    className="form-control shadow-none"
-                    required="true"
-                    placeholder="Address"
-                    name="address"
-                  />
-                </div>
-                <div className="col-8 arform-group   pt-3">
-                  <input
-                    type="text"
-                    className="form-control shadow-none"
-                    placeholder="Apartment, studio, or floor"
-                    name="other"
-                  />
-                </div>
-                <Row>
-                  {" "}
-                  <div className="ar-city   pt-3">
-                    <input
-                      type="text"
-                      className="form-control shadow-none"
-                      required="true"
-                      placeholder="City"
-                      name="city"
-                    />
-                  </div>
-                  <div className="ar-city    pt-3 ">
-                    <input
-                      type="text"
-                      className="form-control shadow-none"
-                      required="true"
-                      placeholder="State"
-                      name="state"
-                    />
-                  </div>
-                </Row>
-                <div className="col-8 arform-group   pt-3">
-                  <input
-                    type="text"
-                    className="form-control shadow-none"
-                    placeholder="Zip Code"
-                    name="zipcode"
-                  />
-                </div>
+      <div className="contact-form-container">
+        <form>
+          <form onSubmit={sendEmail}>
+            <Row>
+              <div className="ar-textarea">
+                <h1>Add your resource to our Directory.</h1>
+                <p>
+                  If you are not listed and would like to be added to our
+                  database. Please fill out the form below. If you have any
+                  questions, feel free to send us an email at
+                  info@cityresources.com
+                </p>
               </div>
-            </form>
-          </div>
-        </Col>
+              <Col md>
+                <div className="row mx-auto">
+                  <div className="col-8 arform-group  ">
+                    <label className="ar-form-label">Organization</label>
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      required="true"
+                      placeholder="Organization"
+                      name="organization"
+                    />
+                  </div>
 
-        <Col md>
-          <div>
-            {" "}
-            <div className="col-8 arform-group ">
-              <h5>
-                Program Overview - <br />
-              </h5>
-              <i>
-                What do you offer? What are the requirements, if any? Are
-                referrals required? List specifics.
-              </i>{" "}
-              <textarea
-                className="form-control shadow-none"
-                id=""
-                cols="20"
-                required="true"
-                rows="10"
-                name="programOverview"
-              ></textarea>
-            </div>
-            <div className="col-5 pt-3 arform-group ">
-              <input
-                type="submit"
-                className="contact-form-btn"
-                value="Submit for review"
-              ></input>
-            </div>
-          </div>
-        </Col>
-        {/* <Col md>
+                  <div className="col-8 arform-group pt-3 ">
+                    <label className="ar-form-label">Phone Number</label>
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      required="true"
+                      placeholder="Phone Number"
+                      name="phone"
+                    />
+                  </div>
+                  <div className="col-8 arform-group  pt-3  ">
+                    <label className="ar-form-label">Address</label>
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      required="true"
+                      placeholder="Address"
+                      name="address"
+                    />
+                  </div>
+                  <div className="col-8 arform-group   pt-3">
+                    <label className="ar-form-label">Address 2</label>
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      placeholder="Apartment, studio, or floor"
+                      name="other"
+                    />
+                  </div>
+                  <Row>
+                    {" "}
+                    <div className="ar-city   pt-3">
+                      <label className="ar-form-label">City</label>
+                      <input
+                        type="text"
+                        className="form-control shadow-none"
+                        required="true"
+                        placeholder="City"
+                        name="city"
+                      />
+                    </div>
+                    <div className="ar-state    pt-3 ">
+                      <label className="ar-form-label">State</label>
+                      <input
+                        type="text"
+                        className="form-control shadow-none"
+                        required="true"
+                        placeholder="State"
+                        name="state"
+                      />
+                    </div>
+                    <div className="ar-city   pt-3">
+                      <label className="ar-form-label">Zipcode</label>
+                      <input
+                        type="text"
+                        className="form-control shadow-none"
+                        placeholder="Zip Code"
+                        name="zipcode"
+                      />
+                    </div>{" "}
+                  </Row>
+                </div>
+              </Col>
+              <Col md>
+                <div>
+                  <div className="col-8 arform-group ">
+                    <label className="ar-form-label">Contact Person</label>
+                    <input
+                      type="text"
+                      className="form-control shadow-none"
+                      required
+                      placeholder="Contact Person"
+                      name="name"
+                    />
+                  </div>
+                  <div className="col-8 arform-group pt-3  ">
+                    <label className="ar-form-label">Email Address</label>
+                    <input
+                      type="email"
+                      className="form-control shadow-none"
+                      required="true"
+                      placeholder="Email Address"
+                      name="email"
+                    />
+                  </div>
+                  <div className="col-8 arform-group pt-5 ">
+                    <label className="ar-form-label">Program Overview:</label>
+
+                    <p>
+                      What do you offer? What are the requirements, if any? Are
+                      referrals required? List specifics.
+                    </p>
+                    <textarea
+                      className="form-control shadow-none"
+                      id=""
+                      cols="20"
+                      required="true"
+                      rows="5"
+                      name="programOverview"
+                    ></textarea>
+                  </div>
+                  <div className="col-5 pt-3 arform-group ">
+                    <input
+                      type="submit"
+                      className="ar-submitform-btn"
+                      value="Submit for review"
+                    ></input>
+                  </div>
+                </div>
+              </Col>
+              {/* <Col md>
           {" "}
           <div className="col-sm ar">
             <div className="ar-form-section">
@@ -246,7 +256,10 @@ export default function SimpleContactForm() {
             <SubmitModal />
           </Form>
         </Col> */}
-      </Row>
+            </Row>{" "}
+          </form>
+        </form>
+      </div>
     </Container>
   );
 }

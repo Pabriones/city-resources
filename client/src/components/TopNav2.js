@@ -16,7 +16,7 @@ const TopNav2 = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
           <Nav className="top-nav2">
-            <Nav.Link className="TopNav-light-links" href="#">
+            <Nav.Link className="TopNav-light-links" href="/directory">
               <h3> SEARCH </h3>
             </Nav.Link>
             <Nav.Link className="TopNav-light-links" href="/forms">

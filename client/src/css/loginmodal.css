@@ -2,6 +2,7 @@
   font-weight: bold;
   color: rgb(255, 255, 255);
   font-size: 6vh;
+  letter-spacing: 2px;
   /* text-align: center; */
 }
 .form-container a:hover {
@@ -62,6 +63,8 @@
   border: none;
   text-transform: uppercase;
   outline: none;
+  color: #eee;
+  font-size: 2.5vh;
   margin: 8%;
   padding: 3%;
   transition: transform 80ms ease-in;
@@ -119,7 +122,8 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  font-size: 1.4vh;
+  color: #291f1f;
+  font-size: 1.5vh;
   text-transform: uppercase;
   text-align: left;
   width: 32%;
@@ -127,23 +131,23 @@
   box-shadow: none;
 }
 
-.email-pw-label {
-  color: white;
-  padding-top: 5%;
-}
-
 .showPw-btn:hover {
   background-color: transparent;
   border: none;
+  color: #2e2525;
   font-weight: bold;
   padding-top: 0;
-  font-size: 1.4vh;
+  font-size: 1.5vh;
   text-transform: uppercase;
   text-align: left;
   width: 32%;
   padding: 0;
 }
 
+.email-pw-label {
+  color: white;
+  padding-top: 5%;
+}
 /* .loginBtn {
   font-size: 2.5vh;
   font-family: "Roboto", "sans-serif";

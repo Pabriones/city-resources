@@ -20,6 +20,16 @@ const ResourcesSchema = new mongoose.Schema({
 		required: true
 	},
 
+	latitude: {
+		type: Float,
+		required: true
+	},
+
+	longitude: {
+		type: Float,
+		required: true
+	},
+
 	website: {
 		type: String,
 		required: true

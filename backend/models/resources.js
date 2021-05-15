@@ -21,12 +21,12 @@ const ResourcesSchema = new mongoose.Schema({
 	},
 
 	latitude: {
-		type: Float,
+		type: String,
 		required: true
 	},
 
 	longitude: {
-		type: Float,
+		type: String,
 		required: true
 	},
 

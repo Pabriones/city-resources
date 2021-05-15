@@ -4,7 +4,7 @@ form .form-control:focus{
   }
 
 .contact-form-btn {
-    background-color: #695c59;
+    background-color: #2c2927;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 2.5vh;
@@ -18,7 +18,7 @@ form .form-control:focus{
 }
 
 .contact-form-btn:hover {
-    background-color: #534946;
+    background-color: #695c59;
     border: none;
     cursor: pointer;
 }
@@ -29,12 +29,3 @@ form .form-control:focus{
     padding-left: 4%;
 }
 
-.ar-city {
-    width: 40%;
-    
-}
-
-.arform-group {
-    width: 77%;
-    padding-top: 12%;
-}

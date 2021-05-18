@@ -1,123 +1,39 @@
 .contact-container {
   width: 100%;
   font-family: "Roboto", "sans-serif";
-}
-
-/* .emergencyNumbers {
-  font-size: 1.5vh;
-  float: right;
-  width: 55%;
-  padding: 4% 5% 2% 5%;
-  height: 100%;
-  word-break: break-word;
-}
-
-.emergencyNumbers h1 {
-  font-family: "Roboto", "sans-serif";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 3vh;
-  color: #641111;
-} */
-
-.contact-content {
   background-color: #694839;
-  /* text-align: center; */
-  padding: 2%;
+padding: 5%;
 }
 
 /* CONTACT US SECTION */
 .contact-info {
-  font-family: "Roboto", "sans-serif";
   padding: 5%;
   color: #cfcccc;
   font-style: normal;
 }
 
 .contact-info h1 {
-  font-size: 6.5vh;
   letter-spacing: 2px;
   font-weight: bold;
-  font-family: "Roboto", "sans-serif";
   color: #ffffff;
-  padding-left: 5%;
 }
 
-/* 
-EMAIL AND ADD RESOURCE SECTION */
-.contact-info-2 {
-  background-color: #e2e2e2;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 25px 20px -30px;
-  padding: 2.5% 0% 5%;
-}
-
-.email {
+/* .email {
   font-size: 4.5vh;
   text-transform: uppercase;
   text-align: center;
-}
-
-.add-resource {
-}
-
-/* .cs-text {
-  font-size: 2vh;
-} */
-/* 
-.ab2-crop {
-  width: 100%;
-  margin: -32% 0% -18.8% 0%;
-}
-
-.ab2-crop img {
-  width: 100%;
-  margin: -20% 0% -26% 0%;
-}
-
-.ab2-crop2 {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
-}
-
-.ab2-crop2 img {
-  width: 100%;
-  margin: -32% 0% -18.8% 0%;
-} */
-
-/* .cs-btn {
-  background-color: #141414;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 2vh;;
-  color: rgb(255, 255, 255);
-margin: 31px auto 0 0;
-  padding: 4px 45px 1px 51px;
 } */
 
 .addResourceBtn {
   background-color: #2c2927;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 2.5vh;
-
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
   /* margin: 31px auto 0 0; */
-  padding: 3% 3% 3%;
+  padding: 3%;
   margin-top: 4%;
   border: none;
-}
-
-.addResource {
-  /* margin: 0px 2vw; */
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-  padding-left: 5%;
 }
 
 .addResourceBtn:hover {
@@ -126,45 +42,8 @@ margin: 31px auto 0 0;
   cursor: pointer;
 }
 
-.addResource:hover {
-  font-style: normal;
-  font-weight: bolder;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-/* SMARTPHONES */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 1000px) {
   .contact-info h1 {
-    font-size: 4vh;
-  }
-
-  .contact-info p {
-    font-size: 2.2vh;
-  }
-
-  .contact-info {
-    padding: 5% 4% 5%;
-  }
-
-  .addResourceBtn {
-    letter-spacing: 2px;
-    font-size: 2.2vh;
-  }
-
-  .add-resource {
-    padding-top: 15%;
-  }
-
-  .email {
-    text-align: left;
-  }
-}
-
-/* DESKTOPS AND LAPTOPS */
-@media (min-width: 1224px) {
-  .contact-info p {
-    font-size: 2.8vh;
-    padding: 0% 5% 0%;
+    font-size: 4.5vh;
   }
 }

@@ -15,7 +15,17 @@ const ResourcesSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	},
-    address: {
+	address: {
+		type: String,
+		required: true
+	},
+
+	latitude: {
+		type: String,
+		required: true
+	},
+
+	longitude: {
 		type: String,
 		required: true
 	},
@@ -27,19 +37,23 @@ const ResourcesSchema = new mongoose.Schema({
 	email: {
 		type: String,
 		required: true,
-		
+
 	},
 
-    operationHours: {
+	operationHours: {
 		type: String,
 		required: true
 	},
-	
-    description: {
+	operationDays: {
 		type: String,
 		required: true
 	},
-	
+
+	description: {
+		type: String,
+		required: true
+	},
+
 });
 
 module.exports = Resources = mongoose.model('resources', ResourcesSchema);

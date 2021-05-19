@@ -155,7 +155,10 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 									<PersonPlus size={28} /> REGISTER
 								</Button>
 
-			
+								<div className="rp-terms">
+									By clicking REGISTER. You agree to our <a href="">Terms</a> and that you've read our{' '}
+									<a href="">Privacy and Content Policy.</a>
+								</div>
 							</Form>
 						</div>
 					</div>

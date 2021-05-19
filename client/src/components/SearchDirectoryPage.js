@@ -130,36 +130,35 @@ const SearchDirectoryPage = () => {
             </div>
             <h2 className="mb-0">FILTER BY SERVICES:</h2>
             <div className="input-section">
-                <div className="sd-services">
               {state.map((filter, i) => {
                 let temp = [];
                 temp.push(
-                <div>
+                  <div className="sd-services">
                     <input
                       type="checkbox"
                       className="checkbox"
                       onChange={(e) => handleCheckBox(e, i)}
                       checked={filter.checked}
                     />
-                    <label className="sd-services-labels"> {filter.filterName}</label>
-                 </div>
+                    <label> {filter.filterName}</label>
+                  </div>
                 );
                 return temp;
-              })} </div>
+              })}
             </div>
           </div>
 
           {/* Col 2 */}
           <div className="col-6 sd-results-container scroll">
             <div className="sd-search-results">
-              {/* <SearchNavLinks /> */}
+              <SearchNavLinks />
               <Print ref={componentRef} data={resource} />
             </div>
           </div>
         </div>
         <div className="sd-btn">
           <button className="print-btn" onClick={handlePrint}>
-            <h3>PRINT RESULTS</h3>
+            <h2>PRINT RESULTS</h2>
           </button>
           <p>
             Want to save your favorites and share by email?{" "}

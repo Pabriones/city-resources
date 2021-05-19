@@ -24,7 +24,7 @@ class Homepage extends React.Component {
 				</div>
 				<div>
 					<AboutPage />
-					{/* <AboutPage2 /> */}
+					<AboutPage2 />
 					<ContactSection />
 					<Footer />
 				</div>

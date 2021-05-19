@@ -4,29 +4,38 @@ import "../../src/css/TopNav2.css";
 import { Link as Link1 } from "react-router-dom";
 import LoginModal from "./LoginModal";
 
-// Used by SearchDirectoryPage, RegisterPage
-
 const TopNav2 = () => {
   return (
-    <Container className="TopNav-light">
-      <Navbar expand="lg">
-        <Navbar.Brand href="/" className="TopNav-light-title">
+    <Container className="TopNavContainer2">
+      <Navbar expand="lg" variant="light">
+        <Navbar.Brand href="/" className="navTitle2">
           <h1>CITY RESOURCES</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
-          <Nav className="top-nav2">
-            <Nav.Link className="TopNav-light-links" href="/directory">
-              <h3> SEARCH </h3>
+          <Nav className="mr-auto2">
+            <Nav.Link className="nav-links2" href="/">
+              <Link1 className="nav-links2" to="/" spy={true} duration={500}>
+                <h3> SEARCH </h3>
+              </Link1>
             </Nav.Link>
-            <Nav.Link className="TopNav-light-links" href="/forms">
-              <h3>FORMS</h3>
+            <Nav.Link className="nav-links2" href="#">
+              <Link1 className="nav-links2" to="#" spy={true} duration={500}>
+                <h3>FORMS</h3>
+              </Link1>
             </Nav.Link>
-            <Nav.Link className="TopNav-light-links" href="/">
-              <h3> CONTACT</h3>
+            <Nav.Link className="nav-links2" href="#">
+              <Link1
+                className="nav-links2"
+                to="ContactSection"
+                spy={true}
+                duration={500}
+              >
+                <h3> CONTACT</h3>
+              </Link1>
             </Nav.Link>
           </Nav>
-          <Navbar.Collapse className="justify-content-end ">
+          <Navbar.Collapse className="justify-content-end mr-auto2">
             <Navbar.Text>
               <LoginModal />
             </Navbar.Text>

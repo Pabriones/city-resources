@@ -1,29 +1,15 @@
-.TopNav-light {
+.TopNavContainer2 {
   padding-top: 3%;
   font-family: "Roboto", "sans-serif";
 }
-.TopNav-light-title h1 {
+.navTitle2 h1 {
   font-size: 3vh;
   color: #2c2927;
 }
 
-.TopNav-light-title:hover h1 {
+.navTitle2:hover h1 {
   font-size: 3vh;
   color: #2c2927;
-}
-
-.TopNav-light-links h3{
-  text-decoration: none;
-  color: #2c2927;
-  font-style: normal;
-  font-size: 3.5vh;
-}
-
-.TopNav-light-links h3:hover{
-  text-decoration: underline;
-  color: #2c2927;
-  font-style: normal;
-  font-size: 3.5vh;
   font-weight: bold;
 }
 
@@ -33,14 +19,9 @@
   padding-top: 5%;
 } */
 
-/* .topnav-links2 {
+.nav-links2 {
   text-decoration: none;
-  color: #af5b22;
- 
-  font-style: normal;
-  font-size: 3.5vh;
-  font-weight: bold;
-  
+  color: #2c2927;
 }
 
 .nav-links2:hover h3 {
@@ -49,7 +30,7 @@
   font-size: 3.5vh;
   font-weight: bold;
   text-decoration: underline;
-} */
+}
 
 /* .nav-linksBtn2{
 font-size: 2.8vh;

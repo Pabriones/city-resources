@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { Modal, Button, Row, Col } from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 import "../../src/css/loginmodal.css";
 import { Link, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import { login } from "../actions/auth";
-import Alert from '../components/layout/Alert'
+import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
+import {login} from '../actions/auth'
 
-const LoginModal = ({ login, isAuthenticated }) => {
+
+const LoginModal = ({login, isAuthenticated}) => {
   const [show, setShow] = useState(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -16,11 +17,6 @@ const LoginModal = ({ login, isAuthenticated }) => {
     email: "",
     password: "",
   });
-
-  const [passwordShown, setPasswordShow] = useState(false);
-  const togglePassword = () => {
-    setPasswordShow(!passwordShown);
-  };
 
   const { email, password } = formData;
   const onChange = (e) =>
@@ -32,69 +28,63 @@ const LoginModal = ({ login, isAuthenticated }) => {
   };
 
   // Redirect if logged in
-  if (isAuthenticated) {
-    return <Redirect to="/homepage" />;
+  if(isAuthenticated){
+    return <Redirect to='/homepage'/>
   }
 
   return (
     <>
-      <Button variant=" " className="signin-btn" onClick={handleShow}>
+      <Button variant=" " className="nav-linksBtn" onClick={handleShow}>
         SIGN IN
       </Button>
 
       <Modal show={show} onHide={handleClose}>
-        {/* <div className="logContainer"> */}
-        <div className="form-container  ">
-          <form action="#" onSubmit={(e) => onSubmit(e)}>
-            {" "}
-            <h1>SIGN IN</h1>
-            <label className="email-pw-label">Email</label>
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              value={email}
-              onChange={(e) => onChange(e)}
-              required
-            />
-            <label className="email-pw-label">
-              Password{" "}
-              <Link className="forgot-link" to="/resetpassword">
-                Forgot Password?
-              </Link>
-            </label>
-            <input
-              type={passwordShown ? "text" : "password"}
-              placeholder="Password"
-              name="password"
-              value={password}
-              onChange={(e) => onChange(e)}
-              required
-            />
-            <button className="showPw-btn" onClick={togglePassword}>
-              Show Password
-            </button>
-            <button className="Login-modal-btn">
-              Sign in
-            </button>
-            <p>
-              Don't have an account yet?{" "}
-              <Link to="/registerpage">CREATE ONE!</Link>
-            </p>
-          </form>
+        <div className="logContainer">
+          <div className="form-container sign-in-container">
+            <form action="#" onSubmit={(e) => onSubmit(e)}>
+              <h1>SIGN IN</h1>
+              <p>
+                {" "}
+                Don't have an account yet?{" "}
+                <Link to="/registerpage">CREATE ONE!</Link>
+              </p>
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={email}
+                onChange={(e) => onChange(e)}
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={password}
+                onChange={(e) => onChange(e)}
+                required
+              />
+              <p>
+                <Link to="/resetpassword">Forgot Password?</Link>
+              </p>
+
+              <button>
+                <Link>Sign in</Link>
+              </button>
+            </form>
+          </div>
         </div>
-        {/* </div> */}
       </Modal>
     </>
   );
 };
 LoginModal.propTypes = {
   login: PropTypes.func.isRequired,
-  isAuthenticated: PropTypes.bool,
+  isAuthenticated: PropTypes.bool
 };
 
-const mapStateToProps = (state) => ({
-  isAuthenticated: state.auth.isAuthenticated,
+const mapStateToProps = state => ({
+  isAuthenticated: state.auth.isAuthenticated
 });
 
-export default connect(mapStateToProps, { login })(LoginModal);
+export default connect(mapStateToProps, {login}) (LoginModal);

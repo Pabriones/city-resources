@@ -1,43 +1,67 @@
 .accordion-up-covid {
-  background-color: transparent;
   border: none;
   text-decoration: none;
+  font-family: "Roboto", "sans-serif";
 }
 
-.accordion-header-covid {
-  background-color: transparent;
+.accordion-up-covid h2:hover {
+  color: #585858;
+}
+
+.accordion-up-covid h2 {
+  color: #0c0b0c;
+}
+
+/* .accordion-header-covid {
   border: none;
   text-decoration: none;
+} */
+
+.vaccine-info-container a:hover {
+  color: red;
+  font-weight: bold;
 }
 
-.accordion-header-covid p {
+.vaccine-info-container a {
+  text-decoration: none;
+  color: red;
 }
 
 .openTrue {
   cursor: pointer;
-  color: #e01a1a;
   border: none;
-  float: right;
   outline: none;
+  text-decoration: none;
   box-shadow: none;
   background-color: transparent;
-}
-
-.openTrue:hover {
-  color: black;
-}
-
-.closeFalse:hover {
-  color: black;
 }
 
 .closeFalse {
   cursor: pointer;
   outline: none;
-  float: right;
-  color: #463f3f;
+  text-decoration: none;
   outline: none;
   box-shadow: none;
   border: none;
   background-color: transparent;
+}
+
+@media (min-width: 568px) {
+
+}
+
+@media (min-width: 990px) {
+ 
+}
+
+@media (min-width: 1275px) {
+  .vaccine-info-container {
+    padding: 2% 5%;
+    font-size: 2.5vh;
+  }
+
+  .accordion-up-covid h2{
+    text-align: left;
+    padding: 1% 4% 0%;
+  }
 }

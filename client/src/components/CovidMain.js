@@ -1,10 +1,6 @@
 import React from "react";
 import {
-  Tab,
   Row,
-  Col,
-  Nav,
-  Form,
   Button,
   Accordion,
   Card,
@@ -28,10 +24,10 @@ class CovidMain extends React.Component {
   render() {
     return (
       <div>
-        <Accordion defaultActiveKey="/">
+        <Accordion defaultActiveKey="0">
           <Card className="accordion-up-covid">
             <Card.Header className="accordion-header-covid">
-              <Row>
+              <Row> 
                 <Accordion.Toggle
                   as={Button}
                   variant="link"
@@ -39,23 +35,15 @@ class CovidMain extends React.Component {
                   className={this.state.button ? "openTrue" : "closeFalse"}
                   onClick={this.handleClick}
                 >
-                  }
-                  <a
-                    href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
-                    className="lp-jumbo-link"
-                  >
-                    For the most update information about COVID-19, please visit
-                    the CDC Website
-                  </a>{" "}
-                  <Justify size={35} />
-                </Accordion.Toggle>{" "}
+                <h2>  Vaccine appointments are available! </h2> 
+              
+                </Accordion.Toggle> 
               </Row>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
               <Card.Body className="vaccine-info-container">
-                <p>
-                  {" "}
-                  <h4>Vaccine appointments are available!</h4>
+  
+                  <p>
                   King County:{" "}
                   <a
                     href="https://seattle.signetic.com/home/93d64636-e4a2-eb11-b1ac-002248089768"
@@ -78,7 +66,15 @@ class CovidMain extends React.Component {
                   >
                     Free Covid-19 testing sites
                   </a>
-                </p>
+              </p>
+                For the most update information about COVID-19, please visit the{" "}
+                 <a
+                   href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+                   className="lp-jumbo-link"
+                 >
+                   CDC Website
+                 </a>
+                 
               </Card.Body>
             </Accordion.Collapse>
           </Card>

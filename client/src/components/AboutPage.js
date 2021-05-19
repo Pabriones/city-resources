@@ -30,13 +30,13 @@ const AboutPage = () => {
         </div>
       </div>
       <div class="container-fluid quote">
-        "Seattle's homelessness crisis has been years in the making, and its
+        <p>"Seattle's homelessness crisis has been years in the making, and its
         roots run deep, touching racial inequity, economic disparities, mental
         health treatment, rising housing costs, mental health, addiction, and so
         much more. We have a responsibility to be honest that this crisis won't
         go away overnight. Lasting, meaningful progress will take years. But we
         still must act - and are acting - to improve life in Seattle."- Mayor
-        Jenny Durkan
+        Jenny Durkan</p>
       </div>
       <div class="parallax">
           <div class="space"> </div>

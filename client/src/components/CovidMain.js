@@ -28,7 +28,7 @@ class CovidMain extends React.Component {
   render() {
     return (
       <div>
-        <Accordion defaultActiveKey="0">
+        <Accordion defaultActiveKey="/">
           <Card className="accordion-up-covid">
             <Card.Header className="accordion-header-covid">
             <Row>   

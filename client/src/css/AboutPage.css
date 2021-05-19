@@ -180,3 +180,24 @@
     padding-right: 12%;
   }
 }
+
+@media (min-width: 990px) {
+  .about-page-title h1 {
+    font-size: 12vh;
+  }
+
+  .quote {
+    font-size: 3vh;
+  }
+
+  .about-page-intro {
+    font-size: 4vh;
+    padding-right: 8%;
+  }
+}
+
+@media (min-width: 1275px) {
+  .about-page-intro {
+    padding-right: 20%;
+  }
+}

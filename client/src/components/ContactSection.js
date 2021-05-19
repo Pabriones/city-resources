@@ -8,8 +8,9 @@ const ContactSection = () => {
     <div class="container-fluid contact-container">
       <div id="ContactSection"></div>
       <div class="row contact-content">
+        <h1>GET IN TOUCH</h1>
         <div class="col-md contact-info">
-          <h1>GET IN TOUCH</h1>
+          
 
           <p>
             {" "}

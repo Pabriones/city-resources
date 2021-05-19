@@ -1,30 +1,23 @@
-form .form-control:focus{
-    box-shadow: none;
-    border-color: #302e2e;
-  }
+form .form-control:focus {
+  box-shadow: none;
+  border-color: #302e2e;
+}
 
 .contact-form-btn {
-    background-color: #695c59;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 2.5vh;
-    font-family: "Poppins", sans-serif;
-    color: rgb(255, 255, 255);
-    /* margin: 31px auto 0 0; */
-    padding: 4% 4% 4%;
- border: none;
-  
- 
+  background-color: #2c2927;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  /* margin: 31px auto 0 0; */
+  border: none;
+  padding: 3%;
+  margin-top: 4%;
+  width: 100%;
 }
 
 .contact-form-btn:hover {
-    background-color: #534946;
-    border: none;
-    cursor: pointer;
-}
-
-.form-group {
-    width: 90%;
-    padding-top: 12%;
-    padding-left: 4%;
+  background-color: #695c59;
+  border: none;
+  cursor: pointer;
 }

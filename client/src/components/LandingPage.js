@@ -21,10 +21,10 @@ class LandingPage extends React.Component {
     return (
       <body>
         <div id="LandingPage">
-          <Jumbotron fluid>
-            <Container className="lp-covid-jumbo"><CovidMain/>
-            </Container>
-          </Jumbotron>
+  
+       <CovidMain/>
+           
+        
           <div className="lp-container">
             <TopNav />
             <div className="lp-flex-container"></div>

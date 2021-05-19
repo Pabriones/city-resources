@@ -8,7 +8,7 @@ const ContactSection = () => {
     <div class="container-fluid contact-container">
       <div id="ContactSection"></div>
       <div class="row contact-content">
-        <div class="col-sm contact-info">
+        <div class="col-md contact-info">
           <h1>GET IN TOUCH</h1>
 
           <p>

@@ -8,25 +8,25 @@ import LoginModal from "./LoginModal";
 
 const TopNav2 = () => {
   return (
-    <Container className="TopNavContainer2">
-      <Navbar expand="lg" variant="light">
-        <Navbar.Brand href="/" className="navTitle2">
+    <Container className="TopNav-light">
+      <Navbar expand="lg">
+        <Navbar.Brand href="/" className="TopNav-light-title">
           <h1>CITY RESOURCES</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav ">
-          <Nav className="mr-auto2">
-            <Nav.Link className="nav-links2" href="#">
+          <Nav className="top-nav2">
+            <Nav.Link className="TopNav-light-links" href="/directory">
               <h3> SEARCH </h3>
             </Nav.Link>
-            <Nav.Link className="nav-links2" href="/forms">
+            <Nav.Link className="TopNav-light-links" href="/forms">
               <h3>FORMS</h3>
             </Nav.Link>
-            <Nav.Link className="nav-links2" href="/">
+            <Nav.Link className="TopNav-light-links" href="/">
               <h3> CONTACT</h3>
             </Nav.Link>
           </Nav>
-          <Navbar.Collapse className="justify-content-end mr-auto2">
+          <Navbar.Collapse className="justify-content-end ">
             <Navbar.Text>
               <LoginModal />
             </Navbar.Text>

@@ -31,25 +31,24 @@ class CovidMain extends React.Component {
         <Accordion defaultActiveKey="/">
           <Card className="accordion-up-covid">
             <Card.Header className="accordion-header-covid">
-            <Row>   
-               <Col><h3>
-                  For the most update information about COVID-19, please visit
-                  the{" "}
+              <Row>
+                <Accordion.Toggle
+                  as={Button}
+                  variant="link"
+                  eventKey="0"
+                  className={this.state.button ? "openTrue" : "closeFalse"}
+                  onClick={this.handleClick}
+                >
+                  }
                   <a
                     href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
                     className="lp-jumbo-link"
                   >
-                    CDC Website
-                  </a>
-                  .
-                </h3>
-             </Col> 
-                  <Col>
-                    <Accordion.Toggle as={Button} variant="link" eventKey="0" 
-                    className={this.state.button ? "openTrue" : "closeFalse"}
-                    onClick={this.handleClick}>
-                      <Justify size={55} />
-                    </Accordion.Toggle>{" "}</Col>
+                    For the most update information about COVID-19, please visit
+                    the CDC Website
+                  </a>{" "}
+                  <Justify size={35} />
+                </Accordion.Toggle>{" "}
               </Row>
             </Card.Header>
             <Accordion.Collapse eventKey="0">

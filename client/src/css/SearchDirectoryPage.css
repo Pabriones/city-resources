@@ -5,7 +5,7 @@
 .sd-container {
   width: 100%;
   font-family: "Roboto", "sans-serif";
-  padding: 4% 1% 0%;
+  padding: 4% 2% 0%;
 }
 
 /* .sd-title {
@@ -29,39 +29,28 @@ input[type="text"] {
 }
 .sd-filterContainer {
   width: 50%;
-  padding: 1% 4% 0%;
+  padding: 2% 3%;
 }
 /* .col-6.p-main {
  padding: 5% 5% 2%;
 } */
 .sd-results-container {
   background-color: #fafafa;
+  padding: 2%;
 }
 
 .sd-search-results {
-  padding: 4% 2%;
+  padding: 3% 4% 2%;
+  font-family: "Roboto", "sans-serif";
 }
 
-.sd-search-results p{
-  font-size: 2vh;
-  letter-spacing: 0.5px;
-  margin:0;
- 
-   
+.sd-search-results p {
+  font-size: 2.5vh;
 }
 
-.sd-search-results a{
-  text-decoration: underline;
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.sd-search-results a:hover{
-  text-decoration: underline;
-  color: rgb(97, 63, 63);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.sd-search-results h1 {
+  font-size: 4.5vh;
+  font-family: "Roboto", "sans-serif";
 }
 
 /* .website-linkBtn {
@@ -81,38 +70,37 @@ input[type="text"] {
 
 .sd-services {
   font-family: "Roboto", "sans-serif";
-  /* padding: 3%; */
+  padding: 3%;
   color: #6e6d6d;
   white-space: nowrap;
-  font-size: 2.5vh;
+  font-size: 2.3vh;
 }
 
 input.checkbox {
   width: 15%;
-  height: 3.5vh;
+  height: 2.5vh;
   vertical-align: middle;
 }
 
 .input-section {
+  padding: 1.5% 2% 2%;
   column-count: 2;
-
-  width: 110%;
-}
-
-.sd-services-labels {
-  padding: 1.5%;
 }
 
 .mb-0 {
-  padding: 6% 0% 5%;
+  padding-top: 6.5%;
   font-size: 4vh;
 }
 
-/* .mt-2,
+/*   .underline {
+    text-decoration: underline;
+  } */
+
+.mt-2,
 .mb-2 {
   margin-top: 13px;
   margin-bottom: 13px;
-} */
+}
 
 /* .hero {
   /* overflow: hidden; */
@@ -148,41 +136,39 @@ input.checkbox {
 
 .print-btn {
   background-color: #383636;
-  padding: 1% 6% 1%;
+  width: 35%;
   outline: none;
   box-shadow: none;
 }
 
-.print-btn:hover {
-  background-color: #695c59;
-}
-
-.print-btn h3 {
+.print-btn h2 {
   color: #eeeeee;
-
-  letter-spacing: 1px;
+  margin: 5%;
+  font-size: 2.5vh;
+  font-family: "Roboto", "sans-serif";
 }
 
-.print-btn:hover h3 {
+.print-btn:hover h2 {
+  font-weight: bold;
+  color: #ebebeb;
   text-decoration: none;
-
+  font-family: "Roboto", "sans-serif";
   outline: none;
   box-shadow: none;
 }
 
 .sd-btn {
-  margin: 5% 0% 3%;
+  padding: 5% 5%;
   text-align: center;
 }
 
 .sd-btn p {
-  margin: 2%;
-  font-size: 2.2vh;
+  padding-top: 2%;
 }
 
 .scroll {
   overflow-y: scroll;
-  max-height: 110vh;
+  max-height: 115vh;
   /*   min-height: 85vh; */
 }
 
@@ -195,6 +181,14 @@ input.checkbox {
 
 .fav-icon:hover {
   color: red;
+}
+@media screen and (max-width: 1000px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .col-6 {
+    width: 100%;
+  }
 }
 
 .sd-rp-link {
@@ -211,82 +205,6 @@ input.checkbox {
   color: #c54b26;
 }
 
-@media screen and (max-width: 1400px) {
-  .sd-search-results {
-    padding: 3% 4% 2%;
-    font-family: "Roboto", "sans-serif";
-  }
-
-  .sd-search-results p {
-    font-size: 2.2vh;
-  }
-
-  .sd-search-results h1 {
-    font-size: 3.2vh;
-    font-family: "Roboto", "sans-serif";
-  }
-}
-@media screen and (max-width: 1200px) {
-  .row {
-    flex-wrap: wrap;
-  }
-  .col-6 {
-    width: 100%;
-  }
-
-  .sd-services {
-    font-family: "Roboto", "sans-serif";
-    padding: 1%;
-    color: #6e6d6d;
-    white-space: nowrap;
-    font-size: 2.3vh;
-  }
-  .sd-filterContainer {
-    padding-right: 10%;
-  }
-  .input-section {
-    column-count: 2;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .input-section {
-    column-count: 1;
-  }
-
-  .sd-btn {
-    margin: 10% 0% 15%;
-    text-align: center;
-  }
-
-  .sd-btn p {
-    margin: 5%;
-    font-size: 2.2vh;
-  }
-
-  .sd-services {
-    font-family: "Roboto", "sans-serif";
-    padding: 2%;
-    color: #6e6d6d;
-    overflow: hidden;
-    font-size: 3.2vh;
-  }
-
-  .sd-services-labels {
-    padding: 1%;
-  }
-}
-
-/* @media screen and (min-width: 600px) and (max-width: 680px) {
-   .sd-services {
-    font-family: "Roboto", "sans-serif";
-    padding: 2%;
-    color: #6e6d6d;
-    overflow: hidden;
-    font-size: 3vh;
-  }
-} */
-
 /* SMARTPHONES */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .mb-0 {
@@ -299,6 +217,6 @@ input.checkbox {
     padding: 2%;
     color: #6e6d6d;
     overflow: hidden;
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
 }

@@ -13,16 +13,22 @@
 		"@testing-library/user-event": "^7.2.1",
 		"axios": "^0.21.1",
 		"bootstrap": "^4.5.3",
+		"emailjs-com": "^2.6.4",
+		"google-maps-react": "^2.0.6",
 		"moment": "^2.29.1",
 		"react": "^16.14.0",
+		"react-avatar": "^3.10.0",
 		"react-bootstrap": "^1.4.0",
+		"react-bootstrap-icons": "^1.5.0",
 		"react-dom": "^16.13.1",
-		"react-modal": "^3.12.1",
+		"react-modal": "^3.13.1",
 		"react-moment": "^1.1.1",
 		"react-redux": "^7.2.4",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "^4.0.3",
+		"react-scroll": "^1.8.2",
 		"react-to-print": "^2.12.4",
+		"reactjs-popup": "^2.0.4",
 		"redux": "^4.1.0",
 		"redux-devtools-extension": "^2.13.9",
 		"redux-thunk": "^2.3.0",
@@ -56,5 +62,5 @@
 	"devDependencies": {
 		"case-sensitive-paths-webpack-plugin": "^2.4.0"
 	},
-	"proxy": "http://localhost:8080"
+	"proxy": "http://localhost:3000"
 }

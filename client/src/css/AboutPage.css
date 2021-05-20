@@ -183,11 +183,12 @@
 
 @media (min-width: 990px) {
   .about-page-title h1 {
-    font-size: 12vh;
+    font-size: 6vh;
   }
 
   .quote {
-    font-size: 3vh;
+    font-size: 2vh;
+    padding: 5%;
   }
 
   .about-page-container {
@@ -196,14 +197,18 @@
 
   
   .about-page-intro {
-    font-size: 4vh;
+    font-size: 2vh;
     padding-right: 8%;
   }
 }
 
+
+
+
+
 @media (min-width: 1275px) {
   .about-page-intro {
-    padding-right: 20%;
+  padding: 2% 1% 2%;
   }
 
   .directLinkBtn {

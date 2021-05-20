@@ -119,8 +119,8 @@ export default function SimpleContactForm() {
                 </div>
               </Col>
               <Col md>
-                <div>
-                  <div className="col-8 arform-group ">
+              <div className="row mx-auto">
+                  <div className="col-8 arform-group   pt-3">
                     <label className="ar-form-label">Contact Person</label>
                     <input
                       type="text"
@@ -130,7 +130,7 @@ export default function SimpleContactForm() {
                       name="name"
                     />
                   </div>
-                  <div className="col-8 arform-group pt-3  ">
+                  <div className="col-8 arform-group   pt-3">
                     <label className="ar-form-label">Email Address</label>
                     <input
                       type="email"

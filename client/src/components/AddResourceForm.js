@@ -120,7 +120,7 @@ export default function SimpleContactForm() {
               </Col>
               <Col md>
               <div className="row mx-auto">
-                  <div className="col-8 arform-group   pt-3">
+                  <div className="col-8 arform-group">
                     <label className="ar-form-label">Contact Person</label>
                     <input
                       type="text"

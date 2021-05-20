@@ -24,6 +24,22 @@
   font-weight: bold;
 }
 
+.signin-btn {
+  background-color: #1f1c1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.5vh;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0%;
+}
+
+.signin-btn:hover {
+  color: #ffffff;
+  font-style: normal;
+  background-color: #695c59;
+}
+
 /* .mr-auto2 p {
   font-size: 3vh;
   color: #181515;
@@ -63,7 +79,7 @@ font-size: 2.8vh;
 
 @media (min-width: 990px) {
   .TopNav-light-title h1 {
-    font-size: 2vh;
+    font-size: 3vh;
   }
 
   .TopNav-main-links:hover h3 {

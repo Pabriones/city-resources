@@ -86,13 +86,13 @@ const Footer = () => {
                 </li>
               </div>
             </ui>
-          </div>
+          </div>  
+          
+   
         </div>
-        <div className="row">
-          <p className="col-lg">
+        {/* <div className="col-sm">
             &copy;{new Date().getFullYear()} CITYRESOURCES
-          </p>
-        </div>
+          </div> */}
       </div>
     </div>
   );

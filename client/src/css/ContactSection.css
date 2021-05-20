@@ -2,12 +2,12 @@
   width: 100%;
   font-family: "Roboto", "sans-serif";
   background-color: #694839;
-  padding: 5%;
+  padding: 6%;
 }
 
 /* CONTACT US SECTION */
 .contact-info {
-  padding: 5% 5% 4%;
+  padding: 4% 5% 4%;
   color: #cfcccc;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 .contact-content h1 {
   letter-spacing: 2px;
   font-weight: bold;
-  padding-left: 4%;
+  padding-left: 5%;
   color: #ffffff;
 }
 
@@ -43,24 +43,43 @@
   cursor: pointer;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 568px) {
   .contact-content h1 {
-    font-size: 7vh;
+    font-size: 5vh;
+    padding-left: 4%;
   }
 
   .contact-info {
-    padding: 1% 4% 4%;
-    font-size: 2.2vh;
+    padding: 2% 4% 2%;
+  }
+}
+
+@media (min-width: 990px) {
+  .contact-content h1 {
+    font-size: 4.2vh;
+    padding-left: 2%;
+  }
+
+  .contact-info {
+    padding: 1% 2% 4%;
+    font-size: 1.5vh;
   }
 }
 
 @media (min-width: 1275px) {
-  .contact-info h1 {
-    font-size: 8.5vh;
+  .contact-content h1 {
+    font-size: 6vh;
+    padding-left: 5%;
   }
 
   .contact-info {
     font-size: 2.5vh;
+      padding: 2% 5% 2%;
   }
 
+  .contact-container {
+    padding: 3% 0% 3%;
+  }
+
+ 
 }

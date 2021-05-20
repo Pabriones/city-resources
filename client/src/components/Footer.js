@@ -17,13 +17,13 @@ const Footer = () => {
           </div>
           {/* Column2 */}
 
-          {/* <div className="col-sm">
+          <div className="col-sm">
             <ui className="list-unstyled">
               <div className="ft-text">
                 {" "}
                 <li>
                   <Link1 className="ft-link" to="/" spy={true} duration={500}>
-                    search
+                    ABOUT
                   </Link1>
                 </li>
               </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                 </li>
               </div>
             </ui>
-          </div> */}
+          </div>
 
           {/* Column3 */}
           <div className="col-sm">
@@ -64,7 +64,7 @@ const Footer = () => {
                     spy={true}
                     duration={500}
                   >
-                    ADD YOUR RESOURCE
+                    LIST YOUR RESOURCE
                   </Link1>
                 </li>
               </div>

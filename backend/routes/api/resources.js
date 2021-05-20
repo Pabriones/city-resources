@@ -15,6 +15,8 @@ router.post(
 		check('category', 'Category is required').not().isEmpty(),
 		check('phone', 'Phone is required').not().isEmpty(),
         check('address', 'Address is required').not().isEmpty(),
+		check('latitude', 'Latitude is required').not().isEmpty(),
+		check('longitude', 'Longitude is required').not().isEmpty(),
 		check('website', 'Website is required').not().isEmpty(),
         check('email', 'Please include a valid email').not().isEmpty(),
 		check('operationHours', 'Operation hours are required').not().isEmpty(),
@@ -28,7 +30,7 @@ router.post(
 			return res.status(400).json({ errors: errors.array() });
 		}
 
-		const { name, category, phone, address, website, email,operationHours, description } = req.body;
+		const { name, category, phone, address, latitude, longitude, website, email,operationHours, description } = req.body;
 
 		try {
 			// See if users exists
@@ -39,7 +41,7 @@ router.post(
 
 			
 
-			resources = new Resources({ name,category, phone, address, website, email, operationHours, description });
+			resources = new Resources({ name,category, phone, address, latitude, longitude, website, email, operationHours, description });
 
             
 			await resources.save();

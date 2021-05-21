@@ -1,40 +1,42 @@
 .footer {
-  /* bottom: 0; */
-  padding: 8% 5% 8%;
-  font-family: "Roboto", "sans-serif";
+	/* bottom: 0; */
+	padding: 8% 5% 8%;
+	font-family: "Roboto", "sans-serif";
+	box-shadow: 10px 0px 50px -16px rgba(0, 0, 0, 0.75);
+	margin-bottom: 10px;
 }
 
 .ft-text {
-  font-weight: bolder;
+	font-weight: bolder;
 }
 
 .ft-text li {
-  line-height: 6vh;
+	line-height: 6vh;
 }
 
 .col-lg {
-  float: right;
+	float: right;
 }
 
 .ft-link {
-  text-align: center;
-  text-decoration: none;
-  color: #222831;
-  cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #222831;
+	cursor: pointer;
 }
 
 .ft-link-logo {
-  text-decoration: none;
-  color: #222831;
-  cursor: pointer;
+	text-decoration: none;
+	color: #222831;
+	cursor: pointer;
 }
 
 .ft-link:hover,
 .ft-link-logo:hover {
-  font-weight: 500;
-  text-decoration: none;
-  color: #694839;
-  font-family: "Roboto", "sans-serif";
+	font-weight: 500;
+	text-decoration: none;
+	color: #694839;
+	font-family: "Roboto", "sans-serif";
 }
 
 /* SMARTPHONES */
@@ -67,53 +69,53 @@
 } */
 
 @media (min-width: 568px) {
-  .ft-link {
-    font-size: 2vh;
-  }
+	.ft-link {
+		font-size: 2vh;
+	}
 
-  .ft-link-logo {
-    font-size: 3vh;
-  }
+	.ft-link-logo {
+		font-size: 3vh;
+	}
 
-  .footer {
-    /* bottom: 0; */
-    padding: 2% 4% 2%;
-    font-family: "Roboto", "sans-serif";
-  }
+	.footer {
+		/* bottom: 0; */
+		padding: 2% 4% 2%;
+		font-family: "Roboto", "sans-serif";
+	}
 
-  .ft-text li {
-    line-height: 5vh;
-  }
+	.ft-text li {
+		line-height: 5vh;
+	}
 }
 
 @media (min-width: 990px) {
-  .ft-link {
-    font-size: 2vh;
-  }
+	.ft-link {
+		font-size: 2vh;
+	}
 
-  .ft-link-logo {
-    font-size: 3vh;
-  }
+	.ft-link-logo {
+		font-size: 3vh;
+	}
 
-  .footer {
-    /* bottom: 0; */
-    padding: 2% 2% 2%;
-    font-family: "Roboto", "sans-serif";
-  }
+	.footer {
+		/* bottom: 0; */
+		padding: 2% 2% 2%;
+		font-family: "Roboto", "sans-serif";
+	}
 }
 
 @media (min-width: 1275px) {
-  .ft-link {
-    font-size: 3vh;
-  }
+	.ft-link {
+		font-size: 3vh;
+	}
 
-  .ft-link-logo {
-    font-size: 4vh;
-  }
+	.ft-link-logo {
+		font-size: 4vh;
+	}
 
-  .footer {
-    /* bottom: 0; */
-    padding: 2% 5% 2%;
-    font-family: "Roboto", "sans-serif";
-  }
+	.footer {
+		/* bottom: 0; */
+		padding: 2% 5% 2%;
+		font-family: "Roboto", "sans-serif";
+	}
 }

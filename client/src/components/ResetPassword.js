@@ -6,14 +6,14 @@ import { Button, Form, Row, Container, Col } from "react-bootstrap";
 
 function ResetPassword() {
   return (
-    <body>
+    <body>       <TopNav2 />{" "}
       <div className="rpass-container">
-        <TopNav2 />{" "}
+ 
         <div className="rpass-form">
           <Container>
             <Row>
               {/* <Col> </Col> */}
-              <Col xs={8} className="form-col">
+              <Col xs={12} className="form-col">
                 <Form>
                   <div className="reset-text">
                     <h1>Reset Password</h1>
@@ -22,8 +22,9 @@ function ResetPassword() {
                       send you an email with instructions to reset your password
                     </p>
                   </div>{" "}
+                  <div className="rp-input">
                   <Form.Group as={Row} controlId="formHorizontalEmail">
-                    <Form.Label column sm={2}>
+                    <Form.Label column sm={5}>
                       Email Address
                     </Form.Label>
                     <Col sm={10}>
@@ -33,9 +34,9 @@ function ResetPassword() {
                         placeholder="Email"
                       />
                     </Col>
-                  </Form.Group>
+                  </Form.Group></div>
                   <Form.Group as={Row}>
-                    <Col className="rpass-submit" sm={{ span: 10, offset: 2 }}>
+                    <Col className="rpass-submit" sm={{ span: 10, offset: 1 }}>
                       <Button className="rpass-submitBtn" type="submit">
                         Send Instructions
                       </Button>

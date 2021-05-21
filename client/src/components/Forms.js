@@ -2,6 +2,7 @@ import React, {useEffect, useState,useRef} from "react";
 import '../../src/css/SearchDirectoryPage.css';
 import Footer from './Footer';
 import Axios from "axios";
+import TopNav2 from './TopNav2'
 
 let filterArray = [ { filterName: 'Parking' } ];
 
@@ -96,8 +97,9 @@ const Forms = () => {
 	};
  let sortArray;
 	return (
+		<body><TopNav2/>
 		<div className="sd-container">
-			{/* Row 1 */} <div className="sd-title">CITY RESOURCES </div>
+			{/* Row 1 */} 
 			<div className="row hero">
 				{/* Col 1 */}
 				<div className="col-6 p main sd-filterContainer">
@@ -142,7 +144,7 @@ const Forms = () => {
 				{' '}
 				<Footer />
 			</div>
-		</div>
+		</div></body>
 	);
 };
 

@@ -1,16 +1,43 @@
-.TopNavContainer2 {
+.TopNav-light {
   padding-top: 3%;
   font-family: "Roboto", "sans-serif";
 }
-.navTitle2 h1 {
-  font-size: 3vh;
+.TopNav-light-title h1 {
   color: #2c2927;
 }
 
-.navTitle2:hover h1 {
-  font-size: 3vh;
+.TopNav-light-title:hover h1 {
   color: #2c2927;
+}
+
+.TopNav-light-links h3 {
+  text-decoration: none;
+  color: #2c2927;
+  font-style: normal;
+}
+
+.TopNav-light-links h3:hover {
+  text-decoration: underline;
+  color: #2c2927;
+  font-style: normal;
+
   font-weight: bold;
+}
+
+.signin-btn {
+  background-color: #1f1c1a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.5vh;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 0%;
+}
+
+.signin-btn:hover {
+  color: #ffffff;
+  font-style: normal;
+  background-color: #695c59;
 }
 
 /* .mr-auto2 p {
@@ -19,18 +46,22 @@
   padding-top: 5%;
 } */
 
-.nav-links2 {
+/* .topnav-links2 {
   text-decoration: none;
-  color: #2c2927;
+  color: #af5b22;
+ 
+  font-style: normal;
+  font-size: 3.5vh;
+  font-weight: bold;
+  
 }
-
 .nav-links2:hover h3 {
   color: #2c2927;
   font-style: normal;
   font-size: 3.5vh;
   font-weight: bold;
   text-decoration: underline;
-}
+} */
 
 /* .nav-linksBtn2{
 font-size: 2.8vh;
@@ -39,10 +70,29 @@ font-size: 2.8vh;
  border: none;
  border-radius: 0%;
 }
-
 .nav-linksBtn2:hover {
   color: #181515;
   font-style: normal;
  background-color: #3a3030;
  
 } */
+
+@media (min-width: 990px) {
+  .TopNav-light-title h1 {
+    font-size: 3vh;
+  }
+
+  .TopNav-main-links:hover h3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3vh;
+    text-decoration: underline;
+  }
+
+  .TopNav-main-links h3 {
+    color: #ffffff;
+    font-size: 3vh;
+    font-style: normal;
+  }
+}

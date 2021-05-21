@@ -57,12 +57,13 @@ const LoginModal = ({ login, isAuthenticated }) => {
               onChange={(e) => onChange(e)}
               required
             />
-            <label className="email-pw-label">
-              Password{" "}
-              <Link className="forgot-link" to="/resetpassword">
+         
+         <label className="email-pw-label">   
+            <div class="row justify-content-end"> <div class="col-7"> Password{" "} </div>    
+            <div class="col-5"> <Link className="forgot-link" to="/resetpassword">
                 Forgot Password?
-              </Link>
-            </label>
+              </Link></div> </div>  </label>  
+         
             <input
               type={passwordShown ? "text" : "password"}
               placeholder="Password"
@@ -78,7 +79,7 @@ const LoginModal = ({ login, isAuthenticated }) => {
               Sign in
             </button>
             <p>
-              Don't have an account yet?{" "}
+              Don't have an account yet?<br/>
               <Link to="/registerpage">CREATE ONE!</Link>
             </p>
           </form>

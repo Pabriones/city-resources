@@ -22,7 +22,7 @@ class LandingPage extends React.Component {
       <body>
         <div id="LandingPage">
   
-       <CovidMain/>
+       {/* <CovidMain/> */}
            
         
           <div className="lp-container">

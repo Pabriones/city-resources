@@ -11,8 +11,8 @@
 
 .ar-textarea p {
   font-family: "Roboto", "sans-serif";
-  line-height: 150%;
-  padding-top: 5%;
+  width: 80%;
+  font-size: 2.2vh;
 }
 
 .btn:focus {
@@ -50,4 +50,38 @@
   font-weight: bolder;
   text-decoration: none;
   color: #ffffff;
+}
+
+.ar-form-label {
+  font-size: 2.2vh;
+}
+
+.ar-city {
+  width: 40%;
+}
+
+.ar-state {
+  width: 20%;
+}
+
+.arform-group {
+  width: 96.5%;
+  padding-top: 5%;
+}
+
+.ar-submitform-btn {
+  background-color: #1d1918;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.5vh;
+  font-family: "Roboto", "sans-serif";
+  color: rgb(255, 255, 255);
+  padding: 2% 2% 2%;
+  border: none;
+}
+
+.ar-submitform-btn:hover {
+  background-color: #534946;
+  border: none;
+  cursor: pointer;
 }

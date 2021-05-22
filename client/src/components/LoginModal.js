@@ -5,7 +5,7 @@ import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { login } from "../actions/auth";
-import Alert from '../components/layout/Alert'
+import Alert from '../components/layout/Alert';
 
 const LoginModal = ({ login, isAuthenticated }) => {
   const [show, setShow] = useState(false);

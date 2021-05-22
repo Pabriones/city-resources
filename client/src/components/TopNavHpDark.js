@@ -3,6 +3,7 @@ import { Container, Navbar } from "react-bootstrap";
 import "../../src/css/TopNavHpDark.css";
 import { SuitHeart } from "react-bootstrap-icons";
 import { Link as Link1 } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function TopNavHpDark() {
   return (
@@ -19,6 +20,7 @@ function TopNavHpDark() {
           <Navbar.Collapse id="basic-navbar-nav ">
             <Navbar.Collapse className="justify-content-end">
               <Navbar.Text>
+              <Link to="/userprofile"> My Favorites</Link>
                 {/* <a href="#login" className="nav-links favs-dark">
                   <SuitHeart size={30} color="red" /> My Favorites
                 </a>{" "} */}

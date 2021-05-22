@@ -90,9 +90,19 @@
 }
 
 .signin-btn:hover {
-  color: #ffffff;
-  font-style: normal;
-  background-color: #695c59;
+	color: #ffffff;
+	font-style: normal;
+	background-color: #695c59;
+}
+
+.TopNav2-nav-border {
+	/* margin: 0 auto; */
+	/* max-width: 1000px;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #04c2f4;
+	background: rgba(0, 0, 0, 0);*/
+	box-shadow: 10px 20px 25px -15px rgba(0, 0, 0, 0.75);
 }
 /* 
 .favs {

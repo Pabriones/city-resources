@@ -1,14 +1,14 @@
-import React from "react";
-import { Nav, Container, Navbar } from "react-bootstrap";
-import "../../src/css/TopNav2.css";
-import { Link as Link1 } from "react-router-dom";
-import LoginModal from "./LoginModal";
+import React from 'react';
+import { Nav, Container, Navbar } from 'react-bootstrap';
+import '../../src/css/TopNav2.css';
+import { Link as Link1 } from 'react-router-dom';
+import LoginModal from './LoginModal';
 
 // Used by SearchDirectoryPage, RegisterPage, forms
 
 const TopNav2 = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light topnav-light-container">
+    <nav class="navbar navbar-expand-lg navbar-light topnav-light-container TopNav2-nav-border">
       <div class="container-fluid">
         <a class="navbar-brand topnav-light-title" href="/">
           CITY RESOURCES

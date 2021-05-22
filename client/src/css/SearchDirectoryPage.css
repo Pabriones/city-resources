@@ -43,6 +43,29 @@ input[type="text"] {
   font-family: "Roboto", "sans-serif";
 }
 
+.sd-search-results p {
+  margin: 0;
+}
+
+.sd-search-results a {
+  text-decoration: none;
+  color: #6d4343;
+}
+
+.sd-search-results a:hover {
+  font-weight: bold;
+}
+
+.address-link {
+  border: none;
+  color: #6d4343;
+  background-color: transparent;
+}
+
+.address-link:hover {
+  font-weight: bold;
+}
+
 /* .sd-search-results p {
   font-size: 2.5vh;
 } */

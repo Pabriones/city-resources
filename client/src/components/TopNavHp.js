@@ -1,8 +1,9 @@
 import React, { Fragment, Redirect } from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 import '../../src/css/TopNavHpDark.css';
 import { SuitHeart } from 'react-bootstrap-icons';
 import { Link as Link1 } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../actions/auth';
@@ -11,14 +12,9 @@ import TopNav2 from './TopNav2';
 const TopNavHp = ({ auth: { isAuthenticated, loading }, logout }) => {
 	const authLinks = (
 		<ul>
-			<li>
-				<a onClick={logout} href="/">
-					{' '}
-					<i className="fas fa-sign-out-alt" />
-					{''}
-					<span className="hide-sm">logout</span>
-				</a>
-			</li>
+			<Nav.Link onClick={logout} href="/">
+				<p className="logout-btn">LOGOUT</p>
+			</Nav.Link>
 		</ul>
 	);
 
@@ -41,7 +37,7 @@ const TopNavHp = ({ auth: { isAuthenticated, loading }, logout }) => {
 					<Navbar.Collapse className="justify-content-end">
 						<Navbar.Text>
 							<a href="#login" className="nav-links favs">
-								<SuitHeart size={30} color="red" /> My Favorites
+								<SuitHeart size={30} color="red" /> <Link to="/userprofile">My Favorites</Link>
 							</a>{' '}
 							<br />
 							<p>

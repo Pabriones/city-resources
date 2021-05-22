@@ -4,37 +4,49 @@ import '../../src/css/TopNav2.css';
 import { Link as Link1 } from 'react-router-dom';
 import LoginModal from './LoginModal';
 
-// Used by SearchDirectoryPage, RegisterPage
+// Used by SearchDirectoryPage, RegisterPage, forms
 
 const TopNav2 = () => {
-	return (
-		<Container className="TopNav-light">
-			<Navbar expand="lg" className="TopNav2-nav-border">
-				<Navbar.Brand href="/" className="TopNav-light-title">
-					<h1>CITY RESOURCES</h1>
-				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav ">
-					<Nav className="top-nav2">
-						<Nav.Link className="TopNav-light-links" href="/">
-							<h3> SEARCH </h3>
-						</Nav.Link>
-						<Nav.Link className="TopNav-light-links" href="/forms">
-							<h3>FORMS</h3>
-						</Nav.Link>
-						<Nav.Link className="TopNav-light-links" href="/">
-							<h3> CONTACT</h3>
-						</Nav.Link>
-					</Nav>
-					<Navbar.Collapse className="justify-content-end ">
-						<Navbar.Text>
-							<LoginModal />
-						</Navbar.Text>
-					</Navbar.Collapse>
-				</Navbar.Collapse>
-			</Navbar>
-		</Container>
-	);
+  return (
+    <nav class="navbar navbar-expand-lg navbar-light topnav-light-container TopNav2-nav-border">
+      <div class="container-fluid">
+        <a class="navbar-brand topnav-light-title" href="/">
+          CITY RESOURCES
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active topnav-light-links" href="/directory">
+                SEARCH
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active topnav-light-links" href="#">
+                FORMS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active topnav-light-links" href="/">
+                CONTACT
+              </a>
+            </li>
+          </ul>
+          <LoginModal />
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default TopNav2;

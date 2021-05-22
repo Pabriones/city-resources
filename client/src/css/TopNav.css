@@ -40,13 +40,14 @@
 .justify-content-left{
   padding-top: 5%;
 } */
+ 
 
-.TopNav-main-container {
-  padding-top: 3%;
+.topnav-main-container {
+  padding: 3% 10%;
   font-family: "Roboto", "sans-serif";
 }
-.TopNav-main-title h1 {
-  font-size: 3vh;
+
+.topnav-main-title {
   color: rgb(255, 255, 255);
 }
 
@@ -60,22 +61,22 @@
   padding-top: 5%;
 } */
 
-.navTitle:hover h1 {
+.navTitle:hover {
   color: #ffffff;
   font-weight: bold;
 }
 
-.TopNav-main-links:hover h3 {
+.topnav-main-links:hover {
   color: #ffffff;
   font-weight: bold;
   font-style: normal;
-  font-size: 3.5vh;
+  font-size: 3vh;
   text-decoration: underline;
 }
 
-.TopNav-main-links h3 {
+.topnav-main-links {
   color: #ffffff;
-  font-size: 3.5vh;
+  font-size: 3vh;
   font-style: normal;
 }
 
@@ -83,7 +84,7 @@
   background-color: #1f1c1a;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 2.5vh;
+  /* font-size: 2.5vh; */
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 0%;
@@ -94,7 +95,7 @@
   font-style: normal;
   background-color: #695c59;
 }
-
+/* 
 .favs {
   font-size: 3vh;
 }
@@ -103,7 +104,7 @@
   font-size: 3vh;
   text-decoration: none;
   font-weight: bold;
-}
+} */
 
 .user-logged {
   font-size: 2.2vh;
@@ -116,51 +117,54 @@
   font-weight: bold;
 }
 
+.navbar-toggler-icon {
+  font-size: 3vh;
+}
 
- 
+.navbar-toggler {
+ outline: 0 !important;
+ box-shadow: none !important;
+ border: 0;
+}
 
-@media (min-width: 990px) {
-  .TopNav-main-title h1 {
-    font-size: 2vh;
-    color: rgb(255, 255, 255);
+@media (min-width: 568px) {
+  .topnav-main-title {
+    font-size: 3vh;
   }
 
   .signin-btn {
-    background-color: #1f1c1a;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.5vh;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 0%;
+    font-size: 2vh;
   }
-  
-  .signin-btn:hover {
-    color: #ffffff;
-    font-style: normal;
-    background-color: #695c59;
-  }
-
-  .TopNav-main-links:hover h3 {
-    color: #ffffff;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 3vh;
-    text-decoration: underline;
-  }
-  
-  .TopNav-main-links h3 {
-    color: #ffffff;
-    font-size: 3vh;
-    font-style: normal;
-  }
-
 }
 
+@media (min-width: 990px) {
+  .topnav-main-title {
+    font-size: 1.5vh;
+  }
 
+  .topnav-main-links:hover {
+    font-size: 2vh;
+  }
 
+  .topnav-main-links {
+    font-size: 2vh;
+  }
 
+  .signin-btn {
+    font-size: 3.2vh;
+  }
+}
 
 @media (min-width: 1275px) {
-  
+  .topnav-main-links:hover {
+    font-size: 4vh;
+  }
+
+  .topnav-main-links {
+    font-size: 4vh;
+  }
+
+  .topnav-main-title {
+    font-size: 3vh;
+  }
 }

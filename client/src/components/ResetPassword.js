@@ -4,7 +4,12 @@ import Footer from "./Footer";
 import TopNav2 from "./TopNav2";
 import { Button, Form, Row, Container, Col } from "react-bootstrap";
 
+function myFunction() {
+  alert("I am an alert box!");
+}
+
 function ResetPassword() {
+  
   return (
     <body>       <TopNav2 />{" "}
       <div className="rpass-container">
@@ -37,7 +42,7 @@ function ResetPassword() {
                   </Form.Group></div>
                   <Form.Group as={Row}>
                     <Col className="rpass-submit" sm={{ span: 10, offset: 1 }}>
-                      <Button className="rpass-submitBtn" type="submit">
+                      <Button className="rpass-submitBtn" type="submit" onclick="myFunction()">
                         Send Instructions
                       </Button>
                     </Col>

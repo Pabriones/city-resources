@@ -40,11 +40,12 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 	return (
 		<div>
 			<div className="rp-container">
+				<TopNav2 />
 				<div className="row">
-					<div className="col-sm-3" />
-
-					<div className="col-sm-8">
-						<TopNav2 />
+					<div className="col-sm-3 rp-side-bg" />
+	
+					<div className="col-sm">
+					
 
 						<div className="rp-form">
 							<div className="rp-intro">
@@ -136,29 +137,15 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 									/>
 								</Form.Group>
 
-								<Form.Group className="rp-label">
-									<div className="form-check">
-										<input
-											className="form-check-input"
-											type="checkbox"
-											value=""
-											id="invalidCheck2"
-											required
-										/>
-										<label className="form-check-label" htmlFor="invalidCheck2">
-											Agree to terms and conditions
-										</label>
-									</div>
-								</Form.Group>
-
-								<Button variant="" className="rp-submit" type="submit">
-									<PersonPlus size={28} /> REGISTER
-								</Button>
-
-								<div className="rp-terms">
+		<div className="rp-terms">
 									By clicking REGISTER. You agree to our <a href="">Terms</a> and that you've read our{' '}
 									<a href="">Privacy and Content Policy.</a>
 								</div>
+								<Button variant="" className="rp-submit" type="submit">
+									  REGISTER
+								</Button>
+
+								
 							</Form>
 						</div>
 					</div>

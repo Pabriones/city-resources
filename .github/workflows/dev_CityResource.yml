@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'CityResource'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_be6f51a15a6b476b8568f1f57f92292b }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_6d22bf460cbc48f7858a64ab357c081e }}
         package: .

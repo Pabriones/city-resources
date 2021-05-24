@@ -45,6 +45,7 @@
 .topnav-main-container {
   padding: 3% 10%;
   font-family: "Roboto", "sans-serif";
+  cursor: pointer;
 }
 
 .topnav-main-title {

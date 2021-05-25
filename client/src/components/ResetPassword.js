@@ -34,11 +34,12 @@ function ResetPassword() {
             </div>
 
             <div className="  rpass-submit">
-              <input
+              <button
                 type="submit"
                 className="contact-form-btn rpass-submitBtn"
-                value="Send Instructions"
-              ></input>
+              >
+                Send Instructions
+              </button>
             </div>
           </div>
         </form>

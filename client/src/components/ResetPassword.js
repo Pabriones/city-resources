@@ -4,8 +4,11 @@ import Footer from "./Footer";
 import TopNav2 from "./TopNav2";
 import { Button, Form, Row, Container, Col } from "react-bootstrap";
 
-function myFunction() {
-  alert("I am an alert box!");
+function EnableSend() {
+  document.getElementById("submit").disabled = false;
+}
+function sentMessage() {
+  document.getElementById("submit").innerHTML = "Message sent.";
 }
 
 function ResetPassword() {
@@ -30,6 +33,7 @@ function ResetPassword() {
                 required="true"
                 placeholder="Email Address"
                 name="email"
+                onClick={EnableSend}
               />
             </div>
 
@@ -37,9 +41,14 @@ function ResetPassword() {
               <button
                 type="submit"
                 className="contact-form-btn rpass-submitBtn"
+                id="submit"
+                name="submit"
+                onClick={sentMessage}
+                disabled="true"
               >
                 Send Instructions
               </button>
+              <p id="demo"></p>
             </div>
           </div>
         </form>

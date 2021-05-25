@@ -34,10 +34,8 @@ form .form-control:focus {
 .rp-submit {
   background-color: #302e2e;
 
-  cursor: pointer;
   text-decoration: none;
   color: #e4e0e0;
-  cursor: pointer;
   outline: none;
   box-shadow: none;
   padding: 5% 10%;
@@ -47,13 +45,16 @@ form .form-control:focus {
   background-color: #302e2e;
   font-weight: bold;
 
-  cursor: pointer;
   text-decoration: none;
   color: #e4e0e0;
-  cursor: pointer;
+
   outline: none;
   box-shadow: none;
   padding: 5% 10%;
+}
+
+.rp-submit:disabled {
+  background-color: rgba(0, 0, 0, 0.308);
 }
 
 .usr-login {
@@ -67,8 +68,6 @@ form .form-control:focus {
 .rp-terms {
   padding: 10% 2%;
 }
- 
-
 
 @media (min-width: 568px) {
   .bg {
@@ -96,6 +95,7 @@ form .form-control:focus {
     padding: 2% 20%;
     font-size: 3vh;
     margin-left: 2%;
+    border: none;
   }
 
   .rp-submit:hover {
@@ -113,7 +113,7 @@ form .form-control:focus {
     font-size: 3vh;
     padding: 0% 8% 4%;
   }
- 
+
   .rp-submit {
     font-size: 3vh;
   }

@@ -19,5 +19,9 @@ form .form-control:focus {
 .contact-form-btn:hover {
   background-color: #695c59;
   border: none;
-  cursor: pointer;
+}
+
+.contact-form-btn:disabled {
+  background-color: #332d2c5b;
+  border: none;
 }

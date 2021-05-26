@@ -2,20 +2,19 @@
   border: none;
   text-decoration: none;
   font-family: "Roboto", "sans-serif";
-}
+  width: 100% ;
+} 
 
-.accordion-up-covid h2:hover {
+/* .accordion-header-covid:hover {
   color: #585858;
-}
-
-.accordion-up-covid h2 {
-  color: #0c0b0c;
-}
-
-/* .accordion-header-covid {
-  border: none;
   text-decoration: none;
-} */
+}
+
+.accordion-header-covid {
+  color: #0c0b0c;
+}   */
+
+ 
 
 .vaccine-info-container a:hover {
   color: red;
@@ -31,14 +30,23 @@
   cursor: pointer;
   border: none;
   outline: none;
+  color: #110f0f;
   text-decoration: none;
   box-shadow: none;
   background-color: transparent;
 }
 
+.openTrue:hover
+.closeFalse:hover {
+  text-decoration: none;
+  color: #110f0f;
+  font-weight: bold;
+}
+
 .closeFalse {
   cursor: pointer;
   outline: none;
+  color: rgb(163, 13, 13);
   text-decoration: none;
   outline: none;
   box-shadow: none;
@@ -47,11 +55,21 @@
 }
 
 @media (min-width: 568px) {
-
+  .accordion-header-covid p {
+    font-size: 4vh;
+    margin: 0;
+    text-decoration: none;
+    color: #110f0f;
+  }
 }
 
 @media (min-width: 990px) {
- 
+ .accordion-header-covid p {
+   font-size: 4vh;
+   margin: 0;
+   text-decoration: none;
+   color: #110f0f;
+ }
 }
 
 @media (min-width: 1275px) {

@@ -35,7 +35,7 @@ class CovidMain extends React.Component {
                   className={this.state.button ? "openTrue" : "closeFalse"}
                   onClick={this.handleClick}
                 >
-                <h2>  Vaccine appointments are available! </h2> 
+                <p>Vaccine appointments are available!</p>  
               
                 </Accordion.Toggle> 
               </Row>

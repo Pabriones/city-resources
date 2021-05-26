@@ -10,6 +10,10 @@ import { setAlert } from '../actions/alert';
 import { register } from '../actions/auth';
 import PropTypes from 'prop-types';
 
+function EnableSend() {
+    document.getElementById("submit").disabled = false;
+  }
+
 const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 	const [ formData, setFormData ] = useState({
 		firstname: '',
@@ -63,6 +67,7 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 										name="firstname"
 										value={firstname}
 										onChange={(e) => onChange(e)}
+										onClick={EnableSend}
 									/>
 								</Form.Group>
 
@@ -141,9 +146,16 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 									By clicking REGISTER. You agree to our <a href="">Terms</a> and that you've read our{' '}
 									<a href="">Privacy and Content Policy.</a>
 								</div>
-								<Button variant="" className="rp-submit" type="submit">
-									  REGISTER
-								</Button>
+								<div className="  form-group  mx-auto">
+              <button
+                type="submit"
+                className="rp-submit"
+                id="submit"
+                name="submit"
+                disabled="true"
+              >
+              Register
+              </button></div>
 
 								
 							</Form>

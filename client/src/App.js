@@ -18,6 +18,7 @@ import UserProfile from './components/UserProfile';
 import ScrollToTop from './components/ScrollToTop';
 import Alert from './components/layout/Alert';
 import setAuthToken from './utils/setAuthToken';
+import PrivateRoute from './components/routing/PrivateRoute';
 //Redux
 import { Provider } from 'react-redux';
 import store from './store';
@@ -47,11 +48,11 @@ const App = () => {
 					<Route path="/registermodal" component={RegisterModal} />
 					<Route path="/addresource" component={AddResource} />
 					<Route path="/forms" component={Forms} />
-					<Route path="/homepage" component={Homepage} />
+					<PrivateRoute path="/homepage" component={Homepage} />
 					<Route path="/registerpage" component={RegisterPage} />
 					<Route path="/resetpassword" component={ResetPassword} />
 					<Route path="/searchnavlinks" component={SearchNavLinks} />
-					<Route path="/userprofile" component={UserProfile} />
+					<PrivateRoute path="/userprofile" component={UserProfile} />
 				</Switch>
 			</Router>
 		</Provider>

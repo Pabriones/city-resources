@@ -43,9 +43,9 @@ input[type="text"] {
   font-family: "Roboto", "sans-serif";
 }
 
-.sd-search-results p {
+/* .sd-search-results p {
   margin: 0;
-}
+} */
 
 .sd-search-results a {
   text-decoration: none;

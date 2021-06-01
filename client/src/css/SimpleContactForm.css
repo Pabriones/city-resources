@@ -12,12 +12,16 @@ form .form-control:focus {
   /* margin: 31px auto 0 0; */
   border: none;
   padding: 3%;
-  margin-top: 4%;
+  margin-top: 3%;
   width: 100%;
 }
 
 .contact-form-btn:hover {
   background-color: #695c59;
   border: none;
-  cursor: pointer;
+}
+
+.contact-form-btn:disabled {
+  background-color: #332d2c5b;
+  border: none;
 }

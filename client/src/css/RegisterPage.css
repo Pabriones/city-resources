@@ -1,15 +1,15 @@
 .rp-container {
-  font-family: "Roberto", sans-serif;
+  font-family: "Roboto", "sans-serif";
 }
 
-form .form-control:focus{
+form .form-control:focus {
   box-shadow: none;
   border-color: #302e2e;
 }
 
-.col-sm-3 {
+.rp-side-bg {
   background-image: url("../Images/brick.jpg");
-  min-height: 100vh;
+  min-height: 25vh;
   max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,26 +33,28 @@ form .form-control:focus{
 
 .rp-submit {
   background-color: #302e2e;
-  font-size: 2.2vh;
-  font-family: "Roboto", "sans-serif";
-  cursor: pointer;
+
   text-decoration: none;
   color: #e4e0e0;
-  cursor: pointer;
   outline: none;
   box-shadow: none;
-  margin: 2% 2vh;
-  padding: 2% 2% 2%;
+  padding: 5% 10%;
 }
 
 .rp-submit:hover {
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
+  background-color: #302e2e;
+  font-weight: bold;
+
+  text-decoration: none;
+  color: #e4e0e0;
+
   outline: none;
   box-shadow: none;
-  text-decoration: underline;
-  color: #e4e0e0;
+  padding: 5% 10%;
+}
+
+.rp-submit:disabled {
+  background-color: rgba(0, 0, 0, 0.308);
 }
 
 .usr-login {
@@ -60,55 +62,59 @@ form .form-control:focus{
 }
 
 .rp-intro {
-  font-size: 4vh;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
 }
 
 .rp-terms {
-  padding-top: 2%;
+  padding: 10% 2%;
 }
 
-/* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
-  .col-sm-3 {
-    background-image: url("../Images/brick.jpg");
+@media (min-width: 568px) {
+  .bg {
     min-height: 25vh;
     max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #e0e0e0;
-  }
-}
-
-/* SMARTPHONES */
-@media (min-width: 320px) and (max-width: 480px) {
-  .rp-intro {
-    font-size: 3vh;
-    padding-bottom: 10%;
-  }
-
-  .rp-form {
-    margin-top: 6.5%;
-    outline: none;
-    box-shadow: none;
-  }
-
-  .rp-terms {
-    padding: 2% 0% 15%;
   }
 
   .rp-submit {
-    background-color: #302e2e;
+    padding: 2% 20%;
     font-size: 3vh;
-    font-family: "Roboto", "sans-serif";
-    cursor: pointer;
-    text-decoration: none;
-    color: #e4e0e0;
-    cursor: pointer;
-    outline: none;
-    box-shadow: none;
-    margin: 10% 1vh;
-    padding: 2% 1% 2%;
+    margin-left: 2%;
+  }
+
+  .rp-submit:hover {
+    padding: 2% 20%;
+  }
+}
+
+@media (min-width: 990px) {
+  .rp-terms {
+    padding: 5% 2%;
+  }
+
+  .rp-submit {
+    padding: 2% 20%;
+    font-size: 3vh;
+    margin-left: 2%;
+    border: none;
+  }
+
+  .rp-submit:hover {
+    padding: 2% 20%;
+  }
+
+  .rp-intro {
+    font-size: 3vh;
+    padding: 0% 8% 4%;
+  }
+}
+
+@media (min-width: 1275px) {
+  .rp-intro {
+    font-size: 3vh;
+    padding: 0% 8% 4%;
+  }
+
+  .rp-submit {
+    font-size: 3vh;
   }
 }

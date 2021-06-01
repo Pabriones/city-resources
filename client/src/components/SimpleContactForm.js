@@ -24,6 +24,10 @@ export default function SimpleContactForm() {
     e.target.reset();
   }
 
+  function EnableSend() {
+    document.getElementById("submit").disabled = false;
+  }
+
   return (
     <div>
       <div className="contact-form-container">
@@ -33,18 +37,20 @@ export default function SimpleContactForm() {
               <input
                 type="text"
                 className="form-control shadow-none"
-                required="true"
+                required
                 placeholder="Name"
                 name="name"
+                onClick={EnableSend}
               />
             </div>
             <div className=" form-group pt-2 mx-auto">
               <input
                 type="email"
                 className="form-control shadow-none"
-                required="true"
+                required
                 placeholder="Email Address"
                 name="email"
+                onClick={EnableSend}
               />
             </div>
             <div className=" form-group pt-2 mx-auto">
@@ -52,18 +58,23 @@ export default function SimpleContactForm() {
                 className="form-control shadow-none"
                 id=""
                 cols="20"
-                required="true"
+                required
                 rows="4"
                 placeholder="Your message"
                 name="message"
+                onClick={EnableSend}
               ></textarea>
             </div>
-            <div className="  form-group pt-2 mx-auto">
-              <input
+            <div className="  form-group  mx-auto">
+              <button
                 type="submit"
                 className="contact-form-btn"
-                value="Send Message"
-              ></input>
+                id="submit"
+                name="submit"
+                disabled="true"
+              >
+                Send Instructions
+              </button>
             </div>
           </div>
         </form>

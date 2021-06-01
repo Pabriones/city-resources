@@ -10,6 +10,10 @@ import { setAlert } from '../actions/alert';
 import { register } from '../actions/auth';
 import PropTypes from 'prop-types';
 
+function EnableSend() {
+    document.getElementById("submit").disabled = false;
+  }
+
 const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 	const [ formData, setFormData ] = useState({
 		firstname: '',
@@ -40,11 +44,12 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 	return (
 		<div>
 			<div className="rp-container">
+				<TopNav2 />
 				<div className="row">
-					<div className="col-sm-3" />
-
-					<div className="col-sm-8">
-						<TopNav2 />
+					<div className="col-sm-3 rp-side-bg" />
+	
+					<div className="col-sm">
+					
 
 						<div className="rp-form">
 							<div className="rp-intro">
@@ -62,6 +67,7 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 										name="firstname"
 										value={firstname}
 										onChange={(e) => onChange(e)}
+										onClick={EnableSend}
 									/>
 								</Form.Group>
 
@@ -136,29 +142,22 @@ const RegisterPage = ({ setAlert, register, isAuthenticated }) => {
 									/>
 								</Form.Group>
 
-								<Form.Group className="rp-label">
-									<div className="form-check">
-										<input
-											className="form-check-input"
-											type="checkbox"
-											value=""
-											id="invalidCheck2"
-											required
-										/>
-										<label className="form-check-label" htmlFor="invalidCheck2">
-											Agree to terms and conditions
-										</label>
-									</div>
-								</Form.Group>
-
-								<Button variant="" className="rp-submit" type="submit">
-									<PersonPlus size={28} /> REGISTER
-								</Button>
-
-								<div className="rp-terms">
+		<div className="rp-terms">
 									By clicking REGISTER. You agree to our <a href="">Terms</a> and that you've read our{' '}
 									<a href="">Privacy and Content Policy.</a>
 								</div>
+								<div className="  form-group  mx-auto">
+              <button
+                type="submit"
+                className="rp-submit"
+                id="submit"
+                name="submit"
+                disabled="true"
+              >
+              Register
+              </button></div>
+
+								
 							</Form>
 						</div>
 					</div>

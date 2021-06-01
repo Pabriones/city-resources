@@ -54,5 +54,5 @@
 	"devDependencies": {
 		"case-sensitive-paths-webpack-plugin": "^2.4.0"
 	},
-	"proxy": "http://localhost:8080/"
+	"proxy": "http://localhost:8080"
 }

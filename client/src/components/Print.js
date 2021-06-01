@@ -106,35 +106,20 @@ class Print extends Component {
               let phoneNumber = "tel:" + filter.phone;
               toPrint.push(
                 <div className="sd-search-results">
-                  <h1>{filter.name}</h1>
-                  <p>{filter.description}</p>
-                  <br />
-                  <p>{filter.operationHours ? filter.operationHours : ""}</p>
-                  <p>
-                    Phone: <a href={phoneNumber}>{filter.phone}</a>
-                  </p>
-                  Address:
-                  <button
-                    className="address-link"
-                    onClick={this.openModal.bind(
-                      this,
-                      filter.address,
-                      filter.latitude,
-                      filter.longitude
-                    )}
-                  >
-                    {filter.address}
-                  </button>
-                  <p>
-                    Website : <a href={filter.website}> {filter.website}</a>
-                  </p>{" "}
-                  <p> {filter.email}</p>
-                  <br />
-                  <p>{filter.operationDays ? filter.operationDays : ""}</p>
-                  {/*<p>9:30 AM - 3:00 PM</p>*/}
-                </div>
-              );
-              return toPrint;
+                <h1>{filter.name}</h1>
+                 <p>Website : <a href={filter.website}> {filter.website}</a></p>
+                <p>Phone: <a href={phoneNumber}>{filter.phone}</a></p>
+                <p style={{textDecoration: 'underline',cursor: 'pointer'}} onClick={this.openModal.bind(this,filter.address,filter.latitude,filter.longitude)}>Address: <u>{filter.address}</u></p>
+                <p>Email: {filter.email}</p>
+                <p>Operation Days:{(filter.operationDays)?filter.operationDays:''}</p>
+                <p>Operation Hours:{(filter.operationHours)?filter.operationHours:''}</p>
+
+                {/*<p>9:30 AM - 3:00 PM</p>*/}
+
+                <p>{filter.description}</p>
+              </div>
+            );
+            return toPrint;
             })
           : null}
       </p>

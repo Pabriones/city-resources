@@ -59,8 +59,8 @@ const LoginModal = ({ login, isAuthenticated }) => {
             />
          
          <label className="email-pw-label">   
-            <div class="row justify-content-end"> <div class="col-7"> Password{" "} </div>    
-            <div class="col-5"> <Link className="forgot-link" to="/resetpassword">
+            <div class="row justify-content-end"> <div class="col "> Password{" "} </div>    
+            <div class="col-6 "> <Link className="forgot-link" to="/resetpassword">
                 Forgot Password?
               </Link></div> </div>  </label>  
          

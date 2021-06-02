@@ -37,10 +37,10 @@ function ResetPassword() {
               />
             </div>
 
-            <div className="  rpass-submit">
+            <div className=" reset-submit  ">
               <button
                 type="submit"
-                className="contact-form-btn rpass-submitBtn"
+                className="  reset-submitBtn"
                 id="submit"
                 name="submit"
                 onClick={sentMessage}
@@ -48,7 +48,7 @@ function ResetPassword() {
               >
                 Send Instructions
               </button>
-              <p id="demo"></p>
+         
             </div>
           </div>
         </form>

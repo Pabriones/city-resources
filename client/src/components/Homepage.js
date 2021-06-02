@@ -10,13 +10,17 @@ import TopNavHp from './TopNavHp';
 import CovidMain from './CovidMain';
 import { connect } from 'react-redux';
 import { getCurrentProfile } from '../actions/profile';
+import Spinner from '../components/layout/spinner';
+import { Fragment } from 'react';
 
-const Homepage = ({ getCurrentProfile, auth, profile }) => {
+const Homepage = ({ getCurrentProfile, auth, profile: { profile, loading } }) => {
 	useEffect(() => {
 		getCurrentProfile();
 	}, []);
 
-	return (
+	return loading && profile == null ? (
+		<Spinner />
+	) : (
 		<body>
 			<div id="LandingPage">
 				<Jumbotron fluid>
@@ -30,7 +34,6 @@ const Homepage = ({ getCurrentProfile, auth, profile }) => {
 			</div>
 			<div>
 				<AboutPage />
-				<AboutPage2 />
 				<ContactSection />
 				<Footer />
 			</div>

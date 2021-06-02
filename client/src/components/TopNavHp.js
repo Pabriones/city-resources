@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../actions/auth';
 
-const TopNavHp = ({ auth: { isAuthenticated, loading }, logout }) => {
+const TopNavHp = ({ auth: { isAuthenticated, loading, account }, logout }) => {
 	const authLinks = (
 		<ul>
 			<Nav.Link onClick={logout} href="/">
@@ -82,7 +82,7 @@ const TopNavHp = ({ auth: { isAuthenticated, loading }, logout }) => {
 								spy={true}
 								duration={500}
 							>
-								Hello User
+								{account && account.firstname}
 							</Link1>
 						</li>
 					</ul>

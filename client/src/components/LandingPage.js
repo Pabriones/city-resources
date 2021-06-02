@@ -8,28 +8,40 @@ import ContactSection from './ContactSection';
 import TopNav from './TopNav';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import CovidMain from './CovidMain';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { Redirect } from 'react-router';
 
-class LandingPage extends React.Component {
-	render() {
-		return (
-			<body>
-				<div id="LandingPage">
-					<CovidMain />
-
-					<div className="lp-container">
-						<TopNav />
-						<div className="lp-flex-container" />
-					</div>
-				</div>
-				<div>
-					<AboutPage />
-					{/* <AboutPage2 /> */}
-					<ContactSection />
-					<Footer />
-				</div>
-			</body>
-		);
+const LandingPage = ({ isAuthenticated }) => {
+	if (isAuthenticated) {
+		return <Redirect to="/homepage" />;
 	}
-}
 
-export default LandingPage;
+	return (
+		<body>
+			<div id="LandingPage">
+				<CovidMain />
+
+				<div className="lp-container">
+					<TopNav />
+					<div className="lp-flex-container" />
+				</div>
+			</div>
+			<div>
+				<AboutPage />
+				<ContactSection />
+				<Footer />
+			</div>
+		</body>
+	);
+};
+
+LandingPage.propTypes = {
+	isAuthenticated: PropTypes.bool
+};
+
+const mapStateToProps = (state) => ({
+	isAuthenticated: state.auth.isAuthenticated
+});
+
+export default connect(mapStateToProps)(LandingPage);

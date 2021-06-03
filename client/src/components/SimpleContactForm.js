@@ -1,8 +1,21 @@
 import emailjs from "emailjs-com";
 import React from "react";
 import "../../src/css/SimpleContactForm.css";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function SimpleContactForm() {
+  const notify = () => {
+    toast.success("Message sent!", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
   function sendEmail(e) {
     e.preventDefault();
 
@@ -24,9 +37,9 @@ export default function SimpleContactForm() {
     e.target.reset();
   }
 
-  function EnableSend() {
-    document.getElementById("submit").disabled = false;
-  }
+  // function EnableSend() {
+  //   document.getElementById("submit").disabled = false;
+  // }
 
   return (
     <div>
@@ -40,7 +53,7 @@ export default function SimpleContactForm() {
                 required
                 placeholder="Name"
                 name="name"
-                onClick={EnableSend}
+                // onClick={EnableSend}
               />
             </div>
             <div className=" form-group pt-2 mx-auto">
@@ -50,7 +63,7 @@ export default function SimpleContactForm() {
                 required
                 placeholder="Email Address"
                 name="email"
-                onClick={EnableSend}
+                // onClick={EnableSend}
               />
             </div>
             <div className=" form-group pt-2 mx-auto">
@@ -62,7 +75,7 @@ export default function SimpleContactForm() {
                 rows="4"
                 placeholder="Your message"
                 name="message"
-                onClick={EnableSend}
+                // onClick={EnableSend}
               ></textarea>
             </div>
             <div className="  form-group  mx-auto">
@@ -71,10 +84,11 @@ export default function SimpleContactForm() {
                 className="contact-form-btn"
                 id="submit"
                 name="submit"
-                disabled="true"
+                onClick={notify}
               >
-                Send Instructions
+                Send Message
               </button>
+              <ToastContainer transition={Bounce} style={{fontSize: "4vh"}} />
             </div>
           </div>
         </form>

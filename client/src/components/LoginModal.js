@@ -60,9 +60,8 @@ const LoginModal = ({ login, isAuthenticated }) => {
          
          <label className="email-pw-label">   
             <div class="row justify-content-end"> <div class="col "> Password{" "} </div>    
-            <div class="col-6 "> <Link className="forgot-link" to="/resetpassword">
-                Forgot Password?
-              </Link></div> </div>  </label>  
+              </div>  
+              </label>  
          
             <input
               type={passwordShown ? "text" : "password"}
@@ -78,6 +77,11 @@ const LoginModal = ({ login, isAuthenticated }) => {
             <button className="Login-modal-btn">
               Sign in
             </button>
+            <p > 
+            Forgot Password? Click <Link to="/resetpassword">
+                 {" "} Here
+              </Link>
+            </p> 
             <p>
               Don't have an account yet?<br/>
               <Link to="/registerpage">CREATE ONE!</Link>

@@ -6,6 +6,7 @@ import MapContainer from '../components/map';
 import 'reactjs-popup/dist/index.css';
 import { Map, InfoWindow, Marker, GoogleApiWrapper, Polygon } from 'google-maps-react';
 import { SuitHeart, Envelope } from 'react-bootstrap-icons';
+import EmailShare from 'react-email-share-link';
 
 class Print extends Component {
 	constructor(props) {
@@ -108,7 +109,17 @@ class Print extends Component {
 										type="button"
 										className="favorite-heart"
 									/>{' '}
-									<Envelope type="button" className="share-envelope" />
+									<EmailShare
+										email="mickey@mouse.com"
+										subject="Your subject"
+										body="Your message, including the link to this page"
+									>
+										{(link) => (
+											<a href={link} data-rel="external">
+												<Envelope type="button" className="share-envelope" />
+											</a>
+										)}
+									</EmailShare>
 								</h1>
 								<p>
 									Website : <a href={filter.website}> {filter.website}</a>

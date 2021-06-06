@@ -17,7 +17,7 @@ function TopNavHpDark() {
 					<Navbar.Collapse id="basic-navbar-nav ">
 						<Navbar.Collapse className="justify-content-end">
 							<Navbar.Text>
-								<Link to="/userprofile"> My Favorites</Link>
+								<Link to="/userprofile"> My Profile</Link>
 								{/* <a href="#login" className="nav-links favs-dark">
                   <SuitHeart size={30} color="red" /> My Favorites
                 </a>{" "} */}

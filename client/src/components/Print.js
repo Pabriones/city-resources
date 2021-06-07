@@ -6,6 +6,7 @@ import MapContainer from '../components/map';
 import 'reactjs-popup/dist/index.css';
 import { Map, InfoWindow, Marker, GoogleApiWrapper, Polygon } from 'google-maps-react';
 import { SuitHeart, Envelope } from 'react-bootstrap-icons';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import EmailShare from 'react-email-share-link';
 
 class Print extends Component {
@@ -94,6 +95,19 @@ class Print extends Component {
 
 	render() {
 		let data = this.state.data;
+
+		const renderTooltip = (props) => (
+			<Tooltip id="button-tooltip" {...props}>
+				Add to Favorites
+			</Tooltip>
+		);
+
+		const renderTooltipEnv = (props) => (
+			<Tooltip id="button-tooltip" {...props}>
+				Share me
+			</Tooltip>
+		);
+
 		return (
 			<p>
 				{this.Modal()}
@@ -104,19 +118,28 @@ class Print extends Component {
 						toPrint.push(
 							<div className="sd-search-results">
 								<h1>
-									{filter.name} <SuitHeart
-										color="red"
-										type="button"
-										className="favorite-heart"
-									/>{' '}
+									{filter.name}{' '}
+									<OverlayTrigger
+										placement="right"
+										delay={{ show: 250, hide: 400 }}
+										overlay={renderTooltip}
+									>
+										<SuitHeart color="red" type="button" className="favorite-heart" />
+									</OverlayTrigger>{' '}
 									<EmailShare
 										email="mickey@mouse.com"
-										subject="Your subject"
+										subject="Share this to your Friend or Family"
 										body="Your message, including the link to this page"
 									>
 										{(link) => (
 											<a href={link} data-rel="external">
-												<Envelope type="button" className="share-envelope" />
+												<OverlayTrigger
+													placement="right"
+													delay={{ show: 250, hide: 400 }}
+													overlay={renderTooltipEnv}
+												>
+													<Envelope type="button" className="share-envelope" />
+												</OverlayTrigger>
 											</a>
 										)}
 									</EmailShare>

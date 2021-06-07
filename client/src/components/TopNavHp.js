@@ -2,7 +2,7 @@ import React, { Fragment, Redirect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import '../../src/css/TopNavHp.css';
 import { SuitHeartFill } from 'react-bootstrap-icons';
-import { Link as Link1 } from 'react-router-dom';
+import { Link as Link1 } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -29,17 +29,7 @@ const TopNavHp = ({ auth: { isAuthenticated, loading, account }, logout }) => {
 				<a class="navbar-brand topnav-main-title" href="#">
 					CITY RESOURCES
 				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon" />
-				</button>
+
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
@@ -76,14 +66,9 @@ const TopNavHp = ({ auth: { isAuthenticated, loading, account }, logout }) => {
 					<ul class="navbar-nav user-links">
 						<p> Signed in as:</p>
 						<li class="nav-item topnav-user-links ">
-							<Link1
-								class="nav-link active topnav-user-links"
-								to="/userprofile"
-								spy={true}
-								duration={500}
-							>
+							<Link class="nav-link active topnav-user-links" to="/userprofile" spy={true} duration={500}>
 								{account && account.firstname}
-							</Link1>
+							</Link>
 						</li>
 					</ul>
 

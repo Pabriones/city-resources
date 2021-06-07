@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Jumbotron, Container } from 'react-bootstrap';
 import Footer from './Footer';
 import AboutPage from './AboutPage';
-import AboutPage2 from './AboutPage2';
 import ContactSection from './ContactSection';
 import '../../src/css/LandingPage.css';
 import TopNavHp from './TopNavHp';

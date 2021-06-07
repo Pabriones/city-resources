@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../src/css/Footer.css';
 import { Link as Link1 } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -10,9 +11,9 @@ const Footer = () => {
 					{/* Column1 */}
 					<div className="col-sm">
 						<div className="ft-text">
-							<Link1 className="ft-link-logo" to="/" spy={true} duration={500}>
+							<Link className="ft-link-logo" to="/" spy={true} duration={500}>
 								CITY RESOURCES
-							</Link1>
+							</Link>
 						</div>
 					</div>
 					{/* Column2 */}
@@ -44,17 +45,17 @@ const Footer = () => {
 							<div className="ft-text">
 								{' '}
 								<li>
-									<Link1 className="ft-link" to="/directory" spy={true} duration={500}>
+									<Link className="ft-link" to="/directory" spy={true} duration={500}>
 										{' '}
 										SEARCH DIRECTORY{' '}
-									</Link1>
+									</Link>
 								</li>
 							</div>
 							<div className="ft-text">
 								<li>
-									<Link1 className="ft-link" to="/addresource" spy={true} duration={500}>
+									<Link className="ft-link" to="/addresource" spy={true} duration={500}>
 										ADD YOUR RESOURCE
-									</Link1>
+									</Link>
 								</li>
 							</div>
 						</ui>

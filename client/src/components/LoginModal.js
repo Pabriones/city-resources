@@ -5,7 +5,7 @@ import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { login } from "../actions/auth";
-import Alert from '../components/layout/Alert';
+import Alert from "../components/layout/Alert";
 
 const LoginModal = ({ login, isAuthenticated }) => {
   const [show, setShow] = useState(false);
@@ -46,8 +46,22 @@ const LoginModal = ({ login, isAuthenticated }) => {
         {/* <div className="logContainer"> */}
         <div className="form-container  ">
           <form action="#" onSubmit={(e) => onSubmit(e)}>
-            {" "}
-            <h1>SIGN IN</h1>
+            <div class="row signin-modal">
+              <div class="col-md signin-title">
+                <h1>SIGN IN</h1>
+              </div>
+
+              {/* <div class="col-md create-account-link">
+                <Link to="/registerpage">
+                  {" "}
+                  <button className="create-account-btn">
+                    {" "}
+                    CREATE ACCOUNT
+                  </button>
+                </Link>
+              </div> */}
+            </div>
+
             <label className="email-pw-label">Email</label>
             <input
               type="email"
@@ -57,12 +71,17 @@ const LoginModal = ({ login, isAuthenticated }) => {
               onChange={(e) => onChange(e)}
               required
             />
-         
-         <label className="email-pw-label">   
-            <div class="row justify-content-end"> <div class="col "> Password{" "} </div>    
-              </div>  
-              </label>  
-         
+
+            <label className="email-pw-label">
+              <div class="row justify-content-end">
+                <div class="col-md">Password</div>
+
+                <div class="col-md forgot-pw-link">
+                  <Link to="/resetpassword"> FORGOT PASSWORD?</Link>
+                </div>
+              </div>
+            </label>
+
             <input
               type={passwordShown ? "text" : "password"}
               placeholder="Password"
@@ -74,17 +93,13 @@ const LoginModal = ({ login, isAuthenticated }) => {
             <button className="showPw-btn" onClick={togglePassword}>
               Show Password
             </button>
-            <button className="Login-modal-btn">
-              Sign in
-            </button>
-            <p > 
-            Forgot Password? Click <Link to="/resetpassword">
-                 {" "} Here
-              </Link>
-            </p> 
+            <button className="Login-modal-btn">Sign in</button>
             <p>
-              Don't have an account yet?<br/>
-              <Link to="/registerpage">CREATE ONE!</Link>
+           Don't have an account yet?  <Link to="/registerpage">
+                 <br/>
+                    CREATE ONE!
+                 
+                </Link>
             </p>
           </form>
         </div>

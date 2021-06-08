@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import Footer from "./Footer";
 import AboutPage from "./AboutPage";
-import AboutPage2 from "./AboutPage2";
+import SubscribeMe from "./SubscribeMe";
 import ContactSection from "./ContactSection";
 import TopNav from "./TopNav";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -37,6 +37,7 @@ const LandingPage = ({ isAuthenticated }) => {
       <div>
         <AboutPage />
         <ContactSection />
+        <SubscribeMe />
         <Footer />
       </div>
     </body>

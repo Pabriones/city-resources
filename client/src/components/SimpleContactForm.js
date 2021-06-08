@@ -88,7 +88,6 @@ export default function SimpleContactForm() {
               >
                 Send Message
               </button>
-              <ToastContainer transition={Bounce} style={{fontSize: "4vh"}} />
             </div>
           </div>
         </form>

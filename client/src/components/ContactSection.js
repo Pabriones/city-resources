@@ -10,8 +10,6 @@ const ContactSection = () => {
       <div class="row contact-content">
         <h1>GET IN TOUCH</h1>
         <div class="col-md contact-info">
-          
-
           <p>
             {" "}
             Any questions or comments? We would love to know your thoughts. If

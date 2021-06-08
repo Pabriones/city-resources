@@ -1,6 +1,7 @@
 import React from "react";
 import "../../src/css/ResetPassword.css";
 import Footer from "./Footer";
+import emailjs from "emailjs-com";
 import TopNav2 from "./TopNav2";
 import { Button, Form, Row, Container, Col } from "react-bootstrap";
 import { ToastContainer, toast, Bounce } from "react-toastify";
@@ -13,10 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 //   document.getElementById("submit").innerHTML = "Message sent.";
 // }
 
-function resetPw(e) {
-  e.preventDefault();
-  e.target.reset();
-}
+ 
 
 function ResetPassword() {
   const notify = () => {
@@ -30,6 +28,27 @@ function ResetPassword() {
       progress: undefined,
     });
   };
+
+  function resetPw(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wkyp2uz",
+        "template_yrygo4o",
+        e.target,
+        "user_HarQvCQDVRSyllfUxOCDt"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
 
   return (
     <body>

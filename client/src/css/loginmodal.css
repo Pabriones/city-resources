@@ -15,8 +15,10 @@
 }
 
 .forgot-link {
-	align-content: space-between;
+	align-content: center;
+	text-align: center;
 	text-transform: uppercase;
+	color: white;
 }
 
 .form-container p {
@@ -108,7 +110,6 @@
 	outline: none;
 	box-shadow: none;
 	height: 8%;
-
 	margin: 12px 0;
 	width: 100%;
 }

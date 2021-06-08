@@ -4,8 +4,10 @@ import '../../src/css/TopNavHpDark.css';
 import { SuitHeart } from 'react-bootstrap-icons';
 import { Link as Link1 } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-function TopNavHpDark() {
+const TopNavHpDark = ({ auth: { account, isAuthenticated, loading } }) => {
 	return (
 		<div>
 			<Container className="TopNavContainer-dark">
@@ -17,7 +19,7 @@ function TopNavHpDark() {
 					<Navbar.Collapse id="basic-navbar-nav ">
 						<Navbar.Collapse className="justify-content-end">
 							<Navbar.Text>
-								<Link to="/userprofile"> My Favorites</Link>
+								<Link to="/userprofile"> My Profile</Link>
 								{/* <a href="#login" className="nav-links favs-dark">
                   <SuitHeart size={30} color="red" /> My Favorites
                 </a>{" "} */}
@@ -31,7 +33,7 @@ function TopNavHpDark() {
 										spy={true}
 										duration={500}
 									>
-										Selina Nguyen
+										{account && account.firstname} {account && account.lastname}
 									</Link1>
 								</p>
 							</Navbar.Text>
@@ -41,6 +43,14 @@ function TopNavHpDark() {
 			</Container>
 		</div>
 	);
-}
+};
 
-export default TopNavHpDark;
+TopNavHpDark.propTypes = {
+	auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+	auth: state.auth
+});
+
+export default connect(mapStateToProps)(TopNavHpDark);

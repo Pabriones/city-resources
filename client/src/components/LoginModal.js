@@ -90,16 +90,21 @@ const LoginModal = ({ login, isAuthenticated }) => {
               onChange={(e) => onChange(e)}
               required
             />
-            <button className="showPw-btn" onClick={togglePassword}>
-              Show Password
-            </button>
+            <div class="row show-password-link">
+              <div class="col-md">
+                <button className="showPw-btn" onClick={togglePassword}>
+                  Show Password
+                </button>
+              </div>
+            </div>
+
             <button className="Login-modal-btn">Sign in</button>
             <p>
-           Don't have an account yet?  <Link to="/registerpage">
-                 <br/>
-                    CREATE ONE!
-                 
-                </Link>
+              Don't have an account yet?{" "}
+              <Link to="/registerpage">
+                <br />
+                CREATE ONE!
+              </Link>
             </p>
           </form>
         </div>

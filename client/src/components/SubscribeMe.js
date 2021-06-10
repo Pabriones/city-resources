@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const ContactSection = () => {
+const SubscribeMe = () => {
  
     const notifySub = () => {
       toast.success("Added!", {
@@ -77,6 +77,6 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default SubscribeMe;
 
 

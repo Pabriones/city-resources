@@ -6,7 +6,7 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const ContactSection = () => {
+const SubscribeMe = () => {
 	const notifySub = () => {
 		toast.success('Added!', {
 			position: 'top-center',
@@ -48,7 +48,21 @@ const ContactSection = () => {
 							name="email"
 						/>
 					</div>
+					{/* function subscribe(e) {
+		e.preventDefault()
 
+		emailjs.sendForm('service_wkyp2uz', 'template_5xd7yrd', e.target, 'user_HarQvCQDVRSyllfUxOCDt').then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+		e.target.reset();
+   
+	}; */}
+					export default SubscribeMe;
 					<div className="sub-submit">
 						<button type="submit" className="subBtn" id="sub" name="submit" onClick={notifySub}>
 							ADD ME TO THE LIST!

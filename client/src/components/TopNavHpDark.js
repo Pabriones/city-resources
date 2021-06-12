@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Container, Navbar } from "react-bootstrap";
 import "../../src/css/TopNavHpDark.css";
 import { SuitHeart } from "react-bootstrap-icons";
 import { Link as Link1 } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import {useSelector} from "react-redux";
 
 function TopNavHpDark() {
+  const {account} = useSelector(({auth}) => auth);
+  const [fname, setFname] = useState('');
+  const [lname, setLname] = useState('');
+  useEffect(()=>{
+    if(account){
+      setFname(account.firstname);
+      setLname(account.lastname);
+    }
+  },[account]);
   return (
     <div>
       <Container className="TopNavContainer-dark">
@@ -34,7 +44,7 @@ function TopNavHpDark() {
                     spy={true}
                     duration={500}
                   >
-                    Selina Nguyen
+                    {fname + ' '+ lname }
                   </Link1>
                 </p>
               </Navbar.Text>

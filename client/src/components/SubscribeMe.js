@@ -68,7 +68,7 @@ const SubscribeMe = () => {
     >
       ADD ME TO THE LIST!
     </button>
-    <ToastContainer />
+    {/*ToastContainer />*/}
   </div>
 </div>
 </form>

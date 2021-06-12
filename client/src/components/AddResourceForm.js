@@ -3,8 +3,23 @@ import { Form, Row, Container, Col } from "react-bootstrap";
 import "../../src/css/AddResource.css";
 import emailjs from "emailjs-com";
 import "../../src/css/SimpleContactForm.css";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function SimpleContactForm() {
+
+  const notify = () => {
+    toast.success("Request submitted!", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -161,7 +176,9 @@ export default function SimpleContactForm() {
                       type="submit"
                       className="ar-submitform-btn"
                       value="Submit for review"
+                      onClick={notify}
                     ></input>
+                      <ToastContainer className="toast-alert" />
                   </div>
                 </div>
               </Col>

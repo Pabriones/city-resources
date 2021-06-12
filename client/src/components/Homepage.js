@@ -1,33 +1,55 @@
-import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
-import Footer from "./Footer";
-import AboutPage from "./AboutPage";
-import AboutPage2 from "./AboutPage2";
-import ContactSection from "./ContactSection";
-import "../../src/css/LandingPage.css";
-import TopNavHp from "./TopNavHp";
-import CovidMain from "./CovidMain";
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { Jumbotron, Container } from 'react-bootstrap';
+import Footer from './Footer';
+import AboutPage from './AboutPage';
+import ContactSection from './ContactSection';
+import '../../src/css/LandingPage.css';
+import TopNavHp from './TopNavHp';
+import CovidMain from './CovidMain';
+import { connect } from 'react-redux';
+import { getCurrentProfile } from '../actions/profile';
+import Spinner from '../components/layout/spinner';
+import { Fragment } from 'react';
 
-class Homepage extends React.Component {
-  render() {
-    return (
-      <body>
-        <div id="LandingPage">
-          <CovidMain />
+const Homepage = ({
+  getCurrentProfile,
+  auth,
+  profile: { profile, loading },
+}) => {
+  useEffect(() => {
+    getCurrentProfile();
+  }, []);
 
-          <div className="lp-container">
-            <TopNavHp />
-          </div>
+  return loading && profile == null ? (
+    <Spinner />
+  ) : (
+    <body>
+      <div id="LandingPage">
+        <CovidMain />
+
+        <div className="lp-container">
+          <TopNavHp />
         </div>
-        <div>
-          <AboutPage />
-     
-          <ContactSection />
-          <Footer />
-        </div>
-      </body>
-    );
-  }
-}
+      </div>
+      <div>
+        <AboutPage />
+        <ContactSection />
+        <Footer />
+      </div>
+    </body>
+  );
+};
 
-export default Homepage;
+Homepage.propTypes = {
+  getCurrentProfile: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  profile: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  auth: state.auth,
+  profile: state.profile,
+});
+
+export default connect(mapStateToProps, { getCurrentProfile })(Homepage);

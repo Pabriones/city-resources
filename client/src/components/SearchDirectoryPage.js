@@ -99,7 +99,7 @@ const SearchDirectoryPage = () => {
 		handleRequest([]);
 	}, []);
 
-	let toPrint = [];
+	// let toPrint = [];
 
 	return (
 		<body>

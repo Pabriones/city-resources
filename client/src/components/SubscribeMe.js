@@ -19,7 +19,7 @@ const SubscribeMe = () => {
 		});
 	};
 
-	function subscribe(e) {
+	const subscribe = (e) => {
 		e.preventDefault();
 
 		emailjs.sendForm('service_wkyp2uz', 'template_5xd7yrd', e.target, 'user_HarQvCQDVRSyllfUxOCDt').then(
@@ -31,7 +31,7 @@ const SubscribeMe = () => {
 			}
 		);
 		e.target.reset();
-	}
+	};
 
 	return (
 		<div class="row sub-content">
@@ -48,21 +48,7 @@ const SubscribeMe = () => {
 							name="email"
 						/>
 					</div>
-					{/* function subscribe(e) {
-		e.preventDefault()
 
-		emailjs.sendForm('service_wkyp2uz', 'template_5xd7yrd', e.target, 'user_HarQvCQDVRSyllfUxOCDt').then(
-			(result) => {
-				console.log(result.text);
-			},
-			(error) => {
-				console.log(error.text);
-			}
-		);
-		e.target.reset();
-   
-	}; */}
-					export default SubscribeMe;
 					<div className="sub-submit">
 						<button type="submit" className="subBtn" id="sub" name="submit" onClick={notifySub}>
 							ADD ME TO THE LIST!
@@ -75,4 +61,4 @@ const SubscribeMe = () => {
 	);
 };
 
-export default ContactSection;
+export default SubscribeMe;

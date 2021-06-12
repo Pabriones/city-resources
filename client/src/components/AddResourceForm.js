@@ -6,7 +6,7 @@ import '../../src/css/SimpleContactForm.css';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function SimpleContactForm() {
+const AddResourceForm = () => {
 	const notify = () => {
 		toast.success('Request submitted!', {
 			position: 'top-center',
@@ -19,7 +19,7 @@ export default function SimpleContactForm() {
 		});
 	};
 
-	function sendEmail(e) {
+	const sendEmail = (e) => {
 		e.preventDefault();
 
 		emailjs.sendForm('service_g11nedj', 'template_lu0019p', e.target, 'user_yI6ZqqiUBuyWJcjomajAu').then(
@@ -31,7 +31,7 @@ export default function SimpleContactForm() {
 			}
 		);
 		e.target.reset();
-	}
+	};
 
 	// const AddResourceForm = () => {
 	return (
@@ -260,6 +260,6 @@ export default function SimpleContactForm() {
 			</div>
 		</Container>
 	);
-}
+};
 
-// export default AddResourceForm;
+export default AddResourceForm;

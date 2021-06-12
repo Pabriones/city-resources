@@ -21,7 +21,7 @@
 		"react-avatar": "^3.10.0",
 		"react-bootstrap": "^1.4.0",
 		"react-bootstrap-icons": "^1.5.0",
-		"react-dom": "^16.13.1",
+		"react-dom": "^16.14.0",
 		"react-email-share-link": "^1.0.3",
 		"react-modal": "^3.13.1",
 		"react-moment": "^1.1.1",
@@ -62,7 +62,8 @@
 		]
 	},
 	"devDependencies": {
-		"case-sensitive-paths-webpack-plugin": "^2.4.0"
+		"case-sensitive-paths-webpack-plugin": "^2.4.0",
+		"eslint-plugin-react-hooks": "^4.2.0"
 	},
 	"proxy": "http://localhost:8080"
 }

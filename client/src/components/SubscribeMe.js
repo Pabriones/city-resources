@@ -53,7 +53,7 @@ const SubscribeMe = () => {
 						<button type="submit" className="subBtn" id="sub" name="submit" onClick={notifySub}>
 							ADD ME TO THE LIST!
 						</button>
-						<ToastContainer />
+						{/* {ToastContainer} */}
 					</div>
 				</div>
 			</form>

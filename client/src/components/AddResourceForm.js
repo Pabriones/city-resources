@@ -169,7 +169,7 @@ const AddResourceForm = () => {
 											value="Submit for review"
 											onClick={notify}
 										/>
-										<ToastContainer className="toast-alert" />
+										{/* <ToastContainer className="toast-alert" /> */}
 									</div>
 								</div>
 							</Col>

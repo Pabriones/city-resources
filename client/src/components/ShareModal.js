@@ -19,9 +19,9 @@ function ShareModal() {
 
   return (
     <>
-      {/* <button variant=" " className="website-linkBtn" onClick={handleShow}>
+      <button variant=" " className="website-linkBtn" onClick={handleShow}>
         <EnvelopeOpen size={25} /> Share
-      </button> */}
+      </button>
 
       <Modal show={show} onHide={handleClose}>
         <div className="share-modal-container">

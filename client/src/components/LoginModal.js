@@ -113,6 +113,7 @@ const LoginModal = ({ login, isAuthenticated }) => {
     </>
   );
 };
+
 LoginModal.propTypes = {
   login: PropTypes.func.isRequired,
   isAuthenticated: PropTypes.bool,

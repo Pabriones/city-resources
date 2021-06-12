@@ -4,7 +4,7 @@ import '../../src/css/SimpleContactForm.css';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const SimpleContactForm = () => {
+export default function SimpleContactForm() {
 	const notify = () => {
 		toast.success('Message sent!', {
 			position: 'top-center',
@@ -16,7 +16,7 @@ const SimpleContactForm = () => {
 			progress: undefined
 		});
 	};
-	const sendEmail = (e) => {
+	function sendEmail(e) {
 		e.preventDefault();
 
 		emailjs.sendForm('service_g11nedj', 'template_bmvagbl', e.target, 'user_yI6ZqqiUBuyWJcjomajAu').then(
@@ -28,10 +28,10 @@ const SimpleContactForm = () => {
 			}
 		);
 		e.target.reset();
-	};
+	}
 
 	// function EnableSend() {
-	//   document.getElementById("submit").disabled = false;
+	// 	document.getElementById('submit').disabled = false;
 	// }
 
 	return (
@@ -87,6 +87,4 @@ const SimpleContactForm = () => {
 			</div>
 		</div>
 	);
-};
-
-export default SimpleContactForm;
+}

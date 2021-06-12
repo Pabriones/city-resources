@@ -61,6 +61,9 @@
 			"last 1 safari version"
 		]
 	},
+	"alias": {
+		"react": "path.resolve('./node_modules/react')"
+	},
 	"devDependencies": {
 		"case-sensitive-paths-webpack-plugin": "^2.4.0",
 		"eslint-plugin-react-hooks": "^4.2.0"

@@ -1,12 +1,69 @@
-import React from 'react';
+import React ,{useState,useEffect} from 'react';
 import '../../src/css/UserProfile.css';
 import { Tab, Row, Col, Nav, Form, Button, Accordion, Card } from 'react-bootstrap';
 import Footer from './Footer';
 import TopNavHpDark from './TopNavHpDark';
 import { ArrowRight, ArrowRightCircle, EnvelopeOpen } from 'react-bootstrap-icons';
 import Avatar from 'react-avatar';
+import jwt_decode from "jwt-decode";
+import {useSelector} from 'react-redux';
+import Axios from "axios";
 
 function UserProfile() {
+	const {account} = useSelector(({auth}) => auth);
+
+	const [fname, setFname] = useState('');
+	const [lname, setLname] = useState('');
+	const [email, setEmail] = useState('');
+	const [oldpassword, setOldpassword] = useState('');
+	const [newpassword, setNewpassword] = useState('');
+
+useEffect(()=>{
+	if(account){
+		setFname(account.firstname);
+		setLname(account.lastname);
+		setEmail(account.email);
+	}
+		},[account]);
+
+const updateName=()=> {
+	Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+	Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+	Axios.post('http://localhost:3000/api/getAccount', {
+			firstname: fname, lastname: lname,
+		});
+	};
+
+	const updatePassword=()=> {
+		Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+		Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+		Axios.post('http://localhost:3000/api/changePassword', {
+			email: email, oldPassword: oldpassword,newPassword:newpassword
+		}).then((res) => {
+
+		});
+	};
+
+	const handleChange=(e,field)=>{
+		switch (field) {
+			case 'fname':
+				setFname(e.target.value);
+				break;
+			case 'lname':
+				setLname(e.target.value);
+				break;
+			case 'email':
+				setEmail(e.target.value);
+				break;
+			case 'oldpassword':
+				setOldpassword(e.target.value);
+				break;
+			case 'newpassword':
+				setNewpassword(e.target.value);
+				break;
+		}
+	};
+
 	return (
 		<body>
 			<div className="up-container">
@@ -52,7 +109,7 @@ function UserProfile() {
 														'purple'
 													])}
 													round="100px"
-													name="Selina Nguyen"
+													name={fname +' '+ lname}
 												/>
 											</div>{' '}
 											<Form className="user-profile-input">
@@ -63,8 +120,12 @@ function UserProfile() {
 													<Form.Control
 														size="lg"
 														className="input-bar-up"
-														placeholder="  First Name"
+														placeholder="First Name"
 														required
+														value={fname}
+														onChange={(e)=>{
+															handleChange(e,'fname');
+														}}
 													/>
 												</Form.Group>
 												<Form.Group className="rp-label">
@@ -76,10 +137,15 @@ function UserProfile() {
 														className="input-bar-up"
 														placeholder="  Last Name"
 														required
+														value={lname}
+														onChange={(e)=>{
+															handleChange(e,'lname');
+														}}
+
 													/>
 												</Form.Group>
 
-												<Button className="save-btn-up" variant="outline-secondary">
+												<Button className="save-btn-up" variant="outline-secondary" onClick={updateName}>
 													UPDATE
 												</Button>
 											</Form>
@@ -98,6 +164,10 @@ function UserProfile() {
 														type="email"
 														placeholder="Enter email"
 														required
+														value={email}
+														onChange={(e)=>{
+															handleChange(e,email);
+														}}
 													/>
 												</Form.Group>
 
@@ -108,8 +178,12 @@ function UserProfile() {
 													<Form.Control
 														size="lg"
 														className="input-bar-up"
-														placeholder="New Password"
+														placeholder="Old Password"
 														required
+														value={oldpassword}
+														onChange={(e)=>{
+															handleChange(e,'oldpassword');
+														}}
 													/>
 												</Form.Group>
 
@@ -120,12 +194,16 @@ function UserProfile() {
 													<Form.Control
 														size="lg"
 														className="input-bar-up"
-														placeholder="Confirm password"
+														placeholder="New password"
 														required
+														value={newpassword}
+														onChange={(e)=>{
+															handleChange(e,'newpassword');
+														}}
 													/>
 												</Form.Group>
 
-												<Button className="save-btn-up" variant="outline-secondary">
+												<Button className="save-btn-up" variant="outline-secondary" onClick={updatePassword}>
 													SAVE
 												</Button>
 											</Form>

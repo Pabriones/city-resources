@@ -74,7 +74,6 @@ const SearchDirectoryPage = () => {
 	};
 
 	const handleSearch = (e) => {
-		console.log(e.target.value);
 		if (e.target.value !== '') {
 			const filteredItems = state.filter((item) => {
 				return item.filterName.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1;

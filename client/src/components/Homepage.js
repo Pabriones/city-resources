@@ -11,7 +11,6 @@ import { connect } from 'react-redux';
 import { getCurrentProfile } from '../actions/profile';
 import Spinner from '../components/layout/spinner';
 import SubscribeMe from './SubscribeMe';
-import { Fragment } from 'react';
 
 const Homepage = ({ getCurrentProfile, auth, profile: { profile, loading } }) => {
 	useEffect(() => {

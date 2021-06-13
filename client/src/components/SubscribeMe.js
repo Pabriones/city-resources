@@ -48,13 +48,12 @@ const SubscribeMe = () => {
 							name="email"
 						/>
 					</div>
-
 					<div className="sub-submit">
 						<button type="submit" className="subBtn" id="sub" name="submit" onClick={notifySub}>
 							ADD ME TO THE LIST!
 						</button>
-						{/* {ToastContainer} */}
 					</div>
+					{/* <ToastContainer /> */}
 				</div>
 			</form>
 		</div>

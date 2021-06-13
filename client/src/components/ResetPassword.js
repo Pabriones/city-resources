@@ -75,7 +75,7 @@ function ResetPassword() {
 							>
 								Send Instructions
 							</button>
-							<ToastContainer className="toast-alert" />
+							{/* <ToastContainer className="toast-alert" /> */}
 						</div>
 					</div>
 				</form>

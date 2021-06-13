@@ -22,6 +22,7 @@ const SubscribeMe = () => {
 	const subscribe = (e) => {
 		e.preventDefault();
 
+
 		emailjs.sendForm('service_wkyp2uz', 'template_5xd7yrd', e.target, 'user_HarQvCQDVRSyllfUxOCDt').then(
 			(result) => {
 				console.log(result.text);
@@ -32,6 +33,7 @@ const SubscribeMe = () => {
 		);
 		e.target.reset();
 	};
+
 
 	return (
 		<div class="row sub-content">

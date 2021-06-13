@@ -4,7 +4,6 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper,Polygon} from 'google-maps-rea
 export class MapContainer extends Component {
     constructor(props) {
         super(props);
-        console.log(this.props);
         this.state = {
             title:this.props.address,
             lat:this.props.lat,

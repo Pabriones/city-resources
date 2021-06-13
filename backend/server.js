@@ -30,6 +30,8 @@ app.use('/api/getFilterData', require('./routes/api/getFilterData'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));
+app.use('/api/getAccount', require('./routes/api/getAccount'));
+app.use('/api/changePassword', require('./routes/api/changeCred'));
 
 const PORT = process.env.PORT || 8080;
 

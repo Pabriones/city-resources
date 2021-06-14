@@ -1,50 +1,54 @@
-import React ,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../src/css/UserProfile.css';
 import { Tab, Row, Col, Nav, Form, Button, Accordion, Card } from 'react-bootstrap';
 import Footer from './Footer';
 import TopNavHpDark from './TopNavHpDark';
 import { ArrowRight, ArrowRightCircle, EnvelopeOpen } from 'react-bootstrap-icons';
 import Avatar from 'react-avatar';
-import jwt_decode from "jwt-decode";
-import {useSelector} from 'react-redux';
-import Axios from "axios";
+import jwt_decode from 'jwt-decode';
+import { useSelector } from 'react-redux';
+import Axios from 'axios';
 
 function UserProfile() {
-	const {account} = useSelector(({auth}) => auth);
+	const { account } = useSelector(({ auth }) => auth);
 
-	const [fname, setFname] = useState('');
-	const [lname, setLname] = useState('');
-	const [email, setEmail] = useState('');
-	const [oldpassword, setOldpassword] = useState('');
-	const [newpassword, setNewpassword] = useState('');
+	const [ fname, setFname ] = useState('');
+	const [ lname, setLname ] = useState('');
+	const [ email, setEmail ] = useState('');
+	const [ oldpassword, setOldpassword ] = useState('');
+	const [ newpassword, setNewpassword ] = useState('');
 
-useEffect(()=>{
-	if(account){
-		setFname(account.firstname);
-		setLname(account.lastname);
-		setEmail(account.email);
-	}
-		},[account]);
+	useEffect(
+		() => {
+			if (account) {
+				setFname(account.firstname);
+				setLname(account.lastname);
+				setEmail(account.email);
+			}
+		},
+		[ account ]
+	);
 
-const updateName=()=> {
-	Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
-	Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-	Axios.post('http://localhost:3000/api/getAccount', {
-			firstname: fname, lastname: lname,
+	const updateName = () => {
+		Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+		Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+		Axios.post('http://localhost:3000/api/getAccount', {
+			firstname: fname,
+			lastname: lname
 		});
 	};
 
-	const updatePassword=()=> {
+	const updatePassword = () => {
 		Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 		Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 		Axios.post('http://localhost:3000/api/changePassword', {
-			email: email, oldPassword: oldpassword,newPassword:newpassword
-		}).then((res) => {
-
-		});
+			email: email,
+			oldPassword: oldpassword,
+			newPassword: newpassword
+		}).then((res) => {});
 	};
 
-	const handleChange=(e,field)=>{
+	const handleChange = (e, field) => {
 		switch (field) {
 			case 'fname':
 				setFname(e.target.value);
@@ -109,7 +113,7 @@ const updateName=()=> {
 														'purple'
 													])}
 													round="100px"
-													name={fname +' '+ lname}
+													name={fname + ' ' + lname}
 												/>
 											</div>{' '}
 											<Form className="user-profile-input">
@@ -123,8 +127,8 @@ const updateName=()=> {
 														placeholder="First Name"
 														required
 														value={fname}
-														onChange={(e)=>{
-															handleChange(e,'fname');
+														onChange={(e) => {
+															handleChange(e, 'fname');
 														}}
 													/>
 												</Form.Group>
@@ -138,14 +142,17 @@ const updateName=()=> {
 														placeholder="  Last Name"
 														required
 														value={lname}
-														onChange={(e)=>{
-															handleChange(e,'lname');
+														onChange={(e) => {
+															handleChange(e, 'lname');
 														}}
-
 													/>
 												</Form.Group>
 
-												<Button className="save-btn-up" variant="outline-secondary" onClick={updateName}>
+												<Button
+													className="save-btn-up"
+													variant="outline-secondary"
+													onClick={updateName}
+												>
 													UPDATE
 												</Button>
 											</Form>
@@ -165,8 +172,8 @@ const updateName=()=> {
 														placeholder="Enter email"
 														required
 														value={email}
-														onChange={(e)=>{
-															handleChange(e,email);
+														onChange={(e) => {
+															handleChange(e, email);
 														}}
 													/>
 												</Form.Group>
@@ -181,8 +188,8 @@ const updateName=()=> {
 														placeholder="Old Password"
 														required
 														value={oldpassword}
-														onChange={(e)=>{
-															handleChange(e,'oldpassword');
+														onChange={(e) => {
+															handleChange(e, 'oldpassword');
 														}}
 													/>
 												</Form.Group>
@@ -197,13 +204,17 @@ const updateName=()=> {
 														placeholder="New password"
 														required
 														value={newpassword}
-														onChange={(e)=>{
-															handleChange(e,'newpassword');
+														onChange={(e) => {
+															handleChange(e, 'newpassword');
 														}}
 													/>
 												</Form.Group>
 
-												<Button className="save-btn-up" variant="outline-secondary" onClick={updatePassword}>
+												<Button
+													className="save-btn-up"
+													variant="outline-secondary"
+													onClick={updatePassword}
+												>
 													SAVE
 												</Button>
 											</Form>

@@ -1,0 +1,120 @@
+.rp-container {
+  font-family: "Roboto", "sans-serif";
+}
+
+form .form-control:focus {
+  box-shadow: none;
+  border-color: #302e2e;
+}
+
+.rp-side-bg {
+  background-image: url("../Images/brick.jpg");
+  min-height: 25vh;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-form {
+  margin: 5%;
+  outline: none;
+  box-shadow: none;
+}
+
+/* .rp-title {
+  font-size: 3vh;
+  padding: 5% 5% 0%;
+} */
+
+.rp-label {
+  padding: 2%;
+}
+
+.rp-submit {
+  background-color: #302e2e;
+
+  text-decoration: none;
+  color: #e4e0e0;
+  outline: none;
+  box-shadow: none;
+  padding: 5% 10%;
+}
+
+.rp-submit:hover {
+  background-color: #302e2e;
+  font-weight: bold;
+
+  text-decoration: none;
+  color: #e4e0e0;
+
+  outline: none;
+  box-shadow: none;
+  padding: 5% 10%;
+}
+
+.rp-submit:disabled {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.usr-login {
+  float: right;
+}
+
+.rp-intro {
+  padding-bottom: 5%;
+}
+
+.rp-terms {
+  padding: 10% 2%;
+}
+
+@media (min-width: 568px) {
+  .bg {
+    min-height: 25vh;
+    max-width: 100%;
+  }
+
+  .rp-submit {
+    padding: 2% 20%;
+    font-size: 3vh;
+    margin-left: 2%;
+  }
+
+  .rp-submit:hover {
+    padding: 2% 20%;
+  }
+}
+
+@media (min-width: 990px) {
+  .rp-terms {
+    padding: 5% 2%;
+  }
+
+  .rp-submit {
+    padding: 2% 20%;
+    font-size: 3vh;
+    margin-left: 2%;
+    border: none;
+  }
+
+  .rp-submit:hover {
+    padding: 2% 20%;
+  }
+
+  .rp-intro {
+    font-size: 3vh;
+    padding: 0% 8% 4%;
+  }
+}
+
+@media (min-width: 1275px) {
+  .rp-intro {
+    font-size: 3vh;
+    padding: 0% 8% 4%;
+  }
+
+  .rp-submit {
+    font-size: 3vh;
+  }
+}

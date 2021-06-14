@@ -1,11 +1,39 @@
 .cr-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-     
-  }
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+}
 
 .content-wrap {
-    flex: 1;
-    
-  }
+	flex: 1;
+}
+
+/* Alert  */
+.alert {
+	padding: 0.8rem;
+	margin: 1rem 0;
+	opacity: 0.9;
+	background: var(--light-color);
+	color: red;
+}
+
+.alert-primary {
+	background: var(--primary-color);
+	color: #fff;
+}
+
+.alert-light {
+	background: var(--light-color);
+	color: #333;
+}
+
+.alert-danger {
+	background: var(--danger-color);
+	color: red;
+}
+
+.alert-success {
+	background: var(--danger-color);
+	color: #fff;
+}

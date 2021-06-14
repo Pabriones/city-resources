@@ -1,88 +1,85 @@
-import React from "react";
-import "../../src/css/Footer.css";
-import { Link as Link2 } from "react-scroll";
-
-
+import React from 'react';
+import '../../src/css/Footer.css';
+import { Link as Link1 } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  return (
-    <div className="footer">
-      <div className="ft-container">
-        <div className="row">
-          {/* Column1 */}
-          <div className="col-sm">
-            <div className="ft-text">
-              <a href="url" className="ft-link-logo">
-                CITY <br />
-                RESOURCES
-              </a>
-            </div>
-          </div>
-          {/* Column2 */}
-          <div className="col-sm">
-            <ui className="list-unstyled">
-              <div className="ft-text">
-                <li>
-                  <Link2
-                    className="ft-link"
-                    to="LandingPage"
-                    spy={true}
-                    duration={500}
-                  >
-                    HOME
-                  </Link2>
-                </li>
-              </div>
+	return (
+		<div className="footer">
+			<div className="ft-container">
+				<div className="row">
+					{/* Column1 */}
+					<div className="col-sm">
+						<div className="ft-text">
+							<Link className="ft-link-logo" to="/" spy={true} duration={500}>
+								CITY RESOURCES
+							</Link>
+						</div>
+					</div>
+					{/* Column2 */}
 
-              <div className="ft-text">
-                {" "}
-                <li>
-                  <a href="url" className="ft-link">
-                    {" "}
-                    SEARCH DIRECTORY{" "}
-                  </a>
-                </li>
-              </div>
-            </ui>
-          </div>
-
-          {/* Column3 */}
-          <div className="col-sm">
+					{/* <div className="col-sm">
             <ui className="list-unstyled">
               <div className="ft-text">
                 {" "}
                 <li>
-                  <Link2
-                    className="ft-link"
-                    to="AboutPage"
-                    spy={true}
-                    duration={500}
-                  >
-                    ABOUT
-                  </Link2>
+                  <Link1 className="ft-link" to="/" spy={true} duration={500}>
+                    search
+                  </Link1>
                 </li>
               </div>
-
               <div className="ft-text">
                 {" "}
                 <li>
-                  <a href=" " className="ft-link">
-                    {" "}
-                    CONTACT{" "}
-                  </a>
+                  <Link1 className="ft-link" to="/" spy={true} duration={500}>
+                    CONTACT
+                  </Link1>
                 </li>
               </div>
             </ui>
-          </div>
-        </div>
-        <div className="row">
-          <p className="col-lg">
+          </div> */}
+
+					{/* Column3 */}
+					<div className="col-sm">
+						<ui className="list-unstyled">
+							<div className="ft-text">
+								{' '}
+								<li>
+									<Link className="ft-link" to="/directory" spy={true} duration={500}>
+										{' '}
+										SEARCH DIRECTORY{' '}
+									</Link>
+								</li>
+							</div>
+							<div className="ft-text">
+								<li>
+									<Link className="ft-link" to="/addresource" spy={true} duration={500}>
+										ADD YOUR RESOURCE
+									</Link>
+								</li>
+							</div>
+						</ui>
+					</div>
+
+					<div className="col-sm">
+						<ui className="list-unstyled">
+							<div className="ft-text">
+								{' '}
+								<li>
+									<Link1 className="ft-link" to="/forms" spy={true} duration={500}>
+										FORMS
+									</Link1>
+								</li>
+							</div>
+						</ui>
+					</div>
+				</div>
+				{/* <div className="col-sm">
             &copy;{new Date().getFullYear()} CITYRESOURCES
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+          </div> */}
+			</div>
+		</div>
+	);
 };
 
 export default Footer;

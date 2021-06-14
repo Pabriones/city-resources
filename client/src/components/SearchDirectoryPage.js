@@ -33,6 +33,7 @@ let filterArray = [
 	{ filterName: 'Native and Indigenous', checked: false },
 	{ filterName: 'Pets and Service Animals', checked: false },
 	{ filterName: 'Problem Gambling', checked: false },
+	{ filterName: 'Rental Assistance', checked: false },
 	{ filterName: 'Seniors', checked: false },
 	{ filterName: 'Services for People of Color', checked: false },
 	{ filterName: 'Shelters', checked: false },

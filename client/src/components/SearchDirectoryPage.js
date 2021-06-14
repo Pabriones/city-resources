@@ -13,9 +13,9 @@ import {
 } from "react-bootstrap-icons";
 import SearchNavLinks from "./SearchNavLinks";
 import Axios from "axios";
-import { Link as Link3 } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TopNav2 from "./TopNav2";
-import { Alert, Button } from "react-bootstrap";
+import { Alert, Button, Jumbotron } from "react-bootstrap";
 
 let filterArray = [
   { filterName: "Clothing Assistance", checked: false },
@@ -185,7 +185,17 @@ const SearchDirectoryPage = () => {
           <div className="col-6 sd-results-container scroll">
             <div className="sd-search-results">
               {/* <SearchNavLinks /> */}
-              <AlertDismissible />
+              {/* <AlertDismissible /> */}
+              <Jumbotron className="sav-fav-info">
+                <p>Must be a registered user in order to save favorites</p>
+
+                <Link to="/registerpage">
+                  {" "}
+                  <Button className="create-btn-jumbo " variant="light">
+                    Create an account
+                  </Button>{" "}
+                </Link>
+              </Jumbotron>
               <Print ref={componentRef} data={resource} />
             </div>
           </div>
@@ -194,7 +204,7 @@ const SearchDirectoryPage = () => {
           <button className="print-btn" onClick={handlePrint}>
             <h3>PRINT RESULTS</h3>
           </button>
-          <p>
+          {/* <p>
             Want to save your favorites and share by email?{" "}
             <Link3
               className="sd-rp-link"
@@ -204,7 +214,7 @@ const SearchDirectoryPage = () => {
             >
               Create an account!
             </Link3>
-          </p>
+          </p> */}
         </div>{" "}
       </div>
       <div>

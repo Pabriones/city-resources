@@ -56,7 +56,7 @@ input[type="text"] {
   color: #6d4343;
 }
 
-.prnt p{
+.prnt p {
   text-transform: uppercase;
 }
 
@@ -85,8 +85,6 @@ input[type="text"] {
 .user-icons {
   text-align: right;
 }
-
- 
 
 /* .website-linkBtn {
   padding: 2%;
@@ -259,6 +257,32 @@ input.checkbox {
   .sd-services-labels {
     padding: 1%;
   }
+}
+
+.sav-fav-info {
+  background-color: #ccc6c6;
+  height: 16vh;
+  padding: 4%;
+  font-size: 2.5vh;
+  margin: 2;
+}
+
+.create-btn-jumbo {
+  background-color: #1d1a1a;
+  outline: none;
+  color: #eeeeee;
+  border: none;
+  font-size: 2vh;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.create-btn-jumbo:hover {
+  outline: none;
+  font-size: 2vh;
+  background-color: #695c59;
+  box-shadow: none;
 }
 
 /* @media screen and (min-width: 600px) and (max-width: 680px) {

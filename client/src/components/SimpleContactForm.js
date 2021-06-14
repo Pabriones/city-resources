@@ -24,6 +24,7 @@ export default function SimpleContactForm() {
   function sendMsg() {
     document.getElementById("msgAlert").innerHTML = "Message Sent!";
     document.getElementById("msgAlert").style.backgroundColor="green"
+    window.location.reload();
   }
 
   function sendEmail(e) {

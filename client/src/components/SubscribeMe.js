@@ -11,6 +11,11 @@ const SubscribeMe = () => {
     setEmail(e.target.value);
   };
 
+  function alertUser() {
+    document.getElementById("alert").innerHTML = "Yay! You're added!";
+    document.getElementById("alert").style.backgroundColor = "green";
+  }
+  
   function subscribe(e) {
     e.preventDefault();
 
@@ -32,10 +37,7 @@ const SubscribeMe = () => {
     e.target.reset();
   }
 
-  function alertUser() {
-    document.getElementById("alert").innerHTML = "Yay! You're added!";
-    document.getElementById("alert").style.backgroundColor = "green";
-  }
+ 
 
   return (
     <div class="row sub-content">

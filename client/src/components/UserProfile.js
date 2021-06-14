@@ -87,8 +87,9 @@ function UserProfile() {
 
   return (
     <body>
+    <TopNavHpDark /> 
       <div className="up-container">
-        <TopNavHpDark />
+       
         <div className="profile-container">
           <Tab.Container defaultActiveKey="Profile">
             <Row>

@@ -4,22 +4,21 @@ import "../../src/css/SubscribeMe.css";
 import { Link as Link2 } from "react-router-dom";
 import SimpleContactForm from "./SimpleContactForm";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast, Bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+ 
 
 const SubscribeMe = () => {
  
-    const notifySub = () => {
-      toast.success("Added!", {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    };
+    // const notifySub = () => {
+    //   toast.success("Added!", {
+    //     position: "top-center",
+    //     autoClose: 3000,
+    //     hideProgressBar: true,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //   });
+    // };
   
     function subscribe(e) {
       e.preventDefault();
@@ -41,7 +40,14 @@ const SubscribeMe = () => {
         );
       e.target.reset();
     }
+
+ function alertUser( ) {
+   document.getElementById("alert").innerHTML="Yay! You're added!";
+   document.getElementById("alert").style.backgroundColor="green"
+   
+ }
   
+
   return (
   
 <div class="row sub-content">
@@ -62,13 +68,13 @@ const SubscribeMe = () => {
     <button
       type="submit"
       className="subBtn"
-      id="sub"
+      id="alert"
       name="submit"
-      onClick={notifySub}
+      onClick={alertUser}
     >
-      ADD ME TO THE LIST!
+     ADD ME TO THE LIST!
     </button>
-    {/*ToastContainer />*/}
+ 
   </div>
 </div>
 </form>

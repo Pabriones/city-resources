@@ -1,21 +1,27 @@
 import emailjs from "emailjs-com";
 import React from "react";
 import "../../src/css/SimpleContactForm.css";
-import { ToastContainer, toast, Bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast, Bounce } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 export default function SimpleContactForm() {
-  const notify = () => {
-    toast.success("Message sent!", {
-      position: "top-center",
-      autoClose: 3000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-  };
+  // const notify = () => {
+  //   toast.success("Message sent!", {
+  //     position: "top-center",
+  //     autoClose: 3000,
+  //     hideProgressBar: true,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //   });
+  // };
+
+  function sendMsg() {
+    document.getElementById("msgAlert").innerHTML = "Message Sent!";
+    document.getElementById("msgAlert").style.backgroundColor="green"
+  }
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -82,9 +88,9 @@ export default function SimpleContactForm() {
               <button
                 type="submit"
                 className="contact-form-btn"
-                id="submit"
+                id="msgAlert"
                 name="submit"
-                onClick={notify}
+                onClick={sendMsg}
               >
                 Send Message
               </button>

@@ -1,0 +1,57 @@
+.prnt p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3vh;
+  padding-top: 10%;
+}
+
+.user-icons-prnt {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.website-link {
+  word-wrap: break-word;
+  text-align: right;
+}
+
+.address-link {
+  color: #6d4343;
+  cursor: pointer;
+  text-align: right;
+}
+
+.site-description {
+  padding: 5%;
+}
+
+@media (min-width: 568px) {
+  .sd-icons {
+    padding-top: 10%;
+  }
+  .prnt p {
+    padding-top: 1%;
+    text-align: left;
+  }
+  .website-link p {
+    margin: 2px;
+  }
+}
+
+@media (min-width: 980px) {
+}
+
+@media (min-width: 1275px) {
+  .site-description {
+    padding: 3%;
+    font-size: 2.5vh;
+  }
+
+  .site-info {
+    font-size: 2.8vh;
+  }
+
+  .prnt p {
+    font-size: 4vh;
+  }
+}

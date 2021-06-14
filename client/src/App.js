@@ -26,6 +26,7 @@ import { loadAccount } from "./actions/auth";
 import TopNavHp from "./components/TopNavHp";
 import AboutPage from "./components/AboutPage";
 import EmailNotifications from "./components/EmailNotifications";
+import UserIcons from "./components/UserIcons";
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -51,11 +52,12 @@ const App = () => {
           <Route path="/registermodal" component={RegisterModal} />
           <Route path="/addresource" component={AddResource} />
           <Route path="/forms" component={Forms} />
-          <PrivateRoute path="/homepage" component={Homepage} />
+          <PrivateRoute path="/homepage" component={Homepage} exact />
           <Route path="/registerpage" component={RegisterPage} />
           <Route path="/resetpassword" component={ResetPassword} />
           <Route path="/searchnavlinks" component={SearchNavLinks} />
           <Route path="/emailnotifications" component={EmailNotifications} />
+          <Route path="/usericons" component={UserIcons} />
           <Route path="/aboutpage" component={AboutPage} />
           <PrivateRoute path="/TopNavHp" component={TopNavHp} />
           <PrivateRoute path="/userprofile" component={UserProfile} />

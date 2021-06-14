@@ -14,8 +14,6 @@ import { Button, Form, Row, Container, Col } from "react-bootstrap";
 //   document.getElementById("submit").innerHTML = "Message sent.";
 // }
 
- 
-
 function ResetPassword() {
   // const notify = () => {
   //   toast.success("Instructions sent!", {
@@ -34,50 +32,43 @@ function ResetPassword() {
     document.getElementById("pwAlert").style.backgroundColor="green"
   }
 
-  function resetPw(e) {
-    e.preventDefault();
+	function resetPw(e) {
+		e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_wkyp2uz",
-        "template_yrygo4o",
-        e.target,
-        "user_HarQvCQDVRSyllfUxOCDt"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
+		emailjs.sendForm('service_wkyp2uz', 'template_yrygo4o', e.target, 'user_HarQvCQDVRSyllfUxOCDt').then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+		e.target.reset();
+	}
 
-  return (
-    <body>
-      {" "}
-      <TopNav2 />{" "}
-      <div className="rpass-container">
-        <div className="reset-text">
-          <h1>Reset Password</h1>
-          <p>
-            Enter the email associated with your account and we'll send you an
-            email with instructions to reset your password.
-          </p>
-        </div>{" "}
-        <form onSubmit={resetPw}>
-          <div className="row   ">
-            <div className=" form-group pt-2 mx-auto rpass-email">
-              <input
-                type="email"
-                className="form-control shadow-none rp-email-input"
-                required="true"
-                placeholder="Email Address"
-                name="email"
-              />
-            </div>
+	return (
+		<body>
+			{' '}
+			<TopNav2 />{' '}
+			<div className="rpass-container">
+				<div className="reset-text">
+					<h1>Reset Password</h1>
+					<p>
+						Enter the email associated with your account and we'll send you an email with instructions to
+						reset your password.
+					</p>
+				</div>{' '}
+				<form onSubmit={resetPw}>
+					<div className="row   ">
+						<div className=" form-group pt-2 mx-auto rpass-email">
+							<input
+								type="email"
+								className="form-control shadow-none rp-email-input"
+								required="true"
+								placeholder="Email Address"
+								name="email"
+							/>
+						</div>
 
             <div className="reset-submit">
               <button
@@ -129,10 +120,10 @@ function ResetPassword() {
             </div>
           </div>
         </form> */}
-      </div>{" "}
-      <Footer />
-    </body>
-  );
+			</div>{' '}
+			<Footer />
+		</body>
+	);
 }
 
 export default ResetPassword;

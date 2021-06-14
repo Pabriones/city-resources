@@ -10,46 +10,43 @@ import CovidMain from './CovidMain';
 import { connect } from 'react-redux';
 import { getCurrentProfile } from '../actions/profile';
 import Spinner from '../components/layout/spinner';
-import { Fragment } from 'react';
+import SubscribeMe from './SubscribeMe';
 
-const Homepage = ({
-  getCurrentProfile,
-  auth,
-  profile: { profile, loading },
-}) => {
-  useEffect(() => {
-    getCurrentProfile();
-  }, []);
+const Homepage = ({ getCurrentProfile, auth, profile: { profile, loading } }) => {
+	useEffect(() => {
+		getCurrentProfile();
+	}, []);
 
-  return loading && profile == null ? (
-    <Spinner />
-  ) : (
-    <body>
-      <div id="LandingPage">
-        <CovidMain />
+	return loading && profile == null ? (
+		<Spinner />
+	) : (
+		<body>
+			<div id="LandingPage">
+				<CovidMain />
 
-        <div className="lp-container">
-          <TopNavHp />
-        </div>
-      </div>
-      <div>
-        <AboutPage />
-        <ContactSection />
-        <Footer />
-      </div>
-    </body>
-  );
+				<div className="lp-container">
+					<TopNavHp />
+				</div>
+			</div>
+			<div>
+				<AboutPage />
+				<ContactSection />
+				<SubscribeMe />
+				<Footer />
+			</div>
+		</body>
+	);
 };
 
 Homepage.propTypes = {
-  getCurrentProfile: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired,
-  profile: PropTypes.object.isRequired,
+	getCurrentProfile: PropTypes.func.isRequired,
+	auth: PropTypes.object.isRequired,
+	profile: PropTypes.object.isRequired
 };
 
 const mapStateToProps = (state) => ({
-  auth: state.auth,
-  profile: state.profile,
+	auth: state.auth,
+	profile: state.profile
 });
 
 export default connect(mapStateToProps, { getCurrentProfile })(Homepage);

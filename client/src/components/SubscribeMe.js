@@ -80,9 +80,31 @@ const SubscribeMe = () => {
 </form>
 </div>
 
-  );
+	return (
+		<div class="row sub-content">
+			<h1>Join our mailing list!</h1>
+			<p>Sign up to receive email updates on events nearby, new resources and more.</p>
+			<form onSubmit={subscribe}>
+				<div className="row  subscribe-section ">
+					<div className=" form-group pt-2 mx-auto sub-email">
+						<input
+							type="email"
+							className="form-control shadow-none sub-input"
+							required="true"
+							placeholder="Email Address"
+							name="email"
+						/>
+					</div>
+					<div className="sub-submit">
+						<button type="submit" className="subBtn" id="sub" name="submit" onClick={notifySub}>
+							ADD ME TO THE LIST!
+						</button>
+					</div>
+					{/* <ToastContainer /> */}
+				</div>
+			</form>
+		</div>
+	);
 };
 
 export default SubscribeMe;
-
-

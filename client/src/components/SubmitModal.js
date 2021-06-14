@@ -5,7 +5,7 @@ import { Link as Link2 } from "react-router-dom";
 import { ArrowRight } from 'react-bootstrap-icons';
 
 
-function SubmitModal() {
+const SubmitModal = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);

@@ -25,27 +25,20 @@ export default function SimpleContactForm() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_g11nedj",
-        "template_bmvagbl",
-        e.target,
-        "user_yI6ZqqiUBuyWJcjomajAu"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
+		emailjs.sendForm('service_g11nedj', 'template_bmvagbl', e.target, 'user_yI6ZqqiUBuyWJcjomajAu').then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+		e.target.reset();
+	}
 
-  // function EnableSend() {
-  //   document.getElementById("submit").disabled = false;
-  // }
+	// function EnableSend() {
+	// 	document.getElementById('submit').disabled = false;
+	// }
 
   return (
     <div>

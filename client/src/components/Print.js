@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, state, toggle } from 'react';
 import '../../src/css/SearchDirectoryPage.css';
 import Popup from 'reactjs-popup';
 import ReactModal from 'react-modal';
@@ -6,7 +6,7 @@ import MapContainer from '../components/map';
 import 'reactjs-popup/dist/index.css';
 import { Map, InfoWindow, Marker, GoogleApiWrapper, Polygon } from 'google-maps-react';
 import { SuitHeart, Envelope } from 'react-bootstrap-icons';
-import { Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { Tooltip, OverlayTrigger, Alert } from 'react-bootstrap';
 import EmailShare from 'react-email-share-link';
 
 class Print extends Component {

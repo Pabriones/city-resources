@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal, Button, Row, Col } from "react-bootstrap";
+import { Modal, Button, Row, Col, Spinner } from "react-bootstrap";
 import "../../src/css/loginmodal.css";
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
@@ -98,7 +98,7 @@ const LoginModal = ({ login, isAuthenticated }) => {
               </div>
             </div>
 
-            <button className="Login-modal-btn">Sign in</button>
+            <button className="Login-modal-btn"> Sign in</button>
             <p>
               Don't have an account yet?{" "}
               <Link to="/registerpage">
@@ -113,6 +113,7 @@ const LoginModal = ({ login, isAuthenticated }) => {
     </>
   );
 };
+
 LoginModal.propTypes = {
   login: PropTypes.func.isRequired,
   isAuthenticated: PropTypes.bool,

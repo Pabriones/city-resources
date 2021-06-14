@@ -18,7 +18,7 @@
 
 .flex-column {
   background-color: #e0e0e073;
-  height: 70vh;
+  height: 115vh;
 }
 
 .up-selections:hover h2 {
@@ -30,13 +30,15 @@
 }
 
 .accordion-up {
-  background-color: transparent;
+  background-color:  transparent;
   border: none;
+
 }
 
 .accordion-header {
   background-color: transparent;
   border: none;
+  width: 120%;
 }
 
 .accordion-header p {

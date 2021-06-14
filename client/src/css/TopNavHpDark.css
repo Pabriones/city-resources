@@ -80,6 +80,10 @@
 	font-size: 5.5vh;
 }
 
+.nav-icons-hp{
+float: right;
+}
+
 /* SMARTPHONES */
 @media (min-width: 320px) and (max-width: 480px) {
 	.navTitleHp h1 {

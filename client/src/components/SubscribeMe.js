@@ -1,11 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../src/css/SubscribeMe.css";
 import { Link as Link2 } from "react-router-dom";
 import SimpleContactForm from "./SimpleContactForm";
 import emailjs from "emailjs-com";
 
 const SubscribeMe = () => {
- 
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
   function subscribe(e) {
     e.preventDefault();
@@ -49,6 +53,8 @@ const SubscribeMe = () => {
               required="true"
               placeholder="Email Address"
               name="email"
+              onChange={handleEmailChange}
+              value={email}
             />
           </div>
 
@@ -59,6 +65,7 @@ const SubscribeMe = () => {
               id="alert"
               name="submit"
               onClick={alertUser}
+              disabled={!email}
             >
               ADD ME TO THE LIST!
             </button>

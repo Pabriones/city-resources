@@ -23,6 +23,8 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import { Provider } from 'react-redux';
 import store from './store';
 import { loadAccount } from './actions/auth';
+import TopNavHp from './components/TopNavHp';
+import AboutPage from './components/AboutPage';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -52,6 +54,8 @@ const App = () => {
 					<Route path="/registerpage" component={RegisterPage} />
 					<Route path="/resetpassword" component={ResetPassword} />
 					<Route path="/searchnavlinks" component={SearchNavLinks} />
+					<Route path="/aboutpage" component={AboutPage} />
+					<PrivateRoute path="/TopNavHp" component={TopNavHp} />
 					<PrivateRoute path="/userprofile" component={UserProfile} />
 				</Switch>
 			</Router>

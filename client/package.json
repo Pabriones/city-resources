@@ -12,6 +12,7 @@
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
 		"axios": "^0.21.1",
+		"babel-preset-react": "^6.24.1",
 		"bootstrap": "^4.5.3",
 		"emailjs-com": "^2.6.4",
 		"google-maps-react": "^2.0.6",
@@ -21,7 +22,7 @@
 		"react-avatar": "^3.10.0",
 		"react-bootstrap": "^1.4.0",
 		"react-bootstrap-icons": "^1.5.0",
-		"react-dom": "^16.13.1",
+		"react-dom": "^16.14.0",
 		"react-email-share-link": "^1.0.3",
 		"react-modal": "^3.13.1",
 		"react-moment": "^1.1.1",
@@ -62,8 +63,12 @@
 			"last 1 safari version"
 		]
 	},
+	"alias": {
+		"react": "path.resolve('./node_modules/react')"
+	},
 	"devDependencies": {
-		"case-sensitive-paths-webpack-plugin": "^2.4.0"
+		"case-sensitive-paths-webpack-plugin": "^2.4.0",
+		"eslint-plugin-react-hooks": "^4.2.0"
 	},
 	"proxy": "http://localhost:8080"
 }

@@ -8,6 +8,7 @@ import SearchNavLinks from './SearchNavLinks';
 import Axios from 'axios';
 import { Link as Link3 } from 'react-router-dom';
 import TopNav2 from './TopNav2';
+import { Alert, Button } from 'react-bootstrap';
 
 let filterArray = [
 	{ filterName: 'Clothing Assistance', checked: false },
@@ -101,6 +102,31 @@ const SearchDirectoryPage = () => {
 
 	// let toPrint = [];
 
+	//Alert button on top of list of directory
+	function AlertDismissible() {
+		const [show, setShow] = useState(true);
+	
+		return (
+			<>
+				<Alert show={show} variant="dark">
+					{/* <Alert.Heading>How's it going?!</Alert.Heading> */}
+					<p>
+						Must be a registered user in order to save favorites
+					</p>
+					<hr />
+					<div className="d-flex justify-content-end">
+						<Button onClick={() => setShow(false)} variant="outline-dark">
+							Close me
+						</Button>
+					</div>
+				</Alert>
+	
+				{!show && <Button onClick={() => setShow(true)} variant="outline-dark">Expand Me!</Button>}
+			</>
+		);
+	}
+	//End of alert button
+
 	return (
 		<body>
 			<TopNav2 />
@@ -141,6 +167,7 @@ const SearchDirectoryPage = () => {
 					<div className="col-6 sd-results-container scroll">
 						<div className="sd-search-results">
 							{/* <SearchNavLinks /> */}
+							<AlertDismissible />
 							<Print ref={componentRef} data={resource} />
 						</div>
 					</div>

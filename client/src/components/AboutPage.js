@@ -24,7 +24,7 @@ const AboutPage = () => {
 						{' '}
 						<button type="button" class="directLinkBtn">
 							{' '}
-							SEARCH DIRECTORY <ArrowRight size={20} />
+							SEARCH DIRECTORY <ArrowRight size={20} to="/directory" />
 						</button>
 					</Link>
 				</div>

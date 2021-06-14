@@ -1,7 +1,7 @@
 import React, { Fragment, Redirect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import '../../src/css/TopNavHp.css';
-import { SuitHeartFill } from 'react-bootstrap-icons';
+import { SuitHeart, SuitHeartFill, Bell } from 'react-bootstrap-icons';
 import { Link as Link1 } from 'react-scroll';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -58,9 +58,9 @@ const TopNavHp = ({ auth: { isAuthenticated, loading, account }, logout }) => {
 						{' '}
 						<li class="nav-item">
 							<Link class="nav-link active topnav-user-links" to="userprofile" spy={true} duration={500}>
-								<SuitHeartFill size={30} color="red" /> FAVORITES
+								<SuitHeart size={35} color="red" />  
 							</Link>
-						</li>
+						</li>   <Bell  size={35} color="black" />{" "}
 					</ul>
 
 					<ul class="navbar-nav user-links">

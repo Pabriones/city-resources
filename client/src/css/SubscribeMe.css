@@ -18,10 +18,14 @@
   width: 100%;
 }
 
-.subBtn:hover {
+.subBtn:hover{
   background-color: #695c59;
   border: none;
-  cursor: pointer;
+}
+
+.subBtn:disabled{
+  background-color: #838080;
+  border: none;
 }
 
 @media (min-width: 568px) {

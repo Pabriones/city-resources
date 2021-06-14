@@ -1,25 +1,30 @@
 import emailjs from "emailjs-com";
-import React from "react";
+import React, {useState} from "react";
 import "../../src/css/SimpleContactForm.css";
 // import { ToastContainer, toast, Bounce } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 
 export default function SimpleContactForm() {
-  // const notify = () => {
-  //   toast.success("Message sent!", {
-  //     position: "top-center",
-  //     autoClose: 3000,
-  //     hideProgressBar: true,
-  //     closeOnClick: true,
-  //     pauseOnHover: true,
-  //     draggable: true,
-  //     progress: undefined,
-  //   });
-  // };
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
 
   function sendMsg() {
     document.getElementById("msgAlert").innerHTML = "Message Sent!";
     document.getElementById("msgAlert").style.backgroundColor="green"
+    window.location.reload();
   }
 
   function sendEmail(e) {
@@ -52,7 +57,8 @@ export default function SimpleContactForm() {
                 required
                 placeholder="Name"
                 name="name"
-                // onClick={EnableSend}
+                onChange={handleNameChange}
+                value={name}
               />
             </div>
             <div className=" form-group pt-2 mx-auto">
@@ -62,7 +68,8 @@ export default function SimpleContactForm() {
                 required
                 placeholder="Email Address"
                 name="email"
-                // onClick={EnableSend}
+                onChange={handleEmailChange}
+                value={email}
               />
             </div>
             <div className=" form-group pt-2 mx-auto">
@@ -74,7 +81,8 @@ export default function SimpleContactForm() {
                 rows="4"
                 placeholder="Your message"
                 name="message"
-                // onClick={EnableSend}
+                onChange={handleMessageChange}
+                value={message}
               ></textarea>
             </div>
             <div className="  form-group  mx-auto">
@@ -84,6 +92,7 @@ export default function SimpleContactForm() {
                 id="msgAlert"
                 name="submit"
                 onClick={sendMsg}
+                disabled={!email || !name || !message}
               >
                 Send Message
               </button>

@@ -1,6 +1,8 @@
 .TopNavContainer-dark {
 	padding-top: 3%;
 	font-family: "Roboto", "sans-serif";
+ 
+ 
 }
 .navTitle-dark h1 {
 	font-size: 3vh;
@@ -78,6 +80,10 @@
 .navTitleHp h1 {
 	color: #ffffff;
 	font-size: 5.5vh;
+}
+
+.nav-icons-hp{
+float: right;
 }
 
 /* SMARTPHONES */

@@ -1,0 +1,58 @@
+.sub-content {
+  font-family: "Roboto", "sans-serif";
+  padding: 8%;
+  color: white;
+  background-color: rgb(27, 26, 26);
+}
+
+.subBtn {
+  background-color: #4b4846;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  /* margin: 31px auto 0 0; */
+  border: none;
+  padding: 3%;
+  text-align: center;
+  width: 100%;
+}
+
+.subBtn:hover{
+  background-color: #695c59;
+  border: none;
+}
+
+.subBtn:disabled{
+  background-color: #838080;
+  border: none;
+}
+
+@media (min-width: 568px) {
+  .sub-content {
+    padding: 5% 8%;
+  }
+}
+
+@media (min-width: 980px) {
+}
+
+@media (min-width: 1275px) {
+  .sub-content {
+    padding: 3% 8%;
+  }
+
+  .sub-content p {
+      font-size: 2.5vh;
+  }
+
+  .subBtn {
+    font-size: 2.2vh;
+    padding: 1%;
+    width: 50%;
+  }
+
+  .sub-input {
+    width: 50%;
+  }
+}

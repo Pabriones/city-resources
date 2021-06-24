@@ -1,17 +1,15 @@
 .ContactIntro {
   color: #22333b;
-  position:absolute;
-  width:1000px;
-  height:124px;
-  left:370px;
-  top:300px;
-  font-family: "Roboto Slab";
+  position: absolute;
+  width: 1000px;
+  height: 124px;
+  left: 370px;
+  top: 300px;
+  font-family: "Roboto";
   font-style: normal;
   font-size: 40px;
   line-height: 35px;
- 
 }
-
 
 .ContactIntro2 {
   color: #38373b;
@@ -21,14 +19,11 @@
   font-size: 35px;
   line-height: 50px;
   padding-left: 280px;
-  position:absolute;
-  width:800px;
-  height:500px;
-  left:150px;
-  top:450px;
-
-  
- 
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  left: 150px;
+  top: 450px;
 }
 
 .SubmitForm {
@@ -37,13 +32,8 @@
   margin-top: 15px;
   padding-left: 1200px;
   padding-top: 400px;
-  position:absolute;
-  width:584px;
-
- 
-
-  
- 
+  position: absolute;
+  width: 584px;
 }
 
 .Social {
@@ -68,5 +58,4 @@
 
 .label {
   margin-top: 20px;
- 
 }

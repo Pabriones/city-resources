@@ -1,0 +1,50 @@
+.topnav-user-container {
+  padding: 3% 1% 0% 10%;
+  font-family: "Roboto", "sans-serif";
+}
+.topnav-user-links {
+  padding: 0;
+  font-size: 2.8vh;
+  text-decoration: none;
+}
+
+.topnav-user-links:hover {
+  /* padding: 0; */
+  font-size: 2.8vh;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-links {
+  /* margin: 0% 1% 0%; */
+ margin-top: 5%;
+}
+
+.user-links p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.user-logout-btn {
+  font-size: 2.5vh;
+}
+
+@media (min-width: 568px) {
+}
+
+@media (min-width: 990px) {
+}
+
+@media (min-width: 1275px) {
+    .user-links {
+        /* margin: 0% 1% 0%; */
+       margin: 0% 1% 1%;
+      }
+
+      .user-links p {
+        font-size: 2.8vh;
+        text-transform: uppercase;
+        color: rgb(15, 14, 14);
+      }
+
+}

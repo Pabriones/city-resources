@@ -1,81 +1,86 @@
 .contact-container {
-  background-color: #eddfd0;
-  width: auto;
-  margin: auto;
-  border: 1px solid #eddfd0;
+  width: 100%;
+  font-family: "Roboto", "sans-serif";
+  background-color: #694839;
+  padding: 6%;
 }
 
-.emergencyNumbers {
-  font-size: 1.5vh;
-  background-color: #dfd7d7;
-  float: right;
-  width: 50%;
-  padding: 4% 5% 2% 5%;
-  height: 100%;
-  word-break: break-word;
-}
-
-.emergencyNumbers h1 {
-  font-family: Roboto Condensed;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 3vh;
-  color: #641111;
-}
-
-.contactInfo {
-  padding: 3% 5% 2% 5%;
-  font-size: 1.8vh;
-  background-color: #dfd7d7;
-  font-family: Roboto;
+/* CONTACT US SECTION */
+.contact-info {
+  padding: 4% 5% 4%;
+  color: #cfcccc;
   font-style: normal;
-  float: left;
-  width: 50%;
-  height: 100%;
-  text-align: justify;
 }
 
-.contactInfo h1 {
-  font-size: 4vh;
-  font-weight: 600;
-  color: #22333b;
+.contact-content h1 {
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding-left: 5%;
+  color: #ffffff;
 }
 
-.contactInfo h2 {
-  font-size: 4vh;
-  padding-top: 3%;
-  word-break: break-word;
+/* .email {
+  font-size: 4.5vh;
+  text-transform: uppercase;
+  text-align: center;
+} */
+
+.addResourceBtn {
+  background-color: #2c2927;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  /* margin: 31px auto 0 0; */
+  padding: 3%;
+  margin-top: 4%;
+  border: none;
 }
 
-.mail-icon {
-  font-size: 3.2vh;
+.addResourceBtn:hover {
+  background-color: #695c59;
+  border: none;
+  cursor: pointer;
 }
 
-.ab2-images {
+.sub-content {
+  background-color: #2c2927;
+}
+@media (min-width: 568px) {
+  .contact-content h1 {
+    font-size: 5vh;
+    padding-left: 4%;
+  }
+
+  .contact-info {
+    padding: 2% 4% 2%;
+  }
 }
 
-.ab2-crop {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
+@media (min-width: 980px) {
+  .contact-content h1 {
+    font-size: 4.2vh;
+    padding-left: 2%;
+  }
+
+  .contact-info {
+    padding: 1% 2% 4%;
+    font-size: 2.5vh;
+  }
 }
 
-.ab2-crop img {
-  width: 100%;
-  margin: -20% 0% -26% 0%;
-}
+@media (min-width: 1275px) {
+  .contact-content h1 {
+    font-size: 6vh;
+    padding-left: 5%;
+  }
 
-.ab2-crop2 {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
-}
+  .contact-info {
+    font-size: 2.5vh;
+    padding: 2% 5% 2%;
+  }
 
-.ab2-crop2 img {
-  width: 100%;
-  margin: -32% 0% -18.8% 0%;
+  .contact-container {
+    padding: 2% 0% 2%;
+  }
 }

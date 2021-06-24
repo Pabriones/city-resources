@@ -1,0 +1,43 @@
+form .form-control:focus{
+  box-shadow: none;
+  border-color: #302e2e;
+}
+
+.buttonTrue {
+  cursor: pointer;
+  color: rgb(224, 26, 26);
+  border: none;
+  float: right;
+  padding-top: 3.5%;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.buttonFalse {
+  cursor: pointer;
+  outline: none;
+  float: right;
+  padding-top: 3.5%;
+  outline: none;
+  box-shadow: none;
+  color: rgb(0, 0, 0);
+  border: none;
+  background-color: transparent;
+}
+
+.website-linkBtn {
+  padding: 2%;
+  font-size: 2.2vh;
+  background-color: #252424;
+  border: none;
+  color: #f7f3f3;
+  margin: 3% 2% 8%;
+}
+
+.website-linkBtn:hover {
+  font-weight: bold;
+  color: #f3f3f3;
+  text-decoration: none;
+  font-family: "Roboto", "sans-serif";
+}

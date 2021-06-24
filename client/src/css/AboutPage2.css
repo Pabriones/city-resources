@@ -1,67 +1,46 @@
-
 .ab2-container {
-  background-color: #F3EDE5;
-    width: auto;
-    margin: auto;
-    border-bottom: 10px solid #a17b6c;
-  }
-
+  background-color: #ebedee;
+  width: 100%;
+  margin: auto;
+  padding: 3%;
+}
 
 .ab2-content h1 {
-      padding: 5% 5% 2%;
-  font-family: "Roboto", "sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 4vh;
-  
   color: #22333b;
+  padding: 3% 0% 4%;
 }
 
 .ab2-title {
-  font-family: "Roboto", "sans-serif";
-  font-size: 2.5vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8vh;
   font-weight: bold;
   color: #22333b;
-   
 }
 
 .ab2-text-container {
   font-family: "Roboto", "sans-serif";
-  color: #22333b;
-  margin: 0% 5% 8%;
-  font-size: 2vh;
-  text-align: justify;
+  padding: 3%;
+  font-size: 2.1vh;
 }
 
-/* .ab2-text-container p {
-  margin: 0.2% 0% 2.8%;
+.ab2-text-container p {
+  padding-bottom: 4%;
+  font-size: 2.5vh;
 }
 
-.ab2-images {
-  margin-top: 6.5%;
-}
+/* SMARTPHONES */
+@media (min-width: 320px) and (max-width: 480px) {
+  .ab2-content h1 {
+    font-size: 2.8vh;
+  }
 
-.ab2-crop {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
+  .ab2-title {
+    font-size: 2.4vh;
+  }
+  .ab2-content p {
+    font-size: 2.2vh;
+  }
 }
-
-.ab2-crop img {
-  width: 100%;
-  margin: -20% 0% -26% 0%;
-}
-
-.ab2-crop2 {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  float: left;
-  display: -webkit-inline-flex;
-}
-
-.ab2-crop2 img {
-  width: 100%;
-  margin: -32% 0% -18.8% 0%;
-} */

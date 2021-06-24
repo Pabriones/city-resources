@@ -1,0 +1,97 @@
+.up-container {
+  font-family: "Roboto", "sans-serif";
+  margin: 1% 5% 0%;
+}
+
+.up-form-container {
+  padding: 0% 5% 0%;
+  width: 78%;
+ 
+}
+
+.up-form-container p {
+  padding: 4% 2% 0%;
+  margin: 2%;
+  font-size: 2.8vh;
+}
+
+.up-selections {
+  text-transform: uppercase;
+}
+
+.flex-column {
+  background-color: #e0e0e073;
+  height: 100vh;
+  width: 100%;
+}
+
+.up-selections:hover h2 {
+  font-weight: bold;
+}
+
+.up-selections h2 {
+  color: rgb(22, 16, 16);
+}
+
+.accordion-up {
+  background-color:  transparent;
+  border: none;
+
+}
+
+.accordion-header {
+  background-color: transparent;
+  border: none;
+  width: 120%;
+}
+
+.accordion-header p {
+  font-size: 3.5vh;
+}
+
+.accordion-edit {
+  text-decoration: none;
+
+  float: right;
+  padding-right: 50%;
+
+  color: black;
+}
+
+.edit-btn {
+  background-color: rgb(212, 212, 212);
+  border: none;
+}
+
+.checkbox-label-up {
+  font-size: 2.5vh;
+  padding-left: 10%;
+  margin-bottom: 3%;
+}
+
+.save-btn-up {
+  margin: 1% 70% 0%;
+  color: rgb(39, 39, 39);
+}
+
+.input-bar-up {
+  width: 80%;
+}
+
+.user-profile-input {
+  padding-left: 10%;
+  font-size: 2.5vh;
+}
+
+.avatar-circle {
+  padding: 5% 0% 2%;
+  text-align: center;
+}
+
+/* SMARTPHONES */
+@media (min-width: 320px) and (max-width: 780px) {
+  .flex-column {
+    background-color: #e0e0e073;
+    height: 35vh;
+  }
+}

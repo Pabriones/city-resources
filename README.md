@@ -1,5 +1,8 @@
 # City Resource website project
 
+### What is City Resource
+City Resource is a Web Application that compiles most of Seattle's Assistance Program, from housing, food, to even medical cost assistance. City Resource makes it easier to search for assitance without searching the web for hours.
+
 ## To Deploy locally
 
 ### Clone Repo to your local computer

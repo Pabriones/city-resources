@@ -8,13 +8,18 @@ Users are able to easily search by selecting a filter, print the list of the res
 
 ![LandingPage](https://user-images.githubusercontent.com/57070340/135529323-9cebcdc2-fa92-4ec1-906e-18010ec5676c.png)
 
+
 <img width="1431" alt="Login-accessibility" src="https://user-images.githubusercontent.com/57070340/135529617-42e57ba2-6a4a-48c5-8e89-3061510ec93e.png">
+
+
+![SearchResources](https://user-images.githubusercontent.com/57070340/135530657-18d80cd5-3bad-4d70-add3-2bd442895dda.png)
+
 
 ![AddResources](https://user-images.githubusercontent.com/57070340/135529447-d81e94e6-acf9-4e21-852c-8b6da0d221be.png)
 
+
 ![Registration](https://user-images.githubusercontent.com/57070340/135529558-f017268f-4aa6-4fd6-ae80-dd75e2e87151.png)
 
-![SearchResources](https://user-images.githubusercontent.com/57070340/135529583-76fe7894-4adf-4fb5-a011-c96aab1daff0.png)
 
 ## To Deploy locally
 
